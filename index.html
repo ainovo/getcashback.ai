@@ -31,11 +31,6 @@
       z-index: -1;
     }
     
-    @media (max-width: 767px) {
-      .background {
-        background-position: 10% center;
-      }
-    }
     .content {
       position: relative;
       display: flex;
@@ -107,6 +102,30 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+      }
+      .background {
+        background-position: 10% center;
+      }
+    }
+    
+    /* Landscape mode on mobile */
+    @media (max-width: 915px) and (orientation: landscape) {
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        align-items: flex-start;
+        text-align: left;
+      }
+      .background {
+        background-position: 15% center;
+      }
+      .button {
+        margin: 5px 0;
+        padding: 8px 16px;
+        font-size: 14px;
       }
     }
     
