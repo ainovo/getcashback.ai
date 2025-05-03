@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,22 +20,20 @@
       min-height: 100vh;
       overflow-x: hidden;
     }
+
     .buttons {
       display: flex;
       justify-content: left;
       align-items: left;
       gap: 24px;
       max-width: 45vw;
-      margin-top: 32px;
-      margin-bottom: 32px;
-      margin-left: 32px;
+      margin: 8px;
       position: sticky;
       bottom: 0;
       z-index: 10;
-      padding-top: 16px;
-      padding-left: 16px;
-      padding-bottom: 16px;
+      padding: 16px;
     }
+
     .button {
       display: inline-flex;
       align-items: center;
@@ -47,49 +46,58 @@
       border-radius: 6px;
       cursor: pointer;
       text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s, padding 0.35s cubic-bezier(0.4,0,0.2,1);
-      min-width: 40px;
+      transition: transform 0.2s, box-shadow 0.2s, padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      min-width: 30px;
       justify-content: center;
       overflow: hidden;
     }
-    .button:hover, .button:focus {
+
+    .button:hover,
+    .button:focus {
       padding: 12px 24px;
     }
+
     .button-text {
       opacity: 0;
       max-width: 0;
       overflow: hidden;
-      transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1), max-width 0.35s cubic-bezier(0.4,0,0.2,1), margin-left 0.35s cubic-bezier(0.4,0,0.2,1);
+      transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1), margin-left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
       margin-left: 0;
       white-space: nowrap;
       display: inline-block;
     }
+
     .button:hover .button-text,
     .button:focus .button-text {
       opacity: 1;
       max-width: 300px;
       margin-left: 8px;
     }
+
     .reddit-button {
       background-color: #ff4500;
       color: white;
     }
+
     .chrome-button {
       background-color: #4285F4;
       color: white;
     }
+
     .git-button {
-      background-color:#24292e; 
-      color:white;
+      background-color: #24292e;
+      color: white;
     }
+
     .button-icon {
       height: 20px;
       width: 20px;
       flex-shrink: 0;
     }
+
     .images {
       position: absolute;
-      top: 0;
+      top: 90px;
       left: 0;
       width: 100vw;
       display: flex;
@@ -100,54 +108,87 @@
       padding-bottom: 16px;
       background: transparent;
     }
-    @media (max-width: 767px) {
-      .buttons{
-        margin-left: 8px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        padding-left: 4px;
-        padding-top: 4px;
-        padding-left: 4px;
+
+    @media (max-width: 767px), (max-device-width: 767px) {
+      .buttons {
+        margin: 8px;
+        padding: 4px;
         max-width: 100vw;
+        gap: 8px;
+      }
+
+      .button-text {
+        opacity: 1;
+        max-width: 300px;
+        font-size: smaller;
+      }
+
+      .chrome-button,
+      .git-button {
+        display: none !important;
+      }
+
+      .images{
+        top: 65px;
       }
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9R52Y9WNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B9R52Y9WNF');
+  </script>
 </head>
+
 <body>
   <div class="buttons">
     <a class="button reddit-button" href="https://www.reddit.com/r/GetCashback/" target="_blank">
       <svg class="button-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="10" cy="10" r="10" fill="#FF4500"/>
-        <path d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z" fill="#FFFFFF"/>
+        <circle cx="10" cy="10" r="10" fill="#FF4500" />
+        <path
+          d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
+          fill="#FFFFFF" />
       </svg>
       <span class="button-text">Join The Community</span>
     </a>
     <a class="button git-button" href="getcashback-extension-v1.0.0.zip" target="_blank">
       <svg class="button-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        <path
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
       </svg>
       <span class="button-text">Download 1.0.0</span>
     </a>
     <a class="button chrome-button" href="#" target="_blank">
       <svg class="button-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="10" cy="10" r="10" fill="#FFFFFF"/>
-        <circle cx="10" cy="10" r="4" fill="#FFFFFF"/>
-        <path d="M10,5h8.33a10,10,0,0,0-17.32,0L5.67,12.5l.004-.001A5,5,0,0,1,10,5Z" fill="#EA4335"/>
-        <path d="M14.33,12.5,10,20a10,10,0,0,0,8.66-15H10l-.001.004A5,5,0,0,1,14.33,12.5Z" fill="#FBBC04"/>
-        <path d="M5.67,12.5,1.34,5a10,10,0,0,0,8.66,15l4.33-7.5-.003-.003a5,5,0,0,1-8.66.003Z" fill="#34A853"/>
-        <circle cx="10" cy="10" r="3" fill="#1A73E8"/>
+        <circle cx="10" cy="10" r="10" fill="#FFFFFF" />
+        <circle cx="10" cy="10" r="4" fill="#FFFFFF" />
+        <path d="M10,5h8.33a10,10,0,0,0-17.32,0L5.67,12.5l.004-.001A5,5,0,0,1,10,5Z" fill="#EA4335" />
+        <path d="M14.33,12.5,10,20a10,10,0,0,0,8.66-15H10l-.001.004A5,5,0,0,1,14.33,12.5Z" fill="#FBBC04" />
+        <path d="M5.67,12.5,1.34,5a10,10,0,0,0,8.66,15l4.33-7.5-.003-.003a5,5,0,0,1-8.66.003Z" fill="#34A853" />
+        <circle cx="10" cy="10" r="3" fill="#1A73E8" />
       </svg>
       <span class="button-text">Install (Coming Soon)</span>
     </a>
   </div>
   <div class="images">
-    <img src="getcashback.ai.png" alt="GetCashback.ai - Your Cashback Copilot" style="width:100%; display:block; margin-bottom:16px;">    
-    <img src="your privacy comes first.png" alt="Your Privacy Comes First" style="width:100%; display:block; margin-bottom:16px;">
-    <img src="automatically collect cashback offers.png" alt="Automatically Collect Cashback Offers" style="width:100%; display:block; margin-bottom:16px;">
-    <img src="read fine print spot best deals.png" alt="Read Fine Print Spot Best Deals" style="width:100%; display:block; margin-bottom:16px;">
-    <img src="instant redemption alerts.png" alt="Instant Redemption Alerts" style="width:100%; display:block; margin-bottom:16px;">
-    <img src="discover local offers.png" alt="Discover Local Offers" style="width:100%; display:block; margin-bottom:16px;">
+    <img src="getcashback.ai.png" alt="GetCashback.ai - Your Cashback Copilot"
+      style="width:100%; display:block; margin-bottom:16px;">
+    <img src="your privacy comes first.png" alt="Your Privacy Comes First"
+      style="width:100%; display:block; margin-bottom:16px;">
+    <img src="automatically collect cashback offers.png" alt="Automatically Collect Cashback Offers"
+      style="width:100%; display:block; margin-bottom:16px;">
+    <img src="read fine print spot best deals.png" alt="Read Fine Print Spot Best Deals"
+      style="width:100%; display:block; margin-bottom:16px;">
+    <img src="instant redemption alerts.png" alt="Instant Redemption Alerts"
+      style="width:100%; display:block; margin-bottom:16px;">
+    <img src="discover local offers.png" alt="Discover Local Offers"
+      style="width:100%; display:block; margin-bottom:16px;">
     <img src="search and compare.png" alt="Search and Compare" style="width:100%; display:block; margin-bottom:16px;">
   </div>
 </body>
+
 </html>
