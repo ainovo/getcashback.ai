@@ -137,3 +137,6 @@ dist
 
 # MacOS files
 .DS_Store
+
+# Original JavaScript files
+original-js

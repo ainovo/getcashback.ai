@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>GetCashback.ai Wallet - Live Demo</title>
+  <meta name="description" content="Track, analyze, and maximize your cashback and rewards offers with GetCashback.ai Wallet. Visualize your savings and discover new opportunities to earn more.">
+  <meta name="keywords" content="cashback wallet, rewards, offer tracking, savings, getcashback.ai, Chrome extension, AI, finance">
+  <link rel="canonical" href="https://getcashback.ai/wallet.html">
+  <meta property="og:title" content="GetCashback.ai Wallet - Track & Maximize Your Cashback Offers">
+  <meta property="og:description" content="Track, analyze, and maximize your cashback and rewards offers with GetCashback.ai Wallet. Visualize your savings and discover new opportunities to earn more.">
+  <meta property="og:image" content="https://getcashback.ai/getcashback.ai.png">
+  <meta property="og:url" content="https://getcashback.ai/wallet.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GetCashback.ai Wallet - Track & Maximize Your Cashback Offers">
+  <meta name="twitter:description" content="Track, analyze, and maximize your cashback and rewards offers with GetCashback.ai Wallet. Visualize your savings and discover new opportunities to earn more.">
+  <meta name="twitter:image" content="https://getcashback.ai/getcashback.ai.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GetCashback.ai Wallet",
+      "url": "https://getcashback.ai/wallet.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Chrome",
+      "description": "Track, analyze, and maximize your cashback and rewards offers with GetCashback.ai Wallet.",
+      "browserRequirements": "Requires Google Chrome"
+    }
+  </script>
+  <link rel="stylesheet" href="css/wallet.css">
+  <script src="js/extension-web.js"></script>
+  <script src="js/shared.js" defer></script>
+  <script src="js/wallet.js" defer></script>
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+  <script src="lib/leaflet/leaflet.js"></script>
+  <script src="lib/compromise.js"></script>
+</head>
+
+<body class="wallet-page">
+  <div class="wallet-container">
+    <!-- Left column for navigation -->
+    <div class="left-column">
+      <div class="logo-container">
+        <img src="images/icon.png" alt="GetCashback.ai" class="header-icon" width="60">
+        <h1 class="wallet-title">GetCashback.ai</h1>
+      </div>
+      <div class="header-ribbon">
+        <div class="stat-row">
+          <span class="stat-value" id="total-value">$0.00</span>
+          <span class="stat-label">Collected</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-value" id="earning">$0.00</span>
+          <span class="stat-label">Est. Earnings</span>
+        </div>
+      </div>
+      <div style="margin:20px;gap:10px;flex-direction:column;display:flex;align-items: center;">
+        <span> ℹ️ This is a live demo. Real offers require the extension to be installed and
+          activated.</span>
+        <a href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde"
+          target="_blank"
+          style="display:inline-flex;align-items:center;gap:10px;padding:8px 16px;font-weight:600;border:none;border-radius:6px;cursor:pointer;text-decoration:none;background-color:#4285F4;color:white;">
+          <svg class="button-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+            style="height:20px;width:20px;flex-shrink:0;">
+            <circle cx="10" cy="10" r="10" fill="#FFFFFF" />
+            <circle cx="10" cy="10" r="4" fill="#FFFFFF" />
+            <path d="M10,5h8.33a10,10,0,0,0-17.32,0L5.67,12.5l.004-.001A5,5,0,0,1,10,5Z" fill="#EA4335" />
+            <path d="M14.33,12.5,10,20a10,10,0,0,0,8.66-15H10l-.001.004A5,5,0,0,1,14.33,12.5Z" fill="#FBBC04" />
+            <path d="M5.67,12.5,1.34,5a10,10,0,0,0,8.66,15l4.33-7.5-.003-.003a5,5,0,0,1-8.66.003Z" fill="#34A853" />
+            <circle cx="10" cy="10" r="3" fill="#1A73E8" />
+          </svg>
+          <span>Install</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="wallet.html" id="home" class="nav-link">🏠 Home </a></li>
+          <li><a href="#" id="privacy" class="nav-link">🔒 Privacy</a></li>
+          <li><a href="#" id="hunt-offers" class="nav-link">🔍 Collect</a></li>
+          <li><a href="#" id="analyze" class="nav-link">🤖 Analyze</a></li>
+          <li><a href="#" id="redeem" class="nav-link">💰 Redeem </a></li>
+          <li style="display:none"><a href="#" id="export-csv-button" class="nav-link">📊 Export</a></li>
+          <li><a href="#" id="clear-storage" class="nav-link">🗑️ Reset</a></li>
+          <li style="display:none"><a href="#" id="verify" class="nav-link">🔄 Update</a></li>
+          <li><a href="#" id="help" class="nav-link">❓ Help</a></li>
+          <li><a href="#" id="ai-summary" class="nav-link" style="display: none;">🛠️ Debug</a></li>
+          <li><a href="#" id="deduplicate-offers" class="nav-link" style="display: none;">🗃️ Dedupe</a></li>
+        </ul>
+      </nav>
+
+      <div id="storage-info">
+        <div class="storage-text"></div>
+        <div class="storage-progress-container">
+          <div class="storage-progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="signin-container">
+        <button id="purge-button" class="purge-button">
+          🧹
+          Purge
+        </button>
+        <button id="signin-button" class="signin-button">
+          ☁️
+          Sync
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Right column for content -->
+    <div class="right-column">
+      <div class="content">
+        <!-- Stats summary moved to top -->
+        <div class="stats wallet-stats">
+          <div class="stat-row">
+            <span class="stat-label">Available</span>
+            <span class="stat-value" id="active-offers">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Activated</span>
+            <span class="stat-value" id="offers-activated">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Collected</span>
+            <span class="stat-value" id="collected-offers">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Expired</span>
+            <span class="stat-value" id="offers-expired">0</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Redeemed</span>
+            <span class="stat-value" id="redeemed-offers">0</span>
+          </div>
+        </div>
+
+        <!-- Combined search and filters row -->
+        <!-- Replace the existing controls-container with this new structure -->
+        <div class="controls-container">
+          <!-- Sort dropdown (left aligned) -->
+          <div class="sort-container">
+            <select id="sort-options" class="sort-dropdown">
+              <option value="recent" selected>Recently Updated</option>
+              <option value="expiry-asc">Expiry Date (Earliest)</option>
+              <option value="expiry-desc">Expiry Date (Latest)</option>
+              <option value="value-desc">Value (High to Low)</option>
+              <option value="value-asc">Value (Low to High)</option>
+              <option value="effort-asc">Effort (Easy to Hard)</option>
+              <option value="effort-desc">Effort (Hard to Easy)</option>
+              <option value="cashbackfixed-desc">Cashback $ (High to Low)</option>
+              <option value="cashbackpercent-desc">Cashback % (High to Low)</option>
+            </select>
+          </div>
+          <!-- Search box (left aligned) -->
+          <div class="search-container">
+            <input type="text" id="offer-search" placeholder="Search offers..." class="search-box">
+            <span class="search-clear-button" id="search-clear">&times;</span>
+          </div>
+          <div class="card-container">
+            <button id="card-toggle" class="toggle-button" title="Hide/show card">
+              <span class="card-label">Hide</span>&nbsp;
+              <span class="card-icon">💳</span>
+            </button>
+          </div>
+          <!-- Local map toggle (right aligned) -->
+          <div class="local-container">
+            <button id="local-toggle" class="toggle-button" title="Show local map">
+              <span class="local-icon">🗺️</span>&nbsp;
+              <span class="local-label"></span>
+            </button>
+          </div>
+          <!-- Advanced filters toggle (right aligned) -->
+          <div class="filters-toggle-container">
+            <button id="advanced-filters-toggle" class="toggle-button" title="Show filters">
+              <span class="filter-icon">🤖</span>&nbsp;
+              <span class="filter-label"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Advanced filters panel (initially hidden) -->
+        <div id="advanced-filters-panel" class="advanced-filters-panel">
+          <button class="filter-panel-close" id="filter-panel-close">✕</button>
+
+          <div class="filter-actions">
+            <button id="reset-filters" class="reset-button">Reset All</button>
+          </div>
+
+          <div class="filter-section">
+            <div id="card-filter-container" class="filter-group">
+              <!-- Card checkboxes will be populated dynamically -->
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div id="bank-filter-container" class="filter-group">
+              <!-- Bank checkboxes will be populated dynamically -->
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div id="category-filter-container" class="filter-group">
+              <!-- Category checkboxes will be populated dynamically -->
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-group">
+              <div class="filter-title">Type</div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="type-cashback" value="cashback" class="filter-checkbox type-checkbox">
+                <label for="type-cashback">Cashback</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="type-discount" value="discount" class="filter-checkbox type-checkbox">
+                <label for="type-discount">Discount</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="type-points" value="points" class="filter-checkbox type-checkbox">
+                <label for="type-points">Points</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-group">
+              <div class="filter-title">Location</div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="location-online" value="online" class="filter-checkbox location-checkbox">
+                <label for="location-online">Online</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="location-in-store" value="in-store"
+                  class="filter-checkbox location-checkbox">
+                <label for="location-in-store">In-store</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-group">
+              <div class="filter-title">Status</div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="status-redeemed" value="redeemed" class="filter-checkbox status-checkbox">
+                <label for="status-redeemed">Redeemed</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="status-expired" value="expired" class="filter-checkbox status-checkbox">
+                <label for="status-expired">Expired</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-group">
+              <div class="filter-title">Min Spend</div>
+              <div class="range-inputs">
+                <input type="number" id="min-spend-min" placeholder="Min $" min="0">
+                <span>to</span>
+                <input type="number" id="min-spend-max" placeholder="Max $" min="0">
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="filter-group">
+              <div class="filter-title">Max Cashback</div>
+              <div class="range-inputs">
+                <input type="number" id="max-cashback-min" placeholder="Min $" min="0">
+                <span>to</span>
+                <input type="number" id="max-cashback-max" placeholder="Max $" min="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hunt offers container (initially hidden) -->
+        <div id="hunt-offers-container" class="hunt-offers-container" style="display: none;">
+          <h2 class="section-title">Places to Hunt for Offers</h2>
+          <div id="bank-links-grid" class="bank-links-grid">
+            <!-- Bank cards will be inserted here dynamically -->
+          </div>
+        </div>
+
+        <!-- AI Summary container (initially hidden) -->
+        <div id="ai-summary-container" class="ai-summary-container" style="display: none;">
+          <div id="ai-summary-grid" class="offers-grid">
+            <!-- AI summary cards will be inserted here dynamically -->
+          </div>
+        </div>
+
+        <!-- Offers grid container (default view) -->
+        <div id="offers-grid-container" class="offers-grid-container">
+          <div id="offers-grid" class="offers-grid">
+            <!-- Offer cards will be inserted here dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Map view container (initially hidden) -->
+      <div id="map-view-container" class="map-view-container" style="display: none;">
+        <div id="map" class="map-container"></div>
+        <div id="map-offers-list" class="map-offers-list"></div>
+      </div>
+
+      <!-- Add this after the map-view-container div -->
+      <div id="analyze-container" class="analyze-container">
+        <span class="analyze-intro">Let our AI agents review all your collected offers! They will extract key details
+          from offer terms, figure out places to redeem, estimate potential value, and provide personalized
+          recommendations—helping you make the most of your cashback opportunities.</span>
+        <div class="robot-container">
+          <div class="robot-animation">🤖</div>
+          <button id="start-analyze-button" class="analyze-button">Start Analysis</button>
+        </div>
+
+        <div class="analyze-steps">
+          <div class="analyze-step" data-step="1">
+            <div class="step-number">1</div>
+          </div>
+          <div class="analyze-step" data-step="2">
+            <div class="step-number">2</div>
+          </div>
+          <div class="analyze-step" data-step="3">
+            <div class="step-number">3</div>
+          </div>
+          <div class="analyze-step" data-step="4">
+            <div class="step-number">4</div>
+          </div>
+        </div>
+
+        <div class="step-content-container">
+          <div class="step-content">
+            <div class="step-title">Extracting Key Attributes...(25%)</div>
+            <div class="step-description">Extract key attributes such as expiration date, minimum spend requirement, max
+              cashback amount, redeeming locations, from description</div>
+          </div>
+          <div class="step-content">
+            <div class="step-title">Calculating Value...(50%)</div>
+            <div class="step-description">Determining the potential value of each offer based on its category</div>
+          </div>
+          <div class="step-content">
+            <div class="step-title">Enrich Details from External Sources...(75%)</div>
+            <div class="step-description">Enriching offer details such as merchants' websites from external data sources
+            </div>
+          </div>
+          <div class="step-content">
+            <div class="step-title">Generating Recommendations...(100%)</div>
+            <div class="step-description">Creating personalized recommendations</div>
+          </div>
+        </div>
+
+        <div class="analyze-results">
+          <h3>🎉 Analysis Complete! </h3>
+          <div id="analysis-results-content">
+            <div class="analysis-summary">
+              <h4>💰 Summary</h4>
+              <div id="analysis-summary-details"></div>
+              <button id="analysis-summary-details-category-breakdown" class="analyze-button">Break Down By
+                Categories</button>
+            </div>
+            <div class="analysis-recommendations">
+              <h4>✅ Recommendations</h4>
+              <ul id="analysis-recommendations-details"></ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category breakdown container (initially hidden) -->
+        <div id="category-breakdown-container" class="category-breakdown-container" style="display: none;">
+          <h4>📊 Category Breakdown</h4>
+          <table class="category-breakdown-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort="category">Category <span class="sort-icon">↕️</span></th>
+                <th class="sortable" data-sort="offers">Offers <span class="sort-icon">↕️</span></th>
+                <th class="sortable" data-sort="valuable">Valuable Offers <span class="sort-icon">↕️</span></th>
+                <th class="sortable" data-sort="total">Total Value <span class="sort-icon">↕️</span></th>
+                <th class="sortable" data-sort="average">Avg. Value <span class="sort-icon">↕️</span></th>
+              </tr>
+            </thead>
+            <tbody id="category-breakdown-body">
+              <!-- Table rows will be inserted here dynamically -->
+            </tbody>
+          </table>
+          <button id="close-breakdown-button" class="close-breakdown-button">Close Breakdown</button>
+        </div>
+      </div>
+
+      <!-- Add this somewhere in the body of your wallet.html file -->
+      <div id="category-spend-modal" class="category-spend-modal" style="display: none;">
+        <div class="category-spend-modal-content">
+          <div class="countdown-container">
+            <div class="countdown-text">This dialog will close in <span id="countdown-number">60</span> seconds</div>
+            <div class="countdown-bar">
+              <div class="countdown-progress"></div>
+            </div>
+          </div>
+          <p>We will use the following to calculate offer values. You may adjust the amounts based on your typical
+            spending per transaction in each category for more accurate results.</p>
+          <form id="category-spend-form">
+            <!-- Categories will be dynamically inserted here -->
+            <div id="category-inputs-container"></div>
+
+            <div class="button-group">
+              <button type="button" id="cancel-spend-button" class="cancel-button">Skip</button>
+              <button type="button" id="save-spend-button" class="save-button">Save Preferences</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="mark-redeemed-container" class="mark-redeemed-container" style="display: none;">
+        <h2 class="section-title">Offers You Attempted to Redeem</h2>
+        <div id="redeem-grid" class="redeem-list">
+          <!-- Offer lines will be inserted here dynamically -->
+        </div>
+        <button id="mark-all-redeemed-button" class="mark-all-redeemed-button">Mark Redeemed</button>
+      </div>
+
+      <footer>
+        <div class="footer-text" id="footer">
+          GetCashback.ai v1.0 - Your Cashback Copilot
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- Offer Card Template -->
+<template id="offer-card-template">
+  <div class="offer-card-name"></div>
+  <div class="offer-logo-container">
+    <img src="" alt="" class="offer-logo">
+    <div class="effort-label easy">Easy</div>
+  </div>
+  <div class="offer-merchant"></div>
+  <div class="offer-amount"></div>
+  <div class="offer-value"></div>
+  <div class="redeem-button-container">
+    <!-- Changed to match hunt-button implementation -->
+  </div>
+  <div class="offer-details">
+    <div class="offer-min-spend"></div>
+    <div class="offer-max-cashback"></div>
+    <div class="offer-expiry"></div>
+  </div>
+</template>
+
+<!-- Offer Details Modal Template -->
+<template id="offer-details-template">
+  <div class="offer-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="modal-logo" src="" alt="">
+        <h2 class="modal-merchant"></h2>
+      </div>
+
+      <p class="modal-amount"></p>
+
+      <div class="modal-info">
+        <p><strong>ID:</strong> <span class="modal-id"></span></p>
+        <p><strong>Bank:</strong> <span class="modal-bank"></span></p>
+        <p><strong>Card:</strong> <span class="modal-card"></span></p>
+        <p><strong class="modal-expiry"></strong></p>
+      </div>
+
+      <div class="modal-details">
+        <h3>Offer Details</h3>
+        <div class="modal-description"></div>
+      </div>
+
+      <div class="modal-actions">
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- Bank Card Template -->
+<template id="bank-card-template">
+  <div class="bank-card">
+    <div class="bank-card-name">Offer Providers</div>
+    <div class="bank-name"></div>
+    <div class="bank-description"></div>
+    <button class="hunt-button">Hunt Offers</button>
+    <div class="disclaimer"></div>
+  </div>
+</template>
+
+<!-- AI Summary Card Template -->
+<template id="ai-summary-card-template">
+  <div class="offer-card-name"></div>
+  <div class="merchant-category"></div>
+  <div class="offer-logo-container">
+    <img src="" alt="" class="offer-logo">
+  </div>
+  <a class="merchant-website">
+    <div class="offer-merchant"></div>
+  </a>
+  <div class="offer-amount"></div>
+  <div class="redeem-container">
+    <div class="redeem-at-title">Redeem At:</div>
+    <ul>🔗&nbsp;<a class="redeem-link" target="_blank">Online</a></ul>
+    <ul>📍&nbsp;<a class="redeem-location" target="_blank">In store</a></ul>
+  </div>
+  <div class="key-terms-container">
+    <div class="key-term-title">Key Terms:</div>
+    <ul class="key-terms-list"></ul>
+  </div>
+  <div class="effort-container">
+    Effort Assessment:
+    <div class="effort-label"></div>
+  </div>
+</template>
+
+<!-- Redeem Card Template -->
+<template id="redeem-line-template">
+  <div class="redeem-line-item">
+    <div class="redeem-merchant-info">
+      <img class="redeem-merchant-logo" src="" alt="">
+      <div class="redeem-merchant-name"></div>
+      <button class="details-button">Terms</button>
+      <div class="redeem-offer-details">
+        <div class="redeem-offer-bank"></div>
+        <div class="redeem-offer-card"></div>
+        <div class="redeem-offer-id"></div>
+      </div>
+      <div class="redeem-offer-amount"></div>
+      <div class="redeem-offer-expiry"></div>
+    </div>
+    <div class="redeem-amount-input">
+      <label>Amount spent: $</label>
+      <input type="number" class="amount-spent-input" min="0" step="0.01" placeholder="0.00">
+    </div>
+  </div>
+</template>
+
+<!-- Redeem Card Template -->
+<template id="redeem-line-template">
+  <div class="redeem-line-item">
+    <div class="redeem-merchant-info">
+      <img class="redeem-merchant-logo" src="" alt="">
+      <div class="redeem-merchant-name"></div>
+      <button class="details-button">Terms</button>
+      <div class="redeem-offer-details">
+        <div class="redeem-offer-bank"></div>
+        <div class="redeem-offer-card"></div>
+        <div class="redeem-offer-id"></div>
+      </div>
+      <div class="redeem-offer-amount"></div>
+      <div class="redeem-offer-expiry"></div>
+    </div>
+    <div class="redeem-amount-input">
+      <label>Amount spent: $</label>
+      <input type="number" class="amount-spent-input" min="0" step="0.01" placeholder="0.00">
+    </div>
+  </div>
+</template>
+
+<template id="tos-modal-template">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>User Agreement</h2>
+    </div>
+    <div class="modal-body">
+      <div id="tos-content">Loading Terms of Service...</div>
+    </div>
+    <div class="register-info-item">
+      <span class="register-label">Client ID:</span>
+      <span id="register-client-id" class="register-value"></span>
+      <span class="register-label">Version:</span>
+      <span id="register-version" class="register-value">1.0</span>
+    </div>
+    <div class="register-form-group">
+      <label for="register-email">Email Address:</label>
+      <div id="email-input">
+        <input type="email" id="register-email" placeholder="Enter your email" required>
+        <label id="email-remark">(Make sure this is an email you can access. We'll send you your agreement & activation
+          link there.)</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button id="agree-tos-button" class="save-button">I Agree</button>
+      <button id="decline-tos-button" class="cancel-button">I Decline</button>
+    </div>
+  </div>
+</template>
