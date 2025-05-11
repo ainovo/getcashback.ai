@@ -5,17 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GetCashback.ai - Your Cashback Copilot</title>
-  <meta name="description" content="GetCashback.ai is your AI-powered cashback copilot. Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
-  <meta name="keywords" content="cashback, rewards, Chrome extension, credit card offers, AI, shopping, savings, automatic, getcashback.ai">
+  <meta name="description"
+    content="GetCashback.ai is your AI-powered cashback copilot. Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
+  <meta name="keywords"
+    content="cashback, rewards, Chrome extension, credit card offers, AI, shopping, savings, automatic, getcashback.ai">
   <link rel="canonical" href="https://getcashback.ai/">
   <meta property="og:title" content="GetCashback.ai - Your Cashback Copilot">
-  <meta property="og:description" content="Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
+  <meta property="og:description"
+    content="Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
   <meta property="og:image" content="https://getcashback.ai/getcashback.ai.png">
   <meta property="og:url" content="https://getcashback.ai/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="GetCashback.ai - Your Cashback Copilot">
-  <meta name="twitter:description" content="Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
+  <meta name="twitter:description"
+    content="Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
   <meta name="twitter:image" content="https://getcashback.ai/getcashback.ai.png">
   <script type="application/ld+json">
     {
@@ -34,133 +38,13 @@
       }
     }
   </script>
+  <script src="js/extension-web.js"></script>
+  <script src="js/shared.js" defer></script>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #38908E;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: left;
-      align-items: left;
-      gap: 24px;
-      max-width: 45vw;
-      margin: 8px;
-      position: sticky;
-      bottom: 0;
-      z-index: 10;
-      padding: 16px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin: 0;
-      padding: 12px;
-      font-size: 16px;
-      font-weight: 600;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s, padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      min-width: 30px;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .button:hover,
-    .button:focus {
-      padding: 12px 24px;
-    }
-
-    .button-text {
-      opacity: 0;
-      max-width: 0;
-      overflow: hidden;
-      transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1), margin-left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      margin-left: 0;
-      white-space: nowrap;
-      display: inline-block;
-    }
-
-    .button:hover .button-text,
-    .button:focus .button-text {
-      opacity: 1;
-      max-width: 300px;
-      margin-left: 8px;
-    }
-
-    .reddit-button {
-      background-color: #ff4500;
-      color: white;
-    }
-
-    .chrome-button {
-      background-color: #4285F4;
-      color: white;
-    }
-
-    .git-button {
-      background-color: #24292e;
-      color: white;
-    }
-
-    .button-icon {
-      height: 20px;
-      width: 20px;
-      flex-shrink: 0;
-    }
-
-    .images {
-      position: absolute;
-      top: 90px;
-      left: 0;
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-height: 100vh;
-      overflow-y: auto;
-      padding-bottom: 16px;
-      background: transparent;
-    }
-
-    @media (max-width: 767px), (max-device-width: 767px) {
-      .buttons {
-        margin: 8px;
-        padding: 4px;
-        max-width: 100vw;
-        gap: 8px;
-      }
-
-      .button-text {
-        opacity: 1;
-        max-width: 300px;
-        font-size: smaller;
-      }
-
-      .git-button {
-        display: none !important;
-      }
-
-      .images{
-        top: 65px;
-      }
-    }
-  </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9R52Y9WNF"></script>
   <script>
@@ -173,58 +57,228 @@
 </head>
 
 <body>
-  <div class="buttons">
-    <a class="button demo-button" href="wallet.html" target="_blank" style="background-color:#6ff6f6; color:#1a6ca6;">
-      <svg class="button-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="48" fill="#6ff6f6" stroke="#1a6ca6" stroke-width="4"/>
-        <circle cx="50" cy="50" r="35" fill="#f6d6a6" stroke="#1a6ca6" stroke-width="4"/>
-        <text x="50" y="65" text-anchor="middle" font-size="48" font-family="Arial, Helvetica, sans-serif" fill="#1a6ca6" stroke="#1a6ca6" stroke-width="2" font-weight="bold">$</text>
-      </svg>
-      <span class="button-text">Demo Live</span>
-    </a>
-    <a class="button chrome-button" href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde" target="_blank">
-      <svg class="button-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="10" cy="10" r="10" fill="#FFFFFF" />
-        <circle cx="10" cy="10" r="4" fill="#FFFFFF" />
-        <path d="M10,5h8.33a10,10,0,0,0-17.32,0L5.67,12.5l.004-.001A5,5,0,0,1,10,5Z" fill="#EA4335" />
-        <path d="M14.33,12.5,10,20a10,10,0,0,0,8.66-15H10l-.001.004A5,5,0,0,1,14.33,12.5Z" fill="#FBBC04" />
-        <path d="M5.67,12.5,1.34,5a10,10,0,0,0,8.66,15l4.33-7.5-.003-.003a5,5,0,0,1-8.66.003Z" fill="#34A853" />
-        <circle cx="10" cy="10" r="3" fill="#1A73E8" />
-      </svg>
-      <span class="button-text">Install 1.0.0</span>
-    </a>
-    <a class="button git-button" href="getcashback-extension-v1.0.0.zip" target="_blank">
-      <svg class="button-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-      </svg>
-      <span class="button-text">Download 1.0.0</span>
-    </a>
-    <a class="button reddit-button" href="https://www.reddit.com/r/GetCashback/" target="_blank">
-      <svg class="button-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="10" cy="10" r="10" fill="#FF4500" />
-        <path
-          d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
-          fill="#FFFFFF" />
-      </svg>
-      <span class="button-text">Get Support</span>
-    </a>
+  <div class="header-bar">
+    <div class="logo-title">
+      <img src="images/icon.png" alt="GetCashback.ai" class="logo" width="50" />
+      <h1 class="title">GetCashback.ai</h1>
+    </div>
+    <div class="header-buttons">
+      <a class="header-button chrome-button"
+        href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde"
+        target="_blank">
+        <svg class="button-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="10" fill="#FFFFFF" />
+          <circle cx="10" cy="10" r="4" fill="#FFFFFF" />
+          <path d="M10,5h8.33a10,10,0,0,0-17.32,0L5.67,12.5l.004-.001A5,5,0,0,1,10,5Z" fill="#EA4335" />
+          <path d="M14.33,12.5,10,20a10,10,0,0,0,8.66-15H10l-.001.004A5,5,0,0,1,14.33,12.5Z" fill="#FBBC04" />
+          <path d="M5.67,12.5,1.34,5a10,10,0,0,0,8.66,15l4.33-7.5-.003-.003a5,5,0,0,1-8.66.003Z" fill="#34A853" />
+          <circle cx="10" cy="10" r="3" fill="#1A73E8" />
+        </svg>
+        <span class="button-text">Install</span>
+      </a>
+      <a class="header-button demo-button" href="wallet.html" target="_blank">
+        <svg class="button-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#6ff6f6" stroke="#1a6ca6" stroke-width="4" />
+          <circle cx="50" cy="50" r="35" fill="#f6d6a6" stroke="#1a6ca6" stroke-width="4" />
+          <text x="50" y="65" text-anchor="middle" font-size="48" font-family="Arial, Helvetica, sans-serif"
+            fill="#1a6ca6" stroke="#1a6ca6" stroke-width="2" font-weight="bold">$</text>
+        </svg>
+        <span class="button-text">Demo</span>
+      </a>
+      <a class="header-button git-button" href="getcashback-extension-v1.0.0.zip" target="_blank">
+        <svg class="button-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </svg>
+        <span class="button-text">Download</span>
+      </a>
+      <a class="header-button reddit-button" href="https://www.reddit.com/r/GetCashback/" target="_blank">
+        <svg class="button-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="10" fill="#FF4500" />
+          <path
+            d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
+            fill="#FFFFFF" />
+        </svg>
+        <span class="button-text">Support</span>
+      </a>
+    </div>
   </div>
-  <div class="images">
-    <img src="getcashback.ai.png" alt="GetCashback.ai - Your Cashback Copilot"
-      style="width:100%; display:block; margin-bottom:16px;">
-    <img src="your privacy comes first.png" alt="Your Privacy Comes First"
-      style="width:100%; display:block; margin-bottom:16px;">
-    <img src="automatically collect cashback offers.png" alt="Automatically Collect Cashback Offers"
-      style="width:100%; display:block; margin-bottom:16px;">
-    <img src="read fine print spot best deals.png" alt="Read Fine Print Spot Best Deals"
-      style="width:100%; display:block; margin-bottom:16px;">
-    <img src="instant redemption alerts.png" alt="Instant Redemption Alerts"
-      style="width:100%; display:block; margin-bottom:16px;">
-    <img src="discover local offers.png" alt="Discover Local Offers"
-      style="width:100%; display:block; margin-bottom:16px;">
-    <img src="search and compare.png" alt="Search and Compare" style="width:100%; display:block; margin-bottom:16px;">
-  </div>
-</body>
+  <div class="main">
+    <div class="hero-center">
+      <h1 class="hero-headline">Your Cashback Copilot</h1>
+      <div class="hero-subtitle">Automatically collect offers, analyze best deals, and remind you to redeem — smarter
+        cashback makes saving easy.</div>
+      <div class="hero-searchbox">
+        <div class="hero-search-input">
+          I want to spend $<input id="spend-amount" placeholder="100" type="number" class="search-box" min="10"
+            inputmode="numeric" step="1">
+          on <input id="offer-search" placeholder="..." type="text" class="search-box">
+        </div>
+        <div class="hero-search-actions">
+          <div class="hero-search-left">
 
+          </div>
+          <div class="hero-search-right">
+            <!-- Advanced filters toggle (right aligned) -->
+            <div class="filters-toggle-container">
+              <button id="advanced-filters-toggle" class="toggle-button" title="Show filters">
+                <span class="filter-icon">🤖</span>&nbsp;
+                <span class="filter-label"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-suggestions">
+        <div class="hero-suggestion-btn">Sort by
+          <select id="sort-options" class="sort-dropdown">
+            <option value="recent" selected>newest</option>
+            <option value="expiry-asc">expiring soon</option>
+            <option value="value-desc">highest value</option>
+            <option value="effort-asc">least effort</option>
+            <option value="cashbackfixed-desc">highest $</option>
+            <option value="cashbackpercent-desc">highest %</option>
+          </select>
+        </div>
+        <div class="hero-suggestion-btn">
+          <input type="checkbox" id="type-cashback" value="cashback" class="filter-checkbox type-checkbox">
+          <label for="type-cashback">Cashback</label>
+        </div>
+        <div class="hero-suggestion-btn">
+          <input type="checkbox" id="type-discount" value="discount" class="filter-checkbox type-checkbox">
+          <label for="type-discount">Discount</label>
+        </div>
+        <div class="hero-suggestion-btn">
+          <input type="checkbox" id="type-points" value="points" class="filter-checkbox type-checkbox">
+          <label for="type-points">Points</label>
+        </div>
+        <div id="bank-filter-container">
+          <!-- Bank checkboxes will be populated dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stat-row">
+    <a id="stat-row"
+      href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde"
+      style="text-decoration: none;">
+      <span id="stat-label" class="stat-label">You could unlock
+        <span class="header-button demo-button" id="total-value">$0.00</span> in savings when you spend 
+        <span id="spend-amount-label" class="header-button demo-button">$100</span> on 
+        <span id="offer-search-label" class="header-button demo-button">something</span>. 
+        <span class="header-button demo-button">Install the extension</span> to start collecting today!
+      </span>
+      <span id="no-offer-label" class="stat-label" style="display:none;">No offers here? This data might be old. 
+        <span class="header-button demo-button">Try the extension</span>
+         to see the latest savings!</span>
+      </span>
+    </a>
+  </div>
+  <div class="wallet-container">
+    <!-- Right column for content -->
+    <div class="right-column">
+      <div class="content">
+        <!-- Offers grid container (default view) -->
+        <div id="offers-grid-container" class="offers-grid-container" style="display: none;">
+          <div id="offers-grid" class="offers-grid">
+            <!-- Offer cards will be inserted here dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Start -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo-col">
+        <img src="images/icon.png" alt="GetCashback.ai" class="footer-logo" width="40" />
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Company</div>
+        <a href="https://ainovo.co">Aivono Co.</a>
+        <!-- Social Logos -->
+        <div class="footer-social-logos">
+          <a href="https://www.linkedin.com/company/ainovoco" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.854 0-2.137 1.445-2.137 2.938v5.668H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.368-1.852 3.602 0 4.267 2.37 4.267 5.455v6.288zM5.337 7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.144.926-2.07 2.07-2.07s2.07.926 2.07 2.07c0 1.143-.926 2.07-2.07 2.07zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/ainovo.co/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#E1306C">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.056 2.003.24 2.465.403a4.92 4.92 0 0 1 1.775 1.153 4.92 4.92 0 0 1 1.153 1.775c.163.462.347 1.26.403 2.465.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.206-.24 2.003-.403 2.465a4.92 4.92 0 0 1-1.153 1.775 4.92 4.92 0 0 1-1.775 1.153c-.462.163-1.26.347-2.465.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.056-2.003-.24-2.465-.403a4.92 4.92 0 0 1-1.775-1.153 4.92 4.92 0 0 1-1.153-1.775c-.163-.462-.347-1.26-.403-2.465C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.056-1.206.24-2.003.403-2.465a4.92 4.92 0 0 1 1.153-1.775 4.92 4.92 0 0 1 1.775-1.153c.462-.163 1.26-.347 2.465-.403C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.145 0-3.507.012-4.741.068-1.062.048-1.637.222-2.017.37a3.093 3.093 0 0 0-1.12.73 3.093 3.093 0 0 0-.73 1.12c-.148.38-.322.955-.37 2.017-.056 1.234-.068 1.596-.068 4.741s.012 3.507.068 4.741c.048 1.062.222 1.637.37 2.017a3.093 3.093 0 0 0 .73 1.12 3.093 3.093 0 0 0 1.12.73c.38.148.955.322 2.017.37 1.234.056 1.596.068 4.741.068s3.507-.012 4.741-.068c1.062-.048 1.637-.222 2.017-.37a3.093 3.093 0 0 0 1.12-.73 3.093 3.093 0 0 0 .73-1.12c.148-.38.322-.955.37-2.017.056-1.234.068-1.596.068-4.741s-.012-3.507-.068-4.741c-.048-1.062-.222-1.637-.37-2.017a3.093 3.093 0 0 0-.73-1.12 3.093 3.093 0 0 0-1.12-.73c-.38-.148-.955-.322-2.017-.37-1.234-.056-1.596-.068-4.741-.068zm0 4.838a5.001 5.001 0 1 1 0 10.002 5.001 5.001 0 0 1 0-10.002zm0 1.837a3.164 3.164 0 1 0 0 6.328 3.164 3.164 0 0 0 0-6.328zm6.406-2.24a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0z" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@ainovo.co" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#000000">
+              <path
+                d="M12.75 0h3.03a4.5 4.5 0 0 0 4.5 4.5v3.03a7.53 7.53 0 0 1-4.5-1.44v8.19a6.75 6.75 0 1 1-6.75-6.75h.75v3.03a3.75 3.75 0 1 0 3.75 3.75V0z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Product</div>
+        <a href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde">Chrome Extension</a>
+        <a href="wallet.html">Live Demo</a>
+        <a href="getcashback-extension-v1.0.0.zip">ZIP Download</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Resources</div>
+        <a href="https://www.reddit.com/r/GetCashback/">Support</a>
+        <a href="https://docs.google.com/document/d/1May1v4NpX5CRW4VOqOE0zp2W42gsKRylukyqnuxS8t4">Release Notes</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Legal</div>
+        <a href="https://api.getcashback.ai/tos/1.0.0.html">Privacy Policy</a>
+        <a href="https://api.getcashback.ai/tos/1.0.0.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
 </html>
+
+<!-- Offer Card Template -->
+<template id="offer-card-template">
+  <div class="offer-bank-name"></div>
+  <div class="offer-logo-container">
+    <img src="" alt="" class="offer-logo">
+    <div class="effort-label easy">Easy</div>
+  </div>
+  <div class="offer-merchant"></div>
+  <div class="offer-amount"></div>
+  <div class="offer-value"></div>
+  <div class="redeem-button-container" style="display: none;">
+    <!-- Changed to match hunt-button implementation -->
+  </div>
+  <div class="offer-details">
+    <div class="offer-min-spend"></div>
+    <div class="offer-max-cashback"></div>
+    <div class="offer-expiry"></div>
+  </div>
+</template>
+
+<!-- Offer Details Modal Template -->
+<template id="offer-details-template">
+  <div class="offer-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="modal-logo" src="" alt="">
+        <h2 class="modal-merchant"></h2>
+      </div>
+
+      <p class="modal-amount"></p>
+
+      <div class="modal-details">
+        <h3>Offer Details</h3>
+        <div class="modal-description"></div>
+      </div>
+
+      <div class="modal-actions">
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
+  </div>
+</template>
