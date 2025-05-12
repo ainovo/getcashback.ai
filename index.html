@@ -132,9 +132,9 @@
       <div class="hero-suggestions">
         <div class="hero-suggestion-btn">Sort by
           <select id="sort-options" class="sort-dropdown">
-            <option value="recent" selected>newest</option>
+            <option value="recent">newest</option>
             <option value="expiry-asc">expiring soon</option>
-            <option value="value-desc">highest value</option>
+            <option value="value-desc" selected>highest value</option>
             <option value="effort-asc">least effort</option>
             <option value="cashbackfixed-desc">highest $</option>
             <option value="cashbackpercent-desc">highest %</option>
@@ -163,14 +163,14 @@
       href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde"
       style="text-decoration: none;">
       <span id="stat-label" class="stat-label">You could unlock
-        <span class="header-button demo-button" id="total-value">$0.00</span> in savings when you spend 
-        <span id="spend-amount-label" class="header-button demo-button">$100</span> on 
-        <span id="offer-search-label" class="header-button demo-button">something</span>. 
+        <span class="header-button demo-button" id="total-value">$0.00</span> in savings when you spend
+        <span id="spend-amount-label" class="header-button demo-button">$100</span> on
+        <span id="offer-search-label" class="header-button demo-button">something</span>.
         <span class="header-button demo-button">Install the extension</span> to start collecting today!
       </span>
-      <span id="no-offer-label" class="stat-label" style="display:none;">No offers here? This data might be old. 
+      <span id="no-offer-label" class="stat-label" style="display:none;">No offers here? This data might be old.
         <span class="header-button demo-button">Try the extension</span>
-         to see the latest savings!</span>
+        to see the latest savings!</span>
       </span>
     </a>
   </div>
@@ -199,28 +199,84 @@
         <!-- Social Logos -->
         <div class="footer-social-logos">
           <a href="https://www.linkedin.com/company/ainovoco" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.854 0-2.137 1.445-2.137 2.938v5.668H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.368-1.852 3.602 0 4.267 2.37 4.267 5.455v6.288zM5.337 7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.144.926-2.07 2.07-2.07s2.07.926 2.07 2.07c0 1.143-.926 2.07-2.07 2.07zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
+            <svg height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 382" xml:space="preserve">
+              <path style="fill:#0077B7;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+                     C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+                     H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+                     c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+                     s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+                     c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+                     c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+                     c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+                     L341.91,330.654L341.91,330.654z" />
             </svg>
           </a>
           <a href="https://www.instagram.com/ainovo.co/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#E1306C">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.056 2.003.24 2.465.403a4.92 4.92 0 0 1 1.775 1.153 4.92 4.92 0 0 1 1.153 1.775c.163.462.347 1.26.403 2.465.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.206-.24 2.003-.403 2.465a4.92 4.92 0 0 1-1.153 1.775 4.92 4.92 0 0 1-1.775 1.153c-.462.163-1.26.347-2.465.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.056-2.003-.24-2.465-.403a4.92 4.92 0 0 1-1.775-1.153 4.92 4.92 0 0 1-1.153-1.775c-.163-.462-.347-1.26-.403-2.465C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.056-1.206.24-2.003.403-2.465a4.92 4.92 0 0 1 1.153-1.775 4.92 4.92 0 0 1 1.775-1.153c.462-.163 1.26-.347 2.465-.403C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.145 0-3.507.012-4.741.068-1.062.048-1.637.222-2.017.37a3.093 3.093 0 0 0-1.12.73 3.093 3.093 0 0 0-.73 1.12c-.148.38-.322.955-.37 2.017-.056 1.234-.068 1.596-.068 4.741s.012 3.507.068 4.741c.048 1.062.222 1.637.37 2.017a3.093 3.093 0 0 0 .73 1.12 3.093 3.093 0 0 0 1.12.73c.38.148.955.322 2.017.37 1.234.056 1.596.068 4.741.068s3.507-.012 4.741-.068c1.062-.048 1.637-.222 2.017-.37a3.093 3.093 0 0 0 1.12-.73 3.093 3.093 0 0 0 .73-1.12c.148-.38.322-.955.37-2.017.056-1.234.068-1.596.068-4.741s-.012-3.507-.068-4.741c-.048-1.062-.222-1.637-.37-2.017a3.093 3.093 0 0 0-.73-1.12 3.093 3.093 0 0 0-1.12-.73c-.38-.148-.955-.322-2.017-.37-1.234-.056-1.596-.068-4.741-.068zm0 4.838a5.001 5.001 0 1 1 0 10.002 5.001 5.001 0 0 1 0-10.002zm0 1.837a3.164 3.164 0 1 0 0 6.328 3.164 3.164 0 0 0 0-6.328zm6.406-2.24a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0z" />
+            <svg height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 551.034 551.034" xml:space="preserve">
+              <g id="XMLID_13_">
+
+                <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517"
+                  y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+                  <stop offset="0" style="stop-color:#E09B3D" />
+                  <stop offset="0.3" style="stop-color:#C74C4D" />
+                  <stop offset="0.6" style="stop-color:#C21975" />
+                  <stop offset="1" style="stop-color:#7024C4" />
+                </linearGradient>
+                <path id="XMLID_17_" style="fill:url(#XMLID_2_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+             c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+             C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+             c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+             c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+
+                <linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517"
+                  y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+                  <stop offset="0" style="stop-color:#E09B3D" />
+                  <stop offset="0.3" style="stop-color:#C74C4D" />
+                  <stop offset="0.6" style="stop-color:#C21975" />
+                  <stop offset="1" style="stop-color:#7024C4" />
+                </linearGradient>
+                <path id="XMLID_81_" style="fill:url(#XMLID_3_);" d="M275.517,133C196.933,133,133,196.933,133,275.516
+             s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6
+             c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083
+             C362.6,323.611,323.611,362.6,275.517,362.6z" />
+
+                <linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="418.306" y1="4.5714" x2="418.306"
+                  y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+                  <stop offset="0" style="stop-color:#E09B3D" />
+                  <stop offset="0.3" style="stop-color:#C74C4D" />
+                  <stop offset="0.6" style="stop-color:#C21975" />
+                  <stop offset="1" style="stop-color:#7024C4" />
+                </linearGradient>
+                <circle id="XMLID_83_" style="fill:url(#XMLID_4_);" cx="418.306" cy="134.072" r="34.149" />
+              </g>
             </svg>
           </a>
           <a href="https://www.tiktok.com/@ainovo.co" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#000000">
+            <svg height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333335 333336"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd">
               <path
-                d="M12.75 0h3.03a4.5 4.5 0 0 0 4.5 4.5v3.03a7.53 7.53 0 0 1-4.5-1.44v8.19a6.75 6.75 0 1 1-6.75-6.75h.75v3.03a3.75 3.75 0 1 0 3.75 3.75V0z" />
+                d="M72464 0h188407c39856 0 72464 32609 72464 72465v188407c0 39855-32608 72464-72464 72464H72464C32608 333336 0 300727 0 260872V72465C0 32609 32608 0 72464 0zm127664 70642c337 2877 825 5661 1461 8341l6304 2c1170 9991 4006 19119 8465 26697 7282 6745 16797 10904 28280 11641v9208c2131 444 4350 746 6659 894v29690c-14847 1462-27841-3426-42981-12531l2324 50847c0 16398 61 23892-8738 38977-20546 35222-58194 36677-82176 18323-12269-4256-23069-12466-29881-23612-19875-32516-1959-85512 55687-90966l-94 7835v1970c3105-646 6365-1144 9794-1468v31311c-12484 2057-20412 5890-24119 12980-7424 14197-4049 26526 3716 34309 16276 2796 34401-8481 31673-43351V70644h33628z"
+                fill="#1a121f" />
+              <path
+                d="M200128 70642c3093 26406 18915 45038 44510 46681v25046l-165 15v-21275c-25595-1642-40311-17390-43404-43796l-27114-1v111095c3912 50005-35050 51490-49955 32531 17482 10934 45867 3826 42501-39202V70641h33628zm-72854 184165c-15319-3153-29249-12306-37430-25689-19875-32516-1959-85512 55687-90966l-94 7835c-53444 8512-58809 65920-44009 89802 5707 9209 15076 15686 25846 19019z"
+                fill="#26f4ee" />
+              <path
+                d="M207892 78985c1761 15036 7293 28119 16454 36903-12866-6655-20630-19315-23062-36905l6609 2zm36580 47511c2181 463 4456 777 6824 929v29690c-14847 1462-27841-3426-42981-12531l2324 50847c0 16398 61 23892-8738 38977-21443 36760-61517 36743-85239 15810 30930 17765 84928 3857 84829-56453v-55496c15141 9105 28134 13993 42981 12530v-24302zm-99036 21460c3105-646 6365-1144 9794-1468v31311c-12484 2057-20412 5890-24119 12980-10441 19964 474 36238 14923 41365-18075-649-36010-19214-23555-43031 3707-7089 10474-10923 22958-12980v-28177z"
+                fill="#fb2c53" />
+              <path
+                d="M201068 77313c3093 26406 17809 42154 43404 43796v29689c-14847 1462-27841-3425-42981-12530v55496c119 72433-77802 77945-100063 42025-14800-23881-9435-81290 44009-89802v30147c-12483 2057-19250 5891-22958 12980-22909 43808 56997 69872 51475-706V77313l27114 1z"
+                fill="#fefefe" />
             </svg>
           </a>
         </div>
       </div>
       <div class="footer-col">
         <div class="footer-title">Product</div>
-        <a href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde">Chrome Extension</a>
+        <a href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde">Chrome
+          Extension</a>
         <a href="wallet.html">Live Demo</a>
         <a href="getcashback-extension-v1.0.0.zip">ZIP Download</a>
       </div>
@@ -238,6 +294,7 @@
   </footer>
   <!-- Footer End -->
 </body>
+
 </html>
 
 <!-- Offer Card Template -->

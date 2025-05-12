@@ -448,7 +448,6 @@ body {
   text-align: center;
   height: auto;
   min-height: 180px;
-  max-width: 200px;
   position: relative;
   overflow: hidden;
   color: #232323;
@@ -924,7 +923,6 @@ footer {
 
 /* Offer grid specific styles */
 .offers-grid .offer-card {
-  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1462,19 +1460,6 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Responsive adjustments for map view */
-@media (max-width: 768px) {
-  
-  .map-container {
-    width: 100%;
-  }
-  
-  .map-offers-list {
-    width: 100%;
-    max-height: none;
-  }
-}
-
 /* Custom Leaflet marker popup styles */
 .custom-popup {
   max-width: 250px;
@@ -1669,22 +1654,6 @@ footer {
 
 .reset-button:hover {
   background-color: #e0e0e0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .right-column.show-filters {
-    padding-right: 0;
-  }
-  
-  .advanced-filters-panel {
-    width: 100%;
-    height: auto;
-    position: static;
-    border-left: none;
-    border-top: 1px solid #ddd;
-    box-shadow: none;
-  }
 }
 
 /* Analyze container styles */
@@ -2688,8 +2657,8 @@ footer {
 }
 
 .footer-social-logos{
-  flex-direction: row;
-  gap: 5px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-col {
