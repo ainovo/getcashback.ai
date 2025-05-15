@@ -108,7 +108,7 @@ body {
   color: white;
 }
 
-.chrome-button {
+.chrome-button, .edge-button {
   background-color: #4285F4;
   color: white;
 }
