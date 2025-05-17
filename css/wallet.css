@@ -819,21 +819,47 @@ footer {
   color: #555;
 }
 
+.modal-details {
+  margin-top: 15px;
+}
+
+.modal-details header,
+.modal-details div[data-cy="logo"]{
+  display:none;
+}
+
+.modal-details h1,
+.modal-details h2,
+.modal-details h3 {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
 .modal-description {
   font-size: 13px;
   color: #666;
   line-height: 1.4;
 }
 
+.modal-description div,
 .modal-description p {
   margin-bottom: 10px;
 }
-
+ 
 .modal-description a {
   color: #64D8CB;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+}
+
+.modal-description footer{
+  background-color: transparent !important;;
+  padding: 0 !important;
+  box-shadow: none !important;
+  text-align: initial !important;
+  margin-top: 0 !important;
 }
 
 .modal-description a:hover {
@@ -845,11 +871,18 @@ footer {
 .modal-description ul, 
 .modal-description ol {
   padding-left: 20px;
-  margin: 10px 0;
 }
 
 .modal-description li {
-  margin-bottom: 5px;
+  display:flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.modal-description div img,
+.modal-description li img{
+  width: 15px;
+  height: 15px;
 }
 
 .modal-actions {
