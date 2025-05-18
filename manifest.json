@@ -1,0 +1,21 @@
+{
+  "name": "GetCashback.ai - Your Cashback Copilot",
+  "short_name": "GetCashback.ai",
+  "description": "Automatically collect offers, analyze best deals, and remind you to redeem — smarter cashback makes saving easy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#64D8CB",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,1 +1,745 @@
-const a1_0x17f674=a1_0x5478;(function(_0x18578b,_0x428cdb){const _0x58fc62=a1_0x5478,_0xd78045=_0x18578b();while(!![]){try{const _0x3432b1=-parseInt(_0x58fc62(0x23a))/0x1*(parseInt(_0x58fc62(0x268))/0x2)+parseInt(_0x58fc62(0x239))/0x3*(parseInt(_0x58fc62(0x20b))/0x4)+parseInt(_0x58fc62(0x217))/0x5*(-parseInt(_0x58fc62(0x1c3))/0x6)+-parseInt(_0x58fc62(0x1ce))/0x7+parseInt(_0x58fc62(0x28c))/0x8+parseInt(_0x58fc62(0x1a0))/0x9*(parseInt(_0x58fc62(0x1e4))/0xa)+-parseInt(_0x58fc62(0x22c))/0xb;if(_0x3432b1===_0x428cdb)break;else _0xd78045['push'](_0xd78045['shift']());}catch(_0x32f893){_0xd78045['push'](_0xd78045['shift']());}}}(a1_0x4487,0xb610b));const offersGrid=document['getElementById']('offers-grid'),sortOptions=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x1fa)),searchBox=document[a1_0x17f674(0x1c2)]('offer-search'),buttonAdvancedFilter=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x1cd)),onlineFilter=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x1f2)),offersGridContainer=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x2a0)),spendAmount=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x1cf)),searchBoxLabel=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x27f)),spendAmountLabel=document[a1_0x17f674(0x1c2)]('spend-amount-label'),statLabel=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x1ea)),noOfferLabel=document[a1_0x17f674(0x1c2)](a1_0x17f674(0x234)),edgeButton=document[a1_0x17f674(0x279)](a1_0x17f674(0x275)),chromeButton=document['querySelector']('.chrome-button');let allOffers=[],cards=[],currentFilter='all',currentSearch='';document[a1_0x17f674(0x22d)](a1_0x17f674(0x29f),()=>{const _0x2f7000=a1_0x17f674,_0x33fce0={'FFDSP':_0x2f7000(0x227),'qyISl':function(_0x2b2c0c,_0x46dfd1,_0x1b1423){return _0x2b2c0c(_0x46dfd1,_0x1b1423);},'OacbE':function(_0xf451dd,_0x10f5d8){return _0xf451dd%_0x10f5d8;},'OTerg':function(_0x21e85c,_0x453bdc){return _0x21e85c+_0x453bdc;},'wxOVi':function(_0x135a4e,_0x3244fc){return _0x135a4e||_0x3244fc;},'UfQnU':_0x2f7000(0x207),'NWUfT':function(_0x391201){return _0x391201();},'NODcs':function(_0x425856){return _0x425856();},'ApZsv':function(_0x4126c7,_0x1891bd){return _0x4126c7||_0x1891bd;},'pWqKw':'100','HtJSb':function(_0x171363,_0x2d4770){return _0x171363>_0x2d4770;},'WhXJz':function(_0x56e3ca){return _0x56e3ca();},'Sgjgo':function(_0x5180c2){return _0x5180c2();},'JeGde':function(_0x49217d){return _0x49217d();},'ZtlRU':_0x2f7000(0x1da),'bgXMT':_0x2f7000(0x291),'WJdSe':'travel...','UpOTp':function(_0xb5cb51){return _0xb5cb51();},'nWUDB':_0x2f7000(0x1b6),'VCtmo':function(_0xf59445,_0x1514d8){return _0xf59445!==_0x1514d8;},'vcGiM':_0x2f7000(0x1f3),'aZrvO':function(_0x5d4858,_0x473e8b){return _0x5d4858&&_0x473e8b;},'NAqSp':'none','WZdUx':'type-cashback','YSeHX':_0x2f7000(0x22a),'Xuite':_0x2f7000(0x1ef)},_0x3dcc8c=[_0x33fce0[_0x2f7000(0x29a)],_0x2f7000(0x1b4),_0x33fce0[_0x2f7000(0x245)],_0x33fce0[_0x2f7000(0x266)],_0x2f7000(0x226)];let _0x922cb=0x0,_0x1d4a3f=0x0,_0x5e096e=!![];function _0x4635ae(){const _0x2f507a=_0x2f7000;if(!_0x5e096e)return;const _0x480bc5=_0x3dcc8c[_0x922cb];searchBox[_0x2f507a(0x21a)](_0x33fce0['FFDSP'],_0x480bc5['slice'](0x0,_0x1d4a3f)),_0x1d4a3f<_0x480bc5[_0x2f507a(0x1b1)]?(_0x1d4a3f++,_0x33fce0[_0x2f507a(0x247)](setTimeout,_0x4635ae,0x3c)):(_0x5e096e=![],setTimeout(_0x1b78f7,0x5dc));}function _0x1b78f7(){const _0x1209ad=_0x2f7000,_0x353cf7=_0x3dcc8c[_0x922cb];_0x1d4a3f>0x0?(_0x1d4a3f--,searchBox[_0x1209ad(0x21a)](_0x33fce0['FFDSP'],_0x353cf7[_0x1209ad(0x252)](0x0,_0x1d4a3f)),setTimeout(_0x1b78f7,0x1e)):(_0x922cb=_0x33fce0['OacbE'](_0x33fce0[_0x1209ad(0x24b)](_0x922cb,0x1),_0x3dcc8c['length']),_0x5e096e=!![],setTimeout(_0x4635ae,0x1f4));}_0x33fce0['UpOTp'](_0x4635ae);const _0x2cb364=navigator[_0x2f7000(0x1f5)],_0x2a7091=_0x2cb364[_0x2f7000(0x221)](_0x33fce0[_0x2f7000(0x1a4)])!==-0x1,_0x2cd79a=_0x33fce0[_0x2f7000(0x244)](_0x2cb364[_0x2f7000(0x221)](_0x33fce0[_0x2f7000(0x201)]),-0x1)&&!_0x2a7091;if(_0x33fce0['aZrvO'](edgeButton,chromeButton)){if(_0x2a7091)edgeButton[_0x2f7000(0x23e)][_0x2f7000(0x1c0)]='',chromeButton[_0x2f7000(0x23e)][_0x2f7000(0x1c0)]='none';else _0x2cd79a?(edgeButton[_0x2f7000(0x23e)][_0x2f7000(0x1c0)]=_0x33fce0['NAqSp'],chromeButton[_0x2f7000(0x23e)][_0x2f7000(0x1c0)]=''):(edgeButton[_0x2f7000(0x23e)][_0x2f7000(0x1c0)]=_0x33fce0['NAqSp'],chromeButton[_0x2f7000(0x23e)][_0x2f7000(0x1c0)]='');}document[_0x2f7000(0x1c2)](_0x33fce0[_0x2f7000(0x29d)])['addEventListener'](_0x33fce0[_0x2f7000(0x272)],updateCurrentView),document[_0x2f7000(0x1c2)](_0x2f7000(0x2a1))[_0x2f7000(0x22d)](_0x33fce0['YSeHX'],updateCurrentView),document[_0x2f7000(0x1c2)](_0x33fce0['Xuite'])[_0x2f7000(0x22d)](_0x33fce0[_0x2f7000(0x272)],updateCurrentView),sortOptions[_0x2f7000(0x22d)](_0x33fce0[_0x2f7000(0x272)],updateCurrentView),searchBox[_0x2f7000(0x22d)](_0x33fce0['YSeHX'],()=>{const _0x2fc072=_0x2f7000;gTagSearchInput(),currentSearch=searchBox[_0x2fc072(0x1d0)]['toLowerCase'](),searchBoxLabel[_0x2fc072(0x290)]=_0x33fce0['wxOVi'](currentSearch,_0x33fce0[_0x2fc072(0x212)]),offersGridContainer[_0x2fc072(0x23e)][_0x2fc072(0x1c0)]='',_0x33fce0['NWUfT'](updateCurrentView);}),spendAmount[_0x2f7000(0x22d)](_0x33fce0['YSeHX'],()=>{const _0x310851=_0x2f7000,_0x53f587={'OwzPK':function(_0x395303){return _0x33fce0['NWUfT'](_0x395303);}};_0x33fce0[_0x310851(0x1cb)](gTagSearchInput);const _0x47767a=spendAmount[_0x310851(0x1d0)];spendAmountLabel[_0x310851(0x290)]='$'+_0x33fce0[_0x310851(0x1e9)](_0x47767a,_0x33fce0[_0x310851(0x1d6)]),_0x47767a&&_0x33fce0['HtJSb'](parseInt(_0x47767a),0x0)?Promise[_0x310851(0x1f7)](allOffers[_0x310851(0x236)](_0x21c31a=>estimateValue(_0x21c31a,_0x47767a)[_0x310851(0x237)](_0x141b7b=>{const _0xf091ac=_0x310851;_0x21c31a[_0xf091ac(0x26b)]=_0x141b7b;})))[_0x310851(0x237)](()=>{const _0x10fe2c=_0x310851;offersGridContainer[_0x10fe2c(0x23e)][_0x10fe2c(0x1c0)]='',_0x53f587[_0x10fe2c(0x26f)](updateCurrentView);}):_0x33fce0[_0x310851(0x1c6)](updateCurrentView);}),buttonAdvancedFilter[_0x2f7000(0x22d)](_0x2f7000(0x22f),function(){const _0x337ac6=_0x2f7000;_0x33fce0[_0x337ac6(0x1c6)](gTagSearchInput),offersGridContainer[_0x337ac6(0x23e)][_0x337ac6(0x1c0)]='',_0x33fce0[_0x337ac6(0x1eb)](updateCurrentView);}),loadAllOffers(function(){setTimeout(function(){populateFilterDropdowns(),_0x33fce0['JeGde'](updateCurrentView);},0x1f4);});}),window[a1_0x17f674(0x1b0)]=function(){const _0x57aad1=a1_0x17f674,_0x59285a={'GiDWq':function(_0x40007f){return _0x40007f();},'KPlzj':function(_0x53714c){return _0x53714c();},'FlZMu':function(_0x2f5acf,_0x52e8c7){return _0x2f5acf(_0x52e8c7);}};_0x59285a[_0x57aad1(0x1a1)](loadAllOffers,function(){const _0x3bc841=_0x57aad1;_0x59285a[_0x3bc841(0x200)](populateFilterDropdowns),_0x59285a[_0x3bc841(0x1fe)](updateCurrentView);});};function gTagSearchInput(){const _0x2d0f11=a1_0x17f674,_0x24550e={'wFexn':'function','slQui':function(_0x2b5168,_0x1ec494,_0x1bb784,_0x5928cc){return _0x2b5168(_0x1ec494,_0x1bb784,_0x5928cc);},'ftncz':'event','kjgJy':'hero_search_input'};typeof gtag===_0x24550e[_0x2d0f11(0x292)]&&_0x24550e[_0x2d0f11(0x2a9)](gtag,_0x24550e[_0x2d0f11(0x25e)],_0x24550e[_0x2d0f11(0x1e5)],{'spend_amount':spendAmount[_0x2d0f11(0x1d0)],'search_term':searchBox[_0x2d0f11(0x1d0)]});}function loadAllOffers(_0x1d0a42){const _0x23b909=a1_0x17f674,_0xb7c79a={'PAPQn':function(_0x5e70ba,_0x12280c){return _0x5e70ba<_0x12280c;},'wXIgj':_0x23b909(0x270),'YXufi':_0x23b909(0x1f7),'vHhVT':'offercontainer_processed','BovVO':function(_0x28f9ae,_0x40bac8){return _0x28f9ae!=_0x40bac8;},'LfRWJ':function(_0x18030f,_0x40bb11){return _0x18030f>_0x40bb11;},'qonuQ':'function','hZuvf':function(_0x17619f){return _0x17619f();}};chrome[_0x23b909(0x267)][_0x23b909(0x24f)]['get'](null,function(_0x26c2b5){const _0x4f105c=_0x23b909;allOffers=[],cards=[_0xb7c79a[_0x4f105c(0x1a8)]];let _0x147c1b=0x0,_0x563ba3=0x0,_0x17fd33=0x0,_0x4553d4=0x0,_0x3b4727=0x0;for(const _0x12d3ac in _0x26c2b5){if(_0x12d3ac[_0x4f105c(0x25b)](_0xb7c79a['vHhVT'])&&_0xb7c79a['BovVO'](_0x12d3ac,_0xb7c79a[_0x4f105c(0x210)])){const _0x362756=_0x26c2b5[_0x12d3ac];_0x362756&&_0x362756[_0x4f105c(0x1d9)]&&_0xb7c79a[_0x4f105c(0x243)](_0x362756['offers'][_0x4f105c(0x1b1)],0x0)&&(_0x362756[_0x4f105c(0x23b)]&&!cards['includes'](_0x362756['card'])&&cards[_0x4f105c(0x257)](_0x362756[_0x4f105c(0x23b)]),_0x362756[_0x4f105c(0x1d9)][_0x4f105c(0x1f6)](_0x596b8a=>{const _0x5123f7=_0x4f105c;_0x563ba3++;if(_0xb7c79a['PAPQn'](new Date(_0x596b8a[_0x5123f7(0x1ac)]),new Date(new Date()[_0x5123f7(0x1ad)]())))_0x3b4727++;else{const _0x1f7ae9={..._0x596b8a,'bank':_0x362756[_0x5123f7(0x286)]||'Unknown\x20Bank','card':_0x362756[_0x5123f7(0x23b)]||_0xb7c79a[_0x5123f7(0x2a8)],'lastUpdated':_0x596b8a[_0x5123f7(0x28e)]||new Date()['toISOString']()};allOffers[_0x5123f7(0x257)](_0x1f7ae9);}if(_0x596b8a[_0x5123f7(0x2a5)])_0x17fd33++;if(_0x596b8a[_0x5123f7(0x1e3)])_0x4553d4++;}),_0x147c1b+=_0x362756[_0x4f105c(0x1cc)]||0x0);}}typeof _0x1d0a42===_0xb7c79a[_0x4f105c(0x241)]?_0xb7c79a[_0x4f105c(0x27b)](_0x1d0a42):_0xb7c79a['hZuvf'](updateCurrentView);});}function calculateTotalValue(_0x288163){const _0x2627b2=a1_0x17f674;return _0x288163[_0x2627b2(0x209)]((_0x2080b6,_0x12f519)=>_0x2080b6+(parseFloat(_0x12f519[_0x2627b2(0x26b)])||0x0),0x0);}function createOfferCard(_0x500647){const _0xf80117=a1_0x17f674,_0x315f54={'qqtoE':function(_0x3080f8,_0x98582c){return _0x3080f8(_0x98582c);},'TeHfO':_0xf80117(0x1b5),'oFThR':_0xf80117(0x284),'PIrHh':'div','sHZwg':_0xf80117(0x220),'kKJuU':function(_0x3843ff,_0x3080ea){return _0x3843ff(_0x3080ea);},'hSKKb':function(_0x29a1f9,_0x5ee7f7){return _0x29a1f9(_0x5ee7f7);},'LoxCC':function(_0x5ea771,_0x5dca3d){return _0x5ea771(_0x5dca3d);},'DKILv':function(_0xe54d41,_0x53d682){return _0xe54d41(_0x53d682);},'qyIKN':_0xf80117(0x1ee),'YvZvx':_0xf80117(0x1a2),'cNTbB':_0xf80117(0x1e0),'ZFEOz':_0xf80117(0x21b),'wDPZu':_0xf80117(0x216),'OAGke':function(_0x2e6ec4,_0x3a462b){return _0x2e6ec4(_0x3a462b);},'Sosno':function(_0x5bd65c,_0x9c5313){return _0x5bd65c(_0x9c5313);},'rrJtY':_0xf80117(0x1e8),'BRWZH':function(_0x179350,_0x4d2ce5){return _0x179350(_0x4d2ce5);},'CvRDN':'.offer-amount','FgbGO':_0xf80117(0x287),'YZQgj':'Redeem','HvqJP':_0xf80117(0x22f),'Nwixf':_0xf80117(0x263),'lPLfA':_0xf80117(0x1bf),'LdmAA':_0xf80117(0x258),'RfpXa':_0xf80117(0x1fc),'oiKen':_0xf80117(0x1a7),'YqqNb':_0xf80117(0x2a3),'NTgJq':'easy','Nzrge':_0xf80117(0x1af),'Odkqo':'medium','LXNKs':'Medium','DgBeY':_0xf80117(0x2a4)},_0x2e445f=document['createElement'](_0x315f54['PIrHh']);_0x2e445f[_0xf80117(0x256)]=_0xf80117(0x1fb),_0x2e445f['style'][_0xf80117(0x264)]=_0x315f54[_0xf80117(0x21f)];const _0x492011=document['getElementById']('offer-card-template'),_0x13e3f4=_0x492011[_0xf80117(0x1bc)][_0xf80117(0x20f)](!![]);!_0x500647['expiration']&&_0x500647[_0xf80117(0x29c)]&&(_0x500647[_0xf80117(0x1ac)]=_0x315f54['kKJuU'](extractExpiryDateFromDescription,_0x500647['description']));const _0x1c5619=formatExpiryDate(getExpiryDate(_0x500647));let _0x39793c=_0x500647[_0xf80117(0x19f)]||_0x315f54[_0xf80117(0x274)](extractMinSpendFromDescription,_0x500647[_0xf80117(0x29c)])||'',_0x1b3c4b=_0x500647[_0xf80117(0x20e)]||_0x315f54[_0xf80117(0x293)](extractMaxCashbackFromDescription,_0x500647[_0xf80117(0x29c)])||'';const _0xca1e41=_0x315f54[_0xf80117(0x280)](assessCashbackEase,_0x500647);_0x13e3f4['querySelector'](_0x315f54[_0xf80117(0x259)])[_0xf80117(0x290)]=_0x500647['bank'],_0x13e3f4[_0xf80117(0x279)](_0x315f54[_0xf80117(0x298)])[_0xf80117(0x2a6)]=_0x500647['logo'],_0x13e3f4[_0xf80117(0x279)](_0xf80117(0x1a2))[_0xf80117(0x26e)]=_0x500647[_0xf80117(0x246)],_0x13e3f4[_0xf80117(0x279)](_0x315f54[_0xf80117(0x24c)])['textContent']=_0x500647[_0xf80117(0x246)]||_0x315f54['ZFEOz'];const _0xf97196=_0x13e3f4[_0xf80117(0x279)](_0x315f54[_0xf80117(0x28f)]);_0xf97196&&(_0xf97196[_0xf80117(0x290)]=_0x500647['estValue']&&_0x315f54['OAGke'](parseInt,_0x500647[_0xf80117(0x26b)])!==0x0?_0xf80117(0x24e)+_0x315f54[_0xf80117(0x1e6)](parseFloat,_0x500647[_0xf80117(0x26b)])[_0xf80117(0x24a)](0x2)+'\x20for\x20you\x20·\x20Eligibility\x20may\x20vary)':_0x315f54[_0xf80117(0x28b)]);let _0x2ab922=_0x315f54['LoxCC'](displayCashbackAmount,_0x315f54[_0xf80117(0x2a2)](parseCashbackAmount,_0x500647));const _0x258624=_0x13e3f4[_0xf80117(0x279)](_0x315f54[_0xf80117(0x235)]);_0x258624[_0xf80117(0x290)]=_0x2ab922;const _0x37aa8f=_0x13e3f4['querySelector'](_0x315f54[_0xf80117(0x1b8)]),_0x58a2ed=_0x315f54[_0xf80117(0x2a2)](getRedeemLink,_0x500647)||_0x500647[_0xf80117(0x1a9)];if(_0x58a2ed){const _0x3abd20=document[_0xf80117(0x27c)](_0xf80117(0x251));_0x3abd20['className']=_0x315f54[_0xf80117(0x1c5)],_0x3abd20[_0xf80117(0x290)]=_0x315f54[_0xf80117(0x29b)],_0x3abd20['addEventListener'](_0x315f54[_0xf80117(0x1c4)],_0x2fe034=>{const _0x3fdad0=_0xf80117;_0x2fe034[_0x3fdad0(0x28d)](),_0x315f54[_0x3fdad0(0x229)](recordAttemptedRedeem,_0x500647),window['open'](_0x58a2ed,_0x315f54[_0x3fdad0(0x20d)]);}),_0x37aa8f[_0xf80117(0x223)](_0x3abd20);}else{const _0x54ca61=document[_0xf80117(0x27c)](_0xf80117(0x251));_0x54ca61[_0xf80117(0x256)]=_0x315f54['Nwixf'],_0x54ca61[_0xf80117(0x290)]=_0x315f54[_0xf80117(0x211)],_0x54ca61[_0xf80117(0x22d)](_0x315f54[_0xf80117(0x1c4)],_0x2f9864=>{const _0x8d0f0f=_0xf80117;_0x2f9864['stopPropagation'](),_0x315f54[_0x8d0f0f(0x229)](showOfferDetails,_0x500647);}),_0x37aa8f['appendChild'](_0x54ca61);}_0x13e3f4['querySelector'](_0x315f54[_0xf80117(0x1d8)])[_0xf80117(0x290)]='',_0x13e3f4[_0xf80117(0x279)](_0x315f54[_0xf80117(0x26c)])[_0xf80117(0x290)]='',_0x13e3f4['querySelector'](_0x315f54[_0xf80117(0x238)])['textContent']=_0x1c5619;if(_0xca1e41[_0xf80117(0x249)]!==_0x315f54[_0xf80117(0x253)]){const _0x14de45=_0x13e3f4[_0xf80117(0x279)](_0xf80117(0x282));_0x14de45[_0xf80117(0x1f0)][_0xf80117(0x1db)]('effort-'+_0xca1e41[_0xf80117(0x249)]),_0x14de45[_0xf80117(0x290)]=_0xca1e41[_0xf80117(0x249)]===_0x315f54['NTgJq']?_0x315f54['Nzrge']:_0xca1e41[_0xf80117(0x249)]===_0x315f54[_0xf80117(0x1bd)]?_0x315f54[_0xf80117(0x1b9)]:_0x315f54['DgBeY'];}return _0x2e445f[_0xf80117(0x223)](_0x13e3f4),_0x2e445f[_0xf80117(0x22d)](_0x315f54[_0xf80117(0x1c4)],_0x237397=>{const _0x8f1a94=_0xf80117;if(_0x237397[_0x8f1a94(0x283)][_0x8f1a94(0x1f0)]['contains'](_0x315f54[_0x8f1a94(0x1c5)]))return;_0x315f54[_0x8f1a94(0x229)](showOfferDetails,_0x500647);}),_0x2e445f;}function sortOffers(_0x494ff6,_0x5b3894){const _0x246ccc=a1_0x17f674,_0x3ee08a={'LlxoH':'expiry-asc','MDeED':function(_0x1f670c,_0x20f722){return _0x1f670c-_0x20f722;},'HoVSB':function(_0x3e089a,_0x51a540){return _0x3e089a(_0x51a540);},'knGyi':_0x246ccc(0x27e),'psajO':_0x246ccc(0x1e7),'BXujF':function(_0x354889,_0x4b023e){return _0x354889-_0x4b023e;},'EsNlZ':function(_0x58cfae,_0x5b5428){return _0x58cfae(_0x5b5428);},'Pmfbd':'value-asc','ULsuf':function(_0x242e2d,_0x3c8f90){return _0x242e2d-_0x3c8f90;},'tvpDm':'effort-asc','qYblc':function(_0x40f7b1,_0x1edfb3){return _0x40f7b1(_0x1edfb3);},'nETeY':_0x246ccc(0x2a7),'RtxkY':function(_0x2e3fe8,_0x58e7a3){return _0x2e3fe8-_0x58e7a3;},'FxKrM':function(_0xed87bc,_0x25a894){return _0xed87bc(_0x25a894);},'nbLAF':function(_0x481324,_0x4f32b0){return _0x481324-_0x4f32b0;},'SFwYX':function(_0x5e61de,_0x29ded8){return _0x5e61de(_0x29ded8);},'CVVcD':_0x246ccc(0x289),'QuCQn':function(_0x419ef5,_0x365920){return _0x419ef5-_0x365920;}};return[..._0x494ff6][_0x246ccc(0x1dd)]((_0x54980a,_0x59e423)=>{const _0x1bad17=_0x246ccc;switch(_0x5b3894){case _0x1bad17(0x1ed):const _0xf5974=_0x54980a[_0x1bad17(0x28e)]?new Date(_0x54980a[_0x1bad17(0x28e)])[_0x1bad17(0x262)]():0x0,_0x2530c2=_0x59e423['lastUpdated']?new Date(_0x59e423[_0x1bad17(0x28e)])['getTime']():0x0;return _0x2530c2-_0xf5974;case _0x3ee08a[_0x1bad17(0x215)]:return _0x3ee08a[_0x1bad17(0x1aa)](_0x3ee08a['HoVSB'](getExpiryDate,_0x54980a),getExpiryDate(_0x59e423));case _0x3ee08a['knGyi']:return _0x3ee08a[_0x1bad17(0x1aa)](_0x3ee08a[_0x1bad17(0x1d5)](getExpiryDate,_0x59e423),getExpiryDate(_0x54980a));case _0x3ee08a[_0x1bad17(0x24d)]:return _0x3ee08a['BXujF'](_0x3ee08a[_0x1bad17(0x1d5)](getCashbackValue,_0x59e423),_0x3ee08a[_0x1bad17(0x1df)](getCashbackValue,_0x54980a));case _0x3ee08a[_0x1bad17(0x1ae)]:return _0x3ee08a['ULsuf'](_0x3ee08a['HoVSB'](getCashbackValue,_0x54980a),_0x3ee08a['EsNlZ'](getCashbackValue,_0x59e423));case _0x3ee08a['tvpDm']:return _0x3ee08a[_0x1bad17(0x25f)](_0x3ee08a[_0x1bad17(0x1ab)](getEffortValue,_0x54980a),_0x3ee08a[_0x1bad17(0x1d5)](getEffortValue,_0x59e423));case _0x3ee08a[_0x1bad17(0x205)]:return _0x3ee08a[_0x1bad17(0x271)](getEffortValue(_0x59e423),_0x3ee08a['FxKrM'](getEffortValue,_0x54980a));case _0x1bad17(0x27d):return _0x3ee08a[_0x1bad17(0x1d4)](_0x3ee08a[_0x1bad17(0x273)](getCashbackFixedValue,_0x59e423),_0x3ee08a['HoVSB'](getCashbackFixedValue,_0x54980a));case _0x3ee08a[_0x1bad17(0x25d)]:return _0x3ee08a['QuCQn'](_0x3ee08a['qYblc'](getCashbackPercentValue,_0x59e423),getCashbackPercentValue(_0x54980a));default:return 0x0;}});}function getEffortValue(_0x3dd1b5){const _0x4cb0b5=a1_0x17f674,_0x3b71b8={'NVKar':function(_0x3365f6,_0x308449){return _0x3365f6(_0x308449);},'qeifP':_0x4cb0b5(0x26d)},_0x1cbc23=_0x3b71b8[_0x4cb0b5(0x22e)](assessCashbackEase,_0x3dd1b5);switch(_0x1cbc23[_0x4cb0b5(0x249)]){case _0x3b71b8[_0x4cb0b5(0x1c7)]:return 0x1;case _0x4cb0b5(0x255):return 0x2;case _0x4cb0b5(0x242):return 0x3;default:return 0x4;}}function getCashbackValue(_0x37003c){const _0x1fce25=a1_0x17f674;return parseFloat(_0x37003c[_0x1fce25(0x26b)]||0x0);}function getCashbackFixedValue(_0x3454dd){const _0x76d72e=a1_0x17f674,_0x2fa36f={'DSPYP':function(_0x16225a,_0x5d37f0){return _0x16225a(_0x5d37f0);}};return _0x2fa36f['DSPYP'](parseFloat,_0x3454dd[_0x76d72e(0x1c8)]||0x0);}function getCashbackPercentValue(_0x55a2d5){const _0x396f08=a1_0x17f674,_0x4bb14a={'AneXz':function(_0xcd43d2,_0x3b6ace){return _0xcd43d2(_0x3b6ace);}};return _0x4bb14a[_0x396f08(0x294)](parseFloat,_0x55a2d5[_0x396f08(0x21d)]||0x0);}function a1_0x4487(){const _0x7e7c85=['UfQnU','*[class]','bank-filter-container','LlxoH','.offer-value','916590KkfYqN','offer-search','logo','setAttribute','Unknown\x20Merchant','filter-checkbox\x20bank-checkbox','cashbackPercent','*[style]','sHZwg','relative','indexOf','querySelectorAll','appendChild','No\x20details\x20available','FpKhH','health','placeholder','insertBefore','qqtoE','change','parentNode','3190176kymkxs','addEventListener','NVKar','click','saved','rahYY','label','filter','no-offer-label','CvRDN','map','then','oiKen','3FoFCZb','4Psayyy','card','.modal-description','bank-','style','NUivx','size','qonuQ','hard','LfRWJ','VCtmo','bgXMT','merchantName','qyISl','IwnHg','ease','toFixed','OTerg','cNTbB','psajO','(Est.\x20$','local','category','button','slice','YqqNb','ihSxw','medium','className','push','.offer-min-spend','qyIKN','div','includes','.modal-merchant','CVVcD','ftncz','BXujF','.nav-link','body','getTime','details-button','position','BDqGl','WJdSe','storage','47030QBtGmi','days\x20left','toLowerCase','estValue','RfpXa','easy','alt','OwzPK','Unknown\x20Card','RtxkY','YSeHX','SFwYX','hSKKb','.edge-button','GcHdK','replace','from','querySelector','sIHJn','hZuvf','createElement','cashbackfixed-desc','expiry-desc','offer-search-label','DKILv','NLbJz','.effort-label','target','redeem-button','none','bank','.redeem-button-container','NKOKV','cashbackpercent-desc','class','rrJtY','10104288ISeerZ','stopPropagation','lastUpdated','wDPZu','textContent','amazon...','wFexn','LoxCC','AneXz','WPPQs','rWBPM','RPITK','YvZvx','offer-details-template','ZtlRU','YZQgj','description','WZdUx','WArJX','DOMContentLoaded','offers-grid-container','type-discount','BRWZH','unknown','Hard','activated','src','effort-desc','wXIgj','slQui','VzmKl','minSpend','6291PqOIpW','FlZMu','.offer-logo','TwPND','nWUDB','removeAttribute','RAYQH','.offer-expiry','YXufi','merchantWebsite','MDeED','qYblc','expiration','toDateString','Pmfbd','Easy','onOffersLoaded','length','type','xkRTt','flowers...','_blank','Edg','ulfKG','FgbGO','LXNKs','innerHTML','GEgsS','content','Odkqo','JcjSn','Terms','display','remove','getElementById','6gloVRh','HvqJP','oFThR','WhXJz','qeifP','cashbackFixed','input','hero-suggestion-btn','NODcs','totalOffers','advanced-filters-toggle','8141287UYZrHL','spend-amount','value','removeChild','sIUXQ','CjWdn','nbLAF','HoVSB','pWqKw','EIHJX','LdmAA','offers','groceries...','add','DZoXJ','sort','KqyJw','EsNlZ','.offer-merchant','firstChild','BQSvB','redeemed','15630iDGOCr','kjgJy','Sosno','value-desc','(No\x20est.\x20value)','ApZsv','stat-label','Sgjgo','hdlpK','recent','.offer-bank-name','type-points','classList','XnRrD','location-online','Chrome','dSjnE','userAgent','forEach','all','rJroG','GYlVt','sort-options','offer-card','.offer-max-cashback','total-value','KPlzj','.modal-logo','GiDWq','vcGiM','FzADt','offercontainer_processed_','MHEsK','nETeY','active','something','checkbox','reduce','get','482404GAIJTB','cashbackAmount','TeHfO','maxCashback','cloneNode','vHhVT','lPLfA'];a1_0x4487=function(){return _0x7e7c85;};return a1_0x4487();}function showOfferDetails(_0x5b386b){const _0x2e4bfa=a1_0x17f674,_0xb29353={'MHEsK':_0x2e4bfa(0x23e),'RPITK':_0x2e4bfa(0x28a),'WiEIh':_0x2e4bfa(0x269),'dSjnE':_0x2e4bfa(0x230),'BDqGl':function(_0x2c9a71,_0x5e35fd){return _0x2c9a71===_0x5e35fd;},'WPPQs':'.offer-modal','NKOKV':_0x2e4bfa(0x299),'XnRrD':_0x2e4bfa(0x25a),'ulfKG':_0x2e4bfa(0x21e),'EIHJX':_0x2e4bfa(0x213),'CjWdn':_0x2e4bfa(0x224),'xkRTt':function(_0x332fd0,_0x32af93){return _0x332fd0(_0x32af93);},'TwPND':function(_0x5bc3ad,_0x432f63){return _0x5bc3ad(_0x432f63);},'DZoXJ':_0x2e4bfa(0x1ff),'WArJX':_0x2e4bfa(0x25c),'KgSOK':_0x2e4bfa(0x21b),'MBrwv':function(_0x45b496,_0xd7d98c){return _0x45b496(_0xd7d98c);},'hdlpK':'.modal-amount','rWBPM':_0x2e4bfa(0x23c),'sIUXQ':'#close-modal','HpOkE':_0x2e4bfa(0x22f)},_0x371eee=document[_0x2e4bfa(0x222)](_0xb29353[_0x2e4bfa(0x295)]);_0x371eee[_0x2e4bfa(0x1f6)](_0x596619=>_0x596619[_0x2e4bfa(0x1c1)]());const _0x5b4b80=document[_0x2e4bfa(0x1c2)](_0xb29353[_0x2e4bfa(0x288)]),_0x5f2d7d=_0x5b4b80['content']['cloneNode'](!![])['querySelector'](_0xb29353[_0x2e4bfa(0x295)]);let _0x4d28cc='';if(_0x5b386b['description']){const _0x104a57=document[_0x2e4bfa(0x27c)](_0xb29353[_0x2e4bfa(0x1f1)]);_0x104a57[_0x2e4bfa(0x1ba)]=_0x5b386b['description'];const _0x3b6083=_0x104a57[_0x2e4bfa(0x222)](_0xb29353[_0x2e4bfa(0x1b7)]);_0x3b6083[_0x2e4bfa(0x1f6)](_0x5b7420=>{const _0x13457a=_0x2e4bfa;_0x5b7420[_0x13457a(0x1a5)](_0xb29353[_0x13457a(0x204)]);});const _0x1d3d49=_0x104a57[_0x2e4bfa(0x222)](_0xb29353[_0x2e4bfa(0x1d7)]);_0x1d3d49['forEach'](_0x23d61b=>{const _0x1cb47b=_0x2e4bfa;_0x23d61b['removeAttribute'](_0xb29353[_0x1cb47b(0x297)]);});const _0x5bd194=_0x104a57[_0x2e4bfa(0x222)]('li');_0x5bd194[_0x2e4bfa(0x1f6)](_0x2511c=>{const _0x465628=_0x2e4bfa;_0x2511c[_0x465628(0x290)][_0x465628(0x26a)]()[_0x465628(0x25b)](_0xb29353['WiEIh'])&&_0x2511c['remove'](),_0x2511c['textContent']['toLowerCase']()['includes'](_0xb29353[_0x465628(0x1f4)])&&_0x2511c[_0x465628(0x1c1)]();}),_0x4d28cc=_0x104a57[_0x2e4bfa(0x1ba)];}else _0x4d28cc=_0xb29353[_0x2e4bfa(0x1d3)];let _0x50b62f=_0xb29353[_0x2e4bfa(0x1b3)](formatExpiryDate,_0xb29353[_0x2e4bfa(0x1a3)](getExpiryDate,_0x5b386b));_0x5f2d7d['querySelector'](_0x2e4bfa(0x1ff))[_0x2e4bfa(0x2a6)]=_0x5b386b[_0x2e4bfa(0x219)],_0x5f2d7d[_0x2e4bfa(0x279)](_0xb29353[_0x2e4bfa(0x1dc)])[_0x2e4bfa(0x26e)]=_0x5b386b[_0x2e4bfa(0x246)],_0x5f2d7d[_0x2e4bfa(0x279)](_0xb29353[_0x2e4bfa(0x29e)])['textContent']=_0x5b386b[_0x2e4bfa(0x246)]||_0xb29353['KgSOK'];let _0x358214=_0xb29353['MBrwv'](displayCashbackAmount,_0xb29353[_0x2e4bfa(0x1b3)](parseCashbackAmount,_0x5b386b));_0x5f2d7d['querySelector'](_0xb29353['DZoXJ'])[_0x2e4bfa(0x2a6)]=_0x5b386b[_0x2e4bfa(0x219)],_0x5f2d7d[_0x2e4bfa(0x279)](_0xb29353['DZoXJ'])[_0x2e4bfa(0x26e)]=_0x5b386b[_0x2e4bfa(0x246)],_0x5f2d7d[_0x2e4bfa(0x279)](_0xb29353['WArJX'])['textContent']=_0x5b386b['merchantName']||'Unknown\x20Merchant',_0x5f2d7d[_0x2e4bfa(0x279)](_0xb29353[_0x2e4bfa(0x1ec)])[_0x2e4bfa(0x290)]=_0x358214,_0x5f2d7d['querySelector'](_0xb29353[_0x2e4bfa(0x296)])[_0x2e4bfa(0x1ba)]=_0x4d28cc,document[_0x2e4bfa(0x261)][_0x2e4bfa(0x223)](_0x5f2d7d),_0x5f2d7d[_0x2e4bfa(0x279)](_0xb29353[_0x2e4bfa(0x1d2)])[_0x2e4bfa(0x22d)](_0xb29353['HpOkE'],()=>{const _0x36cd52=_0x2e4bfa;_0x5f2d7d[_0x36cd52(0x1c1)]();}),_0x5f2d7d['addEventListener'](_0x2e4bfa(0x22f),_0x3f02d2=>{const _0x27460b=_0x2e4bfa;_0xb29353[_0x27460b(0x265)](_0x3f02d2['target'],_0x5f2d7d)&&_0x5f2d7d[_0x27460b(0x1c1)]();});}function a1_0x5478(_0x45954e,_0x44952b){const _0x448774=a1_0x4487();return a1_0x5478=function(_0x5478c4,_0xeef3f9){_0x5478c4=_0x5478c4-0x19f;let _0x4f89e8=_0x448774[_0x5478c4];return _0x4f89e8;},a1_0x5478(_0x45954e,_0x44952b);}function setActiveNavLink(_0x15386c){const _0x4236c2=a1_0x17f674,_0x43a6ca={'GEgsS':_0x4236c2(0x206),'rJroG':_0x4236c2(0x260)};document[_0x4236c2(0x222)](_0x43a6ca[_0x4236c2(0x1f8)])[_0x4236c2(0x1f6)](_0x2c2e42=>{const _0x1b51cb=_0x4236c2;_0x2c2e42['classList'][_0x1b51cb(0x1c1)](_0x43a6ca[_0x1b51cb(0x1bb)]);});if(_0x15386c){const _0x455314=document['getElementById'](_0x15386c);_0x455314&&_0x455314['classList'][_0x4236c2(0x1db)](_0x43a6ca['GEgsS']);}}function populateFilterDropdowns(){const _0xcc874a=a1_0x17f674,_0x5c7646={'IwnHg':_0xcc874a(0x1c9),'GYlVt':_0xcc874a(0x208),'rvVxS':_0xcc874a(0x21c),'FpKhH':'change','FzADt':_0xcc874a(0x203),'GaLSt':function(_0x14d5e8,_0x327b01){return _0x14d5e8>_0x327b01;},'KqyJw':_0xcc874a(0x214)},_0x3d6952=document[_0xcc874a(0x1c2)](_0x5c7646[_0xcc874a(0x1de)]);_0x3d6952[_0xcc874a(0x1ba)]='';const _0x2d85fe=new Set();chrome[_0xcc874a(0x267)][_0xcc874a(0x24f)][_0xcc874a(0x20a)](null,function(_0x15dd85){const _0xfb405c=_0xcc874a;for(const _0x17033e in _0x15dd85){if(_0x17033e['startsWith'](_0x5c7646[_0xfb405c(0x202)])){const _0x3ba604=_0x15dd85[_0x17033e];_0x3ba604&&_0x3ba604[_0xfb405c(0x286)]&&_0x2d85fe[_0xfb405c(0x1db)](_0x3ba604[_0xfb405c(0x286)]);}}_0x2d85fe['forEach'](_0x3ea0fc=>{const _0xb81910=_0xfb405c,_0x46ae31=document[_0xb81910(0x27c)](_0xb81910(0x25a));_0x46ae31['className']=_0xb81910(0x1ca);const _0x2c9f04=document['createElement'](_0x5c7646[_0xb81910(0x248)]);_0x2c9f04[_0xb81910(0x1b2)]=_0x5c7646[_0xb81910(0x1f9)],_0x2c9f04['id']=_0xb81910(0x23d)+_0x3ea0fc[_0xb81910(0x277)](/\s+/g,'-')[_0xb81910(0x26a)](),_0x2c9f04[_0xb81910(0x1d0)]=_0x3ea0fc,_0x2c9f04[_0xb81910(0x256)]=_0x5c7646['rvVxS'],_0x2c9f04['addEventListener'](_0x5c7646[_0xb81910(0x225)],updateCurrentView);const _0x1d9863=document['createElement'](_0xb81910(0x232));_0x1d9863['htmlFor']=_0x2c9f04['id'],_0x1d9863[_0xb81910(0x290)]=_0x3ea0fc,_0x46ae31[_0xb81910(0x223)](_0x2c9f04),_0x46ae31[_0xb81910(0x223)](_0x1d9863),_0x3d6952['appendChild'](_0x46ae31);});if(_0x5c7646['GaLSt'](_0x2d85fe[_0xfb405c(0x240)],0x0)&&_0x3d6952['parentNode']){const _0x527cc4=_0x3d6952[_0xfb405c(0x22b)];while(_0x3d6952[_0xfb405c(0x1e1)]){_0x527cc4[_0xfb405c(0x228)](_0x3d6952['firstChild'],_0x3d6952);}_0x527cc4[_0xfb405c(0x1d1)](_0x3d6952);}});}function updateCurrentView(){const _0x1db06a={'riKoq':function(_0x2e6220){return _0x2e6220();}};_0x1db06a['riKoq'](filterAndDisplayOffers);}function getFilteredOffers(){const _0x5979c9=a1_0x17f674,_0x32e262={'ihSxw':function(_0x5b582c,_0x311291){return _0x5b582c===_0x311291;},'VzmKl':function(_0x3eee62,_0x34dcbc){return _0x3eee62===_0x34dcbc;},'SLukq':function(_0x38a00d,_0x1abe1f){return _0x38a00d&&_0x1abe1f;},'JcjSn':_0x5979c9(0x218),'rahYY':'.bank-checkbox:checked','BQSvB':'.type-checkbox:checked','RAYQH':function(_0xf58ae4,_0x82c221,_0x3cac45){return _0xf58ae4(_0x82c221,_0x3cac45);},'NLbJz':_0x5979c9(0x285),'NUivx':_0x5979c9(0x1fd),'GcHdK':function(_0xd984de,_0x1cc74b){return _0xd984de/_0x1cc74b;}},_0x17c000=document[_0x5979c9(0x1c2)](_0x32e262[_0x5979c9(0x1be)])['value'][_0x5979c9(0x26a)](),_0x471633=Array[_0x5979c9(0x278)](document['querySelectorAll'](_0x32e262[_0x5979c9(0x231)]))['map'](_0x3f0496=>_0x3f0496[_0x5979c9(0x1d0)]),_0x3569a0=Array['from'](document[_0x5979c9(0x222)](_0x32e262[_0x5979c9(0x1e2)]))[_0x5979c9(0x236)](_0x2b8fe2=>_0x2b8fe2['value']);let _0x1e3823=allOffers[_0x5979c9(0x233)](_0x2210f0=>{const _0x11ce78=_0x5979c9,_0x43b135=_0x32e262[_0x11ce78(0x254)](_0x471633[_0x11ce78(0x1b1)],0x0)||_0x2210f0[_0x11ce78(0x286)]&&_0x471633[_0x11ce78(0x25b)](_0x2210f0[_0x11ce78(0x286)]),_0x28bb7f=_0x32e262[_0x11ce78(0x2aa)](_0x17c000,'')||_0x2210f0[_0x11ce78(0x246)]&&_0x2210f0[_0x11ce78(0x246)][_0x11ce78(0x26a)]()['includes'](_0x17c000)||_0x2210f0[_0x11ce78(0x29c)]&&_0x2210f0[_0x11ce78(0x29c)][_0x11ce78(0x26a)]()[_0x11ce78(0x25b)](_0x17c000)||_0x2210f0[_0x11ce78(0x20c)]&&_0x2210f0['cashbackAmount'][_0x11ce78(0x26a)]()[_0x11ce78(0x25b)](_0x17c000)||_0x2210f0[_0x11ce78(0x250)]&&_0x2210f0[_0x11ce78(0x250)][_0x11ce78(0x26a)]()[_0x11ce78(0x25b)](_0x17c000),_0x2e0edc=_0x3569a0[_0x11ce78(0x1b1)]===0x0||_0x3569a0[_0x11ce78(0x25b)](_0x2210f0[_0x11ce78(0x1b2)]);return _0x32e262['SLukq'](_0x43b135,_0x2e0edc)&&_0x28bb7f;});_0x1e3823=_0x32e262[_0x5979c9(0x1a6)](sortOffers,_0x1e3823,sortOptions[_0x5979c9(0x1d0)]);const _0xf0cda6=document[_0x5979c9(0x279)]('.filter-label');_0xf0cda6&&(_0xf0cda6[_0x5979c9(0x290)]='('+_0x1e3823[_0x5979c9(0x1b1)]+')');if(_0x1e3823[_0x5979c9(0x1b1)]===0x0)noOfferLabel['style'][_0x5979c9(0x1c0)]='',statLabel[_0x5979c9(0x23e)]['display']=_0x32e262[_0x5979c9(0x281)];else{noOfferLabel['style'][_0x5979c9(0x1c0)]=_0x32e262['NLbJz'],statLabel[_0x5979c9(0x23e)][_0x5979c9(0x1c0)]='';const _0x42534d=calculateTotalValue(_0x1e3823);document[_0x5979c9(0x1c2)](_0x32e262[_0x5979c9(0x23f)])[_0x5979c9(0x290)]='$'+_0x32e262[_0x5979c9(0x276)](_0x42534d,_0x1e3823[_0x5979c9(0x1b1)])[_0x5979c9(0x24a)](0x2);}return _0x1e3823;}function filterAndDisplayOffers(){const _0xeb58f8=a1_0x17f674,_0x33c47b={'sIHJn':function(_0x3f4d72,_0x286acc){return _0x3f4d72(_0x286acc);},'MsNRt':function(_0x8e95b7){return _0x8e95b7();}};offersGrid[_0xeb58f8(0x1ba)]='';const _0x37fee7=_0x33c47b['MsNRt'](getFilteredOffers);_0x37fee7[_0xeb58f8(0x252)](0x0,0x32)[_0xeb58f8(0x1f6)](_0x36ae90=>{const _0x560e6b=_0xeb58f8,_0xc4d92d=_0x33c47b[_0x560e6b(0x27a)](createOfferCard,_0x36ae90);offersGrid[_0x560e6b(0x223)](_0xc4d92d);});}
+// DOM elements
+const offersGrid = document.getElementById('offers-grid');
+const sortOptions = document.getElementById('sort-options');
+const searchBox = document.getElementById('offer-search');
+const buttonAdvancedFilter = document.getElementById('advanced-filters-toggle');
+const onlineFilter = document.getElementById('location-online');
+const offersGridContainer = document.getElementById('offers-grid-container');
+const spendAmount = document.getElementById('spend-amount');
+const searchBoxLabel = document.getElementById('offer-search-label');
+const spendAmountLabel = document.getElementById('spend-amount-label');
+const statLabel = document.getElementById('stat-label');
+const noOfferLabel = document.getElementById('no-offer-label');
+const edgeButton = document.querySelector('.edge-button');
+const chromeButton = document.querySelector('.chrome-button');
+const filterLabel = document.querySelector('.filter-label');
+const iosButton = document.querySelector('.ios-button');
+const androidButton = document.querySelector('.android-button');
+const windowsButton = document.querySelector('.windows-button');
+
+// Global variables
+let allOffers = [];
+let cards = [];
+let currentFilter = 'all';
+let currentSearch = '';
+
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+function installPWA() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => {
+      deferredPrompt = null;
+    });
+  }
+}
+
+function isStandaloneMode() {
+  return window.matchMedia('(display-mode: standalone)').matches
+    || window.navigator.standalone === true
+    || document.referrer.startsWith('android-app://');
+}
+
+function hideInstallButtonsIfStandalone() {
+  if (isStandaloneMode()) {
+    if (iosButton) iosButton.style.display = 'none';
+    if (androidButton) androidButton.style.display = 'none';
+    if (windowsButton) windowsButton.style.display = 'none';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Placeholder animation for search box
+  const phrases = [
+    "groceries...",
+    "flowers...",
+    "amazon...",
+    "travel...",
+    "health"
+  ];
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let typing = true;
+  function typePlaceholder() {
+    if (!typing) return;
+    const currentPhrase = phrases[phraseIndex];
+    searchBox.setAttribute('placeholder', currentPhrase.slice(0, charIndex));
+    if (charIndex < currentPhrase.length) {
+      charIndex++;
+      setTimeout(typePlaceholder, 60);
+    } else {
+      typing = false;
+      setTimeout(erasePlaceholder, 1500);
+    }
+  }
+  function erasePlaceholder() {
+    const currentPhrase = phrases[phraseIndex];
+    if (charIndex > 0) {
+      charIndex--;
+      searchBox.setAttribute('placeholder', currentPhrase.slice(0, charIndex));
+      setTimeout(erasePlaceholder, 30);
+    } else {
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      typing = true;
+      setTimeout(typePlaceholder, 500);
+    }
+  }
+  typePlaceholder();
+
+  const userAgent = navigator.userAgent;
+  const isEdge = userAgent.indexOf("Edg") !== -1;
+  const isChrome = userAgent.indexOf("Chrome") !== -1 && !isEdge;
+
+  if (edgeButton && chromeButton) {
+    // Show/hide buttons based on browser detection
+    if (isEdge) {
+      edgeButton.style.display = '';
+      chromeButton.style.display = 'none';
+    } else if (isChrome) {
+      edgeButton.style.display = 'none';
+      chromeButton.style.display = '';
+    } else {
+      // For other browsers, show Chrome
+      edgeButton.style.display = 'none';
+      chromeButton.style.display = '';
+    }
+  }
+
+  const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+  const isMacOS = /Macintosh|Mac OS X/.test(userAgent) && !isIOS;
+  const isIPadOS = /\(iPad/.test(userAgent);
+  const isWindows = /Windows/.test(userAgent);
+
+  if (iosButton && windowsButton && chromeButton) {
+    if (isIOS || isMacOS || isIPadOS) {
+      iosButton.style.display = '';
+      windowsButton.style.display = 'none';
+      androidButton.style.display = 'none';
+    } else if (isWindows) {
+      iosButton.style.display = 'none';
+      windowsButton.style.display = '';
+      androidButton.style.display = 'none';
+    } else {
+      iosButton.style.display = 'none';
+      windowsButton.style.display = 'none';
+      androidButton.style.display = '';
+    }
+  }
+
+  hideInstallButtonsIfStandalone();
+  document.addEventListener('visibilitychange', hideInstallButtonsIfStandalone);
+
+  if (iosButton) {
+    iosButton.addEventListener('click', function (e) {
+      installPWA();
+    });
+  }
+  if (androidButton) {
+    androidButton.addEventListener('click', function (e) {
+      installPWA();
+    });
+  }
+  if (windowsButton) {
+    windowsButton.addEventListener('click', function (e) {
+      installPWA();
+    });
+  }
+  // Add event listeners for range inputs
+  document.getElementById('type-cashback').addEventListener('change', updateCurrentView);
+  document.getElementById('type-discount').addEventListener('change', updateCurrentView);
+  document.getElementById('type-points').addEventListener('change', updateCurrentView);
+  sortOptions.addEventListener('change', updateCurrentView);
+  searchBox.addEventListener('change', () => {
+    gTagSearchInput();
+    currentSearch = searchBox.value.toLowerCase();
+    searchBoxLabel.textContent = currentSearch || 'something';
+    offersGridContainer.style.display = '';
+    updateCurrentView();
+  });
+  spendAmount.addEventListener('change', () => {
+    gTagSearchInput();
+    const spendAmountValue = spendAmount.value;
+    spendAmountLabel.textContent = `$${spendAmountValue || '100'}`;
+    if (spendAmountValue && parseInt(spendAmountValue) > 0) {
+      // Wait for all estimateValue promises to resolve before updating the view
+      Promise.all(
+        allOffers.map(offer =>
+          estimateValue(offer, spendAmountValue).then(value => {
+            offer.estValue = value;
+          })
+        )
+      ).then(() => {
+        offersGridContainer.style.display = '';
+        updateCurrentView();
+      });
+    } else {
+      updateCurrentView();
+    }
+  });
+  buttonAdvancedFilter.addEventListener('click', function () {
+    gTagSearchInput();
+    offersGridContainer.style.display = '';
+    updateCurrentView();
+  });
+
+  let filterDots = 0;
+  let filterLabelAnimating = true;
+  function animateFilterLabel() {
+    if (!filterLabelAnimating) return;
+    filterDots = (filterDots + 1) % 4; // cycles 0,1,2,3
+    filterLabel.textContent = '.'.repeat(filterDots) || '.';
+    setTimeout(animateFilterLabel, 400);
+  }
+  animateFilterLabel();
+
+  loadJsonOffers();
+
+  const offersLoadedInterval = setInterval(function () {
+    console.log('Offer loaded?', window.offersLoaded);
+    if (window.offersLoaded) {
+      clearInterval(offersLoadedInterval);
+      filterLabelAnimating = false; // Stop the animation
+      filterLabel.textContent = ''; // 
+      clearInterval(offersLoadedInterval);
+      loadAllOffers(() => {
+        populateFilterDropdowns();
+        updateCurrentView();
+      });
+    }
+  }, 1000);
+});
+
+function gTagSearchInput() {
+  // Google Analytics event for hero-search-input as a whole
+  if (typeof gtag === 'function') {
+    gtag('event', 'hero_search_input', {
+      'spend_amount': spendAmount.value,
+      'search_term': searchBox.value
+    });
+  }
+}
+
+// Load all offers from storage
+function loadAllOffers(callback) {
+  chrome.storage.local.get(null, function (result) {
+    cards = ['all'];
+    let totalActive = 0;
+    let totalCollected = 0;
+    let totalActivated = 0;
+    let totalRedeemed = 0;
+    let totalExpired = 0;
+
+    // Process all stored data
+    for (const key in result) {
+      if (key.includes('offercontainer_processed') && key != "offercontainer_processed") {
+        const offerData = result[key];
+
+        if (offerData && offerData.offers && offerData.offers.length > 0) {
+          // Add card to filter options if not already present
+          if (offerData.card && !cards.includes(offerData.card)) {
+            cards.push(offerData.card);
+          }
+          // Process each offer
+          offerData.offers.forEach(offer => {
+            // Update counters
+            totalCollected++;
+            // Check if offer is expired
+            if (new Date(offer.expiration) < new Date(new Date().toDateString())) {
+              totalExpired++;
+            }
+            else {
+              // Add bank and card info to each offer
+              const enrichedOffer = {
+                ...offer,
+                bank: offerData.bank || 'Unknown Bank',
+                card: offerData.card || 'Unknown Card',
+                lastUpdated: offer.lastUpdated || new Date().toISOString() // Add lastUpdated if missing
+              };
+              allOffers.push(enrichedOffer);
+            }
+            if (offer.activated) totalActivated++;
+            if (offer.redeemed) totalRedeemed++;
+          });
+
+          totalActive += offerData.totalOffers || 0;
+        }
+      }
+    }
+
+    // If a callback was provided, call it now that offers are loaded
+    if (typeof callback === 'function') {
+      callback();
+    }
+  })
+}
+
+function loadJsonOffers() {
+  fetch('/data/manifest.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to fetch manifest.json');
+      return response.json();
+    })
+    .then(fileList => {
+      // fileList should be an array of file names, e.g. ["capitalone.json", "amex.json"]
+      if (!Array.isArray(fileList)) {
+        throw new Error('Manifest is not an array of file names');
+      }
+      // Fetch all JSON files in parallel
+      return Promise.all(
+        fileList.map(fileName =>
+          fetch(`/data/${fileName}`)
+            .then(response => {
+              if (!response.ok) throw new Error('Failed to fetch ' + fileName);
+              // Get last-modified header
+              const lastUpdated = response.headers.get('last-modified') || new Date().toISOString();
+              return response.json().then(offersData => ({
+                offersData,
+                lastUpdated,
+                fileName
+              }));
+            })
+        )
+      );
+    })
+    .then(results => {
+      results.forEach(({ offersData, lastUpdated, fileName }) => {
+
+        // Use file name (without .json) as bank and card
+        const name = fileName.replace(/\.json$/i, '');
+        // Helper to normalize offers
+        function normalizeOffer(offer) {
+          return {
+            bank: name,
+            card: name,
+            lastUpdated,
+            id: offer.domain,
+            logo: `https://images.capitaloneshopping.com/api/v1/logos?height=170&domain=${offer.domain}&type=cropped&fallback=true`,
+            merchantName: offer.displayName,
+            cashbackAmount: offer.cardLinkedOffer ? offer.cardLinkedOffer.rewardDisplay : offer.reward_display,
+            merchantWebsite: offer.domain,
+            description: `
+          <div>
+            ${offer.availability.online ? "<p>Online</p>" : ""} 
+            <ul>
+              ${offer.reward_categories ? offer.reward_categories.map(cat => `<li>${cat.name}: ${cat.type == "fixed" ? "$" + cat.amount / 100 : cat.amount / 100 + "%"}</li>`).join('') : ""}
+            </ul>
+            ${offer.availability.inStore ? "<p>In-Store</p>" : ""}
+            <ul>
+              ${offer.cardLinkedOffer?.endDate ? "<li>Expire on " + offer.cardLinkedOffer.endDate.split('T')[0] + "</li>" : ""}
+              ${offer.cardLinkedOffer?.packageMax ? "<li>Up to $" + offer.cardLinkedOffer.packageMax / 100 + "</li>" : ""}
+            </ul>
+          </div>
+          <div>
+            <div>
+              <div>
+                <h3>Merchant details</h3>
+                <p>${offer.availability.online ? "Online: To redeem the offer you must make an eligible purchase at " + offer.domain + ". " + offer.terms_and_conditions + "To earn the payout, you must be a Capital One cardholder or bank account holder, and logged in to your account on capitalone.com or the Capital One Mobile app." : ""}</p>
+                <p>${offer.cardLinkedOffer ? "In-Store: " + offer.cardLinkedOffer.termsAndConditions : ""}</p>
+              </div>
+              <div>
+                <h3>How to receive the payout</h3>
+                <p>Payouts are usually issued within 45 days of an eligible purchase but may take longer in some cases. Your account must be open and in good standing at the time we attempt to award the payout. In the event you have more than one account, we may apply the payout to any active credit card or bank account that is open and in good standing. This offer is valid for your use only and cannot be used to buy and resell goods or services to other persons or third parties.</p>
+              </div>
+              <div>
+                <h3>What is a qualifying online purchase?</h3>
+                <p>To make a qualifying online purchase, you must use the link below, and then complete a purchase at the selected merchant's site, in the window opened by the Capital One Offers tile, within 24 hours. If an offer specifically lists an available coupon on this page, you may use it on the merchant's site, subject to any coupon-related conditions that we display, but you must do so within 24 hours of activating the offer and during the same open browser session triggered by your offer activation. Use of any other coupons, cash back, or promotional websites after selecting an offer and before making a purchase will invalidate your offer. Use of VPNs and ad blockers may also invalidate your offer. Online purchases made on websites without first being redirected by a Capital One Offers tile are not qualifying online purchases.</p>
+              </div>
+              <div>
+                <h3>How is the payout calculated?</h3>
+                <p>The payout for qualifying online purchases is calculated using the subtotal amount of your eligible purchase, which is calculated after any eligible coupons are applied, and excludes taxes, shipping, credits, and other fees. A payout earned through this offer is in addition to any rewards regularly earned with your card. If you return or cancel an otherwise qualifying purchase, you are not eligible for a payout. Payouts for subscription services are only awarded to new customers in their first billing period after the merchant has confirmed your payment has processed. Payouts are not available on trial memberships, unless otherwise stated.</p>
+                <p>Read the complete <a href="https://capitaloneoffers.com/Capital-One-Offers-Terms-and-Conditions.pdf" target="_blank">Capital One Offers terms and conditions</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="https://capitaloneoffers.com/c1-offers/" target="_blank">Activate & Shop Now</a>
+          </div>`,
+            category: offer.easeCategory
+          };
+        }
+        // Push all offers from both standard into allOffers
+        if (offersData.offers && offersData.offers.standard && Array.isArray(offersData.offers.standard.offers)) {
+          offersData.offers.standard.offers.forEach(offer => {
+            const normalizedOffer = normalizeOffer(offer);
+            parseCashbackAmount(normalizedOffer);
+            estimateValue(normalizedOffer, 100).then(
+              value => {
+                normalizedOffer.estValue = value;
+                allOffers.push(normalizedOffer);
+              });
+          });
+        }
+      });
+    })
+    .catch(e => {
+      console.error('Error loading offers:', e);
+    });
+}
+
+// Calculate total value from all offers
+function calculateTotalValue(offers) {
+  return offers.reduce((total, offer) => total + (parseFloat(offer.estValue) || 0), 0);
+}
+
+// Create offer card element
+function createOfferCard(offer) {
+  const offerCard = document.createElement('div');
+  offerCard.className = 'offer-card';
+  offerCard.style.position = 'relative';
+
+  // Clone the template for offer cards (not AI summary cards)
+  const template = document.getElementById('offer-card-template');
+  const clone = template.content.cloneNode(true);
+
+  // Use shared functions to extract and format data
+  if (!offer.expiration && offer.description) {
+    offer.expiration = extractExpiryDateFromDescription(offer.description);
+  }
+
+  // Format expiry date using shared function
+  const expiryText = formatExpiryDate(getExpiryDate(offer));
+
+  // Extract minimum spend and maximum cashback using shared functions
+  let minSpend = offer.minSpend || extractMinSpendFromDescription(offer.description) || '';
+  let maxCashback = offer.maxCashback || extractMaxCashbackFromDescription(offer.description) || '';
+
+  // Assess cashback ease
+  const easeAssessment = assessCashbackEase(offer);
+
+  // Fill in the template with offer data
+  clone.querySelector('.offer-bank-name').textContent = offer.bank;
+  clone.querySelector('.offer-logo').src = offer.logo;
+  clone.querySelector('.offer-logo').alt = offer.merchantName;
+  clone.querySelector('.offer-merchant').textContent = offer.merchantName || 'Unknown Merchant';
+
+  // Calculate and display estimated value if the element exists
+  const valueElement = clone.querySelector('.offer-value');
+  if (valueElement) {
+    valueElement.textContent = (offer.estValue && parseInt(offer.estValue) !== 0) ? `(Est. $${parseFloat(offer.estValue).toFixed(2)} for you · Eligibility may vary)` : '(No est. value)';
+  }
+
+  // Format cashback amount to include max cashback if it exists
+  let cashbackDisplay = displayCashbackAmount(parseCashbackAmount(offer));
+  const amountElement = clone.querySelector('.offer-amount');
+  amountElement.textContent = cashbackDisplay;
+
+  // Add redeem button if link is available - UPDATED to match hunt-button implementation
+  const redeemButtonContainer = clone.querySelector('.redeem-button-container');
+  const redeemLink = getRedeemLink(offer) || offer.merchantWebsite;
+  if (redeemLink) {
+    // Create a button element instead of an anchor
+    const redeemButton = document.createElement('button');
+    redeemButton.className = 'redeem-button';
+    redeemButton.textContent = 'Redeem';
+
+    // Add click event to open the link in a new tab
+    redeemButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      recordAttemptedRedeem(offer);
+      window.open(redeemLink, '_blank');
+    });
+
+    redeemButtonContainer.appendChild(redeemButton);
+  } else {
+    // Create a "Click for Details" button with opposite style
+    const detailsButton = document.createElement('button');
+    detailsButton.className = 'details-button';
+    detailsButton.textContent = 'Terms';
+
+    // Add click event to show offer details
+    detailsButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      showOfferDetails(offer);
+    });
+
+    redeemButtonContainer.appendChild(detailsButton);
+  }
+
+  // Clear the separate min spend and max cashback elements
+  clone.querySelector('.offer-min-spend').textContent = '';
+  clone.querySelector('.offer-max-cashback').textContent = '';
+  clone.querySelector('.offer-expiry').textContent = expiryText;
+
+  // Set ease label if available
+  if (easeAssessment.ease !== 'unknown') {
+    const easeLabel = clone.querySelector('.effort-label');
+    easeLabel.classList.add(`effort-${easeAssessment.ease}`);
+    easeLabel.textContent = easeAssessment.ease === 'easy' ? 'Easy' :
+      easeAssessment.ease === 'medium' ? 'Medium' : 'Hard';
+  }
+
+  // Append the template content to the card
+  offerCard.appendChild(clone);
+
+  // Add click event to show offer details
+  offerCard.addEventListener('click', (event) => {
+    // Don't trigger if clicking on the redeem button
+    if (event.target.classList.contains('redeem-button')) {
+      return;
+    }
+    showOfferDetails(offer);
+  });
+
+  return offerCard;
+}
+
+// Sort offers based on selected option
+function sortOffers(offers, sortOption) {
+  return [...offers].sort((a, b) => {
+    switch (sortOption) {
+      case 'recent':
+        // Sort by lastUpdated timestamp (most recent first)
+        const aTime = a.lastUpdated ? new Date(a.lastUpdated).getTime() : 0;
+        const bTime = b.lastUpdated ? new Date(b.lastUpdated).getTime() : 0;
+        return bTime - aTime; // Descending order (newest first)
+      case 'expiry-asc':
+        return getExpiryDate(a) - getExpiryDate(b);
+      case 'expiry-desc':
+        return getExpiryDate(b) - getExpiryDate(a);
+      case 'value-desc':
+        return getCashbackValue(b) - getCashbackValue(a);
+      case 'value-asc':
+        return getCashbackValue(a) - getCashbackValue(b);
+      case 'effort-asc':
+        return getEffortValue(a) - getEffortValue(b);
+      case 'effort-desc':
+        return getEffortValue(b) - getEffortValue(a);
+      case 'cashbackfixed-desc':
+        return getCashbackFixedValue(b) - getCashbackFixedValue(a);
+      case 'cashbackpercent-desc':
+        return getCashbackPercentValue(b) - getCashbackPercentValue(a);
+      default:
+        return 0;
+    }
+  });
+}
+
+// Helper function to get effort value (ease of cashback)
+function getEffortValue(offer) {
+  const easeAssessment = assessCashbackEase(offer);
+
+  // Convert ease to numeric value for sorting
+  switch (easeAssessment.ease) {
+    case 'easy':
+      return 1;
+    case 'medium':
+      return 2;
+    case 'hard':
+      return 3;
+    default:
+      return 4; // Unknown ease gets lowest priority
+  }
+}
+
+// Helper function to extract cashback value
+function getCashbackValue(offer) {
+  return parseFloat(offer.estValue || 0);
+}
+
+function getCashbackFixedValue(offer) {
+  return parseFloat(offer.cashbackFixed || 0);
+}
+
+function getCashbackPercentValue(offer) {
+  return parseFloat(offer.cashbackPercent || 0);
+}
+
+// Show offer details in a modal
+function showOfferDetails(offer) {
+  // Remove any existing modals first to prevent duplicates
+  const existingModals = document.querySelectorAll('.offer-modal');
+  existingModals.forEach(modal => modal.remove());
+
+  // Clone the template for offer details modal
+  const template = document.getElementById('offer-details-template');
+  const modal = template.content.cloneNode(true).querySelector('.offer-modal');
+
+  // Process description if available
+  let processedDescription = '';
+  if (offer.description) {
+    // Create a temporary div to parse HTML
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = offer.description;
+
+    // Remove all style attributes from all elements
+    const elementsWithStyle = tempDiv.querySelectorAll('*[style]');
+    elementsWithStyle.forEach(el => {
+      el.removeAttribute('style');
+    });
+
+    // Also remove all class attributes to prevent external styling
+    const elementsWithClass = tempDiv.querySelectorAll('*[class]');
+    elementsWithClass.forEach(el => {
+      el.removeAttribute('class');
+    });
+
+    // Also remove x days left text
+    const listItems = tempDiv.querySelectorAll('li');
+    listItems.forEach(item => {
+      if (item.textContent.toLowerCase().includes("days left")) {
+        item.remove();
+      }
+      if (item.textContent.toLowerCase().includes("saved")) {
+        item.remove();
+      }
+    });
+
+    // Set the sanitized HTML
+    processedDescription = tempDiv.innerHTML;
+  } else {
+    processedDescription = 'No details available';
+  }
+
+  // Format expiry text using the shared getExpiryDate function
+  let expiryText = formatExpiryDate(getExpiryDate(offer));
+
+  // Fill in the template with offer data
+  modal.querySelector('.modal-logo').src = offer.logo;
+  modal.querySelector('.modal-logo').alt = offer.merchantName;
+  modal.querySelector('.modal-merchant').textContent = offer.merchantName || 'Unknown Merchant';
+  let cashbackDisplay = displayCashbackAmount(parseCashbackAmount(offer));
+
+  // Fill in the template with offer data
+  modal.querySelector('.modal-logo').src = offer.logo;
+  modal.querySelector('.modal-logo').alt = offer.merchantName;
+  modal.querySelector('.modal-merchant').textContent = offer.merchantName || 'Unknown Merchant';
+  modal.querySelector('.modal-amount').textContent = cashbackDisplay;
+  modal.querySelector('.modal-description').innerHTML = processedDescription;
+
+  // Add to document
+  document.body.appendChild(modal);
+
+  // Add event listeners
+  modal.querySelector('#close-modal').addEventListener('click', () => {
+    modal.remove();
+  });
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.remove();
+    }
+  });
+}
+// Event listeners
+// Function to set active nav link
+function setActiveNavLink(linkId) {
+  // Remove active class from all nav links
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+  });
+
+  // Add active class to the selected link
+  if (linkId) {
+    const activeLink = document.getElementById(linkId);
+    if (activeLink) {
+      activeLink.classList.add('active');
+    }
+  }
+}
+// Update the populateFilterDropdowns function to work with checkboxes instead of dropdowns
+function populateFilterDropdowns() {
+  const bankFilterContainer = document.getElementById('bank-filter-container');
+
+  // Clear existing options
+  bankFilterContainer.innerHTML = '';
+
+  // Get unique banks and cards
+  const banks = Array.from(new Set(allOffers.map(offer => offer.bank)));
+
+  // Add banks as checkboxes
+  banks.forEach(bank => {
+    const checkboxContainer = document.createElement('div');
+    checkboxContainer.className = 'hero-suggestion-btn';
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = `bank-${bank.replace(/\s+/g, '-').toLowerCase()}`;
+    checkbox.value = bank;
+    checkbox.className = 'filter-checkbox bank-checkbox';
+    checkbox.addEventListener('change', updateCurrentView);
+
+    const label = document.createElement('label');
+    label.htmlFor = checkbox.id;
+    label.textContent = bank;
+
+    checkboxContainer.appendChild(checkbox);
+    checkboxContainer.appendChild(label);
+    bankFilterContainer.appendChild(checkboxContainer);
+  });
+}
+// Add this new function to handle filtering in any view
+function updateCurrentView() {
+  // Check which view is currently active and update accordingly
+  filterAndDisplayOffers();
+}
+
+// Extract the common filtering logic into a separate function
+function getFilteredOffers() {
+  // Get all filter values
+  const searchTerm = document.getElementById('offer-search').value.toLowerCase();
+  const selectedBanks = Array.from(document.querySelectorAll('.bank-checkbox:checked')).map(cb => cb.value);
+  const selectedTypes = Array.from(document.querySelectorAll('.type-checkbox:checked')).map(cb => cb.value);
+
+  // Filter offers by all criteria
+  let filteredOffers = allOffers.filter(offer => {
+    // Handle bank filtering - more lenient
+    const matchesBank = selectedBanks.length === 0 ||
+      (offer.bank && selectedBanks.includes(offer.bank));
+
+    // Handle search filtering
+    const matchesSearch = searchTerm === '' ||
+      (offer.merchantName && offer.merchantName.toLowerCase().includes(searchTerm)) ||
+      (offer.description && offer.description.toLowerCase().includes(searchTerm)) ||
+      (offer.cashbackAmount && offer.cashbackAmount.toLowerCase().includes(searchTerm)) ||
+      (offer.category && offer.category.toLowerCase().includes(searchTerm));
+
+    // Determine offer type
+    const matchesType = selectedTypes.length === 0 || selectedTypes.includes(offer.type);
+    // Return true only if all filters match
+    return matchesBank && matchesType && matchesSearch;
+  });
+
+  // Sort offers
+  filteredOffers = sortOffers(filteredOffers, sortOptions.value);
+
+  // Update filter counts in UI
+  if (filterLabel) {
+    filterLabel.textContent = `${filteredOffers.length} offers found`;
+  }
+
+  if (filteredOffers.length === 0) {
+    noOfferLabel.style.display = '';
+    statLabel.style.display = 'none';
+  }
+  else {
+    // Calculate total value
+    noOfferLabel.style.display = 'none';
+    statLabel.style.display = '';
+    const totalValue = calculateTotalValue(filteredOffers);
+    console.log('Total Value:', totalValue);
+    document.getElementById('total-value').textContent = `$${(totalValue / filteredOffers.length).toFixed(2)}`;
+  }
+
+  return filteredOffers;
+}
+
+// Now simplify filterAndDisplayOffers to use the common function
+function filterAndDisplayOffers() {
+  // Clear current display
+  offersGrid.innerHTML = '';
+
+  // Get filtered offers
+  const filteredOffers = getFilteredOffers();
+
+  // Create and append offer cards
+  filteredOffers.slice(0, 50).forEach(offer => {
+    const offerCard = createOfferCard(offer);
+    offersGrid.appendChild(offerCard);
+  });
+}
