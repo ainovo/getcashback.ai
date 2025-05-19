@@ -141,3 +141,4 @@ dist
 # Original JavaScript files
 original-js
 *.sh
+*.zip
