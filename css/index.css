@@ -525,7 +525,7 @@ body {
   text-align: center;
 }
 
-.offer-max-cashback, .offer-min-spend, .offer-expiry {
+.offer-max-cashback, .offer-min-spend, .offer-expiry, .redeem-button-span {
   margin: 1px 0;
 }
 
@@ -980,7 +980,8 @@ footer {
 
 .offers-grid .offer-min-spend,
 .offers-grid .offer-max-cashback,
-.offers-grid .offer-expiry {
+.offers-grid .offer-expiry,
+.offers-grid .redeem-button-span {
   margin-bottom: 5px;
   font-size: 12px;
 }
@@ -1156,8 +1157,8 @@ footer {
   gap: 5px;
 }
 
-.modal-description div img,
-.modal-description li img {
+.modal-description svg,
+.modal-description img{
   width: 15px;
   height: 15px;
 }
@@ -1180,9 +1181,10 @@ footer {
 .redeem-button-container {
   min-height: 32px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 6px 0;
+  margin: 20px 0;
   width: 100%;
 }
 
