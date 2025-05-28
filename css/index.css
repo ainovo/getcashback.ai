@@ -488,6 +488,14 @@ body {
   text-align: center;
 }
 
+.offer-merchant-summary
+{
+  font-size: 12px;
+  color: #666;
+  margin-top: 0px !important;
+  margin-bottom: 10px;
+}
+
 .offer-amount {
   color: #64D8CB;
   font-weight: bold;

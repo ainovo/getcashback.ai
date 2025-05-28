@@ -1,1 +1,1494 @@
-const a2_0x210fff=a2_0x2f7f;(function(_0x2819d8,_0x4df018){const _0x1abaa3=a2_0x2f7f,_0xe53d1b=_0x2819d8();while(!![]){try{const _0x4d7afc=parseInt(_0x1abaa3(0x323))/0x1*(parseInt(_0x1abaa3(0x202))/0x2)+parseInt(_0x1abaa3(0x1f1))/0x3+parseInt(_0x1abaa3(0x19e))/0x4*(parseInt(_0x1abaa3(0x26a))/0x5)+parseInt(_0x1abaa3(0x160))/0x6+-parseInt(_0x1abaa3(0x197))/0x7*(-parseInt(_0x1abaa3(0x214))/0x8)+-parseInt(_0x1abaa3(0x240))/0x9+-parseInt(_0x1abaa3(0x276))/0xa;if(_0x4d7afc===_0x4df018)break;else _0xe53d1b['push'](_0xe53d1b['shift']());}catch(_0x58968f){_0xe53d1b['push'](_0xe53d1b['shift']());}}}(a2_0x2785,0x4a43b));const bankTemplates={'American\x20Express':{'allOffersUrl':a2_0x210fff(0x38a),'bankLogo':a2_0x210fff(0x200),'disclaimer':a2_0x210fff(0x357),'activationAttribute':a2_0x210fff(0x376),'inlineOfferDescription':!![],'cardSelector':a2_0x210fff(0x329),'activateButton':a2_0x210fff(0x1f9),'offerContainer':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x172)},'card':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x345)},'offers':{'type':'xpath','value':a2_0x210fff(0x216)},'merchantName':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x198)},'cashbackAmount':{'type':a2_0x210fff(0x388),'value':'//div[contains(@class,\x20\x22offer-info\x22)]/p[1]/text()'},'logo':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x238)},'offerId':{'type':'xpath','value':a2_0x210fff(0x192)},'redeemLink':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x3c7)},'description':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x26b)},'expiration':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x233)}},'Bank\x20of\x20America':{'allOffersUrl':a2_0x210fff(0x1be),'bankLogo':'https://www1.bac-assets.com/homepage/spa-assets/images/assets-images-global-logos-bac-logo-v2-CSX3648cbbb.svg','disclaimer':'Disclaimer:\x20We\x20are\x20not\x20affiliated\x20with\x20any\x20banks\x20or\x20offer\x20providers.\x20This\x20tool\x20helps\x20you\x20discover\x20and\x20manage\x20offers\x20already\x20available\x20in\x20your\x20own\x20accounts.\x20All\x20cashback\x20and\x20rewards\x20are\x20processed\x20directly\x20by\x20the\x20banks\x20or\x20merchants,\x20according\x20to\x20their\x20program\x20terms\x20and\x20conditions.','activationAttribute':'[data-deal-id=\x22{offerId}\x22]','inlineOfferDescription':!![],'offerContainer':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x173)},'card':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x3b1)},'offers':{'type':'xpath','value':a2_0x210fff(0x1bf)},'merchantName':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x340)},'cashbackAmount':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x348)},'logo':{'type':'xpath','value':a2_0x210fff(0x30b)},'offerId':{'type':a2_0x210fff(0x388),'value':'//a/@data-deal-id'},'redeemLink':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x399)},'description':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x228)},'expiration':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x283)}},'Capital\x20One':{'allOffersUrl':a2_0x210fff(0x2d1),'applyLink':a2_0x210fff(0x3a4),'disclaimer':a2_0x210fff(0x357),'allOffersJson':a2_0x210fff(0x2b9),'inlineOfferDescription':!![],'activationAttribute':a2_0x210fff(0x17f),'activateButton':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x38c)},'termsButton':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x33b)},'closeButtonPostActivation':'#radix-\x5c:rb\x5c:\x20button','offerContainer':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x25f)},'card':{'type':'xpath','value':'//p[contains(@class,\x20\x22md:block\x22)]/text()'},'offers':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x187)},'merchantName':{'type':'xpath','value':'//div[contains(@class,\x20\x22content-image\x22)]//img/@alt'},'cashbackAmount':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x364)},'logo':{'type':'xpath','value':a2_0x210fff(0x18d)},'offerId':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x18d)},'redeemLink':{'type':a2_0x210fff(0x347),'value':'https://capitaloneoffers.com/c1-offers/'},'description':{'type':a2_0x210fff(0x388),'value':'//div[contains(@class,\x20\x22content-container\x22)]'}},'Chase':{'allOffersUrl':a2_0x210fff(0x175),'applyLink':a2_0x210fff(0x3c4),'bankLogo':'https://www.chase.com/etc/designs/chase-ux/css/img/newheaderlogo.svg','disclaimer':a2_0x210fff(0x357),'activationAttribute':'[id=\x22{offerId}\x22]','inlineOfferDescription':![],'offerContainer':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x2e5)},'card':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x3dc)},'offers':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x33f)},'merchantName':{'type':'xpath','value':a2_0x210fff(0x1fa)},'cashbackAmount':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x171)},'logo':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x2ab)},'offerId':{'type':a2_0x210fff(0x388),'value':'//div[@class=\x22offerTileGridItemContainer\x22\x20or\x20@role=\x22listitem\x22]/div/@id'},'redeemLink':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x1f6)},'description':{'type':'xpath','value':a2_0x210fff(0x2a6)}},'Paypal':{'allOffersUrl':'https://www.paypal.com/offers/','bankLogo':'https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg','disclaimer':a2_0x210fff(0x357),'activateFirst':!![],'activationAttribute':a2_0x210fff(0x2f7),'inlineOfferDescription':!![],'activateButton':a2_0x210fff(0x339),'offerContainer':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x369)},'card':{'type':a2_0x210fff(0x347),'value':'Paypal'},'offers':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x193)},'merchantName':{'type':'xpath','value':a2_0x210fff(0x24e)},'cashbackAmount':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x21d)},'logo':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x393)},'offerId':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x24e)},'redeemLink':{'type':'xpath','value':a2_0x210fff(0x39e)},'description':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x1e3)}},'Wells\x20Fargo':{'allOffersUrl':'https://web.secure.wellsfargo.com/auth/deals-portal','allOffersButton':a2_0x210fff(0x1f7),'disclaimer':a2_0x210fff(0x357),'activationAttribute':a2_0x210fff(0x354),'inlineOfferDescription':!![],'closeButtonPostActivation':a2_0x210fff(0x328),'offerContainer':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x1a0)},'card':{'type':'text','value':'Wells\x20Fargo\x20Card'},'offers':{'type':'xpath','value':'//div[@role=\x22button\x22]'},'merchantName':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x3cf)},'cashbackAmount':{'type':'xpath','value':a2_0x210fff(0x38e)},'logo':{'type':a2_0x210fff(0x388),'value':'//img[1]/@src'},'offerId':{'type':'xpath','value':a2_0x210fff(0x252)},'redeemLink':{'type':a2_0x210fff(0x388),'value':'//a[@id=\x22merchant-link-1\x22]/@href'},'description':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x21c)},'expiration':{'type':a2_0x210fff(0x388),'value':a2_0x210fff(0x265)}},'Want\x20More?':{'allOffersUrl':a2_0x210fff(0x35b),'allOfferDescription':a2_0x210fff(0x199)}},categoryKeywords={'Food\x20/\x20Dining':[a2_0x210fff(0x29e),'dining',a2_0x210fff(0x36a),a2_0x210fff(0x3da),'burger','bistro','eatery',a2_0x210fff(0x24a),a2_0x210fff(0x2cf),a2_0x210fff(0x39f),'meal',a2_0x210fff(0x3e0),a2_0x210fff(0x313),a2_0x210fff(0x3cb),a2_0x210fff(0x2db),a2_0x210fff(0x1d3),'taco',a2_0x210fff(0x2c3),'steakhouse',a2_0x210fff(0x1b9),a2_0x210fff(0x1e4),'coffee',a2_0x210fff(0x2c5),a2_0x210fff(0x35c),a2_0x210fff(0x2ac),a2_0x210fff(0x163),'momo',a2_0x210fff(0x287),a2_0x210fff(0x17c),a2_0x210fff(0x36e),'chocolate',a2_0x210fff(0x2fd),a2_0x210fff(0x28d),'pasta',a2_0x210fff(0x27c),a2_0x210fff(0x223),a2_0x210fff(0x161),a2_0x210fff(0x1d4),a2_0x210fff(0x36d),a2_0x210fff(0x182),a2_0x210fff(0x31e),a2_0x210fff(0x34f),a2_0x210fff(0x3bf),a2_0x210fff(0x36b),a2_0x210fff(0x35e),a2_0x210fff(0x29f),a2_0x210fff(0x245),a2_0x210fff(0x1cf),'alcohol',a2_0x210fff(0x3c8),a2_0x210fff(0x1b0)],'Groceries':['grocery','supermarket','fresh',a2_0x210fff(0x261),a2_0x210fff(0x31f),a2_0x210fff(0x1cb),a2_0x210fff(0x250),'pantry',a2_0x210fff(0x304),'grocery\x20service',a2_0x210fff(0x332),a2_0x210fff(0x169),a2_0x210fff(0x377),a2_0x210fff(0x27c),a2_0x210fff(0x1fd),a2_0x210fff(0x2ed),a2_0x210fff(0x16a),a2_0x210fff(0x30d),a2_0x210fff(0x272),a2_0x210fff(0x232),'sam\x27s\x20club'],'Retail':[a2_0x210fff(0x3a0),a2_0x210fff(0x330),a2_0x210fff(0x33a),a2_0x210fff(0x1b4),'store',a2_0x210fff(0x20c),'fashion',a2_0x210fff(0x36f),a2_0x210fff(0x260),a2_0x210fff(0x25b),a2_0x210fff(0x2ec),a2_0x210fff(0x2f0),'accessory','jewelry',a2_0x210fff(0x297),a2_0x210fff(0x316),a2_0x210fff(0x18f),'dress',a2_0x210fff(0x263),a2_0x210fff(0x2d2),'mattress','flower',a2_0x210fff(0x2a7),a2_0x210fff(0x1de),a2_0x210fff(0x1eb),a2_0x210fff(0x3d6),a2_0x210fff(0x352),a2_0x210fff(0x3dd),a2_0x210fff(0x298),a2_0x210fff(0x1c7),a2_0x210fff(0x3b2),a2_0x210fff(0x286),a2_0x210fff(0x37d),a2_0x210fff(0x247),a2_0x210fff(0x16c),a2_0x210fff(0x1c0),a2_0x210fff(0x3d4),a2_0x210fff(0x2a2),a2_0x210fff(0x158),a2_0x210fff(0x32b),a2_0x210fff(0x253),'beauty',a2_0x210fff(0x2ea),a2_0x210fff(0x3b6),a2_0x210fff(0x2b0),'luggage',a2_0x210fff(0x21a),a2_0x210fff(0x351),'PC',a2_0x210fff(0x35a),a2_0x210fff(0x3d0),'scent',a2_0x210fff(0x29d),a2_0x210fff(0x1f5),'dog','cat','puppy',a2_0x210fff(0x341),'gadget',a2_0x210fff(0x1c6),'footwear','tieks',a2_0x210fff(0x258),a2_0x210fff(0x29a),a2_0x210fff(0x2c9),'netgear',a2_0x210fff(0x2b1)],'Gas\x20/\x20Auto':[a2_0x210fff(0x2c7),a2_0x210fff(0x309),a2_0x210fff(0x213),a2_0x210fff(0x2d4),a2_0x210fff(0x397),a2_0x210fff(0x2a0),a2_0x210fff(0x17d),a2_0x210fff(0x1a9),a2_0x210fff(0x2fb),'car',a2_0x210fff(0x32a),a2_0x210fff(0x3a1),a2_0x210fff(0x35d),a2_0x210fff(0x1e0),a2_0x210fff(0x164),a2_0x210fff(0x394),a2_0x210fff(0x3c0),a2_0x210fff(0x367),'brake',a2_0x210fff(0x179),'battery',a2_0x210fff(0x1b8),a2_0x210fff(0x374),a2_0x210fff(0x359)],'Travel\x20/\x20Lodging':[a2_0x210fff(0x3d8),a2_0x210fff(0x366),a2_0x210fff(0x19f),'airline',a2_0x210fff(0x224),a2_0x210fff(0x370),a2_0x210fff(0x1db),a2_0x210fff(0x229),a2_0x210fff(0x34b),a2_0x210fff(0x20b),a2_0x210fff(0x1ad),'stay',a2_0x210fff(0x384),'trip',a2_0x210fff(0x365),a2_0x210fff(0x1ee),'airport',a2_0x210fff(0x225),a2_0x210fff(0x22f),'destination',a2_0x210fff(0x186),a2_0x210fff(0x178),a2_0x210fff(0x248),a2_0x210fff(0x166),a2_0x210fff(0x35f),a2_0x210fff(0x1d8),a2_0x210fff(0x279),a2_0x210fff(0x3d3),'passport',a2_0x210fff(0x2ae),a2_0x210fff(0x34c),a2_0x210fff(0x20e),a2_0x210fff(0x224),a2_0x210fff(0x2f9),a2_0x210fff(0x39b),a2_0x210fff(0x203),a2_0x210fff(0x191),'Madame\x20Tussauds'],'Entertainment':[a2_0x210fff(0x1c1),a2_0x210fff(0x20d),'park',a2_0x210fff(0x361),a2_0x210fff(0x230),a2_0x210fff(0x2c6),a2_0x210fff(0x1e6),a2_0x210fff(0x3ae),a2_0x210fff(0x3c6),'show',a2_0x210fff(0x1ea),a2_0x210fff(0x1c5),a2_0x210fff(0x3d2),a2_0x210fff(0x371),a2_0x210fff(0x15f),'sport',a2_0x210fff(0x3a6),a2_0x210fff(0x1c4),a2_0x210fff(0x2f1),'comedy',a2_0x210fff(0x162),a2_0x210fff(0x2b4),'bar',a2_0x210fff(0x2ee),'arcade',a2_0x210fff(0x2c0),a2_0x210fff(0x211),a2_0x210fff(0x32f),a2_0x210fff(0x299),a2_0x210fff(0x277),a2_0x210fff(0x269),a2_0x210fff(0x2dc),a2_0x210fff(0x186),a2_0x210fff(0x39c),a2_0x210fff(0x3ac),a2_0x210fff(0x320),'kindle',a2_0x210fff(0x27d),a2_0x210fff(0x2dd),a2_0x210fff(0x356),a2_0x210fff(0x174),'starz',a2_0x210fff(0x23b),a2_0x210fff(0x206)],'Services\x20/\x20Utilities':[a2_0x210fff(0x300),'internet',a2_0x210fff(0x1ce),a2_0x210fff(0x23f),a2_0x210fff(0x31d),a2_0x210fff(0x21b),a2_0x210fff(0x1f0),a2_0x210fff(0x221),a2_0x210fff(0x3b8),a2_0x210fff(0x2b7),a2_0x210fff(0x30a),a2_0x210fff(0x358),'financial',a2_0x210fff(0x346),a2_0x210fff(0x2fe),'accounting',a2_0x210fff(0x31b),a2_0x210fff(0x159),a2_0x210fff(0x227),'plumbing','electrical',a2_0x210fff(0x3b9),'repair',a2_0x210fff(0x256),a2_0x210fff(0x35d),a2_0x210fff(0x33e),'protection','monitoring','software',a2_0x210fff(0x301),a2_0x210fff(0x189),'hosting','domain',a2_0x210fff(0x3c1),a2_0x210fff(0x208),'marketing',a2_0x210fff(0x3ab),a2_0x210fff(0x285),a2_0x210fff(0x308),a2_0x210fff(0x20f),a2_0x210fff(0x321),a2_0x210fff(0x314),a2_0x210fff(0x1d0),a2_0x210fff(0x2b3),a2_0x210fff(0x34e)],'Health\x20/\x20Wellness':[a2_0x210fff(0x17a),a2_0x210fff(0x1cd),a2_0x210fff(0x249),a2_0x210fff(0x209),a2_0x210fff(0x3be),a2_0x210fff(0x1fb),a2_0x210fff(0x2b2),a2_0x210fff(0x2fa),a2_0x210fff(0x210),a2_0x210fff(0x275),a2_0x210fff(0x2b6),a2_0x210fff(0x1e7),a2_0x210fff(0x267),'vitamin',a2_0x210fff(0x2cd),a2_0x210fff(0x325),a2_0x210fff(0x1fe),a2_0x210fff(0x28e),a2_0x210fff(0x259),a2_0x210fff(0x1ba),a2_0x210fff(0x195),a2_0x210fff(0x1df),a2_0x210fff(0x22d),a2_0x210fff(0x2bd),a2_0x210fff(0x16d),a2_0x210fff(0x16b),a2_0x210fff(0x25d),a2_0x210fff(0x39a),'muscle','mri',a2_0x210fff(0x3d5),a2_0x210fff(0x3c9),'chiropractor',a2_0x210fff(0x15d),'spa',a2_0x210fff(0x306),a2_0x210fff(0x21e),a2_0x210fff(0x253),'procedure',a2_0x210fff(0x32d),a2_0x210fff(0x204),a2_0x210fff(0x22e),a2_0x210fff(0x27e),a2_0x210fff(0x215),'nutrition','diet',a2_0x210fff(0x261),a2_0x210fff(0x3e1),a2_0x210fff(0x302),a2_0x210fff(0x3bd),a2_0x210fff(0x37c),'mindfulness',a2_0x210fff(0x2a5),'glass',a2_0x210fff(0x26d),a2_0x210fff(0x282),'vision',a2_0x210fff(0x30f),'nutrient',a2_0x210fff(0x1aa),a2_0x210fff(0x184),a2_0x210fff(0x30e),a2_0x210fff(0x3ad),a2_0x210fff(0x16e),a2_0x210fff(0x20a)],'Education':['learning',a2_0x210fff(0x242),a2_0x210fff(0x1a5),a2_0x210fff(0x1e5),a2_0x210fff(0x266),a2_0x210fff(0x2ce),'school',a2_0x210fff(0x381),a2_0x210fff(0x326),a2_0x210fff(0x1bc)]},merchantFixMap={'Visible\x20by\x20Verizon':a2_0x210fff(0x30c),'Frank\x20&\x20Eileen':a2_0x210fff(0x1f2),'AT&T':a2_0x210fff(0x2aa),'AT&T\x20Mobility':a2_0x210fff(0x28c),'T-Mobile':a2_0x210fff(0x284),'Barnes\x20&\x20Noble':a2_0x210fff(0x23d),'Bed\x20Bath\x20&\x20Beyond':a2_0x210fff(0x3a5),'H&M':a2_0x210fff(0x33d),'M&M\x27s':a2_0x210fff(0x177),'P&G':'pg.com','P.F.\x20Chang\x27s':'pfchangs.com','J.Crew':'jcrew.com','Lowe\x27s':'lowes.com','Macy\x27s':'macys.com','Kohl\x27s':a2_0x210fff(0x2cb),'Walgreens':a2_0x210fff(0x392),'Walmart':a2_0x210fff(0x2be),'Target':a2_0x210fff(0x2c8),'Best\x20Buy':a2_0x210fff(0x1c8),'Staples':a2_0x210fff(0x2f2),'LEGO':a2_0x210fff(0x15b),'Norton':a2_0x210fff(0x3aa)},extractionPatterns={'cashbackFixed':/earn\s+\$(\d+(?:\.\d+)?)(?:\s+back)?/i,'cashbackPercentage':/earn\s+(\d+(?:\.\d+)?)%(?:\s+back)?/i,'cashbackPoints':/earn\s+\+?(\d{1,3}(?:,\d{3})*)(?:\s+[^\d]+?)?\s+(?:points?|pts|miles?)(?:\s+back)?/i,'maxRedemptions':/up\s+to\s+(\d+)(?:\s+times|\s*x)/i,'cashbackAmount':/(?<!(?:spend|for)\s*)\$(\d+(?:\.\d+)?)/i,'discountPattern':/not\s+(?:a\s+)?(?:.*\s+)?cash\s*back(?:\s+offer|\s+deal)?|this\s+is\s+not\s+(?:a\s+)?cash\s*back|no\s+cash\s*back/i,'addressPatterns':[/\d+\s(?:\w+\s+)*(?:Expy|Real|Avenue|Ave|Boulevard|Blvd|Circle|Cir|Court|Ct|Drive|Dr|Lane|Ln|Parkway|Pkwy|Place|Pl|Plaza|Plz|Road|Rd|Square|Sq|Street|St|Terrace|Ter|Trail|Trl|Way|Wy)([\w\s]+)?[,\s]+([A-Za-z\s]+)?[,\s]+([A-Za-z]{2,})[,\s]+(\d{5}(?:-\d{4})?)/gi],'redeemLinkHref':/(?:must|required to)(?:\s+\w+)*\s+link|specific\s+link\s+(?:required|needed)|use\s+link|follow\s+this\s+link/i,'redeemLinkText':/(?:must|required to)(?:\s+\w+)*\s+link|specific\s+link\s+(?:required|needed)|use\s+link|follow\s+this\s+link(?:.*?)((?:https?:\/\/)?[a-z0-9][-a-z0-9]*\.[a-z0-9][-a-z0-9.]*(?:\/[^\s]*|\?[^\s]*)?)/i,'minSpend':[/spend(?:\s+\w+)*\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\b/i,/spend(?:\s+\w+)*\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\s+or more/i,/minimum\s+purchase\s+of\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\b/i,/purchase\s+of\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\s+or more/i,/minimum\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\b/i],'maxCashback':[/(\$\d+(?:\.\d+)?)\s+cash\s?back\s+maximum/i,/limit(?:\s+\w+)*\s+(\$\d+(?:\.\d+)?)\s+back/i,/maximum\s+cash\s?back\s+of\s+(\$\d+(?:\.\d+)?)/i,/up\s+to\s+(\$\d+(?:\.\d+)?)\s+cash\s?back/i,/earn\s+up\s+to\s+(\$\d+(?:\.\d+)?)/i,/cash\s?back\s+up\s+to\s+(\$\d+(?:\.\d+)?)/i],'expiryDate':[/(expires?|by)(?:\s+\w+){0,5}\s+(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})/i,/(expires?|by)(?:\s+\w+){0,5}\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{2,4})/i,/(expires?|by)(?:\s+\w+){0,5}\s+(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/i],'difficultyPatterns':[{'pattern':/online only/i,'penalty':0x1,'reason':a2_0x210fff(0x39d),'term':{'text':a2_0x210fff(0x1b3),'type':a2_0x210fff(0x3ba)}},{'pattern':/in[\s-]store only/i,'penalty':0x1,'reason':a2_0x210fff(0x218),'term':{'text':a2_0x210fff(0x28b),'type':a2_0x210fff(0x2c1)}},{'pattern':/(?:must|required to)(?:\s+\w+)*\s+link|specific\s+link\s+(?:required|needed)|use\s+link|follow\s+this\s+link/i,'penalty':0x1,'reason':a2_0x210fff(0x3cd),'term':{'text':a2_0x210fff(0x3cd),'type':a2_0x210fff(0x2c1)}},{'pattern':/first\s+(purchase|transaction|payment)|single\s+(purchase|transaction)|one\s+time\s+(only|use)|one\s+(offer|purchase|transaction)\s+per\s+(customer|account|card)/i,'penalty':0x1,'reason':a2_0x210fff(0x18c),'term':{'text':a2_0x210fff(0x18c),'type':'negative'}},{'pattern':/new\s+(customer|user)/i,'penalty':0x2,'reason':a2_0x210fff(0x25a),'term':{'text':a2_0x210fff(0x25a),'type':a2_0x210fff(0x2c1)}},{'pattern':/promo\s+code|promocode|coupon\s+code/i,'penalty':0x1,'reason':a2_0x210fff(0x1b7),'term':{'text':a2_0x210fff(0x24d),'type':a2_0x210fff(0x2c1)}},{'pattern':/sms|text\s+message|mobile\s+number/i,'penalty':0x2,'reason':a2_0x210fff(0x1d2),'term':{'text':a2_0x210fff(0x2d5),'type':'negative'}},{'pattern':/(select|participating)\s+location/i,'penalty':0x2,'reason':'Location\x20restrictions','term':{'text':a2_0x210fff(0x278),'type':a2_0x210fff(0x2c1)}},{'pattern':/(select|eligible)\s+(product|service|item|items)/i,'penalty':0x2,'reason':'Product/service\x20restrictions','term':{'text':a2_0x210fff(0x317),'type':a2_0x210fff(0x2c1)}}]};typeof chrome!==a2_0x210fff(0x22b)&&chrome[a2_0x210fff(0x189)]&&chrome['storage']['local'][a2_0x210fff(0x19d)]([a2_0x210fff(0x1ac)],function(_0x363365){const _0x4cbbc2=a2_0x210fff,_0x13f4dd={'JwlSn':function(_0x193f06,_0x572672){return _0x193f06===_0x572672;},'lpmvt':_0x4cbbc2(0x26e),'wMaAQ':function(_0x2c7c75,_0x33d3ae){return _0x2c7c75!==_0x33d3ae;},'EHOhb':function(_0x19cb91,_0x259b16){return _0x19cb91===_0x259b16;},'vqUJF':_0x4cbbc2(0x1da),'PxXoM':function(_0x4a3e3b,_0x54379e){return _0x4a3e3b(_0x54379e);},'SnCwc':function(_0xb6cb44,_0xeb4e23){return _0xb6cb44===_0xeb4e23;},'rbltH':function(_0x31026c,_0x2b733f){return _0x31026c!==_0x2b733f;},'sfKQe':function(_0x1f2edf,_0x3a6852){return _0x1f2edf(_0x3a6852);},'NxLUa':function(_0x3a15ce,_0x2a4cd0){return _0x3a15ce(_0x2a4cd0);}};if(_0x363365[_0x4cbbc2(0x1ac)]&&_0x363365['clientInfo']['config'])try{const _0x716cf7=JSON[_0x4cbbc2(0x2b5)](_0x363365[_0x4cbbc2(0x1ac)][_0x4cbbc2(0x2ef)]);_0x716cf7[_0x4cbbc2(0x322)]&&(Object['keys'](bankTemplates)['forEach'](_0x55685d=>{delete bankTemplates[_0x55685d];}),Object[_0x4cbbc2(0x254)](bankTemplates,_0x716cf7[_0x4cbbc2(0x322)]));_0x716cf7[_0x4cbbc2(0x1ed)]&&(Object[_0x4cbbc2(0x294)](categoryKeywords)['forEach'](_0x1b99f5=>{delete categoryKeywords[_0x1b99f5];}),Object['assign'](categoryKeywords,_0x716cf7['categoryKeywords']));_0x716cf7[_0x4cbbc2(0x271)]&&(Object[_0x4cbbc2(0x294)](merchantFixMap)[_0x4cbbc2(0x3c3)](_0x5dc97d=>{delete merchantFixMap[_0x5dc97d];}),Object[_0x4cbbc2(0x254)](merchantFixMap,_0x716cf7[_0x4cbbc2(0x271)]));if(_0x716cf7[_0x4cbbc2(0x37b)]){function _0x399e20(_0x8d7b40){const _0x3ad049=_0x4cbbc2,_0x5c457c=_0x8d7b40[_0x3ad049(0x372)](/^\/(.*)\/([gimuy]*)$/);if(_0x5c457c){const [,_0x17b12c,_0x550ff1]=_0x5c457c;return new RegExp(_0x17b12c,_0x550ff1);}return new RegExp(_0x8d7b40);}Object[_0x4cbbc2(0x294)](extractionPatterns)[_0x4cbbc2(0x3c3)](_0x1a219c=>{delete extractionPatterns[_0x1a219c];});for(const [_0x1899c0,_0x21aef9]of Object[_0x4cbbc2(0x3b5)](_0x716cf7['extractionPatterns'])){if(Array[_0x4cbbc2(0x373)](_0x21aef9))extractionPatterns[_0x1899c0]=_0x21aef9['map'](_0x591528=>{const _0x5359d1=_0x4cbbc2;return _0x13f4dd[_0x5359d1(0x1b2)](typeof _0x591528,_0x13f4dd[_0x5359d1(0x217)])&&_0x13f4dd[_0x5359d1(0x292)](_0x591528,null)?{..._0x591528,'pattern':_0x13f4dd[_0x5359d1(0x1ec)](typeof _0x591528['pattern'],_0x13f4dd['vqUJF'])?_0x399e20(_0x591528['pattern']):_0x591528['pattern']}:_0x13f4dd[_0x5359d1(0x396)](_0x399e20,_0x591528);});else _0x13f4dd[_0x4cbbc2(0x38d)](typeof _0x21aef9,_0x13f4dd[_0x4cbbc2(0x217)])&&_0x13f4dd[_0x4cbbc2(0x28a)](_0x21aef9,null)?(extractionPatterns[_0x1899c0]={..._0x21aef9},_0x21aef9['pattern']&&(extractionPatterns[_0x1899c0][_0x4cbbc2(0x19a)]=_0x13f4dd['sfKQe'](_0x399e20,_0x21aef9[_0x4cbbc2(0x19a)]))):extractionPatterns[_0x1899c0]=_0x13f4dd['NxLUa'](_0x399e20,_0x21aef9);}}}catch(_0x48bb76){}});const avgSpendByCategory={'Food\x20/\x20Dining':0x1e,'Groceries':0x64,'Retail':0x64,'Gas\x20/\x20Auto':0x3c,'Travel\x20/\x20Lodging':0xfa,'Entertainment':0x4b,'Services\x20/\x20Utilities':0x96,'Health\x20/\x20Wellness':0x71,'Education':0x5a,'Other':0x64};function getTextWithLineBreaks(_0xe8337b){const _0x180678=a2_0x210fff,_0x9da928={'AFrDH':_0x180678(0x34d),'SQQPL':function(_0x466224,_0x3ccc1b){return _0x466224(_0x3ccc1b);},'lSLwE':function(_0x1ac912,_0xedbc2f){return _0x1ac912(_0xedbc2f);}};let _0x31b0e6='';for(const _0x109aad of _0xe8337b[_0x180678(0x222)]){if(_0x109aad['nodeType']===Node[_0x180678(0x331)])_0x31b0e6+=_0x109aad[_0x180678(0x1ca)];else{if(_0x109aad[_0x180678(0x3bb)]===Node['ELEMENT_NODE']){const _0x3411e6=_0x109aad[_0x180678(0x21f)]['toLowerCase']();['br','p',_0x180678(0x2a9),'li','ul','ol',_0x9da928[_0x180678(0x380)],'span'][_0x180678(0x2fc)](_0x3411e6)?_0x31b0e6+=_0x9da928[_0x180678(0x296)](getTextWithLineBreaks,_0x109aad)+'\x0a':_0x31b0e6+=_0x9da928[_0x180678(0x3b3)](getTextWithLineBreaks,_0x109aad);}}}return _0x31b0e6;}function getPlainText(_0x57465b){const _0x2ccdb6=a2_0x210fff,_0x28984d={'xXjQF':_0x2ccdb6(0x2a9)},_0xf6c810=document[_0x2ccdb6(0x305)](_0x28984d[_0x2ccdb6(0x273)]);return _0xf6c810[_0x2ccdb6(0x338)]=_0x57465b,getTextWithLineBreaks(_0xf6c810)[_0x2ccdb6(0x2f3)](/\n{2,}/g,'\x0a')[_0x2ccdb6(0x311)]();}function classifyOffer(_0x1deefa){const _0x57abb9=a2_0x210fff,_0x422101={'IPzua':_0x57abb9(0x1f3),'JqerS':function(_0xeabdf3,_0x2364fd){return _0xeabdf3!=_0x2364fd;},'Rvvgy':_0x57abb9(0x22b),'oZWCL':_0x57abb9(0x2a9),'xuWle':function(_0x37dbd7,_0x4863b3){return _0x37dbd7(_0x4863b3);},'jmwYt':_0x57abb9(0x168)};if(!_0x1deefa['description'])return _0x422101[_0x57abb9(0x251)];if(_0x422101[_0x57abb9(0x38b)](typeof nlp,_0x422101[_0x57abb9(0x334)])){const _0x261cb6=document[_0x57abb9(0x305)](_0x422101[_0x57abb9(0x243)]);_0x261cb6[_0x57abb9(0x338)]=_0x1deefa['description'];const _0x12898c=_0x422101[_0x57abb9(0x395)](getTextWithLineBreaks,_0x261cb6)[_0x57abb9(0x360)]()[_0x57abb9(0x2f3)](/\n{2,}/g,'\x0a')[_0x57abb9(0x311)](),_0x4ea69b=_0x1deefa['merchantName']?_0x1deefa[_0x57abb9(0x201)][_0x57abb9(0x360)]():'',_0x3c11d9=_0x422101[_0x57abb9(0x395)](nlp,_0x12898c),_0x4e3cc3=_0x3c11d9['sentences']()[_0x57abb9(0x234)](_0x162abe=>!_0x162abe[_0x57abb9(0x343)]()[_0x57abb9(0x1af)]()['found']);let _0x44097c=_0x4e3cc3[_0x57abb9(0x15a)]()['normalize']({'whitespace':!![],'case':!![],'punctuation':!![],'unicode':!![],'contractions':!![],'acronyms':!![],'parentheses':!![],'possessives':!![],'plurals':![],'verbs':![]})[_0x57abb9(0x236)]()[_0x57abb9(0x337)](_0x422101[_0x57abb9(0x18b)]);_0x4ea69b&&_0x44097c[_0x57abb9(0x18e)](_0x4ea69b);_0x44097c=[...new Set(_0x44097c)][_0x57abb9(0x234)](_0x21a0ba=>_0x21a0ba['length']>0x0);let _0x4eb62f={};for(const [_0x269d2a,_0xb1513b]of Object[_0x57abb9(0x3b5)](categoryKeywords)){let _0x1870b1=0x0;for(const _0x5e17ac of _0x44097c){for(const _0x4c400b of _0xb1513b){const _0x576da6=_0x4c400b[_0x57abb9(0x360)]();(_0x5e17ac===_0x576da6||new RegExp('\x5cb'+_0x576da6+'\x5cb')[_0x57abb9(0x2bb)](_0x5e17ac)||_0x5e17ac['startsWith'](_0x576da6+'-')||_0x5e17ac[_0x57abb9(0x25c)]('-'+_0x576da6))&&(_0x1870b1+=0x1);}}_0x4eb62f[_0x269d2a]=_0x1870b1;}const _0x4df294=Object[_0x57abb9(0x3b5)](_0x4eb62f)[_0x57abb9(0x2ba)]((_0x29fe4c,_0x33795e)=>_0x33795e[0x1]-_0x29fe4c[0x1])[0x0];return _0x4df294[0x1]>0x0?_0x4df294[0x0]:_0x422101[_0x57abb9(0x251)];}}function getElementFromTemplate(_0x138f4a,_0x20955b,_0x39b4ba=document,_0x3fbb6e=![]){const _0x4e7fdc=a2_0x210fff,_0x3ee322={'Pewym':_0x4e7fdc(0x3b4),'aROPx':_0x4e7fdc(0x16f),'SWEPW':_0x4e7fdc(0x31c),'wrOfs':_0x4e7fdc(0x255),'YxucM':'xpath','EEzXj':function(_0x35ce0b,_0x33b5e8){return _0x35ce0b>_0x33b5e8;}};if(!bankTemplates[_0x138f4a]||!bankTemplates[_0x138f4a][_0x20955b])return null;let _0x4a2f1c=_0x39b4ba;if(!_0x39b4ba[_0x4e7fdc(0x382)]){const _0x2edbd7=new DOMParser();_0x4a2f1c=_0x2edbd7[_0x4e7fdc(0x239)](_0x39b4ba,_0x3ee322[_0x4e7fdc(0x1cc)]);}const _0x5cf134=bankTemplates[_0x138f4a][_0x20955b];switch(_0x5cf134[_0x4e7fdc(0x1ef)]){case'id':return _0x4a2f1c[_0x4e7fdc(0x382)]?_0x4a2f1c[_0x4e7fdc(0x382)](_0x5cf134['value']):null;case _0x3ee322['aROPx']:return _0x4a2f1c[_0x4e7fdc(0x1d9)]?_0x4a2f1c[_0x4e7fdc(0x1d9)](_0x5cf134[_0x4e7fdc(0x26c)])[0x0]:null;case _0x3ee322[_0x4e7fdc(0x36c)]:return _0x4a2f1c['querySelector']?_0x4a2f1c[_0x4e7fdc(0x25e)](_0x5cf134['value']):null;case _0x3ee322[_0x4e7fdc(0x19b)]:return _0x4a2f1c['querySelectorAll']?_0x4a2f1c[_0x4e7fdc(0x1a4)](_0x5cf134[_0x4e7fdc(0x26c)]):null;case _0x3ee322[_0x4e7fdc(0x3d7)]:try{const _0x353464=_0x4a2f1c[_0x4e7fdc(0x165)](_0x5cf134[_0x4e7fdc(0x26c)],_0x4a2f1c,null,_0x3fbb6e?XPathResult[_0x4e7fdc(0x17e)]:XPathResult[_0x4e7fdc(0x2a3)],null);if(_0x3fbb6e){const _0x38d545=[];for(let _0x45269d=0x0;_0x45269d<_0x353464[_0x4e7fdc(0x2e0)];_0x45269d++){_0x38d545['push'](_0x353464[_0x4e7fdc(0x288)](_0x45269d));}return _0x3ee322[_0x4e7fdc(0x1f4)](_0x38d545['length'],0x0)?_0x38d545:null;}else return _0x353464[_0x4e7fdc(0x33c)];}catch(_0x977681){return null;}default:return null;}}function getDynamicElementFromTemplate(_0x584783,_0x1325d2,_0x868f8c,_0x443210,_0x4132e8=document,_0x3857b6=![]){const _0x4d6e1b=a2_0x210fff,_0x55f9aa={'hybIU':function(_0x5bdb5e,_0x3fd2ce,_0x585e77,_0x23bc9f,_0x2bece2){return _0x5bdb5e(_0x3fd2ce,_0x585e77,_0x23bc9f,_0x2bece2);},'xAuiK':function(_0x186e7c,_0x1165a8){return _0x186e7c(_0x1165a8);},'vjLnA':function(_0x5751b1,_0x88a838,_0x444e8c){return _0x5751b1(_0x88a838,_0x444e8c);}};let _0x1dae1a;if(!_0x584783){const _0x299646=new MutationObserver((_0x4515f5,_0x6a1b1a)=>{const _0x3c367e=a2_0x2f7f,_0x5d16dd={'XrOvM':function(_0x14a410,_0x5c9099,_0x37d179,_0x49787e,_0x595021){const _0x57b199=a2_0x2f7f;return _0x55f9aa[_0x57b199(0x281)](_0x14a410,_0x5c9099,_0x37d179,_0x49787e,_0x595021);}};_0x55f9aa[_0x3c367e(0x2e4)](clearTimeout,_0x1dae1a),_0x1dae1a=_0x55f9aa[_0x3c367e(0x2ff)](setTimeout,()=>{const _0x547b1c=_0x3c367e;_0x584783=_0x5d16dd[_0x547b1c(0x1e1)](getElementFromTemplate,_0x868f8c,_0x443210,_0x4132e8,_0x3857b6),_0x584783&&(_0x1325d2(_0x584783),_0x6a1b1a[_0x547b1c(0x167)]());},0x7d0);});_0x299646[_0x4d6e1b(0x32e)](document[_0x4d6e1b(0x280)],{'childList':!![],'subtree':!![]});}}function processOfferContainer(_0x343306,_0x4d68be){const _0x28f0ec=a2_0x210fff,_0x30bf7f={'iHVbM':function(_0x243c2e,_0x158429,_0x380618,_0x5befee){return _0x243c2e(_0x158429,_0x380618,_0x5befee);},'VtOhf':_0x28f0ec(0x246),'oUDrW':'id=','QFLyT':function(_0x51a689,_0x4fa583,_0x32b7cc,_0xbdfbd8){return _0x51a689(_0x4fa583,_0x32b7cc,_0xbdfbd8);},'YQKxX':_0x28f0ec(0x201),'IBxsF':'cashbackAmount','PJbjF':function(_0x11e89e,_0x7e4c92){return _0x11e89e||_0x7e4c92;},'StuQE':_0x28f0ec(0x293),'ofcsP':function(_0x2867dc,_0x53e0e0,_0x2784b5,_0x3ed1db){return _0x2867dc(_0x53e0e0,_0x2784b5,_0x3ed1db);},'KdUbA':function(_0x4a480a,_0x417908,_0x18ae4d){return _0x4a480a(_0x417908,_0x18ae4d);},'BkWdc':'offers','FEAuj':function(_0x3cfee3,_0x1a1588,_0x4bc20d,_0x4155f5,_0x198e1a){return _0x3cfee3(_0x1a1588,_0x4bc20d,_0x4155f5,_0x198e1a);},'aOuky':function(_0x1bc58c,_0xa6a5c){return _0x1bc58c!==_0xa6a5c;}};let _0x5c770b={'card':'','totalOffers':0x0,'offers':[]};if(_0x30bf7f[_0x28f0ec(0x28f)](!_0x343306,!_0x4d68be)||!bankTemplates[_0x4d68be])return _0x5c770b;const _0x3b48ed=getElementFromTemplate(_0x4d68be,_0x30bf7f[_0x28f0ec(0x368)],_0x343306);_0x3b48ed&&(_0x5c770b[_0x28f0ec(0x293)]=_0x3b48ed[_0x28f0ec(0x1ca)]['trim']());const _0x7ab8d9=_0x30bf7f[_0x28f0ec(0x2c2)](getElementFromTemplate,_0x4d68be,_0x28f0ec(0x3cc),_0x343306);if(_0x7ab8d9){const _0x1be342=_0x7ab8d9[_0x28f0ec(0x1ca)][_0x28f0ec(0x311)](),_0x5beaa3=_0x1be342[_0x28f0ec(0x372)](/\d+/);_0x5c770b[_0x28f0ec(0x318)]=_0x5beaa3?_0x30bf7f[_0x28f0ec(0x1ff)](parseInt,_0x5beaa3[0x0],0xa):0x0;}let _0x7651e5=[];if(bankTemplates[_0x4d68be][_0x30bf7f[_0x28f0ec(0x2d3)]]){const _0x1cc973=_0x30bf7f['FEAuj'](getElementFromTemplate,_0x4d68be,_0x28f0ec(0x391),_0x343306,!![]);_0x1cc973&&(_0x7651e5=Array[_0x28f0ec(0x373)](_0x1cc973)?_0x1cc973:_0x30bf7f[_0x28f0ec(0x2d9)](_0x1cc973[_0x28f0ec(0x1a6)],undefined)?Array[_0x28f0ec(0x190)](_0x1cc973):[_0x1cc973]);}return _0x7651e5[_0x28f0ec(0x3c3)]((_0x19a46a,_0x21b0ab)=>{const _0x173a19=_0x28f0ec,_0x5a29a5={'id':_0x30bf7f['iHVbM'](getElementFromTemplate,_0x4d68be,_0x30bf7f[_0x173a19(0x181)],_0x19a46a['outerHTML'])[_0x173a19(0x1ca)]['replace'](_0x30bf7f['oUDrW'],''),'description':'','logo':_0x30bf7f[_0x173a19(0x1e2)](getElementFromTemplate,_0x4d68be,'logo',_0x19a46a['innerHTML'])['textContent']['replace'](_0x173a19(0x268),''),'merchantName':_0x30bf7f[_0x173a19(0x27b)](getElementFromTemplate,_0x4d68be,_0x30bf7f['YQKxX'],_0x19a46a[_0x173a19(0x338)])[_0x173a19(0x1ca)],'cashbackAmount':_0x30bf7f[_0x173a19(0x27b)](getElementFromTemplate,_0x4d68be,_0x30bf7f[_0x173a19(0x1d6)],_0x19a46a[_0x173a19(0x338)])['textContent'][_0x173a19(0x2f3)](_0x173a19(0x3d1),'')};_0x5c770b['offers']['push'](_0x5a29a5);}),_0x5c770b;}function updateCollectedOffersCount(){const _0x31b9e8=a2_0x210fff,_0x19908d={'xoXMz':_0x31b9e8(0x390),'PhmPf':_0x31b9e8(0x22b)};typeof chrome!==_0x19908d['PhmPf']&&chrome['storage']&&chrome[_0x31b9e8(0x189)]['local']&&chrome[_0x31b9e8(0x189)]['local'][_0x31b9e8(0x19d)](null,function(_0x3683d3){const _0x1f08a2=_0x31b9e8;let _0x4f2786=0x0;for(const _0x2677d7 in _0x3683d3){if(_0x2677d7[_0x1f08a2(0x24c)](_0x19908d['xoXMz'])){const _0x19df1c=_0x3683d3[_0x2677d7];if(Array[_0x1f08a2(0x373)](_0x19df1c)){const _0xf3ebd1=_0x19df1c[_0x1f08a2(0x234)](_0x4e827b=>!_0x4e827b[_0x1f08a2(0x2e6)]&&getExpiryDate(_0x4e827b)>=new Date());_0x4f2786+=_0xf3ebd1[_0x1f08a2(0x1a6)];}}}});}typeof chrome!==a2_0x210fff(0x22b)&&chrome['runtime']&&(updateCollectedOffersCount(),chrome[a2_0x210fff(0x189)]&&chrome[a2_0x210fff(0x189)]['onChanged']&&chrome[a2_0x210fff(0x189)][a2_0x210fff(0x3ca)]['addListener'](function(_0x2ffaf7,_0x52a992){const _0x4c479d=a2_0x210fff,_0x5065f4={'nOgCT':function(_0x1183a7,_0x2a797e){return _0x1183a7===_0x2a797e;},'GQUHw':_0x4c479d(0x241),'RBlaV':function(_0x3b71c3){return _0x3b71c3();}};if(_0x5065f4[_0x4c479d(0x1ab)](_0x52a992,_0x5065f4[_0x4c479d(0x1bb)])){const _0x308a0c=Object[_0x4c479d(0x294)](_0x2ffaf7)[_0x4c479d(0x32c)](_0x547881=>_0x547881[_0x4c479d(0x24c)](_0x4c479d(0x390)));_0x308a0c&&_0x5065f4[_0x4c479d(0x2d8)](updateCollectedOffersCount);}}));function extractExpiryDateFromDescription(_0x49a950){const _0x437085=a2_0x210fff,_0x3b55bb={'tcxqY':_0x437085(0x37f),'BjVbo':_0x437085(0x295),'OzAQv':'february','jTjaC':_0x437085(0x23a),'FSKpI':_0x437085(0x22a),'xDhba':_0x437085(0x2bf),'kKeXA':'june','aFXLl':_0x437085(0x231),'efSnQ':'september','vLOla':_0x437085(0x2af),'XXTHy':'november','HQbFQ':_0x437085(0x15e),'eDXZs':function(_0xe921d0,_0xfe6219){return _0xe921d0<_0xfe6219;},'liEwD':function(_0xd6f447,_0x335a6b,_0x2276a0){return _0xd6f447(_0x335a6b,_0x2276a0);},'VhXON':function(_0x553ee4,_0xcf06de){return _0x553ee4+_0xcf06de;},'bKyJI':function(_0x43ca3e,_0x1fa81a){return _0x43ca3e+_0x1fa81a;},'sErIs':_0x437085(0x378),'HYpbF':function(_0x54f848,_0x1d9e56,_0x3b0406){return _0x54f848(_0x1d9e56,_0x3b0406);},'BdaxB':function(_0xe6d874,_0x375e3f,_0x2ea82e){return _0xe6d874(_0x375e3f,_0x2ea82e);},'pcRhp':function(_0x3f31b5,_0x398728){return _0x3f31b5+_0x398728;},'uAhFF':function(_0xc0d668,_0x57151f){return _0xc0d668>=_0x57151f;},'FRhtf':function(_0x34772c,_0x116a0c,_0x10c939){return _0x34772c(_0x116a0c,_0x10c939);},'ylZpF':function(_0x4dd296,_0x4a4fa6){return _0x4dd296+_0x4a4fa6;},'MJXin':function(_0x536727,_0x2922c2){return _0x536727<=_0x2922c2;},'Kcxue':function(_0x5cdfa6,_0x14b960){return _0x5cdfa6<=_0x14b960;}};if(!_0x49a950)return null;const _0x5b18c4=String(_0x49a950),_0x165c29=extractionPatterns[_0x437085(0x387)];for(const _0x1a2428 of _0x165c29){const _0x3f8aca=_0x5b18c4[_0x437085(0x372)](_0x1a2428);if(_0x3f8aca){let _0x533db6,_0x3b098c,_0x427cb8;if(_0x1a2428[_0x437085(0x335)]()[_0x437085(0x2fc)](_0x3b55bb['tcxqY'])){const _0x23fffb=[_0x3b55bb['BjVbo'],_0x3b55bb[_0x437085(0x2da)],_0x3b55bb[_0x437085(0x17b)],_0x3b55bb[_0x437085(0x1a7)],_0x3b55bb[_0x437085(0x312)],_0x3b55bb[_0x437085(0x319)],_0x3b55bb['aFXLl'],'august',_0x3b55bb[_0x437085(0x26f)],_0x3b55bb[_0x437085(0x1c3)],_0x3b55bb[_0x437085(0x3a7)],_0x3b55bb[_0x437085(0x27f)]];let _0x1281f6=0x0;for(let _0x57a2f0=0x1;_0x3b55bb[_0x437085(0x37a)](_0x57a2f0,_0x3f8aca['length']);_0x57a2f0++){if(_0x3f8aca[_0x57a2f0]&&_0x23fffb[_0x437085(0x32c)](_0x9b6eea=>_0x3f8aca[_0x57a2f0][_0x437085(0x360)]()[_0x437085(0x24c)](_0x9b6eea[_0x437085(0x307)](0x0,0x3)))){_0x1281f6=_0x57a2f0;break;}}const _0x3a97e2=_0x3f8aca[_0x1281f6][_0x437085(0x360)]();_0x3b098c=_0x23fffb[_0x437085(0x2e9)](_0x291700=>_0x3a97e2[_0x437085(0x24c)](_0x291700[_0x437085(0x307)](0x0,0x3)))+0x1,_0x427cb8=_0x3b55bb[_0x437085(0x1a3)](parseInt,_0x3f8aca[_0x3b55bb[_0x437085(0x3af)](_0x1281f6,0x1)],0xa),_0x533db6=_0x3b55bb['liEwD'](parseInt,_0x3f8aca[_0x3b55bb['bKyJI'](_0x1281f6,0x2)],0xa);}else{if(_0x1a2428[_0x437085(0x335)]()[_0x437085(0x2fc)](_0x3b55bb[_0x437085(0x1e8)])){let _0x5d6ba9=0x0;for(let _0x1629d1=0x1;_0x3b55bb[_0x437085(0x37a)](_0x1629d1,_0x3f8aca[_0x437085(0x1a6)]);_0x1629d1++){if(_0x3f8aca[_0x1629d1]&&/^\d{4}$/[_0x437085(0x2bb)](_0x3f8aca[_0x1629d1])){_0x5d6ba9=_0x1629d1;break;}}_0x533db6=_0x3b55bb[_0x437085(0x3d9)](parseInt,_0x3f8aca[_0x5d6ba9],0xa),_0x3b098c=_0x3b55bb[_0x437085(0x2d0)](parseInt,_0x3f8aca[_0x3b55bb['pcRhp'](_0x5d6ba9,0x1)],0xa),_0x427cb8=_0x3b55bb[_0x437085(0x2d0)](parseInt,_0x3f8aca[_0x5d6ba9+0x2],0xa);}else{let _0x313365=0x0;for(let _0x256ad7=0x1;_0x256ad7<_0x3f8aca['length'];_0x256ad7++){if(_0x3f8aca[_0x256ad7]&&/^\d{1,2}$/['test'](_0x3f8aca[_0x256ad7])&&_0x3b55bb[_0x437085(0x2e3)](_0x3b55bb[_0x437085(0x3d9)](parseInt,_0x3f8aca[_0x256ad7],0xa),0x1)&&parseInt(_0x3f8aca[_0x256ad7],0xa)<=0xc){_0x313365=_0x256ad7;break;}}_0x3b098c=_0x3b55bb[_0x437085(0x3b0)](parseInt,_0x3f8aca[_0x313365],0xa),_0x427cb8=parseInt(_0x3f8aca[_0x3b55bb[_0x437085(0x34a)](_0x313365,0x1)],0xa),_0x533db6=_0x3b55bb[_0x437085(0x2d0)](parseInt,_0x3f8aca[_0x3b55bb['ylZpF'](_0x313365,0x2)],0xa);}}_0x3b55bb[_0x437085(0x37a)](_0x533db6,0x64)&&(_0x533db6=_0x3b55bb['bKyJI'](0x7d0,_0x533db6));if(_0x3b098c>=0x1&&_0x3b55bb[_0x437085(0x2e1)](_0x3b098c,0xc)&&_0x3b55bb['uAhFF'](_0x427cb8,0x1)&&_0x3b55bb[_0x437085(0x386)](_0x427cb8,0x1f)&&_0x3b55bb[_0x437085(0x2e3)](_0x533db6,0x7d0))return _0x3b55bb[_0x437085(0x3af)](_0x3b55bb[_0x437085(0x220)](_0x3b55bb['VhXON'](_0x3b55bb[_0x437085(0x220)](_0x3b098c,'/'),_0x427cb8),'/'),_0x533db6);}}return null;}function extractMinSpendFromDescription(_0x1d76a7){const _0x66f04a=a2_0x210fff;if(!_0x1d76a7)return null;const _0x45f493=extractionPatterns[_0x66f04a(0x3a9)];for(const _0x2d1530 of _0x45f493){const _0x2d7f6a=_0x1d76a7[_0x66f04a(0x372)](_0x2d1530);if(_0x2d7f6a&&_0x2d7f6a[0x1]){const _0x48b67c=_0x2d7f6a[0x1]['trim']();if(/^\$\d+(?:,\d{3})*(?:\.\d+)?$/[_0x66f04a(0x2bb)](_0x48b67c))return _0x48b67c;}}return null;}function extractMaxCashbackFromDescription(_0x4f3bf8){const _0x30e9dd=a2_0x210fff;if(!_0x4f3bf8)return null;const _0x528679=extractionPatterns[_0x30e9dd(0x1dd)];for(const _0x4c9535 of _0x528679){const _0x2a88de=_0x4f3bf8[_0x30e9dd(0x372)](_0x4c9535);if(_0x2a88de&&_0x2a88de[0x1])return _0x2a88de[0x1][_0x30e9dd(0x311)]();}return null;}function formatExpiryDate(_0x52da7c){const _0x2dc1d9=a2_0x210fff,_0x3c8e93={'jNHBq':'No\x20expiration\x20date','aHEip':function(_0x515d6a,_0x44a56a){return _0x515d6a!==_0x44a56a;},'eogmp':function(_0x199005,_0x5336df){return _0x199005 instanceof _0x5336df;},'TBMbK':_0x2dc1d9(0x389),'zBXwd':'numeric','rWevg':_0x2dc1d9(0x289),'xEiwC':function(_0x292748,_0x20e204){return _0x292748<_0x20e204;},'RxFmc':_0x2dc1d9(0x15c)};let _0x3ba738=_0x3c8e93[_0x2dc1d9(0x194)];if(_0x3c8e93[_0x2dc1d9(0x350)](_0x52da7c,Infinity)&&_0x52da7c){const _0x11eb64=new Date(new Date()[_0x2dc1d9(0x22c)]()),_0x4de890=_0x3c8e93[_0x2dc1d9(0x2e7)](_0x52da7c,Date)?_0x52da7c:new Date(_0x52da7c),_0x55d69c=new Intl['DateTimeFormat'](_0x3c8e93['TBMbK'],{'year':_0x3c8e93['zBXwd'],'month':_0x3c8e93[_0x2dc1d9(0x27a)],'day':_0x2dc1d9(0x289)})[_0x2dc1d9(0x2df)](_0x4de890);_0x3c8e93['xEiwC'](_0x4de890,_0x11eb64)?_0x3ba738=_0x3c8e93[_0x2dc1d9(0x2d7)]:_0x3ba738=_0x2dc1d9(0x3a2)+_0x55d69c;}return _0x3ba738;}function getExpiryDate(_0x1e4d7f){const _0x3677ed=a2_0x210fff,_0x4df510={'xydxF':function(_0xe754a6,_0x52a66a){return _0xe754a6(_0x52a66a);}};if(!_0x1e4d7f[_0x3677ed(0x1d1)])return Infinity;const _0x533135=new Date(_0x1e4d7f['expiration']);if(_0x4df510[_0x3677ed(0x29b)](isNaN,_0x533135[_0x3677ed(0x363)]()))return Infinity;return _0x533135;}function getRedeemLink(_0x1e5395){const _0x382a42=a2_0x210fff,_0x211a49={'UNHgN':_0x382a42(0x2a9),'wLtEm':_0x382a42(0x327),'IacCw':function(_0x1b152d,_0x443644){return _0x1b152d>_0x443644;},'CXtrV':_0x382a42(0x170)};if(_0x1e5395[_0x382a42(0x327)])return _0x1e5395['redeemLink'];if(!_0x1e5395[_0x382a42(0x3db)])return null;const _0x505f31=document[_0x382a42(0x305)](_0x211a49[_0x382a42(0x385)]);_0x505f31[_0x382a42(0x338)]=_0x1e5395['description'];const _0x35c4a9=getElementFromTemplate(_0x1e5395['bank'],_0x211a49[_0x382a42(0x291)],_0x1e5395[_0x382a42(0x3db)])?.[_0x382a42(0x1ca)]['replace'](/href/gi,'')[_0x382a42(0x311)]()||'';if(_0x35c4a9)return _0x35c4a9;const _0x2a0582=_0x505f31[_0x382a42(0x1ca)][_0x382a42(0x372)](extractionPatterns[_0x382a42(0x1ae)]);if(_0x2a0582){const _0x540c6e=_0x505f31[_0x382a42(0x1a4)]('a');if(_0x211a49['IacCw'](_0x540c6e[_0x382a42(0x1a6)],0x0))return _0x540c6e[0x0][_0x382a42(0x1e9)];const _0x393a65=_0x505f31['textContent'][_0x382a42(0x372)](extractionPatterns['redeemLinkText']);if(_0x393a65&&_0x393a65[0x2]){let _0x27826e=_0x393a65[0x2][_0x382a42(0x2f3)](/\.$/,'');return _0x27826e[_0x382a42(0x24c)](_0x211a49['CXtrV'])?_0x27826e:_0x382a42(0x262)+_0x27826e;}return null;}if(_0x1e5395[_0x382a42(0x201)]){if(merchantFixMap[_0x1e5395[_0x382a42(0x201)]])return _0x382a42(0x207)+merchantFixMap[_0x1e5395[_0x382a42(0x201)]];}return null;}function assessCashbackEase(_0x4449f2){const _0x24a94a=a2_0x210fff,_0x50532a={'dtvbf':function(_0x28c9f5,_0x245276){return _0x28c9f5!==_0x245276;},'xcWaS':function(_0x1492f8,_0x32e9b5){return _0x1492f8(_0x32e9b5);},'hNEjn':function(_0xe55c48,_0x1503d9){return _0xe55c48>_0x1503d9;},'bjQWE':_0x24a94a(0x2a9),'rHRUq':function(_0x1babd4,_0x573fa9){return _0x1babd4>=_0x573fa9;},'ajpXl':_0x24a94a(0x212),'zUqte':function(_0xf00535,_0xddc771){return _0xf00535>=_0xddc771;},'ELrWS':'medium','LbTxs':_0x24a94a(0x235)};let _0x14b6a1=0xa,_0x854148=[],_0xea53c2=[];if(!_0x4449f2[_0x24a94a(0x3db)])return{'ease':'unknown','score':0x5,'reasons':['No\x20description\x20available'],'terms':[]};const _0x1222c5=document['createElement'](_0x50532a[_0x24a94a(0x24f)]);_0x1222c5[_0x24a94a(0x338)]=_0x24a94a(0x342)+_0x4449f2[_0x24a94a(0x3df)]+_0x24a94a(0x355)+_0x4449f2[_0x24a94a(0x3db)];const _0x420285=_0x1222c5['textContent'][_0x24a94a(0x360)](),_0x199060=extractionPatterns[_0x24a94a(0x37e)];_0x199060[_0x24a94a(0x3c3)](_0x3e840a=>{const _0x2c480a=_0x24a94a;if(_0x3e840a['checkFunction']){const _0x1603b0=_0x3e840a[_0x2c480a(0x29c)](_0x420285);_0x1603b0[_0x2c480a(0x372)]&&(_0x14b6a1-=_0x1603b0['penalty'],_0x854148[_0x2c480a(0x18e)](_0x1603b0[_0x2c480a(0x205)]),_0xea53c2[_0x2c480a(0x18e)](_0x1603b0[_0x2c480a(0x1c2)]));}else{if(_0x3e840a[_0x2c480a(0x19a)]){const _0x29d99d=_0x420285[_0x2c480a(0x372)](_0x3e840a['pattern']);if(_0x29d99d){if(_0x50532a[_0x2c480a(0x379)](_0x3e840a[_0x2c480a(0x2cc)],undefined)&&_0x29d99d[0x1]){const _0x10d819=_0x50532a[_0x2c480a(0x2bc)](parseFloat,_0x29d99d[0x1][_0x2c480a(0x2f3)]('$',''));_0x50532a[_0x2c480a(0x1b6)](_0x10d819,_0x3e840a[_0x2c480a(0x2cc)])&&(_0x14b6a1-=_0x3e840a[_0x2c480a(0x3bc)],_0x854148['push'](_0x3e840a[_0x2c480a(0x205)]),_0xea53c2['push'](_0x3e840a['term']));}else _0x14b6a1-=_0x3e840a['penalty'],_0x854148[_0x2c480a(0x18e)](_0x3e840a[_0x2c480a(0x205)]),_0xea53c2[_0x2c480a(0x18e)](_0x3e840a[_0x2c480a(0x1c2)]);}}}});let _0x1a5ed9;if(_0x50532a[_0x24a94a(0x3a8)](_0x14b6a1,0x8))_0x1a5ed9=_0x50532a[_0x24a94a(0x226)];else _0x50532a[_0x24a94a(0x185)](_0x14b6a1,0x6)?_0x1a5ed9=_0x50532a[_0x24a94a(0x2e2)]:_0x1a5ed9=_0x50532a[_0x24a94a(0x3c2)];return{'ease':_0x1a5ed9,'score':_0x14b6a1,'reasons':_0x854148,'terms':_0xea53c2};}function getRedeemLocation(_0x93e7e6){const _0x2b7a1=a2_0x210fff;if(!_0x93e7e6['description'])return null;const _0x1f4ff0=document[_0x2b7a1(0x305)](_0x2b7a1(0x2a9));_0x1f4ff0[_0x2b7a1(0x338)]=_0x93e7e6['description'];let _0x1579da=_0x1f4ff0[_0x2b7a1(0x338)][_0x2b7a1(0x2f3)](/<br\s*\/?>/gi,',\x20')[_0x2b7a1(0x2f3)](/<\/p>/gi,'\x0a')['replace'](/<\/div>/gi,'\x0a')[_0x2b7a1(0x2f3)](/<\/span>/gi,'\x0a')[_0x2b7a1(0x2f3)](/<p>/gi,'')[_0x2b7a1(0x2f3)](/<div>/gi,'')[_0x2b7a1(0x2f3)](/<span>/gi,'')[_0x2b7a1(0x2f3)](/<a\w*>/gi,'\x0a')['replace'](/<\/a>/gi,'\x0a')['replace'](/,/gi,',\x20');_0x1f4ff0[_0x2b7a1(0x338)]=_0x1579da;let _0x2d3b4b=_0x1f4ff0['textContent']||_0x93e7e6[_0x2b7a1(0x3db)];const _0x2e0aca=extractionPatterns[_0x2b7a1(0x19c)];for(const _0xc5b283 of _0x2e0aca){const _0x45615b=_0x2d3b4b['match'](_0xc5b283);if(_0x45615b&&_0x45615b[0x0])return _0x45615b[0x0][_0x2b7a1(0x2f3)](/[\r\n]+/g,'\x20')[_0x2b7a1(0x2f3)](/\s+/g,'\x20')['replace'](/\s*,\s*/g,',\x20')['trim']();}return null;}function estimateValue(_0x23542c,_0x1d3fac=null){const _0x201162=a2_0x210fff,_0x52ba9a={'rINbd':function(_0x407f2e,_0x416f30){return _0x407f2e(_0x416f30);},'xExlS':function(_0xdfd263,_0x280ce5){return _0xdfd263===_0x280ce5;},'RtWEe':function(_0x10cb0b,_0x2429ac){return _0x10cb0b(_0x2429ac);},'MFbDw':function(_0x1a29e8,_0x410beb){return _0x1a29e8(_0x410beb);},'tFedF':function(_0x4d40f4,_0x3b0ae3){return _0x4d40f4/_0x3b0ae3;},'kkaMa':function(_0x47f080,_0x4c08e3){return _0x47f080>_0x4c08e3;},'TgPVQ':function(_0x55a47b,_0x299a55,_0x3a8975){return _0x55a47b(_0x299a55,_0x3a8975);},'lxOpn':function(_0x37b195,_0x2adc05){return _0x37b195(_0x2adc05);},'zdFBj':_0x201162(0x1f3)};return new Promise(_0x330512=>{const _0x524f1c=_0x201162,_0x506417={'HfhBX':function(_0x28eaae,_0x4cbbff){const _0x1fdfeb=a2_0x2f7f;return _0x52ba9a[_0x1fdfeb(0x362)](_0x28eaae,_0x4cbbff);},'kFuwY':function(_0xa22aa7,_0x4f50ef){return _0x52ba9a['xExlS'](_0xa22aa7,_0x4f50ef);},'jfsMo':function(_0x5dd830,_0x322195){const _0x3f3f02=a2_0x2f7f;return _0x52ba9a[_0x3f3f02(0x336)](_0x5dd830,_0x322195);},'DRDTJ':function(_0x10bf35,_0x50944d){const _0x5b6c38=a2_0x2f7f;return _0x52ba9a[_0x5b6c38(0x362)](_0x10bf35,_0x50944d);},'uaCvM':function(_0xf474cf,_0x37b755){return _0x52ba9a['MFbDw'](_0xf474cf,_0x37b755);},'NoSRw':function(_0x52279a,_0xb4b7e5){const _0x39e920=a2_0x2f7f;return _0x52ba9a[_0x39e920(0x362)](_0x52279a,_0xb4b7e5);},'JolXn':function(_0x28aa91,_0x4107b7){return _0x28aa91>_0x4107b7;},'gTgfZ':function(_0x3d5ccf,_0x3ff89f){const _0x23da12=a2_0x2f7f;return _0x52ba9a[_0x23da12(0x362)](_0x3d5ccf,_0x3ff89f);},'AnIkA':function(_0x339b37,_0x114af4){return _0x52ba9a['tFedF'](_0x339b37,_0x114af4);},'DtMOO':function(_0x56f50c,_0x5ce30a){const _0x4d85a3=a2_0x2f7f;return _0x52ba9a[_0x4d85a3(0x31a)](_0x56f50c,_0x5ce30a);},'MLbjL':function(_0x9a561a,_0x53436a,_0x38ba99){const _0xcd0a3a=a2_0x2f7f;return _0x52ba9a[_0xcd0a3a(0x324)](_0x9a561a,_0x53436a,_0x38ba99);},'xrsjB':function(_0x52d790,_0x581c15){return _0x52d790(_0x581c15);}};if(!_0x23542c){_0x52ba9a[_0x524f1c(0x257)](_0x330512,0x0);return;}const _0xa3d9d2=_0x23542c[_0x524f1c(0x353)]||_0x52ba9a['zdFBj'];chrome['storage'][_0x524f1c(0x241)][_0x524f1c(0x19d)](_0x524f1c(0x264),_0x468eb0=>{const _0x5ad142=_0x524f1c;let _0x456c82=_0x506417[_0x5ad142(0x2a4)](parseFloat,_0x1d3fac)||0x0;_0x506417[_0x5ad142(0x2d6)](_0x456c82,0x0)&&(_0x468eb0[_0x5ad142(0x264)]&&_0x468eb0[_0x5ad142(0x264)][_0x5ad142(0x23c)]&&_0x468eb0[_0x5ad142(0x264)][_0x5ad142(0x23c)][_0xa3d9d2]?_0x456c82=_0x468eb0[_0x5ad142(0x264)]['avgSpendByCategory'][_0xa3d9d2]:_0x456c82=avgSpendByCategory[_0xa3d9d2]||0x0,_0x456c82=_0x506417[_0x5ad142(0x290)](parseFloat,_0x456c82));if(!_0x23542c[_0x5ad142(0x3df)]){_0x506417[_0x5ad142(0x290)](_0x330512,0x0);return;}_0x506417[_0x5ad142(0x2a4)](parseCashbackAmount,_0x23542c);let _0x9c7161=_0x23542c[_0x5ad142(0x3a9)]||extractMinSpendFromDescription(_0x23542c[_0x5ad142(0x3db)])||'',_0x3cf8b8=_0x23542c[_0x5ad142(0x1dd)]||_0x506417[_0x5ad142(0x315)](extractMaxCashbackFromDescription,_0x23542c[_0x5ad142(0x3db)])||'';_0x9c7161=_0x506417[_0x5ad142(0x2f5)](parseFloat,_0x23542c['minSpend']?.[_0x5ad142(0x2f3)](/[$,]/g,''))||0x0,_0x3cf8b8=_0x506417[_0x5ad142(0x303)](parseFloat,_0x23542c[_0x5ad142(0x1dd)]?.[_0x5ad142(0x2f3)](/[$,]/g,''))||Infinity;if(_0x506417['JolXn'](_0x9c7161,_0x456c82)&&_0x9c7161>0x0){_0x506417[_0x5ad142(0x1d5)](_0x330512,0x0);return;}let _0xf6cee7=0x0;if(_0x23542c['cashbackPercent']){const _0x5c2df9=_0x506417['AnIkA'](_0x506417['NoSRw'](parseFloat,_0x23542c[_0x5ad142(0x310)]['replace']('%','')),0x64);_0xf6cee7=_0x456c82*_0x5c2df9;}else _0x23542c[_0x5ad142(0x180)]&&(_0xf6cee7=_0x506417[_0x5ad142(0x2a4)](parseFloat,_0x23542c[_0x5ad142(0x180)][_0x5ad142(0x2f3)](/[$,]/g,'')));_0x506417[_0x5ad142(0x344)](_0xf6cee7,_0x3cf8b8)&&(_0xf6cee7=_0x3cf8b8);if(_0x23542c[_0x5ad142(0x2ca)]){const _0xd87a94=_0x506417[_0x5ad142(0x398)](parseInt,_0x23542c[_0x5ad142(0x2ca)],0xa);!_0x506417[_0x5ad142(0x183)](isNaN,_0xd87a94)&&_0xd87a94>0x0&&(_0xf6cee7*=_0xd87a94);}_0x506417['NoSRw'](_0x330512,_0xf6cee7);});});}function extractType(_0x23db6b){const _0x4c7319=a2_0x210fff,_0x487ce8={'rdUOs':'div','EBtSi':'discount','AJgJT':'points'};if(!_0x23db6b[_0x4c7319(0x3db)])return _0x4c7319(0x3a3);const _0x345791=document['createElement'](_0x487ce8[_0x4c7319(0x2de)]);_0x345791[_0x4c7319(0x338)]=_0x23db6b[_0x4c7319(0x3db)];const _0x26ecf5=_0x345791['textContent']['toLowerCase'](),_0x4da9b5=_0x26ecf5['split'](/[.!?]+\s+/),_0x5c2e47=extractionPatterns['discountPattern'];for(const _0x2ffab1 of _0x4da9b5){if(_0x5c2e47[_0x4c7319(0x2bb)](_0x2ffab1))return _0x487ce8[_0x4c7319(0x188)];}if(_0x23db6b['cashbackPoints'])return _0x487ce8[_0x4c7319(0x383)];return _0x4c7319(0x3a3);}async function getMerchantWebsite(_0xf25619){const _0x125099=a2_0x210fff,_0x136e0a={'enKVd':function(_0x3f64c1,_0x395c70){return _0x3f64c1(_0x395c70);},'kzNxJ':function(_0x4b85a0,_0x1659e3,_0x51c4db){return _0x4b85a0(_0x1659e3,_0x51c4db);},'CcCtm':_0x125099(0x18a)};if(!_0xf25619[_0x125099(0x201)])return null;const _0x4cadbc='\x0a\x20\x20\x20\x20\x20\x20SELECT\x20?website\x20WHERE\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20?company\x20rdfs:label\x20\x22'+_0xf25619[_0x125099(0x201)][_0x125099(0x311)]()+_0x125099(0x1dc),_0x30bd7a=_0x125099(0x3de)+_0x136e0a[_0x125099(0x1a1)](encodeURIComponent,_0x4cadbc),_0x23467c=await _0x136e0a['kzNxJ'](fetch,_0x30bd7a,{'headers':{'Accept':_0x136e0a[_0x125099(0x176)]}}),_0x9fe5db=await _0x23467c[_0x125099(0x2e8)]();return _0x9fe5db?.[_0x125099(0x2b8)]?.[_0x125099(0x3b7)]?.[0x0]?.['website']?.[_0x125099(0x26c)]||null;}function a2_0x2785(){const _0x2565ea=['innerHTML','button[data-cy=\x22base_offer_card__auto_save\x22]','apparel','//span[contains(text(),\x20\x22offer\x20terms\x22)]','singleNodeValue','hm.com','security','//div[@class=\x22offerTileGridItemContainer\x22\x20or\x20@role=\x22listitem\x22]','//div[@id=\x22company_product_desc_ada\x22]//img/@alt','cookware','<p>','verbs','DtMOO','//div[@data-testid=\x22simple_switcher_selected_option_display\x22]/@aria-label','legal','text','//span[@class=\x22deal-offer-percent\x22]/text()','Earn\x20','bKyJI','travel','domestic','section','online\x20safety','chef','aHEip','water\x20bottle','fragrance','category','[data-id=\x22{offerId}\x22]','</p>','news','Disclaimer:\x20We\x20are\x20not\x20affiliated\x20with\x20any\x20banks\x20or\x20offer\x20providers.\x20This\x20tool\x20helps\x20you\x20discover\x20and\x20manage\x20offers\x20already\x20available\x20in\x20your\x20own\x20accounts.\x20All\x20cashback\x20and\x20rewards\x20are\x20processed\x20directly\x20by\x20the\x20banks\x20or\x20merchants,\x20according\x20to\x20their\x20program\x20terms\x20and\x20conditions.','banking','charging\x20station','laptop','https://forms.gle/GDb9PSxhYu25Menk7','deli','maintenance','panda\x20express','backpacking','toLowerCase','museum','rINbd','getTime','//div[contains(@class,\x20\x22standard-tile\x22)]/div[2]/text()','tourism','motel','transmission','StuQE','//div[@data-cy=\x22tertiary_card_list__grid\x22]','grill','takeout','SWEPW','noodle','biriyani','retail','airbnb','festival','match','isArray','electric\x20vehicle','Earn\x20$','div[id=\x22{offerId}\x22]\x20button[data-test-id=\x22button-row\x22]','poultry','\x5cd{4})[\x5c/\x5c-]','dtvbf','eDXZs','extractionPatterns','meditation','decor','difficultyPatterns','Jan(?:uary)?|Feb','AFrDH','university','getElementById','AJgJT','accommodation','UNHgN','Kcxue','expiryDate','xpath','en-US','https://global.americanexpress.com/offers','JqerS','//button[contains(text(),\x20\x22Activate\x20In-Store\x22)]','SnCwc','//p[@data-testid=\x22available-cashback\x22]/text()','kVsCg','collected_offers_','offers','walgreens.com','//img[@data-cy=\x22logo__image\x22]/@src','garage','xuWle','PxXoM','oil\x20change','MLbjL','//div[@class=\x22col3_dealinfo\x22]//a/@href','yoga','bus','attraction','Online\x20only','//a[@class=\x22shopping-view-pevsdf-button_base-text_button_lg-btn_full_width\x22\x20or\x20@class=\x22saved-offers-pevsdf-button_base-text_button_lg-btn_full_width\x22]/@href','food','clothing','repair','Expires\x20on\x20','cashback','https://i.capitalone.com/G7Htl2QMG','bedbathandbeyond.com','music','XXTHy','rHRUq','minSpend','norton.com','advertising','ticketsmarter','serums','theater','VhXON','FRhtf','//span[@id=\x22singleAcnt\x22]/text()','electronic','lSLwE','text/html','entries','skincare','bindings','electric','contractor','neutral','nodeType','penalty','alternative\x20medicine','health','catering','body\x20shop','development','LbTxs','forEach','https://www.referyourchasecard.com/19s/4172W0IZKK','fIWcR','cinema','//button[contains(@class,\x20\x22offer-cta-v\x22)]/a/@href','chicken','optometrist','onChanged','breakfast','totalOfferCount','Must\x20use\x20specific\x20link','RXDGl','//div[@role=\x22button\x22]/@aria-label','tablet','\x20cash\x20back','performance','all-inclusive','tool','dentist','furniture','YxucM','hotel','HYpbF','cafe','description','//mds-select[@id=\x22select-credit-card-account\x22]/mds-select-option[@selected=\x22true\x22]/@label','deodorant','https://query.wikidata.org/sparql?format=json&query=','cashbackAmount','lunch','natural','book','cleaning','nouns','lego.com','Expired','massage','december','game','2927940cDhAjN','barbecue','nightlife','masala','dealership','evaluate','beach','disconnect','array','meat','frozen\x20food','weight','appliance','trainer','moisturizers','class','http','(//span[contains(@class,\x20\x22semanticColorTextRegular\x22)])[2]/text()','//section[@class=\x22offers-list\x22]','//div[@id=\x22bamdAvailableDeals\x22\x20or\x20@id=\x22bamdWidgetWrapper\x22]','paramount+','https://secure.chase.com/web/auth/dashboard#/dashboard/merchantOffers/offer-hub','CcCtm','mms.com','excursion','engine','pharmacy','jTjaC','vitality\x20bowls','tire','ORDERED_NODE_SNAPSHOT_TYPE','div.standard-tile','cashbackFixed','VtOhf','buffet','xrsjB','betterhelp','zUqte','tour','//div[contains(@class,\x20\x22standard-tile\x22)]','EBtSi','storage','application/sparql-results+json','jmwYt','Single\x20redemption\x20only','//div[contains(@class,\x20\x22standard-tile\x22)]//img/@src','push','shirt','from','airfare','//div[@aria-label=\x22offer\x20info\x22]/@id','//section[@data-cy=\x22tertiary_offer_card\x22]','jNHBq','skin','Spend\x20$','101017iVzOok','//div[contains(@class,\x20\x22offer-info\x22)]/p[2]/text()','Missing\x20your\x20favorite\x20cashback\x20providers?\x20Click\x20below\x20and\x20help\x20us\x20improve!','pattern','wrOfs','addressPatterns','get','364FybXrf','resort','//div[@data-en=\x22available-deals\x22]','enKVd','map','liEwD','querySelectorAll','training','length','FSKpI','bank','vehicle','hydration','nOgCT','clientInfo','lodging','redeemLinkHref','isNegative','fish','qnGef','JwlSn','Online\x20purchases\x20only','shoe','cashbackPoints','hNEjn','Requires\x20promo\x20code','diesel','bakery','gut','GQUHw','homework',',\x20up\x20to\x20','https://secure.bankofamerica.com/customer-deals/','//div[@aria-describedby=\x22company_product_desc_ada\x22]','hardware','movie','term','vLOla','streaming','ticket','wardrobe','lego','bestbuy.com',',\x20up\x20to\x20$','textContent','produce','Pewym','dental','cell','meet\x20fresh','mailchimp.com','expiration','Requires\x20SMS','pub','ramen','gTgfZ','IBxsF','bdHbU','hostel','getElementsByClassName','string','flight','\x22@en.\x0a\x20\x20\x20\x20\x20\x20\x20\x20?company\x20wdt:P856\x20?website.\x0a\x20\x20\x20\x20\x20\x20}\x20LIMIT\x201\x0a\x20\x20\x20\x20','maxCashback','bra','hair','part','XrOvM','iHVbM','//article[@data-cy=\x22responsive_modal_dialog\x22]','cookie','research','concert','hospital','sErIs','href','event','underwear','EHOhb','categoryKeywords','cruise','type','bill','1070025YwcnAl','frankandeileen.com','Other','EEzXj','pet','//a[@id=\x22cardlytics-link-tag-0\x22]/@href','button[data-testid=\x22deals-view-all\x22]','IoFDk','div[id=\x22{offerId}\x22]\x20button.offer-cta-v','(//span[contains(@class,\x20\x22semanticColorTextRegular\x22)])[1]/text()','wellness','XteHr','vegetable','probiotic','KdUbA','https://www.americanexpress.com/content/dam/amex/us/merchant/supplies-uplift/product/images/img-WEBLOGO1-01.jpg','merchantName','60OgfEXm','shuttle','rehabilitation','reason','everand','https://www.','design','gym','eye\x20exam','booking','outlet','amusement','reservation','moving','medical','golf','easy','auto','48DVzbSD','counseling','//div[@data-locator-id=\x22merchantOffer\x22]','lpmvt','In-store\x20only','\x20or\x20more,\x20','watch','cable','//div[@data-testid=\x22DealDetailsTerms\x22]','//div[@class=\x22shopping-view-3zwvz-text_body-line_clamp_2\x22\x20or\x20@class=\x22saved-offers-3zwvz-text_body-line_clamp_2\x22]/text()','beauty','tagName','pcRhp','water','childNodes','bbq','rental\x20car','vacation\x20rental','ajpXl','landscaping','//div[@class=\x22col3_dealinfo\x22]','vacation','april','undefined','toDateString','metabolism','physical\x20therapy','rental','zoo','july','natural\x20food','//span[@data-testid=\x22expirationDate\x22]/text()','filter','hard','toSingular','oWEPv','//img[1]/@src','parseFromString','march','discovery+','avgSpendByCategory','barnesandnoble.com','\x20point','phone','1851507arXnGx','local','course','oZWCL','ufhVw','starbucks','offerId','kitchenware','adventure','fitness','pizza','set','startsWith','Promo\x20code\x20required','//div[@class=\x22shopping-view-dvg3v2-text_caption-line_clamp_2\x22\x20or\x20@class=\x22saved-offers-dvg3v2-text_caption-line_clamp_2\x22]/text()','bjQWE','butcher','IPzua','//div/@data-id','cosmetic','assign','selectorAll','installation','lxOpn','patagonia','immunity','New\x20customers\x20only','boutique','endsWith','exercise','querySelector','//div[contains(@class,\x20\x22offers\x22)]','shop','organic','https://','cleaning\x20product','preferences','//p[@data-testid=\x22daysLeft\x22]/text()','education','therapy','src=','gallery','395AcivfP','//section[contains(@class,\x20\x22offer-details\x22)]','value','lens','object','efSnQ','earned','merchantFixMap','bulk\x20food','xXjQF','sentences','doctor','9988600QLBpmM','aquarium','Select\x20locations\x20only','bed\x20and\x20breakfast','rWevg','QFLyT','seafood','podcast','mental\x20health','HQbFQ','body','hybIU','eyeware','//p[contains(@class,\x20\x22deal-exp-date\x22)]/text()','t-mobile.com','printing','home\x20good','cantina','snapshotItem','2-digit','rbltH','In-store\x20purchases\x20only','www.att.com/plans/wireless','sandwich','superfood','PJbjF','jfsMo','wLtEm','wMaAQ','card','keys','january','SQQPL','wear','gear','water\x20park','bike','xydxF','checkFunction','rose','restaurant','snack','mechanic','XLIhF','toy','FIRST_ORDERED_NODE_TYPE','HfhBX','sleep','//div[@data-cy=\x22offer-detail-text-and-disclaimer-link-container\x22]','fabric','XXpZt','div','att.com','//img[@data-testid=\x22logo\x22]/@src','ice\x20cream','kKkiy','international','october','handbag','clothes','optical','quickbooks','club','parse','clinic','provider','results','https://capitaloneoffers.com/c1-offers?_data=routes/c1-offers._index&limit=500&offset=','sort','test','xcWaS','treadmill','walmart.com','may','bowling','negative','ofcsP','sushi','normalize','tea','entertainment','gas','target.com','fragrancenet.com','maxRedemptions','kohls.com','threshold','supplement','masterclass','brewery','BdaxB','https://capitaloneoffers.com/c1-offers/','organizing\x20product','BkWdc','car\x20wash','SMS\x20registration\x20required','kFuwY','RxFmc','RBlaV','aOuky','OzAQv','bar','exhibit','newsletter','rdUOs','format','snapshotLength','MJXin','ELrWS','uAhFF','xAuiK','//div[@id=\x22app-container\x22]','redeemed','eogmp','json','findIndex','makeup','offercontainer_processed_','department\x20store','fruit','lounge','config','mall','play','staples.com','replace','cashbackPercentage','uaCvM','No\x20cashback','button[data-cy=\x22tertiary_offer_card__tile\x22]','GRHAO','train','med','automotive','includes','wine','consulting','vjLnA','utility','cloud','holistic','NoSRw','farmer\x20market','createElement','salon','substring','postal','fuel','coverage','//div[@id=\x22company_product_desc_ada\x22]//img/@src','visible.com','canned\x20good','cleanser','electrolyte','cashbackPercent','trim','xDhba','dinner','zoom','DRDTJ','garment','Eligible\x20products\x20only','totalOffers','kKeXA','kkaMa','tax','selector','insurance','cuisine','food\x20store','audiobook','wireless','bankTemplates','19011DubKmx','TgPVQ','multivitamin','tutor','redeemLink','button[data-testid=\x22modal-lightbox-close-icon\x22]','div[data-testid=\x22simple_switcher_selected_option_display\x22]','truck','gift','some','treatment','observe','theme\x20park','cloth','TEXT_NODE','dairy','YLlml','Rvvgy','toString','RtWEe','out'];a2_0x2785=function(){return _0x2565ea;};return a2_0x2785();}function isUrlString(_0x5a0903){if(!_0x5a0903)return![];const _0x20bb85=/^(?:https?:\/\/)?[a-zA-Z0-9][a-zA-Z0-9-]{0,63}[a-zA-Z0-9](?:\.[a-zA-Z]{2,63})+(\/[^\s]*)?$/;return _0x20bb85['test'](_0x5a0903);}function recordAttemptedRedeem(_0x4eb8c8){const _0x2cf916=a2_0x210fff,_0x431423={'nuBbb':function(_0x4698f9,_0x1f3103){return _0x4698f9===_0x1f3103;},'JXfJM':'offercontainer_processed_'};chrome['storage'][_0x2cf916(0x241)][_0x2cf916(0x19d)](null,function(_0x2d5c16){const _0x110afe=_0x2cf916;for(const _0x17e360 in _0x2d5c16){if(_0x17e360[_0x110afe(0x24c)](_0x431423['JXfJM'])){const _0x174608=_0x2d5c16[_0x17e360];if(_0x174608&&_0x174608[_0x110afe(0x391)]){const _0x159f40=_0x174608[_0x110afe(0x391)][_0x110afe(0x1a2)](_0x3fade0=>{const _0x3e6b2b=_0x110afe;if(_0x431423['nuBbb'](_0x3fade0['id'],_0x4eb8c8['id'])&&_0x431423['nuBbb'](_0x3fade0[_0x3e6b2b(0x1a8)],_0x4eb8c8[_0x3e6b2b(0x1a8)])&&_0x3fade0[_0x3e6b2b(0x293)]===_0x4eb8c8[_0x3e6b2b(0x293)])return{..._0x3fade0,'attemptedRedeem':!![]};return _0x3fade0;});chrome[_0x110afe(0x189)][_0x110afe(0x241)][_0x110afe(0x24b)]({[_0x17e360]:{..._0x174608,'offers':_0x159f40}},function(){});}}}});}function a2_0x2f7f(_0x3e18fb,_0x5c514e){const _0x278542=a2_0x2785();return a2_0x2f7f=function(_0x2f7f3d,_0x3e2724){_0x2f7f3d=_0x2f7f3d-0x158;let _0x43a155=_0x278542[_0x2f7f3d];return _0x43a155;},a2_0x2f7f(_0x3e18fb,_0x5c514e);}function getTotalEarned(){const _0x508c73=a2_0x210fff,_0x24c3d6={'IoFDk':function(_0x3eec2f,_0x467def){return _0x3eec2f(_0x467def);},'kKkiy':_0x508c73(0x2eb),'oWEPv':function(_0x59e811,_0x614503){return _0x59e811!==_0x614503;},'GRHAO':'undefined','ufhVw':function(_0x2f14ee,_0x42acef){return _0x2f14ee(_0x42acef);},'KblCf':'Chrome\x20storage\x20is\x20not\x20available.'};return new Promise((_0x49bfda,_0x40f497)=>{const _0x47f6de=_0x508c73,_0x3e4c15={'RXDGl':function(_0x1f58c5,_0x58f5ff){const _0x2cae7d=a2_0x2f7f;return _0x24c3d6[_0x2cae7d(0x1f8)](_0x1f58c5,_0x58f5ff);},'bTnQT':_0x24c3d6[_0x47f6de(0x2ad)]};_0x24c3d6[_0x47f6de(0x237)](typeof chrome,_0x24c3d6[_0x47f6de(0x2f8)])&&chrome['storage']&&chrome[_0x47f6de(0x189)][_0x47f6de(0x241)]?chrome[_0x47f6de(0x189)][_0x47f6de(0x241)][_0x47f6de(0x19d)](null,function(_0x54a384){const _0x20f67b=_0x47f6de;let _0x512599=0x0;for(const _0x551618 in _0x54a384){if(_0x551618[_0x20f67b(0x24c)](_0x3e4c15['bTnQT'])){const _0x842c29=_0x54a384[_0x551618];_0x842c29&&_0x842c29['offers']&&_0x842c29['offers'][_0x20f67b(0x3c3)](_0x24244f=>{const _0x2d4fe9=_0x20f67b;_0x24244f[_0x2d4fe9(0x2e6)]&&_0x24244f[_0x2d4fe9(0x270)]&&(_0x512599+=_0x3e4c15['RXDGl'](parseFloat,_0x24244f[_0x2d4fe9(0x270)])||0x0);});}}_0x3e4c15[_0x20f67b(0x3ce)](_0x49bfda,_0x512599);}):_0x24c3d6[_0x47f6de(0x244)](_0x40f497,new Error(_0x24c3d6['KblCf']));});}function parseCashbackAmount(_0x28b4ce){const _0x2cc5c0=a2_0x210fff,_0x793585={'XXpZt':function(_0x390bb3,_0x4322bf,_0x461c1d){return _0x390bb3(_0x4322bf,_0x461c1d);}},_0x2dc5b5=_0x28b4ce[_0x2cc5c0(0x3df)][_0x2cc5c0(0x311)](),_0xa33a29=_0x2dc5b5[_0x2cc5c0(0x372)](extractionPatterns[_0x2cc5c0(0x2ca)]);if(_0xa33a29&&_0xa33a29[0x1]){const _0x2dea33=_0x793585[_0x2cc5c0(0x2a8)](parseInt,_0xa33a29[0x1],0xa);!isNaN(_0x2dea33)&&_0x2dea33>0x0&&(_0x28b4ce[_0x2cc5c0(0x2ca)]=_0x2dea33);}if(_0x2dc5b5['includes']('%')){const _0x1e0b57=_0x2dc5b5['match'](extractionPatterns[_0x2cc5c0(0x2f4)]);_0x1e0b57&&_0x1e0b57[0x1]?_0x28b4ce[_0x2cc5c0(0x310)]=_0x1e0b57[0x1]:_0x28b4ce['cashbackPercent']=_0x2dc5b5;}if(_0x2dc5b5[_0x2cc5c0(0x2fc)]('$')){const _0x4afe5a=_0x2dc5b5['match'](extractionPatterns[_0x2cc5c0(0x180)]);if(_0x4afe5a&&_0x4afe5a[0x1])_0x28b4ce[_0x2cc5c0(0x180)]=_0x4afe5a[0x1];else{const _0x3a42f7=_0x2dc5b5['match'](extractionPatterns['cashbackAmount']);_0x3a42f7&&_0x3a42f7[0x1]?_0x28b4ce[_0x2cc5c0(0x180)]=_0x3a42f7[0x1]:_0x28b4ce[_0x2cc5c0(0x180)]='';if(_0x28b4ce[_0x2cc5c0(0x3db)]){const _0x537a80=_0x28b4ce[_0x2cc5c0(0x3db)][_0x2cc5c0(0x372)](extractionPatterns[_0x2cc5c0(0x3df)]);!_0x537a80&&(_0x28b4ce['cashbackFixed']='');}}}if(/points?|pts/i['test'](_0x2dc5b5)){const _0x4e0864=_0x2dc5b5[_0x2cc5c0(0x372)](extractionPatterns[_0x2cc5c0(0x1b5)]);_0x4e0864&&_0x4e0864[0x1]&&(_0x28b4ce[_0x2cc5c0(0x1b5)]=_0x4e0864[0x1]);}return _0x28b4ce;}function displayCashbackAmount(_0x17bcbb){const _0x50a35c=a2_0x210fff,_0x2654ad={'aLOwK':_0x50a35c(0x2f6),'qnGef':function(_0xf3d8f,_0x37df7b){return _0xf3d8f(_0x37df7b);},'bdHbU':function(_0x827a32,_0x26ca0f){return _0x827a32(_0x26ca0f);},'fIWcR':function(_0x5d39f0,_0xaefbc7){return _0x5d39f0!==_0xaefbc7;},'YLlml':function(_0x2db206,_0x13fb1d){return _0x2db206+_0x13fb1d;}};let _0x372533=_0x2654ad['aLOwK'],_0x32eac1=_0x17bcbb[_0x50a35c(0x3a9)]||_0x2654ad[_0x50a35c(0x1b1)](extractMinSpendFromDescription,_0x17bcbb[_0x50a35c(0x3db)])||'',_0x4aba5a=_0x17bcbb[_0x50a35c(0x1dd)]||_0x2654ad[_0x50a35c(0x1d7)](extractMaxCashbackFromDescription,_0x17bcbb[_0x50a35c(0x3db)])||'';if(_0x17bcbb[_0x50a35c(0x310)])_0x372533=_0x50a35c(0x349)+_0x17bcbb[_0x50a35c(0x310)][_0x50a35c(0x2f3)](/%/g,'')+'%',_0x4aba5a&&(_0x372533+=_0x50a35c(0x1c9)+_0x4aba5a[_0x50a35c(0x2f3)](/\$/g,''));else{if(_0x17bcbb[_0x50a35c(0x180)])_0x372533=_0x50a35c(0x375)+_0x17bcbb[_0x50a35c(0x180)][_0x50a35c(0x2f3)](/\$/g,''),_0x4aba5a&&(_0x372533+=',\x20up\x20to\x20$'+_0x4aba5a[_0x50a35c(0x2f3)](/\$/g,''));else _0x17bcbb['cashbackPoints']&&(_0x2654ad[_0x50a35c(0x3c5)](_0x17bcbb['cashbackPoints'],'1')?_0x372533=_0x50a35c(0x349)+_0x17bcbb[_0x50a35c(0x1b5)]+'\x20points':_0x372533=_0x50a35c(0x349)+_0x17bcbb[_0x50a35c(0x1b5)]+_0x50a35c(0x23e));}return _0x17bcbb[_0x50a35c(0x2ca)]&&(_0x372533+=_0x50a35c(0x1bd)+_0x17bcbb[_0x50a35c(0x2ca)]+'\x20times'),_0x32eac1&&(_0x372533=_0x2654ad[_0x50a35c(0x333)](_0x50a35c(0x196)+_0x32eac1[_0x50a35c(0x2f3)](/\$/g,'')+_0x50a35c(0x219),_0x372533[_0x50a35c(0x360)]())),_0x372533;}function extractKeywordsFromDescription(_0x3722ff){const _0x3de4c1=a2_0x210fff,_0x128150={'XLIhF':function(_0x1f7ed2,_0x336e63){return _0x1f7ed2!=_0x336e63;},'POSMS':_0x3de4c1(0x22b),'kVsCg':function(_0x34bbbd,_0x18b06e){return _0x34bbbd(_0x18b06e);},'XteHr':'array'};if(!_0x3722ff[_0x3de4c1(0x3db)])return[];if(_0x128150[_0x3de4c1(0x2a1)](typeof nlp,_0x128150['POSMS'])){const _0x5995a5=document['createElement']('div');_0x5995a5[_0x3de4c1(0x338)]=_0x3722ff['description'];const _0x260ac6=_0x5995a5[_0x3de4c1(0x1ca)][_0x3de4c1(0x360)](),_0x178df4=_0x128150[_0x3de4c1(0x38f)](nlp,_0x260ac6),_0xee6c9a=_0x178df4[_0x3de4c1(0x274)]();let _0x40f0f6=_0xee6c9a['nouns']()[_0x3de4c1(0x2c4)]({'whitespace':!![],'case':!![],'punctuation':!![],'unicode':!![],'contractions':!![],'acronyms':!![],'parentheses':!![],'possessives':!![],'plurals':![],'verbs':![]})[_0x3de4c1(0x236)]()[_0x3de4c1(0x337)](_0x128150[_0x3de4c1(0x1fc)]);return _0x40f0f6=[...new Set(_0x40f0f6)][_0x3de4c1(0x234)](_0x42bccc=>_0x42bccc[_0x3de4c1(0x1a6)]>0x0),_0x40f0f6;}}
+// Shared library for GetCashback extension
+// Local storage data structure
+// 'bank': bank
+// 'offercontainer_raw': raw HTML string
+// 'offercontainer_processed_${bank}_${card}': {
+//   'bank': bank,
+//   'card': card,
+//   'totalOffers': totalOffers,
+//   'offers': [
+//       'id': offerId,
+//       'description': description,
+//       'logo': logo,
+//       'merchantName': merchantName,
+//       'merchantWebsite': merchantWebsite,
+//       'cashbackAmount': cashbackAmount,
+//       'expiration': expiration,
+//       'redeemLink': redeemLink,
+//       'redeemLocation': redeemLocation,
+//       'redeemLocationLat': redeemLocationLat,
+//       'redeemLocationLon': redeemLocationLon,
+//       'category': category,
+//       'estValue': estValue,
+//       'minSpend': minSpend,
+//       'maxCashback': maxCashback,
+//       'type': type,
+//       'activated': true | false,
+//       'redeemed': true | false,
+//       'attemptedRedeem': true | false,
+//       'lastUpdated': lastUpdated
+//   ],
+//   'lastUpdated': lastUpdated
+// }
+// Define a template variable as a dictionary for different banks
+const bankTemplates = {
+  'American Express': {
+    'allOffersUrl': 'https://global.americanexpress.com/offers',
+    'bankLogo': 'https://www.americanexpress.com/content/dam/amex/us/merchant/supplies-uplift/product/images/img-WEBLOGO1-01.jpg',
+    'disclaimer': 'Disclaimer: We are not affiliated with any banks or offer providers. This tool helps you discover and manage offers already available in your own accounts. All cashback and rewards are processed directly by the banks or merchants, according to their program terms and conditions.',
+    'activationAttribute': 'div[id="{offerId}"] button[data-test-id="button-row"]',
+    'inlineOfferDescription': true,
+    'cardSelector': 'div[data-testid="simple_switcher_selected_option_display"]',
+    'activateButton': 'div[id="{offerId}"] button.offer-cta-v',
+    'offerContainer': {
+      'type': 'xpath',
+      'value': '//section[@class="offers-list"]'
+    },
+    'card': {
+      'type': 'xpath',
+      'value': '//div[@data-testid="simple_switcher_selected_option_display"]/@aria-label'
+    },
+    // The following are all based on all offers page
+    'offers': {
+      'type': 'xpath',
+      //'value': '//div[@role="button" and @data-cy="commerce-tile"]'
+      'value': '//div[@data-locator-id="merchantOffer"]'
+    },
+    'merchantName': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "offer-info")]/p[2]/text()'
+    },
+    'cashbackAmount': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "offer-info")]/p[1]/text()'
+    },
+    'logo': {
+      'type': 'xpath',
+      'value': '//img[1]/@src'
+    },
+    'offerId': {
+      'type': 'xpath',
+      'value': '//div[@aria-label="offer info"]/@id'
+    },
+    'redeemLink': {
+      'type': 'xpath',
+      'value': '//button[contains(@class, "offer-cta-v")]/a/@href'
+    },
+    'description': {
+      'type': 'xpath',
+      'value': '//section[contains(@class, "offer-details")]'
+    },
+    'expiration': {
+      'type': 'xpath',
+      'value': '//span[@data-testid="expirationDate"]/text()'
+    }
+  },
+  'Bank of America': {
+    'allOffersUrl': 'https://secure.bankofamerica.com/customer-deals/',
+    'bankLogo': 'https://www1.bac-assets.com/homepage/spa-assets/images/assets-images-global-logos-bac-logo-v2-CSX3648cbbb.svg',
+    'disclaimer': 'Disclaimer: We are not affiliated with any banks or offer providers. This tool helps you discover and manage offers already available in your own accounts. All cashback and rewards are processed directly by the banks or merchants, according to their program terms and conditions.',
+    'activationAttribute': '[data-deal-id="{offerId}"]',
+    'inlineOfferDescription': true,
+    'offerContainer': {
+      'type': 'xpath',
+      'value': '//div[@id="bamdAvailableDeals" or @id="bamdWidgetWrapper"]'
+    },
+    'card': {
+      'type': 'xpath',
+      'value': '//span[@id="singleAcnt"]/text()'
+    },
+    // The following are all based on all offers page
+    'offers': {
+      'type': 'xpath',
+      'value': '//div[@aria-describedby="company_product_desc_ada"]'
+    },
+    'merchantName': {
+      'type': 'xpath',
+      'value': '//div[@id="company_product_desc_ada"]//img/@alt'
+    },
+    'cashbackAmount': {
+      'type': 'xpath',
+      'value': '//span[@class="deal-offer-percent"]/text()'
+    },
+    'logo': {
+      'type': 'xpath',
+      'value': '//div[@id="company_product_desc_ada"]//img/@src'
+    },
+    'offerId': {
+      'type': 'xpath',
+      'value': '//a/@data-deal-id'
+    },
+    'redeemLink': {
+      'type': 'xpath',
+      'value': '//div[@class="col3_dealinfo"]//a/@href'
+    },
+    'description': {
+      'type': 'xpath',
+      'value': '//div[@class="col3_dealinfo"]'
+    },
+    'expiration': {
+      'type': 'xpath',
+      'value': '//p[contains(@class, "deal-exp-date")]/text()'
+    }
+  },
+  'Capital One': {
+    'allOffersUrl': 'https://capitaloneoffers.com/c1-offers/',
+    'applyLink': 'https://i.capitalone.com/G7Htl2QMG',
+    'disclaimer': 'Disclaimer: We are not affiliated with any banks or offer providers. This tool helps you discover and manage offers already available in your own accounts. All cashback and rewards are processed directly by the banks or merchants, according to their program terms and conditions.',  
+    'allOffersJson': 'https://capitaloneoffers.com/c1-offers?_data=routes/c1-offers._index&limit=500&offset=',
+    'inlineOfferDescription': true,
+    'activationAttribute': 'div.standard-tile',
+    'activateButton': {
+      'type': 'xpath',
+      'value': '//button[contains(text(), "Activate In-Store")]'
+    },
+    'termsButton': {
+      'type': 'xpath',
+      'value': '//span[contains(text(), "offer terms")]'
+    },
+    'closeButtonPostActivation': '#radix-\\:rb\\: button',
+    'offerContainer': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "offers")]'
+    },
+    'card': {
+      'type': 'xpath',
+      'value': '//p[contains(@class, "md:block")]/text()'
+    },
+    // The following are all based on all offers page
+    'offers': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "standard-tile")]'
+    },
+    'merchantName': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "content-image")]//img/@alt'
+    },
+    'cashbackAmount': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "standard-tile")]/div[2]/text()'
+    },
+    'logo': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "standard-tile")]//img/@src'
+    },
+    'offerId': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "standard-tile")]//img/@src'
+    },
+    'redeemLink': {
+      'type': 'text',
+      'value': 'https://capitaloneoffers.com/c1-offers/'
+    },
+    'description': {
+      'type': 'xpath',
+      'value': '//div[contains(@class, "content-container")]'
+    }
+  },
+  'Chase': {
+    'allOffersUrl': 'https://secure.chase.com/web/auth/dashboard#/dashboard/merchantOffers/offer-hub',
+    'applyLink': 'https://www.referyourchasecard.com/19s/4172W0IZKK',
+    'bankLogo': 'https://www.chase.com/etc/designs/chase-ux/css/img/newheaderlogo.svg',
+    'disclaimer': 'Disclaimer: We are not affiliated with any banks or offer providers. This tool helps you discover and manage offers already available in your own accounts. All cashback and rewards are processed directly by the banks or merchants, according to their program terms and conditions.',
+    'activationAttribute': '[id="{offerId}"]',
+    'inlineOfferDescription': false,
+    'offerContainer': {
+      'type': 'xpath',
+      //'value': '//div[@data-testid="offerTileGridContainer" or @id="connected-ovd-homepage-entrypoint-container"]'
+      //'value': '//div[@data-testid="offerTileGridContainer"]'
+      'value': '//div[@id="app-container"]'
+    },
+    'card': {
+      'type': 'xpath',
+      'value': '//mds-select[@id="select-credit-card-account"]/mds-select-option[@selected="true"]/@label'
+      // 'value': '//span[@class="mds-select__decoration-button"]/text()'
+      //'value': '//div[@data-testid="AccountInfoToken"]/following-sibling::div[1]/span/text()'
+    },
+    // The following are all based on all offers page
+    'offers': {
+      'type': 'xpath',
+      //'value': '//div[@role="button" and @data-cy="commerce-tile"]'
+      'value': '//div[@class="offerTileGridItemContainer" or @role="listitem"]'
+    },
+    'merchantName': {
+      'type': 'xpath',
+      'value': '(//span[contains(@class, "semanticColorTextRegular")])[1]/text()'
+    },
+    'cashbackAmount': {
+      'type': 'xpath',
+      'value': '(//span[contains(@class, "semanticColorTextRegular")])[2]/text()'
+    },
+    'logo': {
+      'type': 'xpath',
+      'value': '//img[@data-testid="logo"]/@src'
+    },
+    'offerId': {
+      'type': 'xpath',
+      //'value': '//div[@role="button" and @data-cy="commerce-tile"]/@id'
+      'value': '//div[@class="offerTileGridItemContainer" or @role="listitem"]/div/@id'
+    },
+    'redeemLink': {
+      'type': 'xpath',
+      'value': '//a[@id="cardlytics-link-tag-0"]/@href'
+    },
+    'description': {
+      'type': 'xpath',
+      'value': '//div[@data-cy="offer-detail-text-and-disclaimer-link-container"]'
+    }
+  },
+  'Paypal': {
+    'allOffersUrl': 'https://www.paypal.com/offers/',
+    'bankLogo': 'https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg',
+    'disclaimer': 'Disclaimer: We are not affiliated with any banks or offer providers. This tool helps you discover and manage offers already available in your own accounts. All cashback and rewards are processed directly by the banks or merchants, according to their program terms and conditions.',
+    'activateFirst': true,
+    'activationAttribute': 'button[data-cy="tertiary_offer_card__tile"]',
+    'inlineOfferDescription': true,
+    'activateButton': 'button[data-cy="base_offer_card__auto_save"]',
+    'offerContainer': {
+      'type': 'xpath',
+      'value': '//div[@data-cy="tertiary_card_list__grid"]'
+    },
+    'card': {
+      'type': 'text',
+      'value': 'Paypal'
+    },
+    // The following are all based on all offers page
+    'offers': {
+      'type': 'xpath',
+      'value': '//section[@data-cy="tertiary_offer_card"]'
+    },
+    'merchantName': {
+      'type': 'xpath',
+      'value': '//div[@class="shopping-view-dvg3v2-text_caption-line_clamp_2" or @class="saved-offers-dvg3v2-text_caption-line_clamp_2"]/text()'
+    },
+    'cashbackAmount': {
+      'type': 'xpath',
+      'value': '//div[@class="shopping-view-3zwvz-text_body-line_clamp_2" or @class="saved-offers-3zwvz-text_body-line_clamp_2"]/text()'
+    },
+    'logo': {
+      'type': 'xpath',
+      'value': '//img[@data-cy="logo__image"]/@src'
+    },
+    'offerId': {
+      'type': 'xpath',
+      'value': '//div[@class="shopping-view-dvg3v2-text_caption-line_clamp_2" or @class="saved-offers-dvg3v2-text_caption-line_clamp_2"]/text()'
+    },
+    'redeemLink': {
+      'type': 'xpath',
+      'value': '//a[@class="shopping-view-pevsdf-button_base-text_button_lg-btn_full_width" or @class="saved-offers-pevsdf-button_base-text_button_lg-btn_full_width"]/@href'
+    },
+    'description': {
+      'type': 'xpath',
+      'value': '//article[@data-cy="responsive_modal_dialog"]'
+    }
+  },
+  'Wells Fargo': {
+    'allOffersUrl': 'https://web.secure.wellsfargo.com/auth/deals-portal',
+    'allOffersButton': 'button[data-testid="deals-view-all"]',
+    'disclaimer': 'Disclaimer: We are not affiliated with any banks or offer providers. This tool helps you discover and manage offers already available in your own accounts. All cashback and rewards are processed directly by the banks or merchants, according to their program terms and conditions.',
+    'activationAttribute': '[data-id="{offerId}"]',
+    'inlineOfferDescription': true,
+    'closeButtonPostActivation': 'button[data-testid="modal-lightbox-close-icon"]',
+    'offerContainer': {
+      'type': 'xpath',
+      'value': '//div[@data-en="available-deals"]'
+    },
+    'card': {
+      'type': 'text',
+      'value': 'Wells Fargo Card'
+    },
+    // The following are all based on all offers page
+    'offers': {
+      'type': 'xpath',
+      'value': '//div[@role="button"]'
+    },
+    'merchantName': {
+      'type': 'xpath',
+      'value': '//div[@role="button"]/@aria-label'
+    },
+    'cashbackAmount': {
+      'type': 'xpath',
+      'value': '//p[@data-testid="available-cashback"]/text()'
+    },
+    'logo': {
+      'type': 'xpath',
+      'value': '//img[1]/@src'
+    },
+    'offerId': {
+      'type': 'xpath',
+      'value': '//div/@data-id'
+    },
+    'redeemLink': {
+      'type': 'xpath',
+      'value': '//a[@id="merchant-link-1"]/@href'
+    },
+    'description': {
+      'type': 'xpath',
+      'value': '//div[@data-testid="DealDetailsTerms"]'
+    },
+    'expiration': {
+      'type': 'xpath',
+      'value': '//p[@data-testid="daysLeft"]/text()'
+    }
+  },
+  'Want More?': {
+    'allOffersUrl': 'https://forms.gle/GDb9PSxhYu25Menk7',
+    'allOfferDescription': 'Missing your favorite cashback providers? Click below and help us improve!',
+  }
+};
+
+const categoryKeywords = {
+  "Food / Dining": ["restaurant", "dining", "grill", "cafe", "burger", "bistro", "eatery", "pizza", "brewery", "food", "meal", "lunch", "dinner", "breakfast", "bar", "pub", "taco", "sushi", "steakhouse", "bakery", "cookie", "coffee", "tea", "deli", "ice cream", "masala", "momo", "cantina", "vitality bowls", "biriyani", "chocolate", "wine", "sandwich", "pasta", "seafood", "bbq", "barbecue", "ramen", "noodle", "buffet", "cuisine", "chef", "catering", "takeout", "panda express", "snack", "starbucks", "meet fresh", "alcohol", "chicken", "fish"],
+  "Groceries": ["grocery", "supermarket", "fresh", "organic", "food store", "produce", "butcher", "pantry", "farmer market", "grocery service", "dairy", "meat", "poultry", "seafood", "vegetable", "fruit", "frozen food", "canned good", "bulk food", "natural food", "sam's club"],
+  "Retail": ["clothing", "cloth", "apparel", "shoe", "store", "outlet", "fashion", "retail", "shop", "boutique", "department store", "mall", "accessory", "jewelry", "wear", "garment", "shirt", "dress", "cleaning product", "organizing product", "mattress", "flower", "fabric", "bra", "underwear", "furniture", "fragrance", "deodorant", "gear", "lego", "electronic", "home good", "decor", "kitchenware", "appliance", "hardware", "tool", "toy", "book", "gift", "cosmetic", "beauty", "makeup", "skincare", "handbag", "luggage", "watch", "water bottle", "PC", "laptop", "tablet", "scent", "rose", "pet", "dog", "cat", "puppy", "cookware", "gadget", "wardrobe", "footwear", "tieks", "patagonia", "bike", "fragrancenet.com", "netgear", "clothes"],
+  "Gas / Auto": ["gas", "fuel", "auto", "car wash", "oil change", "mechanic", "tire", "vehicle", "automotive", "car", "truck", "repair", "maintenance", "part", "dealership", "garage", "body shop", "transmission", "brake", "engine", "battery", "diesel", "electric vehicle", "charging station"],
+  "Travel / Lodging": ["hotel", "motel", "resort", "airline", "rental car", "airbnb", "flight", "vacation", "travel", "booking", "lodging", "stay", "accommodation", "trip", "tourism", "cruise", "airport", "vacation rental", "rental", "destination", "tour", "excursion", "adventure", "beach", "backpacking", "hostel", "bed and breakfast", "all-inclusive", "passport", "international", "domestic", "reservation", "rental car", "train", "bus", "shuttle", "airfare", "Madame Tussauds"],
+  "Entertainment": ["movie", "amusement", "park", "museum", "zoo", "entertainment", "concert", "theater", "cinema", "show", "event", "ticket", "performance", "festival", "game", "sport", "music", "streaming", "play", "comedy", "nightlife", "club", "bar", "lounge", "arcade", "bowling", "golf", "theme park", "water park", "aquarium", "gallery", "exhibit", "tour", "attraction", "ticketsmarter", "audiobook", "kindle", "podcast", "newsletter", "news", "paramount+", "starz", "discovery+", "everand"],
+  "Services / Utilities": ["utility", "internet", "cell", "phone", "insurance", "cable", "bill", "water", "electric", "provider", "coverage", "banking", "financial", "legal", "consulting", "accounting", "tax", "cleaning", "landscaping", "plumbing", "electrical", "contractor", "repair", "installation", "maintenance", "security", "protection", "monitoring", "software", "cloud", "storage", "hosting", "domain", "development", "design", "marketing", "advertising", "printing", "postal", "moving", "wireless", "zoom", "mailchimp.com", "quickbooks", "online safety"],
+  "Health / Wellness": ["pharmacy", "dental", "fitness", "gym", "health", "wellness", "optical", "med", "medical", "doctor", "clinic", "hospital", "therapy", "vitamin", "supplement", "multivitamin", "probiotic", "superfood", "immunity", "gut", "skin", "hair", "metabolism", "treadmill", "trainer", "weight", "exercise", "yoga", "muscle", "mri", "dentist", "optometrist", "chiropractor", "massage", "spa", "salon", "beauty", "cosmetic", "procedure", "treatment", "rehabilitation", "physical therapy", "mental health", "counseling", "nutrition", "diet", "organic", "natural", "holistic", "alternative medicine", "meditation", "mindfulness", "sleep", "glass", "lens", "eyeware", "vision", "electrolyte", "nutrient", "hydration", "betterhelp", "cleanser", "serums", "moisturizers", "eye exam"],
+  "Education": ["learning", "course", "training", "research", "education", "masterclass", "school", "university", "tutor", "homework"]
+};
+
+// Merchant name to domain mapping for redeem links
+const merchantFixMap = {
+  'Visible by Verizon': 'visible.com',
+  'Frank & Eileen': 'frankandeileen.com',
+  'AT&T': 'att.com',
+  'AT&T Mobility': 'www.att.com/plans/wireless',
+  'T-Mobile': 't-mobile.com',
+  'Barnes & Noble': 'barnesandnoble.com',
+  'Bed Bath & Beyond': 'bedbathandbeyond.com',
+  'H&M': 'hm.com',
+  'M&M\'s': 'mms.com',
+  'P&G': 'pg.com',
+  'P.F. Chang\'s': 'pfchangs.com',
+  'J.Crew': 'jcrew.com',
+  'Lowe\'s': 'lowes.com',
+  'Macy\'s': 'macys.com',
+  'Kohl\'s': 'kohls.com',
+  'Walgreens': 'walgreens.com',
+  'Walmart': 'walmart.com',
+  'Target': 'target.com',
+  'Best Buy': 'bestbuy.com',
+  'Staples': 'staples.com',
+  'LEGO': 'lego.com',
+  'Norton': 'norton.com'
+};
+
+const extractionPatterns = {
+  cashbackFixed: /earn\s+\$(\d+(?:\.\d+)?)(?:\s+back)?/i,
+  cashbackPercentage: /earn\s+(\d+(?:\.\d+)?)%(?:\s+back)?/i,
+  cashbackPoints: /earn\s+\+?(\d{1,3}(?:,\d{3})*)(?:\s+[^\d]+?)?\s+(?:points?|pts|miles?)(?:\s+back)?/i,
+  maxRedemptions: /up\s+to\s+(\d+)(?:\s+times|\s*x)/i,
+  cashbackAmount: /(?<!(?:spend|for)\s*)\$(\d+(?:\.\d+)?)/i,
+  discountPattern: /not\s+(?:a\s+)?(?:.*\s+)?cash\s*back(?:\s+offer|\s+deal)?|this\s+is\s+not\s+(?:a\s+)?cash\s*back|no\s+cash\s*back/i,
+  addressPatterns: [
+    /\d+\s(?:\w+\s+)*(?:Expy|Real|Avenue|Ave|Boulevard|Blvd|Circle|Cir|Court|Ct|Drive|Dr|Lane|Ln|Parkway|Pkwy|Place|Pl|Plaza|Plz|Road|Rd|Square|Sq|Street|St|Terrace|Ter|Trail|Trl|Way|Wy)([\w\s]+)?[,\s]+([A-Za-z\s]+)?[,\s]+([A-Za-z]{2,})[,\s]+(\d{5}(?:-\d{4})?)/gi
+  ],
+  redeemLinkHref: /(?:must|required to)(?:\s+\w+)*\s+link|specific\s+link\s+(?:required|needed)|use\s+link|follow\s+this\s+link/i,
+  redeemLinkText: /(?:must|required to)(?:\s+\w+)*\s+link|specific\s+link\s+(?:required|needed)|use\s+link|follow\s+this\s+link(?:.*?)((?:https?:\/\/)?[a-z0-9][-a-z0-9]*\.[a-z0-9][-a-z0-9.]*(?:\/[^\s]*|\?[^\s]*)?)/i,
+  minSpend: [
+    // Match $ amount after "spend", with word boundaries to prevent over-matching
+    // Updated to make commas optional in numbers like $1,000
+    /spend(?:\s+\w+)*\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\b/i,
+    // Match "spend $X or more"
+    /spend(?:\s+\w+)*\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\s+or more/i,
+    // Additional common patterns with better boundaries
+    /minimum\s+purchase\s+of\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\b/i,
+    /purchase\s+of\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\s+or more/i,
+    /minimum\s+(\$\d+(?:,\d{3})*(?:\.\d+)?)\b/i
+  ],
+  maxCashback: [
+    // Pattern from both popup.js and wallet.js
+    /(\$\d+(?:\.\d+)?)\s+cash\s?back\s+maximum/i,
+    /limit(?:\s+\w+)*\s+(\$\d+(?:\.\d+)?)\s+back/i,
+    // Additional common patterns
+    /maximum\s+cash\s?back\s+of\s+(\$\d+(?:\.\d+)?)/i,
+    /up\s+to\s+(\$\d+(?:\.\d+)?)\s+cash\s?back/i,
+    /earn\s+up\s+to\s+(\$\d+(?:\.\d+)?)/i,
+    /cash\s?back\s+up\s+to\s+(\$\d+(?:\.\d+)?)/i
+  ],
+  expiryDate: [
+    // "by", "Expires" or "Expire" followed by any words and then MM/DD/YY format
+    /(expires?|by)(?:\s+\w+){0,5}\s+(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})/i,
+
+    // "by", "Expires" or "Expire" followed by any words and then Month DD, YYYY format
+    /(expires?|by)(?:\s+\w+){0,5}\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{2,4})/i,
+
+    // "by", "Expires" or "Expire" followed by any words and then YYYY-MM-DD format
+    /(expires?|by)(?:\s+\w+){0,5}\s+(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/i
+  ],
+  difficultyPatterns: [
+    {
+      pattern: /online only/i, penalty: 1, reason: 'Online only',
+      term: { text: "Online purchases only", type: "neutral" }
+    },
+    {
+      pattern: /in[\s-]store only/i, penalty: 1, reason: 'In-store only',
+      term: { text: "In-store purchases only", type: "negative" }
+    },
+    {
+      pattern: /(?:must|required to)(?:\s+\w+)*\s+link|specific\s+link\s+(?:required|needed)|use\s+link|follow\s+this\s+link/i,
+      penalty: 1, reason: 'Must use specific link',
+      term: { text: "Must use specific link", type: "negative" }
+    },
+    {
+      pattern: /first\s+(purchase|transaction|payment)|single\s+(purchase|transaction)|one\s+time\s+(only|use)|one\s+(offer|purchase|transaction)\s+per\s+(customer|account|card)/i,
+      penalty: 1,
+      reason: 'Single redemption only',
+      term: { text: "Single redemption only", type: "negative" }
+    },
+    {
+      pattern: /new\s+(customer|user)/i, penalty: 2, reason: 'New customers only',
+      term: { text: "New customers only", type: "negative" }
+    },
+    {
+      pattern: /promo\s+code|promocode|coupon\s+code/i, penalty: 1, reason: 'Requires promo code',
+      term: { text: "Promo code required", type: "negative" }
+    },
+    {
+      pattern: /sms|text\s+message|mobile\s+number/i, penalty: 2, reason: 'Requires SMS',
+      term: { text: "SMS registration required", type: "negative" }
+    },
+    {
+      pattern: /(select|participating)\s+location/i, penalty: 2, reason: 'Location restrictions',
+      term: { text: "Select locations only", type: "negative" }
+    },
+    {
+      pattern: /(select|eligible)\s+(product|service|item|items)/i, penalty: 2, reason: 'Product/service restrictions',
+      term: { text: "Eligible products only", type: "negative" }
+    }
+  ]
+};
+
+// Fetch configuration from Chrome storage and replace bankTemplates and categoryKeywords if available
+if (typeof chrome !== 'undefined' && chrome.storage) {
+  chrome.storage.local.get(['clientInfo'], function (result) {
+    if (result.clientInfo && result.clientInfo.config) {
+      try {
+        const configData = JSON.parse(result.clientInfo.config);
+        if (configData.bankTemplates) {
+          // Clear all existing properties
+          Object.keys(bankTemplates).forEach(key => { delete bankTemplates[key]; });
+          Object.assign(bankTemplates, configData.bankTemplates);
+          console.log('Bank templates replaced with configuration from storage');
+        }
+        if (configData.categoryKeywords) {
+          // Clear all existing properties
+          Object.keys(categoryKeywords).forEach(key => { delete categoryKeywords[key]; });
+          Object.assign(categoryKeywords, configData.categoryKeywords);
+          console.log('Category keywords replaced with configuration from storage');
+        }
+        if (configData.merchantFixMap) {
+          // Clear all existing properties
+          Object.keys(merchantFixMap).forEach(key => { delete merchantFixMap[key]; });
+          Object.assign(merchantFixMap, configData.merchantFixMap);
+          console.log('Merchant website map replaced with configuration from storage');
+        }
+        if (configData.extractionPatterns) {
+          // Function to parse regex string in format "/pattern/flags"
+          function parseRegexString(regexStr) {
+            // Extract pattern and flags from string like "/pattern/flags"
+            const match = regexStr.match(/^\/(.*)\/([gimuy]*)$/);
+            if (match) {
+              const [, pattern, flags] = match;
+              return new RegExp(pattern, flags);
+            }
+            return new RegExp(regexStr);
+          }
+
+          // Clear all existing properties
+          Object.keys(extractionPatterns).forEach(key => { delete extractionPatterns[key]; });
+
+          // Process each pattern from the config
+          for (const [key, value] of Object.entries(configData.extractionPatterns)) {
+            if (Array.isArray(value)) {
+              // Handle array of patterns (like minSpend, maxCashback, etc.)
+              extractionPatterns[key] = value.map(item => {
+                if (typeof item === 'object' && item !== null) {
+                  // Handle complex patterns like difficultyPatterns
+                  return {
+                    ...item,
+                    pattern: typeof item.pattern === 'string' ?
+                      parseRegexString(item.pattern) : item.pattern
+                  };
+                } else {
+                  // Simple string pattern
+                  return parseRegexString(item);
+                }
+              });
+            } else if (typeof value === 'object' && value !== null) {
+              // Handle complex objects
+              extractionPatterns[key] = { ...value };
+              if (value.pattern) {
+                extractionPatterns[key].pattern = parseRegexString(value.pattern);
+              }
+            } else {
+              // Simple string pattern
+              extractionPatterns[key] = parseRegexString(value);
+            }
+          }
+
+          console.log('Extraction patterns replaced with configuration from storage');
+        }
+      } catch (e) {
+        console.error('Error parsing clientInfo.config:', e);
+      }
+    }
+  });
+}
+
+const avgSpendByCategory = {
+  "Food / Dining": 30,
+  "Groceries": 100,
+  "Retail": 100,
+  "Gas / Auto": 60,
+  "Travel / Lodging": 250,
+  "Entertainment": 75,
+  "Services / Utilities": 150,
+  "Health / Wellness": 113,
+  "Education": 90,
+  "Other": 100
+};
+
+function getTextWithLineBreaks(element) {
+  let text = '';
+  for (const node of element.childNodes) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      text += node.textContent;
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      const tag = node.tagName.toLowerCase();
+      if (['br', 'p', 'div', 'li', 'ul', 'ol', 'section', 'span'].includes(tag)) {
+        text += getTextWithLineBreaks(node) + '\n';
+      } else {
+        text += getTextWithLineBreaks(node);
+      }
+    }
+  }
+  return text;
+}
+
+function getPlainText(description) {
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = description;
+  return getTextWithLineBreaks(tempDiv).replace(/\n{2,}/g, '\n').trim();
+}
+
+function classifyOffer(offer) {
+  if (!offer.description) {
+    return "Other";
+  }
+  if (typeof nlp != 'undefined') {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = offer.description;
+
+    const text = getTextWithLineBreaks(tempDiv).toLowerCase().replace(/\n{2,}/g, '\n').trim();
+    const merchantName = offer.merchantName ? offer.merchantName.toLowerCase() : '';
+
+    // Use compromise to parse the description text
+    const descDoc = nlp(text);
+
+    // Extract only nouns from non-negative sentences
+    const nonNegativeSentences = descDoc.sentences().filter(s => !s.verbs().isNegative().found);
+
+    // Get complete noun phrases as an array (preserving multi-word phrases)
+    let nounPhrases = nonNegativeSentences.nouns().normalize({
+      whitespace: true,
+      case: true,
+      punctuation: true,  // This removes punctuation
+      unicode: true,
+      contractions: true,
+      acronyms: true,
+      parentheses: true,
+      possessives: true,
+      plurals: false,
+      verbs: false
+    })
+      .toSingular() // more effective than normalize() function
+      .out('array');
+
+    // Process merchant name separately
+    if (merchantName) {
+      nounPhrases.push(merchantName);
+    }
+
+    // Remove duplicates and empty strings from nouns array
+    nounPhrases = [...new Set(nounPhrases)].filter(phrase => phrase.length > 0);
+
+    // Score each category based on noun phrase matches
+    let scores = {};
+
+    for (const [category, keywords] of Object.entries(categoryKeywords)) {
+      // Score based on noun phrase matches with keywords
+      let score = 0;
+
+      for (const phrase of nounPhrases) {
+        // Check if any keyword matches the phrase as a whole or if the phrase contains the keyword
+        for (const keyword of keywords) {
+          const keywordLower = keyword.toLowerCase();
+
+          if (
+            phrase === keywordLower || // Exact match
+            new RegExp(`\\b${keywordLower}\\b`).test(phrase) || // Word boundary match
+            phrase.startsWith(`${keywordLower}-`) || // Hyphenated word starting with keyword
+            phrase.endsWith(`-${keywordLower}`) // Hyphenated word ending with keyword
+          ) {
+            score += 1;
+          }
+        }
+      }
+      scores[category] = score;
+    }
+    // Pick the highest scoring category
+    const bestMatch = Object.entries(scores).sort((a, b) => b[1] - a[1])[0];
+    return bestMatch[1] > 0 ? bestMatch[0] : "Other";
+  }
+}
+
+// Function to get element based on template
+function getElementFromTemplate(bank, elementKey, context = document, getAllNodes = false) {
+  if (!bankTemplates[bank] || !bankTemplates[bank][elementKey]) {
+    console.log(`Template not found for ${bank} - ${elementKey}`);
+    return null;
+  }
+
+  let parsedContext = context;
+  if (!context.getElementById) {
+    const parser = new DOMParser();
+    parsedContext = parser.parseFromString(context, "text/html");
+  }
+
+  const template = bankTemplates[bank][elementKey];
+  console.log("getElementFromTemplate context for %s:", elementKey, parsedContext);
+  switch (template.type) {
+    case 'id':
+      return parsedContext.getElementById ? parsedContext.getElementById(template.value) : null;
+    case 'class':
+      return parsedContext.getElementsByClassName ? parsedContext.getElementsByClassName(template.value)[0] : null;
+    case 'selector':
+      return parsedContext.querySelector ? parsedContext.querySelector(template.value) : null;
+    case 'selectorAll':
+      return parsedContext.querySelectorAll ? parsedContext.querySelectorAll(template.value) : null;
+    case 'xpath':
+      // Enhanced XPath handling for any context
+      try {
+        // Create a snapshot type XPath result
+        const xpathResult = parsedContext.evaluate(
+          template.value,
+          parsedContext, // Use the provided context
+          null,
+          getAllNodes ? XPathResult.ORDERED_NODE_SNAPSHOT_TYPE : XPathResult.FIRST_ORDERED_NODE_TYPE,
+          null
+        );
+
+        if (getAllNodes) {
+          // Return all matching nodes for XPath
+          const result = [];
+          for (let i = 0; i < xpathResult.snapshotLength; i++) {
+            result.push(xpathResult.snapshotItem(i));
+          }
+          return result.length > 0 ? result : null;
+        } else {
+          // Return just the first node
+          return xpathResult.singleNodeValue;
+        }
+      } catch (e) {
+        console.error('XPath evaluation error:', e);
+        return null;
+      }
+    default:
+      console.log(`Unknown template type: ${template.type}`);
+      return null;
+  }
+}
+
+// For unknown reasons, result is not null only when it's MutationObserver. 
+function getDynamicElementFromTemplate(result, callback, bank, elementKey, context = document, getAllNodes = false) {
+  // Try to find dynamically loaded element
+  let timeout;
+  if (!result) {
+    // Try to find the AJAX loaded element
+    const observer = new MutationObserver((mutations, obs) => {
+      clearTimeout(timeout);
+
+      timeout = setTimeout(() => {
+        console.log("DOM is stable. Extracting final data...");
+        // Use template to find the container (in document context)
+        result = getElementFromTemplate(bank, elementKey, context, getAllNodes);
+
+        if (result) {
+          callback(result);
+          obs.disconnect();
+        }
+      }, 2000); // Wait 2 second after the last change
+    });
+    // Observe changes in the entire document
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+}
+
+// Process offer container to extract structured data
+function processOfferContainer(container, bank) {
+  let data = {
+    card: '',
+    totalOffers: 0,
+    offers: []
+  };
+
+  if (!container || !bank || !bankTemplates[bank]) {
+    console.log(`Invalid container or bank: ${container}, ${bank}`);
+    return data;
+  }
+
+  // Extract card information using template
+  const cardElement = getElementFromTemplate(bank, 'card', container);
+  console.log(cardElement);
+  if (cardElement) {
+    data.card = cardElement.textContent.trim();
+  }
+
+  // Extract total number of offers using template
+  const totalOffersElement = getElementFromTemplate(bank, 'totalOfferCount', container);
+  if (totalOffersElement) {
+    console.log(totalOffersElement);
+    const totalText = totalOffersElement.textContent.trim();
+    const match = totalText.match(/\d+/);
+    data.totalOffers = match ? parseInt(match[0], 10) : 0;
+  }
+
+  // Extract offers using template - simplified approach
+  let offerElements = [];
+
+  if (bankTemplates[bank]['offers']) {
+    // Use the enhanced getElementFromTemplate with getAllNodes=true for collection types
+    const elements = getElementFromTemplate(bank, 'offers', container, true);
+
+    if (elements) {
+      // Handle both array and NodeList results
+      console.log(elements);
+      offerElements = Array.isArray(elements) ? elements :
+        (elements.length !== undefined ? Array.from(elements) : [elements]);
+    }
+  }
+
+  // Process each offer element
+  offerElements.forEach((offerElement, index) => {
+    console.log("Processing:", getElementFromTemplate(bank, 'offerId', offerElement.innerHTML));
+    const offer = {
+      id: getElementFromTemplate(bank, 'offerId', offerElement.outerHTML).textContent.replace("id=", ""),
+      description: '', // Changed from descriptions array to a single description string
+      logo: getElementFromTemplate(bank, 'logo', offerElement.innerHTML).textContent.replace("src=", ""),
+      merchantName: getElementFromTemplate(bank, 'merchantName', offerElement.innerHTML).textContent,
+      cashbackAmount: getElementFromTemplate(bank, 'cashbackAmount', offerElement.innerHTML).textContent.replace(" cash back", ""),
+    };
+    data.offers.push(offer);
+  });
+  console.log("Count of offers", data.offers.length);
+
+  return data;
+}
+
+// New function to count collected but not redeemed offers
+function updateCollectedOffersCount() {
+  if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
+    chrome.storage.local.get(null, function (items) {
+      let collectedCount = 0;
+
+      // Look for collected offers in storage
+      for (const key in items) {
+        // Check for collected offers data
+        if (key.startsWith('collected_offers_')) {
+          const offers = items[key];
+          if (Array.isArray(offers)) {
+            // Count offers that have been collected but not redeemed and not expired
+            const unredeemed = offers.filter(offer => !offer.redeemed && getExpiryDate(offer) >= new Date());
+            collectedCount += unredeemed.length;
+          }
+        }
+      }
+
+      console.log('Updated badge with collected unredeemed offers count:', collectedCount);
+    });
+  }
+}
+
+// Add this to the end of the file
+// Initialize badge when extension loads
+if (typeof chrome !== 'undefined' && chrome.runtime) {
+  // Update badge when extension loads
+  updateCollectedOffersCount();
+
+  // Listen for changes in storage to update badge
+  if (chrome.storage && chrome.storage.onChanged) {
+    chrome.storage.onChanged.addListener(function (changes, namespace) {
+      if (namespace === 'local') {
+        // Check if any collected offers have changed
+        const hasCollectedOfferChanges = Object.keys(changes).some(key =>
+          key.startsWith('collected_offers_')
+        );
+
+        if (hasCollectedOfferChanges) {
+          // Update badge count when collected offers change
+          updateCollectedOffersCount();
+        }
+      }
+    });
+  }
+}
+
+/**
+ * Extract expiration date from offer description
+ * @param {string} description - The offer description text
+ * @returns {string|null} - ISO date string or null if not found
+ */
+function extractExpiryDateFromDescription(description) {
+  if (!description) return null;
+
+  // Ensure description is a string
+  const desc = String(description);
+
+  // Common date patterns in offer descriptions
+  const patterns = extractionPatterns.expiryDate;
+
+  for (const pattern of patterns) {
+    const match = desc.match(pattern);
+    if (match) {
+      let year, month, day;
+
+      if (pattern.toString().includes('Jan(?:uary)?|Feb')) {
+        // Handle Month DD, YYYY format
+        const monthNames = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+        // Find the index of the first capture group that contains a month name
+        let monthIndex = 0;
+        for (let i = 1; i < match.length; i++) {
+          if (match[i] && monthNames.some(m => match[i].toLowerCase().startsWith(m.substring(0, 3)))) {
+            monthIndex = i;
+            break;
+          }
+        }
+
+        const monthName = match[monthIndex].toLowerCase();
+        month = monthNames.findIndex(m => monthName.startsWith(m.substring(0, 3))) + 1;
+        day = parseInt(match[monthIndex + 1], 10);
+        year = parseInt(match[monthIndex + 2], 10);
+      } else if (pattern.toString().includes('\\d{4})[\\\/\\-]')) {
+        // Handle YYYY-MM-DD format
+        // Find the index of the first capture group that looks like a 4-digit year
+        let yearIndex = 0;
+        for (let i = 1; i < match.length; i++) {
+          if (match[i] && /^\d{4}$/.test(match[i])) {
+            yearIndex = i;
+            break;
+          }
+        }
+
+        year = parseInt(match[yearIndex], 10);
+        month = parseInt(match[yearIndex + 1], 10);
+        day = parseInt(match[yearIndex + 2], 10);
+      } else {
+        // Handle MM/DD/YYYY or MM/DD/YY format
+        // Find the first group of digits that looks like a month
+        let monthIndex = 0;
+        for (let i = 1; i < match.length; i++) {
+          if (match[i] && /^\d{1,2}$/.test(match[i]) && parseInt(match[i], 10) >= 1 && parseInt(match[i], 10) <= 12) {
+            monthIndex = i;
+            break;
+          }
+        }
+
+        month = parseInt(match[monthIndex], 10);
+        day = parseInt(match[monthIndex + 1], 10);
+        year = parseInt(match[monthIndex + 2], 10);
+      }
+
+      // Handle 2-digit years by converting to 4-digit
+      if (year < 100) {
+        // Assume 20xx for years less than 100
+        year = 2000 + year;
+      }
+
+      // Validate date components
+      if (month >= 1 && month <= 12 && day >= 1 && day <= 31 && year >= 2000) {
+        // In Javascript, months are 0-indexed, so subtract 1 from month
+        return month + '/' + day + '/' + year;
+      }
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Extract minimum spend amount from offer description
+ * @param {string} description - The offer description text
+ * @returns {string|null} - Minimum spend amount or null if not found
+ */
+function extractMinSpendFromDescription(description) {
+  if (!description) return null;
+
+  // Common patterns for minimum spend in descriptions
+  const patterns = extractionPatterns.minSpend;
+
+  for (const pattern of patterns) {
+    const match = description.match(pattern);
+    if (match && match[1]) {
+      // Validate that we have a proper currency amount
+      const extractedValue = match[1].trim();
+      // Ensure it starts with $ and contains only digits, optional commas, and possibly one decimal point
+      if (/^\$\d+(?:,\d{3})*(?:\.\d+)?$/.test(extractedValue)) {
+        return extractedValue;
+      }
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Extract maximum cashback amount from offer description
+ * @param {string} description - The offer description text
+ * @returns {string|null} - Maximum cashback amount or null if not found
+ */
+function extractMaxCashbackFromDescription(description) {
+  if (!description) return null;
+
+  // Common patterns for maximum cashback in descriptions
+  const patterns = extractionPatterns.maxCashback;
+
+  for (const pattern of patterns) {
+    const match = description.match(pattern);
+    if (match && match[1]) {
+      return match[1].trim();
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Calculate and format the expiration date string
+ * @param {string} expiryDate - The expiration date in ISO format
+ * @returns {string} Formatted expiration date string
+ */
+function formatExpiryDate(expiryDate) {
+  let expiryText = 'No expiration date';
+  if (expiryDate !== Infinity && expiryDate) {
+    const now = new Date(new Date().toDateString());
+    const expiryDateObj = expiryDate instanceof Date ? expiryDate : new Date(expiryDate);
+    const formattedDate = new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(expiryDateObj);
+
+    if (expiryDateObj < now) {
+      expiryText = 'Expired';
+    } else {
+      expiryText = `Expires on ${formattedDate}`;
+    }
+  }
+  return expiryText;
+}
+
+/**
+ * Get expiration date as timestamp for sorting and comparison
+ * @param {Object} offer - The offer object
+ * @returns {number} - Timestamp or Infinity if no valid date found
+ */
+function getExpiryDate(offer) {
+  // Check if offer.expiration exists and is a valid date string
+  if (!offer.expiration) {
+    return Infinity; // Return Infinity for offers with no expiration
+  }
+
+  // Try to create a Date object and check if it's valid
+  const expiryDate = new Date(offer.expiration);
+
+  // Check if the date is valid (invalid dates return NaN when converted to number)
+  if (isNaN(expiryDate.getTime())) {
+    return Infinity; // Return Infinity for invalid dates
+  }
+
+  return expiryDate;
+}
+
+/**
+ * Helper function to extract redeem link from offer description
+ * @param {Object} offer - The offer object
+ * @returns {string|null} - URL to redeem the offer or null if not found
+ */
+function getRedeemLink(offer) {
+  // If offer already has a redeemLink property, use that
+  if (offer.redeemLink) return offer.redeemLink;
+
+  // Check if description exists
+  if (!offer.description) return null;
+
+  // Create a temporary element to parse HTML
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = offer.description;
+
+  const redeemLink = getElementFromTemplate(offer.bank, 'redeemLink', offer.description)?.textContent.replace(/href/gi, "").trim() || '';
+  if (redeemLink) return redeemLink;
+
+  // Check if the offer requires a specific link
+  const specificLinkRequired = tempDiv.textContent.match(extractionPatterns.redeemLinkHref);
+
+  if (specificLinkRequired) {
+    // Find all links in the description
+    const links = tempDiv.querySelectorAll('a');
+    if (links.length > 0) {
+      // Return the first link (most likely the redeem link)
+      return links[0].href;
+    }
+
+    // Look for URLs in text after "must use" or similar phrases
+    const urlMatch = tempDiv.textContent.match(extractionPatterns.redeemLinkText);
+    if (urlMatch && urlMatch[2]) {
+      // Strip trailing period if it exists (sentence ending)
+      let url = urlMatch[2].replace(/\.$/, '');
+      // Add https:// prefix if not present
+      return url.startsWith('http') ? url : `https://${url}`;
+    }
+
+    // If specific link is required but not found, return null
+    return null;
+  }
+
+  // If no specific link is required, try to generate a merchant website URL
+  if (offer.merchantName) {
+    // Check if we have a direct mapping for this merchant
+    if (merchantFixMap[offer.merchantName]) {
+      return `https://www.${merchantFixMap[offer.merchantName]}`;
+    }
+  }
+
+  return null;
+}
+
+// Helper function to assess how easy cashback can be earned
+function assessCashbackEase(offer) {
+  let score = 10; // Start with perfect score
+  let reasons = [];
+  let terms = []; // Add terms array to store key terms
+
+  if (!offer.description) return { ease: 'unknown', score: 5, reasons: ['No description available'], terms: [] };
+
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = `<p>${offer.cashbackAmount}</p>${offer.description}`;
+  const description = tempDiv.textContent.toLowerCase();
+
+  // Common patterns that indicate difficulty (could be expanded based on actual data)
+  const difficultyPatterns = extractionPatterns.difficultyPatterns;
+
+  // Apply all pattern checks
+  difficultyPatterns.forEach(item => {
+    if (item.checkFunction) {
+      // For patterns that use a custom check function
+      const result = item.checkFunction(description);
+      if (result.match) {
+        score -= result.penalty;
+        reasons.push(result.reason);
+        terms.push(result.term);
+
+        // Remove the positive term for low minimum spend
+        // No longer adding: terms.push({ text: `Low minimum spend: $${result.value}`, type: "positive" });
+      }
+    } else if (item.pattern) {
+      // For patterns with regex
+      const match = description.match(item.pattern);
+      if (match) {
+        // For patterns with thresholds (like minimum spend)
+        if (item.threshold !== undefined && match[1]) {
+          const amount = parseFloat(match[1].replace('$', ''));
+          if (amount > item.threshold) {
+            score -= item.penalty;
+            reasons.push(item.reason);
+            terms.push(item.term);
+          }
+        } else {
+          // For patterns without thresholds
+          score -= item.penalty;
+          reasons.push(item.reason);
+          terms.push(item.term);
+        }
+      }
+    }
+  });
+
+  // Determine ease category based on score
+  let ease;
+  if (score >= 8) {
+    ease = 'easy';
+  } else if (score >= 6) {
+    ease = 'medium';
+  } else {
+    ease = 'hard';
+  }
+
+  return { ease, score, reasons, terms };
+}
+
+/**
+ * Helper function to extract physical addresses from offer description
+ * @param {Object} offer - The offer object
+ * @returns {string|null} - First physical address to redeem the offer or null if none found
+ */
+function getRedeemLocation(offer) {
+  // Check if description exists
+  if (!offer.description) return null;
+
+  // Create a temporary element to parse HTML if description contains HTML
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = offer.description;
+
+  // Directly replace HTML elements that represent line breaks with actual newlines
+  let htmlWithNewlines = tempDiv.innerHTML
+    .replace(/<br\s*\/?>/gi, ', ')
+    .replace(/<\/p>/gi, '\n')
+    .replace(/<\/div>/gi, '\n')
+    .replace(/<\/span>/gi, '\n')
+    .replace(/<p>/gi, '')
+    .replace(/<div>/gi, '')
+    .replace(/<span>/gi, '')
+    .replace(/<a\w*>/gi, '\n')
+    .replace(/<\/a>/gi, '\n')
+    .replace(/,/gi, ', ');
+
+  // Update the div with our modified HTML
+  tempDiv.innerHTML = htmlWithNewlines;
+  // Get text with our newlines intact
+  let plainText = tempDiv.textContent || offer.description;
+  // Simplified address patterns
+  const addressPatterns = extractionPatterns.addressPatterns;
+  // Try each pattern to find an address
+  for (const pattern of addressPatterns) {
+    const match = plainText.match(pattern);
+    if (match && match[0]) {
+      // Format the address: normalize spaces and commas
+      return match[0]
+        .replace(/[\r\n]+/g, ' ') // Replace line breaks with spaces
+        .replace(/\s+/g, ' ') // Normalize multiple spaces
+        .replace(/\s*,\s*/g, ', ') // Normalize commas
+        .trim();
+    }
+  }
+  // Return array of locations or null if none found
+  return null;
+}
+
+/**
+ * Estimate the value of an offer based on cashback amount, category spending, and constraints
+ * @param {Object} offer - The offer object
+ * @returns {Promise<number>} - Promise resolving to estimated value in dollars
+ */
+function estimateValue(offer, spend = null) {
+  return new Promise((resolve) => {
+    if (!offer) {
+      resolve(0);
+      return;
+    }
+
+    // Get category for the offer
+    const category = offer.category || 'Other';
+
+    // Get average spend for this category from preferences or defaults
+    chrome.storage.local.get('preferences', (result) => {
+      let avgSpend = parseFloat(spend) || 0;
+      if (avgSpend === 0) {
+        // Try to get user preferences first
+        if (result.preferences &&
+          result.preferences.avgSpendByCategory &&
+          result.preferences.avgSpendByCategory[category]) {
+          avgSpend = result.preferences.avgSpendByCategory[category];
+        } else {
+          // Fall back to default values
+          avgSpend = avgSpendByCategory[category] || 0;
+        }
+        avgSpend = parseFloat(avgSpend);
+      }
+      // If no cashback amount, return 0
+      if (!offer.cashbackAmount) {
+        resolve(0);
+        return;
+      }
+      parseCashbackAmount(offer);
+      let minSpend = offer.minSpend || extractMinSpendFromDescription(offer.description) || '';
+      let maxCashback = offer.maxCashback || extractMaxCashbackFromDescription(offer.description) || '';
+      minSpend = parseFloat(offer.minSpend?.replace(/[$,]/g, '')) || 0;
+      maxCashback = parseFloat(offer.maxCashback?.replace(/[$,]/g, '')) || Infinity;
+      // If minimum spend is higher than average spend for category, return 0
+      if (minSpend > avgSpend && minSpend > 0) {
+        resolve(0);
+        return;
+      }
+      let value = 0;
+      if (offer.cashbackPercent) {
+        // Percentage cashback
+        const percentage = parseFloat(offer.cashbackPercent.replace('%', '')) / 100;
+        value = avgSpend * percentage;
+      } else if (offer.cashbackFixed) {
+        // Fixed dollar amount - target amount between "earn" and "back"
+        value = parseFloat(offer.cashbackFixed.replace(/[$,]/g, ''));
+        // Cap value at maxCashback
+      }
+      if (value > maxCashback) {
+        value = maxCashback;
+      }
+      // Check for "up to X times" to multiply the value
+      if (offer.maxRedemptions) {
+        const times = parseInt(offer.maxRedemptions, 10);
+        if (!isNaN(times) && times > 0) {
+          value *= times;
+        }
+      }
+      resolve(value);
+    });
+  });
+}
+
+/**
+ * Extracts the type of offer from its description.
+ * @param {Object} offer - The offer object containing description.
+ * @returns {string} - "discount" or "cashback"
+ */
+function extractType(offer) {
+  if (!offer.description) {
+    return "cashback"; // Default to cashback if no description
+  }
+
+  // Create a temporary div to handle HTML content
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = offer.description;
+  const text = tempDiv.textContent.toLowerCase();
+
+  // Split the text into sentences
+  const sentences = text.split(/[.!?]+\s+/);
+
+  // The pattern to look for in each individual sentence
+  const discountPattern = extractionPatterns.discountPattern;
+
+  // Check each sentence individually
+  for (const sentence of sentences) {
+    if (discountPattern.test(sentence)) {
+      return "discount";
+    }
+  }
+
+  if (offer.cashbackPoints) {
+    return "points";
+  }
+
+  return "cashback";
+}
+
+async function getMerchantWebsite(offer) {
+  if (!offer.merchantName) {
+    return null;
+  }
+
+  const query = `
+      SELECT ?website WHERE {
+        ?company rdfs:label "${offer.merchantName.trim()}"@en.
+        ?company wdt:P856 ?website.
+      } LIMIT 1
+    `;
+
+  const url = `https://query.wikidata.org/sparql?format=json&query=${encodeURIComponent(query)}`;
+
+  const response = await fetch(url, {
+    headers: { 'Accept': 'application/sparql-results+json' }
+  });
+
+  const data = await response.json();
+  return data?.results?.bindings?.[0]?.website?.value || null;
+}
+
+// Helper function to check if a merchant name is a website URL
+function isUrlString(string) {
+  if (!string) return false;
+  // Regular expression to validate domain format
+  const urlPattern = /^(?:https?:\/\/)?[a-zA-Z0-9][a-zA-Z0-9-]{0,63}[a-zA-Z0-9](?:\.[a-zA-Z]{2,63})+(\/[^\s]*)?$/;
+  // Check if the string matches the domain pattern
+  return urlPattern.test(string);
+}
+
+function recordAttemptedRedeem(offer) {
+  // Update the offer in local storage
+  chrome.storage.local.get(null, function (items) {
+    for (const key in items) {
+      if (key.startsWith('offercontainer_processed_')) {
+        const offerData = items[key];
+        if (offerData && offerData.offers) {
+          const updatedOffers = offerData.offers.map(o => {
+            if (o.id === offer.id && o.bank === offer.bank && o.card === offer.card) {
+              return { ...o, attemptedRedeem: true };
+            }
+            return o;
+          });
+
+          // Save updated offers back to storage
+          chrome.storage.local.set({ [key]: { ...offerData, offers: updatedOffers } }, function () {
+            console.log('Offer updated with attemptedRedeem flag');
+          });
+        }
+      }
+    }
+  });
+}
+
+/**
+ * Sum up the earned amount from all redeemed offers.
+ * @returns {Promise<number>} - The total earned amount from redeemed offers.
+ */
+function getTotalEarned() {
+  return new Promise((resolve, reject) => {
+    if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
+      chrome.storage.local.get(null, function (items) {
+        let totalEarned = 0;
+
+        // Iterate through all items in storage
+        for (const key in items) {
+          if (key.startsWith('offercontainer_processed_')) {
+            const offerData = items[key];
+            if (offerData && offerData.offers) {
+              // Sum up the earned amounts of redeemed offers
+              offerData.offers.forEach(offer => {
+                if (offer.redeemed && offer.earned) {
+                  totalEarned += parseFloat(offer.earned) || 0;
+                }
+              });
+            }
+          }
+        }
+
+        console.log('Total earned from redeemed offers:', totalEarned);
+        resolve(totalEarned);
+      });
+    } else {
+      reject(new Error('Chrome storage is not available.'));
+    }
+  });
+}
+
+function parseCashbackAmount(offer) {
+  const cashbackAmount = offer.cashbackAmount.trim();
+  // Check for "up to X times" to multiply the value
+  const timesMatch = cashbackAmount.match(extractionPatterns.maxRedemptions);
+  if (timesMatch && timesMatch[1]) {
+    const times = parseInt(timesMatch[1], 10);
+    if (!isNaN(times) && times > 0) {
+      offer.maxRedemptions = times;
+    }
+  }
+  if (cashbackAmount.includes('%')) {
+    // Percentage cashback
+    const percentageMatch = cashbackAmount.match(extractionPatterns.cashbackPercentage);
+    if (percentageMatch && percentageMatch[1]) {
+      offer.cashbackPercent = percentageMatch[1];
+    }
+    else {
+      offer.cashbackPercent = cashbackAmount;
+    }
+  }
+  if (cashbackAmount.includes('$')) {
+    // Fixed dollar amount - target amount between "earn" and "back"
+    const earnBackMatch = cashbackAmount.match(extractionPatterns.cashbackFixed);
+    if (earnBackMatch && earnBackMatch[1]) {
+      offer.cashbackFixed = earnBackMatch[1];
+    } else {
+      // Fall back to the first dollar amount if no "earn $X back" pattern
+      const dollarMatch = cashbackAmount.match(extractionPatterns.cashbackAmount);
+      if (dollarMatch && dollarMatch[1]) {
+        offer.cashbackFixed = dollarMatch[1];
+      }
+      else {
+        offer.cashbackFixed = '';
+      }
+      // Double check description to remove non-cashback amounts
+      if (offer.description) {
+        const dollarMatchDescription = offer.description.match(extractionPatterns.cashbackAmount);
+        if (!dollarMatchDescription) {
+          offer.cashbackFixed = '';
+        }
+      }
+    }
+  }
+  if (/points?|pts/i.test(cashbackAmount)) {
+    const pointMatch = cashbackAmount.match(extractionPatterns.cashbackPoints);
+    if (pointMatch && pointMatch[1]) {
+      offer.cashbackPoints = pointMatch[1];
+    }
+  }
+  return offer;
+}
+
+function displayCashbackAmount(offer) {
+  let displayCashbackAmountText = 'No cashback';
+  let minSpend = offer.minSpend || extractMinSpendFromDescription(offer.description) || '';
+  let maxCashback = offer.maxCashback || extractMaxCashbackFromDescription(offer.description) || '';
+
+  if (offer.cashbackPercent) {
+    displayCashbackAmountText = `Earn ${offer.cashbackPercent.replace(/%/g, "")}%`;
+    if (maxCashback) {
+      displayCashbackAmountText += `, up to $${maxCashback.replace(/\$/g, "")}`;
+    }
+  } else if (offer.cashbackFixed) {
+    displayCashbackAmountText = `Earn $${offer.cashbackFixed.replace(/\$/g, "")}`;
+    if (maxCashback) {
+      displayCashbackAmountText += `, up to $${maxCashback.replace(/\$/g, "")}`;
+    }
+  } else if (offer.cashbackPoints) {
+    if (offer.cashbackPoints !== "1") {
+      displayCashbackAmountText = `Earn ${offer.cashbackPoints} points`;
+    }
+    else {
+      displayCashbackAmountText = `Earn ${offer.cashbackPoints} point`;
+    }
+  }
+  if (offer.maxRedemptions) {
+    displayCashbackAmountText += `, up to ${offer.maxRedemptions} times`;
+  }
+  if (minSpend) {
+    displayCashbackAmountText = `Spend $${minSpend.replace(/\$/g, "")} or more, ` + displayCashbackAmountText.toLowerCase();
+  }
+  return displayCashbackAmountText;
+}
+
+function extractKeywordsFromDescription(offer) {
+  if (!offer.description) {
+    return [];
+  }
+  if (typeof nlp != 'undefined') {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = offer.description;
+
+    const text = tempDiv.textContent.toLowerCase();
+
+    // Use compromise to parse the description text
+    const descDoc = nlp(text);
+
+    // Extract only nouns from non-negative sentences
+    const nonNegativeSentences = descDoc.sentences();//.filter(s => !s.verbs().isNegative().found);
+
+    // Get complete noun phrases as an array (preserving multi-word phrases)
+    let nounPhrases = nonNegativeSentences.nouns().normalize({
+      whitespace: true,
+      case: true,
+      punctuation: true,  // This removes punctuation
+      unicode: true,
+      contractions: true,
+      acronyms: true,
+      parentheses: true,
+      possessives: true,
+      plurals: false,
+      verbs: false
+    })
+      .toSingular() // more effective than normalize() function
+      .out('array');
+
+    // Remove duplicates and empty strings from nouns array
+    nounPhrases = [...new Set(nounPhrases)].filter(phrase => phrase.length > 0);
+    return nounPhrases;
+  }
+}
