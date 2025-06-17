@@ -38,6 +38,17 @@
     }
   </script>
   <link rel="stylesheet" href="css/wallet.css">
+  <script>
+    if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      window.addEventListener('DOMContentLoaded', function() {
+        var alertDiv = document.createElement('div');
+        alertDiv.style = 'background: #ffefc1; color: #7a5c00; padding: 16px; text-align: center; font-weight: bold; font-size: 1.1em; border-bottom: 2px solid #ffe082; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;';
+        alertDiv.innerHTML = '⚠️ For the best experience, please use a desktop browser to explore the GetCashback.ai Wallet demo.';
+        document.body.prepend(alertDiv);
+        document.body.style.paddingTop = '56px';
+      });
+    }
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
   <script src="js/extension-web.js"></script>
   <script src="js/shared.js" defer></script>

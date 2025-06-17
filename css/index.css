@@ -134,8 +134,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
   width: 100%;
+  min-height: 70vh;
   z-index: 2;
   position: relative;
 }
@@ -157,7 +157,7 @@ body {
   letter-spacing: -1px;
 }
 
-.hero-subtitle {
+.hero-subtitle, .stat-label {
   font-size: 1.2rem;
   color: #f0f0f0;
   margin-bottom: 32px;
@@ -318,12 +318,8 @@ body {
     font-size: 2.2rem;
   }
 
-  .hero-subtitle {    
+  .hero-subtitle, .stat-label {    
     font-size: 1rem;
-  }
-
-  .stat-label{
-    font-size: smaller;
   }
 
   .hero-searchbox {
@@ -382,15 +378,10 @@ body {
   font-size: 18px;
 }
 
-.stat-label {
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 5px;
-}
-
 .stat-row {
   align-items: center;
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 5px;
   padding: 5px;
   gap: 5px;
@@ -778,10 +769,6 @@ footer {
   padding: 15px;
   width: 100%;
   overflow:hidden;
-}
-
-.left-column.collapsed ~ .right-column {
-  max-width: calc(100% - 125px);
 }
 
 /* Logo container */

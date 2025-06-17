@@ -212,10 +212,14 @@
   </div>
   <div class="main">
     <div class="hero-center">
-      <h1 class="hero-headline">Your Cashback Copilot</h1>
-      <div class="hero-subtitle">Automatically collect offers, analyze best deals, and remind you to redeem — smarter
-        cashback makes saving easy.</div>
-      <div class="hero-searchbox">
+      <h1 class="hero-headline">Hey 👋 Your cashback copilot here. </h1>
+      <div class="hero-subtitle">
+        <span class="filter-label"></span>
+        <div id="bank-filter-container" class="hero-suggestions">
+          <!-- Bank checkboxes will be populated dynamically -->
+        </div>
+      </div>
+      <div class="hero-searchbox" style="display: none;">
         <div class="hero-search-input">
           I want to spend $<input id="spend-amount" placeholder="100" type="number" class="search-box" min="10"
             inputmode="numeric" step="1">
@@ -229,14 +233,39 @@
             <!-- Advanced filters toggle (right aligned) -->
             <div class="filters-toggle-container">
               <button id="advanced-filters-toggle" class="toggle-button" title="Show filters">
-                <span class="filter-icon">🤖</span>&nbsp;
-                <span class="filter-label"></span>
-              </button>
+                <span class="filter-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -960 960 960" class="shrink-0 h-6 w-6 text-background" fill="currentColor" style="transform: rotate(180deg);">
+                    <path d="M442.39-616.87 309.78-487.26q-11.82 11.83-27.78 11.33t-27.78-12.33q-11.83-11.83-11.83-27.78 0-15.96 11.83-27.79l198.43-199q11.83-11.82 28.35-11.82t28.35 11.82l198.43 199q11.83 11.83 11.83 27.79 0 15.95-11.83 27.78-11.82 11.83-27.78 11.83t-27.78-11.83L521.61-618.87v348.83q0 16.95-11.33 28.28-11.32 11.33-28.28 11.33t-28.28-11.33q-11.33-11.33-11.33-28.28z"></path>
+                  </svg>
+                </span>
+                </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="hero-suggestions">
+      <div class="stat-row" style="display: none;">
+        <a id="stat-row"
+          href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde"
+          style="text-decoration: none;">
+          <span id="stat-label" class="stat-label">🤖 Nice —
+            <span id="spend-amount-label">$100</span>
+            on
+            <span id="offer-search-label">something</span> soon? You might get
+            <span class="header-button demo-button" id="total-value">$0.00</span> back! See individual offers below.
+            <span class="header-button demo-button">Install the extension</span> to lock them in.
+          </span>
+          <span id="no-offer-label" class="stat-label" style="display:none;">🤖 No offers here? You might have personalized offers waiting. 
+            <span class="header-button demo-button">Try the extension</span>
+            to uncover them!</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="wallet-container">
+    <!-- Right column for content -->
+    <div class="right-column">
+      <div id="filter-container" class="hero-suggestions" style="display: none;">
         <div class="hero-suggestion-btn">Sort by
           <select id="sort-options" class="sort-dropdown">
             <option value="recent">newest</option>
@@ -259,32 +288,7 @@
           <input type="checkbox" id="type-points" value="points" class="filter-checkbox type-checkbox">
           <label for="type-points">Points</label>
         </div>
-        <div id="bank-filter-container" class="hero-suggestions">
-          <!-- Bank checkboxes will be populated dynamically -->
-        </div>
       </div>
-    </div>
-  </div>
-  <div class="stat-row">
-    <a id="stat-row"
-      href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde"
-      style="text-decoration: none;">
-      <span id="stat-label" class="stat-label">Spending
-        <span id="spend-amount-label">$100</span>
-        on
-        <span id="offer-search-label">something</span> soon? You might get
-        <span class="header-button demo-button" id="total-value">$0.00</span> back!
-        <span class="header-button demo-button">Install the extension</span> to see if it's yours.
-      </span>
-      <span id="no-offer-label" class="stat-label" style="display:none;">No offers here? This data might be old.
-        <span class="header-button demo-button">Try the extension</span>
-        to see the latest savings!</span>
-      </span>
-    </a>
-  </div>
-  <div class="wallet-container">
-    <!-- Right column for content -->
-    <div class="right-column">
       <div class="content">
         <!-- Offers grid container (default view) -->
         <div id="offers-grid-container" class="offers-grid-container" style="display: none;">
@@ -302,8 +306,7 @@
         <img src="images/icon.png" alt="GetCashback.ai" class="footer-logo" width="40" />
       </div>
       <div class="footer-col">
-        <div class="footer-title">Company</div>
-        <a href="https://ainovo.co">Ainovo Co.</a>
+        <div class="footer-title">Built by <a href="https://ainovo.co">Ainovo Co.</a> with AI</div>
         <!-- Social Logos -->
         <div class="footer-social-logos">
           <a href="https://www.linkedin.com/company/ainovoco" target="_blank">
