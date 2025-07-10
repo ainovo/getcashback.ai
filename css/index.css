@@ -325,6 +325,10 @@ body {
   .hero-searchbox {
     border-radius: 12px;
   }
+  
+  .search-box {
+    font-size: 0.8rem;
+  }
 
   .hero-search-input {
     font-size: 1rem;
@@ -592,8 +596,9 @@ body {
 .search-box {
   border-width: 0;
   font-size: 1.1rem;
-  width: 100%;
+  width: 95%;
   outline: none;
+  align-self: center;
   resize: none;
 }
 
