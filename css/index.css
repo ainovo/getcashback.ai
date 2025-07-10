@@ -596,6 +596,7 @@ body {
   outline: none;
   align-self: center;
   resize: none;
+  font-size: 0.9rem;
 }
 
 .search-box::placeholder {
