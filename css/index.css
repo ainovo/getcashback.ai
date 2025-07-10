@@ -178,11 +178,10 @@ body {
 }
 
 .hero-search-input {
-  min-height: 56px;
+  min-height: 60px;
   background: transparent;
   border: none;
   color: #232323;
-  font-size: 1.1rem;
   padding: 20px 24px 12px 24px;
   border-radius: 18px 18px 0 0;
   resize: none;
@@ -324,10 +323,6 @@ body {
 
   .hero-searchbox {
     border-radius: 12px;
-  }
-  
-  .search-box {
-    font-size: 12px;
   }
 
   .hero-search-input {
@@ -595,7 +590,9 @@ body {
 
 .search-box {
   border-width: 0;
-  width: 95%;
+  width: 100%;
+  overflow: hidden;
+  height: 60px;
   outline: none;
   align-self: center;
   resize: none;
