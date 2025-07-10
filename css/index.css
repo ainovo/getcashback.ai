@@ -590,10 +590,11 @@ body {
 }
 
 .search-box {
-  border-width: 0 0 1px 0;
+  border-width: 0;
   font-size: 1.1rem;
-  max-width:130px;
+  width: 100%;
   outline: none;
+  resize: none;
 }
 
 .search-box::placeholder {

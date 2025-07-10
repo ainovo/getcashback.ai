@@ -212,22 +212,18 @@
   </div>
   <div class="main">
     <div class="hero-center">
-      <h1 class="hero-headline">Hey 👋 Your cashback copilot here. </h1>
+      <img src="images/max.png" alt="Max profile picture" style="width:80px;height:80px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:10px;display:block;">
+      <h1 class="hero-headline">Hey 👋 I'm Max - your cashback copilot. </h1>
       <div class="hero-subtitle">
         <span class="filter-label"></span>
-        <div id="bank-filter-container" class="hero-suggestions">
-          <!-- Bank checkboxes will be populated dynamically -->
-        </div>
       </div>
       <div class="hero-searchbox" style="display: none;">
         <div class="hero-search-input">
-          I want to spend $<input id="spend-amount" placeholder="100" type="number" class="search-box" min="10"
-            inputmode="numeric" step="1">
-          on <input id="offer-search" placeholder="..." type="text" class="search-box">
+          <textarea id="offer-search" type="text" class="search-box" maxlength="120"></textarea>
         </div>
         <div class="hero-search-actions">
           <div class="hero-search-left">
-
+            <span id="offer-search-char-remaining" style="font-size: 0.95em; color: #888;">120 characters left</span>
           </div>
           <div class="hero-search-right">
             <!-- Advanced filters toggle (right aligned) -->
@@ -247,16 +243,16 @@
         <a id="stat-row"
           href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde"
           style="text-decoration: none;">
-          <span id="stat-label" class="stat-label">🤖 Nice —
+          <span id="stat-label" class="stat-label">Nice —
             <span id="spend-amount-label">$100</span>
             on
             <span id="offer-search-label">something</span> soon? You might get
             <span class="header-button demo-button" id="total-value">$0.00</span> back! See individual offers below.
-            <span class="header-button demo-button">Install the extension</span> to lock them in.
+            <span class="header-button demo-button">Install the extension</span> to activate them all.
           </span>
-          <span id="no-offer-label" class="stat-label" style="display:none;">🤖 No offers here? You might have personalized offers waiting. 
-            <span class="header-button demo-button">Try the extension</span>
-            to uncover them!</span>
+          <span id="no-offer-label" class="stat-label" style="display:none;">Oops, I cannot find any offer. Try something else and hit the green button again. If you still don't see offers,  
+            <span class="header-button demo-button">install the extension</span>
+            to uncover personalized offers!</span>
           </span>
         </a>
       </div>
@@ -288,6 +284,9 @@
           <input type="checkbox" id="type-points" value="points" class="filter-checkbox type-checkbox">
           <label for="type-points">Points</label>
         </div>
+      </div>
+      <div id="bank-filter-container" class="hero-suggestions" style="display: none;">
+        <!-- Bank checkboxes will be populated dynamically -->
       </div>
       <div class="content">
         <!-- Offers grid container (default view) -->
