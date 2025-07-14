@@ -172,7 +172,6 @@ body {
   font-size: 1.2rem;
   color: #f0f0f0;
   margin-bottom: 32px;
-  text-align: center;
   font-weight: 400;
 }
 
@@ -390,8 +389,6 @@ body {
 }
 
 .stat-row {
-  align-items: center;
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 5px;
