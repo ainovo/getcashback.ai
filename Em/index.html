@@ -10,7 +10,7 @@
   <meta name="keywords"
     content="cashback, rewards, Chrome extension, credit card offers, AI, shopping, savings, automatic, getcashback.ai">
   <link rel="canonical" href="https://getcashback.ai/">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="../manifest.json">
   <meta property="og:title" content="GetCashback.ai - Your Cashback Copilot">
   <meta property="og:description"
     content="Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
@@ -22,8 +22,8 @@
   <meta name="twitter:description"
     content="Automatically collect, analyze, and redeem the best cashback offers from your credit cards and banks. Save more with zero effort!">
   <meta name="twitter:image" content="https://getcashback.ai/getcashback.ai.png">
-  <link rel="icon" href="images/icon.png" type="image/png">
-  <link rel="shortcut icon" href="images/icon.png" type="image/png">
+  <link rel="icon" href="../images/icon.png" type="image/png">
+  <link rel="shortcut icon" href="../images/icon.png" type="image/png">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,11 +42,11 @@
     }
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-  <script src="lib/compromise.js"></script>
-  <script src="js/extension-web.js"></script>
-  <script src="js/shared.js" defer></script>
-  <script src="js/index.js" defer></script>
-  <link rel="stylesheet" href="css/index.css">
+  <script src="../lib/compromise.js"></script>
+  <script src="../js/extension-web.js"></script>
+  <script src="../js/shared.js" defer></script>
+  <script src="../js/index.js" defer></script>
+  <link rel="stylesheet" href="../css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -70,7 +70,7 @@
 <body>
   <div class="header-bar">
     <div class="logo-title">
-      <img src="images/icon.png" alt="GetCashback.ai" class="logo" width="50" />
+      <img src="../images/icon.png" alt="GetCashback.ai" class="logo" width="50" />
       <h1 class="title">GetCashback.ai</h1>
     </div>
     <div class="header-buttons">
@@ -190,7 +190,7 @@
         </svg>
         <span class="button-text">App</span>
       </button>
-      <a class="header-button demo-button" href="wallet.html" target="_blank">
+      <a class="header-button demo-button" href="../wallet.html" target="_blank">
         <svg class="button-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="48" fill="#6ff6f6" stroke="#1a6ca6" stroke-width="4" />
           <circle cx="50" cy="50" r="35" fill="#f6d6a6" stroke="#1a6ca6" stroke-width="4" />
@@ -212,11 +212,10 @@
   </div>
   <div class="main">
     <div class="hero-center">
-      <img src="images/max.png" alt="Max profile picture" style="width:80px;height:80px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:10px;display:block;">
+      <img src="../images/max.png" alt="Max profile picture" style="width:80px;height:80px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:10px;display:block;">
       <h1 class="hero-headline">Hey 👋 I'm Max - your cashback copilot. </h1>
       <div class="hero-subtitle">
-        <div id="filter-label" class="message-box"></div>
-        <div id="source-label" class="hero-suggestion-btn" style="display:none"></div>
+        <span class="filter-label"></span>
       </div>
       <div class="hero-searchbox" style="display: none;">
         <div class="hero-search-input">
@@ -303,7 +302,7 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-logo-col">
-        <img src="images/icon.png" alt="GetCashback.ai" class="footer-logo" width="40" />
+        <img src="../images/icon.png" alt="GetCashback.ai" class="footer-logo" width="40" />
       </div>
       <div class="footer-col">
         <div class="footer-title">Built by <a href="https://ainovo.co">Ainovo Co.</a> with AI</div>

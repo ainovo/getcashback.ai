@@ -157,7 +157,18 @@ body {
   letter-spacing: -1px;
 }
 
-.hero-subtitle, .stat-label {
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-label {
   font-size: 1.2rem;
   color: #f0f0f0;
   margin-bottom: 32px;
@@ -270,6 +281,7 @@ body {
   cursor: pointer;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
   transition: background 0.2s, color 0.2s;
+  width: fit-content;
 }
 
 .hero-suggestion-btn:hover {
@@ -2711,4 +2723,9 @@ footer {
   color: #03CFC5;
   opacity: 1;
   text-decoration: none;
+}
+
+.message-box{
+  min-width:100%;
+  text-align: left;
 }

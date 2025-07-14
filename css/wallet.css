@@ -842,16 +842,24 @@ footer {
   line-height: 1.4;
 }
 
+.modal-description img,
+.modal-description svg,
+.modal-description button {
+  display: none;
+}
+
 .modal-description div,
 .modal-description p {
   margin-bottom: 10px;
 }
  
 .modal-description a {
-  color: #64D8CB;
+  color: #666;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  pointer-events: none;   /* Prevents clicking */
+  cursor: not-allowed;    /* Optional: show a "forbidden" cursor */
 }
 
 .modal-description footer{
