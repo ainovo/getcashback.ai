@@ -1141,10 +1141,12 @@ footer {
 }
 
 .modal-description a {
-  color: #64D8CB;
+  color: #666;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  pointer-events: none;   /* Prevents clicking */
+  cursor: not-allowed;    /* Optional: show a "forbidden" cursor */
 }
 
 .modal-description a:hover {
