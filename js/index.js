@@ -1,1 +1,842 @@
-const a1_0x2cc58b=a1_0x1b2c;(function(_0x49460c,_0x5538f9){const _0x5e4be9=a1_0x1b2c,_0x3394c5=_0x49460c();while(!![]){try{const _0x512e1f=-parseInt(_0x5e4be9(0x283))/0x1+parseInt(_0x5e4be9(0x219))/0x2*(-parseInt(_0x5e4be9(0x220))/0x3)+-parseInt(_0x5e4be9(0x1bf))/0x4*(parseInt(_0x5e4be9(0x191))/0x5)+parseInt(_0x5e4be9(0x2c2))/0x6*(parseInt(_0x5e4be9(0x19b))/0x7)+-parseInt(_0x5e4be9(0x250))/0x8+parseInt(_0x5e4be9(0x146))/0x9*(-parseInt(_0x5e4be9(0x1e8))/0xa)+parseInt(_0x5e4be9(0x1d0))/0xb;if(_0x512e1f===_0x5538f9)break;else _0x3394c5['push'](_0x3394c5['shift']());}catch(_0x5e8160){_0x3394c5['push'](_0x3394c5['shift']());}}}(a1_0x30fd,0x863fb));const offersGrid=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x282)),sortOptions=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x169)),heroSearchBox=document['querySelector'](a1_0x2cc58b(0x2b6)),searchBox=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x2aa)),buttonAdvancedFilter=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x14d)),onlineFilter=document['getElementById'](a1_0x2cc58b(0x26c)),offersGridContainer=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x1fb)),filterContainer=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x1e4)),bankFilterContainer=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x26d)),searchBoxLabel=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x224)),spendAmountLabel=document[a1_0x2cc58b(0x209)]('spend-amount-label'),statRow=document[a1_0x2cc58b(0x275)]('.stat-row'),statLabel=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x1a6)),noOfferLabel=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x1ba)),edgeButton=document['querySelector']('.edge-button'),chromeButton=document[a1_0x2cc58b(0x275)]('.chrome-button'),filterLabel=document[a1_0x2cc58b(0x209)](a1_0x2cc58b(0x167)),sourceLabel=document[a1_0x2cc58b(0x209)]('source-label'),iosButton=document[a1_0x2cc58b(0x275)](a1_0x2cc58b(0x228)),androidButton=document[a1_0x2cc58b(0x275)](a1_0x2cc58b(0x28f)),windowsButton=document[a1_0x2cc58b(0x275)](a1_0x2cc58b(0x153));let allOffers=[],cards=[],currentFilter=a1_0x2cc58b(0x190),currentSearch='',spendAmount=0x64,merchant='',deferredPrompt;window[a1_0x2cc58b(0x249)](a1_0x2cc58b(0x1b6),_0x5eba0f=>{const _0x5d649c=a1_0x2cc58b;_0x5eba0f[_0x5d649c(0x234)](),deferredPrompt=_0x5eba0f;});function installPWA(){const _0x2a29bb=a1_0x2cc58b;deferredPrompt&&(deferredPrompt[_0x2a29bb(0x14b)](),deferredPrompt[_0x2a29bb(0x29e)]['then'](()=>{deferredPrompt=null;}));}function isStandaloneMode(){const _0x1be7ad=a1_0x2cc58b,_0x10c37c={'TMaeo':function(_0x659855,_0x5a7b2b){return _0x659855===_0x5a7b2b;},'doKZp':_0x1be7ad(0x160)};return window[_0x1be7ad(0x2c8)]('(display-mode:\x20standalone)')['matches']||_0x10c37c[_0x1be7ad(0x2b3)](window[_0x1be7ad(0x216)][_0x1be7ad(0x2b0)],!![])||document[_0x1be7ad(0x15c)][_0x1be7ad(0x207)](_0x10c37c['doKZp']);}function hideInstallButtonsIfStandalone(){const _0xdf1e06=a1_0x2cc58b,_0x5e7859={'rxWKM':function(_0x53c3f3){return _0x53c3f3();},'yQsPy':_0xdf1e06(0x1b8)};if(_0x5e7859[_0xdf1e06(0x2da)](isStandaloneMode)){if(iosButton)iosButton[_0xdf1e06(0x2c6)]['display']=_0x5e7859['yQsPy'];if(androidButton)androidButton[_0xdf1e06(0x2c6)][_0xdf1e06(0x20f)]=_0x5e7859['yQsPy'];if(windowsButton)windowsButton[_0xdf1e06(0x2c6)][_0xdf1e06(0x20f)]=_0x5e7859[_0xdf1e06(0x2d8)];}}document[a1_0x2cc58b(0x249)](a1_0x2cc58b(0x28a),()=>{const _0xdf6c19=a1_0x2cc58b,_0x11901e={'MmMfm':_0xdf6c19(0x284),'GXrRU':function(_0x1ba26a,_0x471a30){return _0x1ba26a<_0x471a30;},'DQknK':function(_0x3c9195,_0x39262b,_0x3d7de4){return _0x3c9195(_0x39262b,_0x3d7de4);},'NvtDR':function(_0xb4e320,_0x3623db,_0x364263){return _0xb4e320(_0x3623db,_0x364263);},'iybsl':function(_0x11fe5b,_0x4dd160){return _0x11fe5b>_0x4dd160;},'jYXBj':function(_0x428669,_0x3595a3,_0x2d6369){return _0x428669(_0x3595a3,_0x2d6369);},'vecor':function(_0xb248fb,_0x3a035f){return _0xb248fb%_0x3a035f;},'JbKdF':function(_0x3816fc,_0x108a0c){return _0x3816fc+_0x108a0c;},'mgmrp':function(_0x591fcc,_0x40557b,_0x587b59){return _0x591fcc(_0x40557b,_0x587b59);},'pEVTt':function(_0x5515c7){return _0x5515c7();},'hRCAB':function(_0x6af39c){return _0x6af39c();},'BwIOz':function(_0x6f31b2,_0x392829){return _0x6f31b2-_0x392829;},'MgNBm':function(_0x1c72f3,_0x22f7dd){return _0x1c72f3<_0x22f7dd;},'ZOVfP':_0xdf6c19(0x235),'nIfWg':_0xdf6c19(0x2c9),'CIDiA':function(_0xa09a16,_0x2d6b82){return _0xa09a16&&_0x2d6b82;},'Wdsdu':_0xdf6c19(0x1f2),'JWCWg':function(_0x134ba7){return _0x134ba7();},'qpLBt':function(_0x2e2ef2,_0x5b0cfd){return _0x2e2ef2!==_0x5b0cfd;},'JXdko':_0xdf6c19(0x23e),'ueyNz':function(_0x26b4d9,_0x2d6adf){return _0x26b4d9===_0x2d6adf;},'wZAuL':function(_0x13cfad,_0x33efd8){return _0x13cfad||_0x33efd8;},'MotBJ':'something','LsBjj':_0xdf6c19(0x155),'qyhqK':function(_0x2f97b1,_0x49c833){return _0x2f97b1(_0x49c833);},'ZrJzW':function(_0xcf2d16,_0x31e439){return _0xcf2d16+_0x31e439;},'TigwP':_0xdf6c19(0x2d6),'XroMC':'application/json','lYxGy':'https://us-west1-fast-planet-461216-n6.cloudfunctions.net/askMax','DbblG':_0xdf6c19(0x1b1),'dYCor':function(_0x3d6038,_0x444994){return _0x3d6038+_0x444994;},'huySn':function(_0x4d2a9e,_0x4b02a2,_0x581f14){return _0x4d2a9e(_0x4b02a2,_0x581f14);},'UAwab':function(_0x2115d5,_0x3c77b2){return _0x2115d5>=_0x3c77b2;},'ltDbm':_0xdf6c19(0x23d),'PfQdL':_0xdf6c19(0x22b),'BxTcL':_0xdf6c19(0x242),'eLCvP':_0xdf6c19(0x2c4),'jMOKL':_0xdf6c19(0x295),'IKYiy':_0xdf6c19(0x1a9),'WIUnd':_0xdf6c19(0x23b),'GWpgm':_0xdf6c19(0x157),'Mfhnh':_0xdf6c19(0x1b8),'zlQaT':function(_0x59e66c,_0x42595a){return _0x59e66c&&_0x42595a;},'hMmrh':_0xdf6c19(0x215),'fgrBd':_0xdf6c19(0x260),'xHIQP':_0xdf6c19(0x17e),'Bjcpj':_0xdf6c19(0x299),'fWnJs':'type-discount','AlHRD':_0xdf6c19(0x148),'orvYW':_0xdf6c19(0x27e),'KAdHG':function(_0x44a6fd){return _0x44a6fd();}},_0x4e79ef=[_0x11901e['PfQdL'],_0x11901e[_0xdf6c19(0x178)],_0xdf6c19(0x274),_0x11901e[_0xdf6c19(0x1de)],_0x11901e[_0xdf6c19(0x267)],_0x11901e['IKYiy']];let _0xdfe293=0x0,_0x183b44=0x0,_0x28ac41=!![];function _0x51b71b(){const _0x573dd5=_0xdf6c19;if(!_0x28ac41)return;const _0x4bca13=_0x4e79ef[_0xdfe293];searchBox[_0x573dd5(0x278)](_0x11901e[_0x573dd5(0x1f4)],_0x4bca13['slice'](0x0,_0x183b44)),_0x11901e[_0x573dd5(0x18e)](_0x183b44,_0x4bca13[_0x573dd5(0x17c)])?(_0x183b44++,_0x11901e[_0x573dd5(0x20d)](setTimeout,_0x51b71b,0x3c)):(_0x28ac41=![],_0x11901e[_0x573dd5(0x298)](setTimeout,_0x55b446,0x5dc));}function _0x55b446(){const _0x445a34=_0xdf6c19,_0x2f3a50=_0x4e79ef[_0xdfe293];_0x11901e[_0x445a34(0x279)](_0x183b44,0x0)?(_0x183b44--,searchBox[_0x445a34(0x278)](_0x445a34(0x284),_0x2f3a50['slice'](0x0,_0x183b44)),_0x11901e['jYXBj'](setTimeout,_0x55b446,0x1e)):(_0xdfe293=_0x11901e[_0x445a34(0x1f3)](_0x11901e[_0x445a34(0x1d3)](_0xdfe293,0x1),_0x4e79ef[_0x445a34(0x17c)]),_0x28ac41=!![],_0x11901e[_0x445a34(0x21d)](setTimeout,_0x51b71b,0x1f4));}_0x11901e[_0xdf6c19(0x225)](_0x51b71b);const _0x3af87e=navigator[_0xdf6c19(0x162)],_0x33f44c=_0x11901e['qpLBt'](_0x3af87e['indexOf'](_0x11901e[_0xdf6c19(0x1dc)]),-0x1),_0x12ddac=_0x11901e[_0xdf6c19(0x2ad)](_0x3af87e['indexOf'](_0x11901e[_0xdf6c19(0x1e1)]),-0x1)&&!_0x33f44c;if(edgeButton&&chromeButton){if(_0x33f44c)edgeButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]='',chromeButton['style'][_0xdf6c19(0x20f)]=_0x11901e[_0xdf6c19(0x269)];else _0x12ddac?(edgeButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]=_0x11901e['Mfhnh'],chromeButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]=''):(edgeButton['style']['display']='none',chromeButton[_0xdf6c19(0x2c6)]['display']='');}const _0x1aefba=/iPad|iPhone|iPod/[_0xdf6c19(0x1a1)](_0x3af87e)&&!window['MSStream'],_0x401365=/Macintosh|Mac OS X/[_0xdf6c19(0x1a1)](_0x3af87e)&&!_0x1aefba,_0x52dcec=/\(iPad/[_0xdf6c19(0x1a1)](_0x3af87e),_0x37a601=/Windows/[_0xdf6c19(0x1a1)](_0x3af87e);if(_0x11901e[_0xdf6c19(0x1c6)](iosButton,windowsButton)&&chromeButton){if(_0x11901e[_0xdf6c19(0x1fa)](_0x1aefba,_0x401365)||_0x52dcec)iosButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]='',windowsButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]=_0x11901e['Mfhnh'],androidButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]=_0x11901e['Mfhnh'];else _0x37a601?(iosButton['style'][_0xdf6c19(0x20f)]=_0x11901e['Mfhnh'],windowsButton['style'][_0xdf6c19(0x20f)]='',androidButton[_0xdf6c19(0x2c6)]['display']=_0x11901e[_0xdf6c19(0x269)]):(iosButton['style'][_0xdf6c19(0x20f)]=_0x11901e['Mfhnh'],windowsButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]=_0x11901e[_0xdf6c19(0x269)],androidButton[_0xdf6c19(0x2c6)][_0xdf6c19(0x20f)]='');}hideInstallButtonsIfStandalone(),document['addEventListener'](_0x11901e[_0xdf6c19(0x258)],hideInstallButtonsIfStandalone);iosButton&&iosButton['addEventListener'](_0x11901e[_0xdf6c19(0x276)],function(_0x5f3bf7){const _0x49d5a7=_0xdf6c19;_0x11901e[_0x49d5a7(0x172)](installPWA);});androidButton&&androidButton[_0xdf6c19(0x249)](_0xdf6c19(0x260),function(_0x3aed46){_0x11901e['hRCAB'](installPWA);});windowsButton&&windowsButton['addEventListener'](_0x11901e[_0xdf6c19(0x276)],function(_0x3df3e6){const _0x5a9518=_0xdf6c19;_0x11901e[_0x5a9518(0x225)](installPWA);});document['getElementById'](_0x11901e[_0xdf6c19(0x170)])[_0xdf6c19(0x249)](_0x11901e[_0xdf6c19(0x222)],updateCurrentView),document['getElementById'](_0x11901e['fWnJs'])['addEventListener'](_0xdf6c19(0x299),updateCurrentView),document[_0xdf6c19(0x209)](_0x11901e[_0xdf6c19(0x24e)])[_0xdf6c19(0x249)](_0x11901e[_0xdf6c19(0x222)],updateCurrentView),document[_0xdf6c19(0x209)](_0x11901e[_0xdf6c19(0x2ae)])[_0xdf6c19(0x249)](_0x11901e[_0xdf6c19(0x222)],updateCurrentView),sortOptions[_0xdf6c19(0x249)](_0xdf6c19(0x299),updateCurrentView),searchBox['addEventListener'](_0x11901e[_0xdf6c19(0x187)],function(){const _0x421db9=_0xdf6c19,_0x219818={'EksRg':function(_0x884a5f,_0x457d41){const _0x4c7093=a1_0x1b2c;return _0x11901e[_0x4c7093(0x21b)](_0x884a5f,_0x457d41);},'TbdmU':function(_0x32a10b,_0x3577c3){const _0x2fddfd=a1_0x1b2c;return _0x11901e[_0x2fddfd(0x1fe)](_0x32a10b,_0x3577c3);},'lalBt':_0x11901e[_0x421db9(0x150)],'FvSWG':_0x421db9(0x194)},_0x350778=document[_0x421db9(0x209)](_0x421db9(0x2aa)),_0x458b9b=document[_0x421db9(0x209)](_0x11901e[_0x421db9(0x18d)]);if(_0x11901e[_0x421db9(0x2d0)](_0x350778,_0x458b9b)){const _0x21148d=0x78;function _0x2d5f12(){const _0xfab780=_0x421db9,_0x7af555=_0x219818[_0xfab780(0x2bb)](_0x21148d,_0x350778[_0xfab780(0x1e0)]['length']);_0x458b9b[_0xfab780(0x25b)]=_0x7af555+_0xfab780(0x205),_0x219818[_0xfab780(0x2a6)](_0x7af555,0xa)?_0x458b9b['style'][_0xfab780(0x1eb)]=_0x219818[_0xfab780(0x1d8)]:_0x458b9b['style'][_0xfab780(0x1eb)]=_0x219818[_0xfab780(0x271)];}_0x350778[_0x421db9(0x249)](_0x11901e[_0x421db9(0x187)],_0x2d5f12),_0x11901e['JWCWg'](_0x2d5f12);}}),buttonAdvancedFilter[_0xdf6c19(0x249)](_0x11901e[_0xdf6c19(0x276)],function(){const _0x2654cb=_0xdf6c19,_0x46e172={'ZTYqr':function(_0x2766cf,_0x42b98b){const _0x2052c5=a1_0x1b2c;return _0x11901e[_0x2052c5(0x2ad)](_0x2766cf,_0x42b98b);},'UzsiD':_0x11901e['JXdko'],'JpiBz':function(_0x265519){return _0x265519();},'XRwUg':function(_0x332e1d,_0x3ceef0){const _0x4c8186=a1_0x1b2c;return _0x11901e[_0x4c8186(0x1d3)](_0x332e1d,_0x3ceef0);},'IfVEP':function(_0x470d68,_0x51674d){const _0x1bfac4=a1_0x1b2c;return _0x11901e[_0x1bfac4(0x2b5)](_0x470d68,_0x51674d);},'JoORi':function(_0x470cc2,_0xc3614a){return _0x470cc2+_0xc3614a;},'KPHzx':function(_0x47a103,_0x792ab1){const _0x3bd446=a1_0x1b2c;return _0x11901e[_0x3bd446(0x1fa)](_0x47a103,_0x792ab1);},'AoRMh':_0x11901e[_0x2654cb(0x1f1)],'FOhZK':function(_0x4b5168,_0x8836c5){const _0xacd91=_0x2654cb;return _0x11901e[_0xacd91(0x1d3)](_0x4b5168,_0x8836c5);},'aeZQP':function(_0xb0ea8,_0x971f72){return _0x11901e['wZAuL'](_0xb0ea8,_0x971f72);},'iyBiI':_0x11901e[_0x2654cb(0x263)],'OPxNE':function(_0x3c86d0,_0x103b56){return _0x11901e['qyhqK'](_0x3c86d0,_0x103b56);},'IbNXW':function(_0x37046b,_0x50f79a){return _0x11901e['ZrJzW'](_0x37046b,_0x50f79a);},'oXLGF':_0x11901e[_0x2654cb(0x2a4)],'sUvLu':_0x11901e[_0x2654cb(0x26b)]};_0x11901e[_0x2654cb(0x2ad)](searchBox['value'][_0x2654cb(0x17b)](),'')&&_0x11901e[_0x2654cb(0x298)](fetch,_0x11901e['lYxGy'],{'method':_0x11901e[_0x2654cb(0x2b2)],'headers':{'Content-Type':_0x11901e['XroMC']},'body':JSON[_0x2654cb(0x210)]({'message':searchBox[_0x2654cb(0x1e0)]})})[_0x2654cb(0x29f)](_0x4fb3b5=>_0x4fb3b5['json']())[_0x2654cb(0x29f)](_0x29a855=>{const _0x3d24a0=_0x2654cb,_0xcb5c08={'wlDie':function(_0x424577){return _0x424577();}};if(_0x29a855){if(typeof _0x29a855[_0x3d24a0(0x1b4)]!==_0x3d24a0(0x23e))spendAmount=_0x29a855[_0x3d24a0(0x1b4)];if(_0x46e172[_0x3d24a0(0x20b)](typeof _0x29a855['searchTerm'],_0x46e172[_0x3d24a0(0x15b)]))currentSearch=_0x29a855[_0x3d24a0(0x21c)];if(_0x46e172[_0x3d24a0(0x20b)](typeof _0x29a855[_0x3d24a0(0x22a)],_0x46e172[_0x3d24a0(0x15b)]))merchant=_0x29a855[_0x3d24a0(0x22a)];_0x46e172[_0x3d24a0(0x1cb)](gTagSearchInput),offersGridContainer[_0x3d24a0(0x2c6)][_0x3d24a0(0x20f)]='',searchBoxLabel[_0x3d24a0(0x25b)]=merchant?_0x46e172[_0x3d24a0(0x1c3)](merchant,_0x46e172[_0x3d24a0(0x1c9)](currentSearch,null)?'':_0x46e172['JoORi']('\x20',currentSearch)):_0x46e172[_0x3d24a0(0x253)](currentSearch,_0x46e172[_0x3d24a0(0x28e)]),spendAmountLabel[_0x3d24a0(0x25b)]=_0x46e172[_0x3d24a0(0x223)]('$',_0x46e172[_0x3d24a0(0x2a7)](spendAmount,_0x46e172[_0x3d24a0(0x2dd)])[_0x3d24a0(0x2b4)]()),statRow['style']['display']='';const _0x57f521=window[_0x3d24a0(0x255)]&&currentSearch?_0x46e172[_0x3d24a0(0x296)](nlp,currentSearch)[_0x3d24a0(0x24b)]()[_0x3d24a0(0x1af)]()[_0x3d24a0(0x1a8)]()||currentSearch+'s':currentSearch?_0x46e172[_0x3d24a0(0x223)](currentSearch,'s'):'',_0x2834fd=[currentSearch];if(_0x57f521&&_0x46e172[_0x3d24a0(0x20b)](_0x57f521,currentSearch))_0x2834fd[_0x3d24a0(0x184)](_0x57f521);const _0x2526b9=window[_0x3d24a0(0x255)]&&merchant?_0x46e172['OPxNE'](nlp,merchant)[_0x3d24a0(0x24b)]()[_0x3d24a0(0x1af)]()[_0x3d24a0(0x1a8)]()||_0x46e172['IbNXW'](merchant,'s'):merchant?_0x46e172[_0x3d24a0(0x1c3)](merchant,'s'):'',_0x2d4ba2=[merchant];if(_0x2526b9&&_0x46e172[_0x3d24a0(0x20b)](_0x2526b9,merchant))_0x2d4ba2[_0x3d24a0(0x184)](_0x2526b9);fetch(_0x46e172[_0x3d24a0(0x21f)],{'method':_0x3d24a0(0x1b1),'headers':{'Content-Type':_0x46e172[_0x3d24a0(0x171)]},'body':JSON['stringify']({'spendAmount':spendAmount,'searchTerm':_0x2834fd,'merchant':_0x2d4ba2})})['then'](_0x2373bd=>_0x2373bd[_0x3d24a0(0x268)]())[_0x3d24a0(0x29f)](_0x966470=>{const _0x148333=_0x3d24a0,_0x594285={'uXhtT':function(_0x54934a){const _0x158673=a1_0x1b2c;return _0xcb5c08[_0x158673(0x20c)](_0x54934a);}};allOffers=_0x966470[_0x148333(0x2c5)],Promise[_0x148333(0x190)](allOffers[_0x148333(0x19c)](_0x1c0572=>estimateValue(_0x1c0572,spendAmount||0x64)[_0x148333(0x29f)](_0x4c6c16=>{const _0x398264=_0x148333;_0x1c0572[_0x398264(0x1aa)]=_0x4c6c16;})))[_0x148333(0x29f)](()=>{const _0x393fb5=_0x148333;_0x594285['uXhtT'](populateFilterDropdowns),_0x594285[_0x393fb5(0x189)](updateCurrentView);});});}});});let _0x19ce48=0x0,_0x25b462=!![];function _0x224cb7(){const _0xee9eb4=_0xdf6c19;if(!_0x25b462)return;_0x19ce48=_0x11901e[_0xee9eb4(0x2c7)](_0x19ce48,0x1)%0x4,filterLabel[_0xee9eb4(0x25b)]=_0x11901e[_0xee9eb4(0x15e)](_0xee9eb4(0x1a5),'.'['repeat'](_0x19ce48))||'.',_0x11901e['huySn'](setTimeout,_0x224cb7,0x190);}_0x11901e[_0xdf6c19(0x18c)](_0x224cb7),filterLabel&&_0x11901e[_0xdf6c19(0x16a)](fetch,_0x11901e['TigwP'],{'method':_0xdf6c19(0x1b1),'headers':{'Content-Type':_0x11901e[_0xdf6c19(0x26b)]},'body':JSON[_0xdf6c19(0x210)]({'date':new Date()[_0xdf6c19(0x212)]()})})[_0xdf6c19(0x29f)](_0x39e4be=>_0x39e4be[_0xdf6c19(0x268)]())['then'](_0x227d3f=>{const _0x407159=_0xdf6c19,_0x46b5b5=_0x227d3f['count'][_0x407159(0x2b4)]()||'0',_0x3966f1=_0x227d3f[_0x407159(0x19a)][_0x407159(0x17c)];filterLabel['textContent']='I\x20found\x20'+_0x46b5b5+_0x407159(0x22e);let _0xe73d6d='';_0x227d3f[_0x407159(0x19a)]&&_0x11901e[_0x407159(0x279)](_0x227d3f[_0x407159(0x19a)][_0x407159(0x17c)],0x0)&&_0x227d3f[_0x407159(0x19a)][_0x407159(0x154)](_0x1536db=>{const _0x595b14=_0x407159;if(bankTemplates[_0x1536db]&&bankTemplates[_0x1536db][_0x595b14(0x158)]){const _0x39e53c=new URL(bankTemplates[_0x1536db][_0x595b14(0x158)]),_0x4997ed=_0x39e53c[_0x595b14(0x1ab)][_0x595b14(0x147)]('.'),_0x3176d6=_0x11901e['UAwab'](_0x4997ed[_0x595b14(0x17c)],0x2)?_0x4997ed[_0x595b14(0x1be)](-0x2)[_0x595b14(0x1b2)]('.'):_0x39e53c['hostname'],_0x294a74='https://www.google.com/s2/favicons?domain='+_0x3176d6+_0x595b14(0x2a2);_0xe73d6d+=_0x595b14(0x17a)+_0x294a74+_0x595b14(0x1e7)+_0x1536db+'\x22\x20style=\x22width:\x2020px;\x20height:\x2020px;\x20border-radius:\x2050%;\x20margin-right:\x204px;\x20vertical-align:\x20middle;\x22\x20/>';}}),sourceLabel[_0x407159(0x1a7)]=''+_0xe73d6d+_0x3966f1+_0x407159(0x2af),sourceLabel[_0x407159(0x2c6)][_0x407159(0x20f)]='',_0x25b462=![],heroSearchBox['style']['display']='';})['catch'](()=>{const _0x2eca79=_0xdf6c19;filterLabel[_0x2eca79(0x25b)]=_0x11901e['ltDbm'],_0x25b462=![];});});function gTagSearchInput(){const _0x2c8750=a1_0x2cc58b,_0xcf8db={'orBTN':function(_0x352ce4,_0x226145){return _0x352ce4===_0x226145;},'DkyTl':_0x2c8750(0x182),'ANlmL':_0x2c8750(0x16e)};_0xcf8db[_0x2c8750(0x193)](typeof gtag,_0xcf8db[_0x2c8750(0x1d4)])&&gtag('event',_0xcf8db[_0x2c8750(0x1a3)],{'spend_amount':spendAmount,'search_term':currentSearch});}function loadAllOffers(_0x4ffc47){const _0x381932=a1_0x2cc58b,_0x4964dc={'nPqsd':function(_0x1d42bf,_0x3daa03){return _0x1d42bf(_0x3daa03);},'RRHtZ':function(_0x2f08fc,_0x458f95){return _0x2f08fc<_0x458f95;},'RRHJX':_0x381932(0x1ac),'tWteE':_0x381932(0x293),'uJBQR':function(_0x5380b8,_0x57fc28){return _0x5380b8===_0x57fc28;},'udMGD':_0x381932(0x182),'JtiNw':function(_0x102594,_0x58923e){return _0x102594!=_0x58923e;},'yObzZ':'offercontainer_processed','gVtiH':function(_0x2c2dd6,_0x286d40){return _0x2c2dd6>_0x286d40;}};chrome[_0x381932(0x257)][_0x381932(0x161)][_0x381932(0x2a9)](null,function(_0x54dcf1){const _0x490da8=_0x381932,_0x270d79={'bycqL':function(_0x38d87a,_0x7a40af){const _0x25b492=a1_0x1b2c;return _0x4964dc[_0x25b492(0x27b)](_0x38d87a,_0x7a40af);},'ujvUj':function(_0x3a7679,_0x34873b){const _0x2042a4=a1_0x1b2c;return _0x4964dc[_0x2042a4(0x14e)](_0x3a7679,_0x34873b);},'uFjNj':_0x4964dc['RRHJX'],'aWmRM':_0x4964dc[_0x490da8(0x1ff)],'UFYkD':function(_0x531fb3,_0x136721){const _0x5ca95e=_0x490da8;return _0x4964dc[_0x5ca95e(0x22c)](_0x531fb3,_0x136721);},'wPSWb':_0x4964dc['udMGD']};cards=[_0x490da8(0x190)];let _0x3306fb=0x0,_0x5e7750=0x0,_0x2029b6=0x0,_0x19dfc0=0x0,_0x54c980=0x0;for(const _0x364cd5 in _0x54dcf1){if(_0x364cd5['includes']('offercontainer_processed')&&_0x4964dc[_0x490da8(0x181)](_0x364cd5,_0x4964dc[_0x490da8(0x1fc)])){const _0x963ef=_0x54dcf1[_0x364cd5];_0x963ef&&_0x963ef[_0x490da8(0x2c5)]&&_0x4964dc['gVtiH'](_0x963ef[_0x490da8(0x2c5)][_0x490da8(0x17c)],0x0)&&(_0x963ef[_0x490da8(0x1ea)]&&!cards[_0x490da8(0x168)](_0x963ef['card'])&&cards['push'](_0x963ef['card']),_0x963ef[_0x490da8(0x2c5)][_0x490da8(0x154)](_0x1313d7=>{const _0x332385=_0x490da8;_0x5e7750++;if(_0x270d79['bycqL'](getExpiryDate,_0x1313d7)&&_0x270d79[_0x332385(0x2ca)](new Date(_0x270d79[_0x332385(0x24a)](getExpiryDate,_0x1313d7)),new Date(new Date()['toDateString']())))_0x54c980++;else{const _0x58026a={..._0x1313d7,'bank':_0x963ef['bank']||_0x270d79[_0x332385(0x14a)],'card':_0x963ef['card']||_0x270d79[_0x332385(0x1a4)],'lastUpdated':_0x1313d7[_0x332385(0x27c)]||new Date()['toISOString']()};allOffers['push'](_0x58026a);}if(_0x1313d7['activated'])_0x2029b6++;if(_0x1313d7['redeemed'])_0x19dfc0++;}),_0x3306fb+=_0x963ef[_0x490da8(0x27a)]||0x0);}}Promise['all'](allOffers['map'](_0x46f373=>estimateValue(_0x46f373,0x64)[_0x490da8(0x29f)](_0x35ab10=>{_0x46f373['estValue']=_0x35ab10;})))[_0x490da8(0x29f)](()=>{const _0x3684bd=_0x490da8;_0x270d79['UFYkD'](typeof _0x4ffc47,_0x270d79[_0x3684bd(0x289)])&&_0x4ffc47();});});}function loadJsonOffers(){const _0x4065fe=a1_0x2cc58b,_0x332365={'Rkkzp':_0x4065fe(0x292),'EbeDB':function(_0x73d13e,_0x210a68){return _0x73d13e+_0x210a68;},'ayjzg':'Failed\x20to\x20fetch\x20','kxOJe':_0x4065fe(0x185),'DHQQh':_0x4065fe(0x285),'ThUYj':_0x4065fe(0x1c1),'qFhvQ':'</li>','Cxesh':'<li>Up\x20to\x20$','dieEW':function(_0xe1d94b,_0x540820){return _0xe1d94b/_0x540820;},'scThj':_0x4065fe(0x1bd),'mmxjz':function(_0x3ef293,_0x58f14b,_0x4c43e3){return _0x3ef293(_0x58f14b,_0x4c43e3);},'mORmV':function(_0x51baf2,_0x21c9a9){return _0x51baf2(_0x21c9a9);},'wTJOT':'/data/manifest.json'};_0x332365[_0x4065fe(0x2b7)](fetch,_0x332365['wTJOT'])[_0x4065fe(0x29f)](_0x4b61b1=>{const _0x2fad1a=_0x4065fe;if(!_0x4b61b1['ok'])throw new Error(_0x332365[_0x2fad1a(0x25a)]);return _0x4b61b1[_0x2fad1a(0x268)]();})['then'](_0x9ca80d=>{const _0x45b1df=_0x4065fe,_0x3a4b68={'jYveV':function(_0x16ef98,_0x432460){return _0x332365['EbeDB'](_0x16ef98,_0x432460);},'gZWVX':_0x332365[_0x45b1df(0x1db)],'VxIse':_0x332365['kxOJe']};if(!Array[_0x45b1df(0x211)](_0x9ca80d))throw new Error(_0x332365[_0x45b1df(0x29d)]);return Promise['all'](_0x9ca80d[_0x45b1df(0x19c)](_0x461096=>fetch(_0x45b1df(0x175)+_0x461096)['then'](_0x42038c=>{const _0x457b68=_0x45b1df;if(!_0x42038c['ok'])throw new Error(_0x3a4b68['jYveV'](_0x3a4b68[_0x457b68(0x1ed)],_0x461096));const _0x55fef8=_0x42038c[_0x457b68(0x1ec)][_0x457b68(0x2a9)](_0x3a4b68[_0x457b68(0x221)])||new Date()[_0x457b68(0x1bc)]();return _0x42038c[_0x457b68(0x268)]()[_0x457b68(0x29f)](_0x1c61cc=>({'offersData':_0x1c61cc,'lastUpdated':_0x55fef8,'fileName':_0x461096}));})));})['then'](_0x4bb39a=>{const _0x1bf2a6=_0x4065fe,_0x328772={'XxDNS':function(_0x4d71bb,_0x4792c9,_0x288486){const _0x2d0c8c=a1_0x1b2c;return _0x332365[_0x2d0c8c(0x2a8)](_0x4d71bb,_0x4792c9,_0x288486);}};_0x4bb39a[_0x1bf2a6(0x154)](({offersData:_0x25ebdc,lastUpdated:_0xe009f1,fileName:_0x4e80a9})=>{const _0x2f766f=_0x1bf2a6,_0x3e24a1={'TUIis':function(_0x235066,_0x1df99f){return _0x235066+_0x1df99f;},'GFncP':_0x332365[_0x2f766f(0x2d9)],'Aganp':_0x332365[_0x2f766f(0x273)],'PJSdi':_0x332365[_0x2f766f(0x270)],'hgjvo':function(_0x396048,_0x6701a9){const _0x51bd88=_0x2f766f;return _0x332365[_0x51bd88(0x239)](_0x396048,_0x6701a9);},'NuMOE':_0x2f766f(0x2d2),'pJvSn':function(_0x227793,_0x322378){const _0x44eb33=_0x2f766f;return _0x332365[_0x44eb33(0x1b3)](_0x227793,_0x322378);},'xklvl':_0x332365['scThj']},_0x422527=_0x4e80a9[_0x2f766f(0x20e)](/\.json$/i,'');function _0x3eac3d(_0x34f3b6){const _0x83d852=_0x2f766f;return{'bank':_0x422527,'card':_0x422527,'lastUpdated':_0xe009f1,'id':_0x34f3b6[_0x83d852(0x281)],'logo':_0x83d852(0x25f)+_0x34f3b6[_0x83d852(0x281)]+_0x83d852(0x2cf),'merchantName':_0x34f3b6[_0x83d852(0x1b5)],'cashbackAmount':_0x34f3b6['cardLinkedOffer']?_0x34f3b6[_0x83d852(0x16b)][_0x83d852(0x201)]:_0x34f3b6['reward_display'],'merchantWebsite':_0x34f3b6[_0x83d852(0x281)],'description':'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x34f3b6[_0x83d852(0x1d6)][_0x83d852(0x16c)]?_0x83d852(0x1cc):'')+_0x83d852(0x151)+(_0x34f3b6[_0x83d852(0x25c)]?_0x34f3b6['reward_categories'][_0x83d852(0x19c)](_0x2329f2=>_0x83d852(0x25e)+_0x2329f2['name']+':\x20'+(_0x2329f2[_0x83d852(0x2cd)]==_0x83d852(0x28d)?'$'+_0x2329f2[_0x83d852(0x243)]/0x64:_0x2329f2[_0x83d852(0x243)]/0x64+'%')+_0x83d852(0x2c1))[_0x83d852(0x1b2)](''):'')+_0x83d852(0x19e)+(_0x34f3b6[_0x83d852(0x1d6)][_0x83d852(0x2a0)]?_0x83d852(0x2bc):'')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x34f3b6[_0x83d852(0x16b)]?.[_0x83d852(0x1ef)]?_0x3e24a1[_0x83d852(0x27f)](_0x3e24a1[_0x83d852(0x1b9)],_0x34f3b6[_0x83d852(0x16b)][_0x83d852(0x1ef)][_0x83d852(0x147)]('T')[0x0])+_0x3e24a1['Aganp']:'')+_0x83d852(0x237)+(_0x34f3b6[_0x83d852(0x16b)]?.[_0x83d852(0x173)]?_0x3e24a1['TUIis'](_0x3e24a1[_0x83d852(0x246)],_0x3e24a1[_0x83d852(0x18f)](_0x34f3b6[_0x83d852(0x16b)][_0x83d852(0x173)],0x64))+_0x3e24a1['Aganp']:'')+_0x83d852(0x1f7)+(_0x34f3b6['availability'][_0x83d852(0x16c)]?_0x3e24a1['TUIis'](_0x83d852(0x176)+_0x34f3b6[_0x83d852(0x281)],'.\x20')+_0x34f3b6['terms_and_conditions']+_0x3e24a1[_0x83d852(0x1dd)]:'')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>'+(_0x34f3b6[_0x83d852(0x16b)]?_0x3e24a1[_0x83d852(0x1e9)](_0x3e24a1['xklvl'],_0x34f3b6[_0x83d852(0x16b)][_0x83d852(0x17d)]):'')+_0x83d852(0x1b0),'category':_0x34f3b6[_0x83d852(0x1c0)]};}_0x25ebdc[_0x2f766f(0x2c5)]&&_0x25ebdc[_0x2f766f(0x2c5)][_0x2f766f(0x1d7)]&&Array['isArray'](_0x25ebdc['offers']['standard'][_0x2f766f(0x2c5)])&&_0x25ebdc['offers'][_0x2f766f(0x1d7)][_0x2f766f(0x2c5)][_0x2f766f(0x154)](_0x125d78=>{const _0x4009fc=_0x2f766f,_0x3eb6af=_0x3eac3d(_0x125d78);parseCashbackAmount(_0x3eb6af),_0x328772[_0x4009fc(0x1cd)](estimateValue,_0x3eb6af,0x64)[_0x4009fc(0x29f)](_0x17e0a4=>{const _0x2828df=_0x4009fc;_0x3eb6af[_0x2828df(0x1aa)]=_0x17e0a4,allOffers[_0x2828df(0x184)](_0x3eb6af);});});});})[_0x4065fe(0x231)](_0x894850=>{});}function calculateTotalValue(_0x74d5c3){const _0x412e51=a1_0x2cc58b;return _0x74d5c3['reduce']((_0x6a94f8,_0x2719dc)=>_0x6a94f8+(parseFloat(_0x2719dc[_0x412e51(0x1aa)])||0x0),0x0);}function createOfferCard(_0x2bcbc6){const _0x54b2f8=a1_0x2cc58b,_0x5a6cc5={'DuctL':_0x54b2f8(0x26e),'qNaaT':_0x54b2f8(0x16f),'taVHS':function(_0x29e427,_0x2264fd){return _0x29e427(_0x2264fd);},'mqgXR':'div','fZjeH':_0x54b2f8(0x200),'RyDst':'offer-card-template','DpHBv':function(_0x1ccb09,_0x580048){return _0x1ccb09(_0x580048);},'EPkHJ':function(_0x1cfb6d,_0x5cf4cf){return _0x1cfb6d(_0x5cf4cf);},'DZffa':function(_0x7a1791,_0x1cd29){return _0x7a1791(_0x1cd29);},'jnrYv':_0x54b2f8(0x261),'QOTcn':_0x54b2f8(0x2dc),'NdypM':'none','EhTiS':_0x54b2f8(0x1f5),'LSvoK':_0x54b2f8(0x288),'NERrd':function(_0x4f6cc7,_0x58582a){return _0x4f6cc7!==_0x58582a;},'hKMdV':_0x54b2f8(0x203),'yPpRy':function(_0x46def2,_0x2e2838){return _0x46def2(_0x2e2838);},'SpfSE':'.offer-amount','XKajn':_0x54b2f8(0x197),'BgwuM':_0x54b2f8(0x2bd),'BqWtk':'.redeem-button-log-in','pzriQ':_0x54b2f8(0x2d1),'ToTqD':_0x54b2f8(0x266),'gBmAX':_0x54b2f8(0x163),'nNTCK':function(_0x801c3b,_0xe657eb){return _0x801c3b===_0xe657eb;},'JHXQP':_0x54b2f8(0x19d),'zUDrh':_0x54b2f8(0x233),'FXEtE':'click'},_0x4da630=document['createElement'](_0x5a6cc5[_0x54b2f8(0x17f)]);_0x4da630['className']=_0x5a6cc5[_0x54b2f8(0x16d)],_0x4da630[_0x54b2f8(0x2c6)][_0x54b2f8(0x23f)]=_0x54b2f8(0x217);const _0x17b074=document[_0x54b2f8(0x209)](_0x5a6cc5[_0x54b2f8(0x226)]),_0x1d3a22=_0x17b074[_0x54b2f8(0x204)][_0x54b2f8(0x2ba)](!![]);!_0x2bcbc6[_0x54b2f8(0x1cf)]&&_0x2bcbc6[_0x54b2f8(0x2a3)]&&(_0x2bcbc6[_0x54b2f8(0x1cf)]=extractExpiryDateFromDescription(_0x2bcbc6[_0x54b2f8(0x2a3)]));const _0x2fd4df=_0x5a6cc5[_0x54b2f8(0x24f)](formatExpiryDate,_0x5a6cc5[_0x54b2f8(0x24f)](getExpiryDate,_0x2bcbc6));let _0x1e0e64=_0x2bcbc6[_0x54b2f8(0x166)]||_0x5a6cc5['taVHS'](extractMinSpendFromDescription,_0x2bcbc6[_0x54b2f8(0x2a3)])||'',_0x25ef62=_0x2bcbc6[_0x54b2f8(0x2cc)]||_0x5a6cc5[_0x54b2f8(0x26a)](extractMaxCashbackFromDescription,_0x2bcbc6[_0x54b2f8(0x2a3)])||'';const _0xb30bc8=_0x5a6cc5[_0x54b2f8(0x244)](assessCashbackEase,_0x2bcbc6);_0x1d3a22[_0x54b2f8(0x275)]('.offer-bank-name')['textContent']=_0x2bcbc6[_0x54b2f8(0x280)],_0x1d3a22[_0x54b2f8(0x275)](_0x5a6cc5[_0x54b2f8(0x152)])['src']=_0x2bcbc6[_0x54b2f8(0x24d)],_0x1d3a22[_0x54b2f8(0x275)](_0x5a6cc5[_0x54b2f8(0x152)])[_0x54b2f8(0x1c5)]=_0x2bcbc6['merchantName'],_0x1d3a22[_0x54b2f8(0x275)](_0x5a6cc5[_0x54b2f8(0x26f)])[_0x54b2f8(0x25b)]=_0x2bcbc6[_0x54b2f8(0x19f)]||_0x2bcbc6[_0x54b2f8(0x280)],_0x1d3a22['querySelector']('.offer-merchant-summary-icon')[_0x54b2f8(0x2c6)][_0x54b2f8(0x20f)]=_0x2bcbc6[_0x54b2f8(0x2db)]?'':_0x5a6cc5[_0x54b2f8(0x1ce)],_0x1d3a22['querySelector'](_0x5a6cc5[_0x54b2f8(0x213)])[_0x54b2f8(0x25b)]=_0x2bcbc6[_0x54b2f8(0x2db)]||'';const _0x397faa=_0x1d3a22['querySelector'](_0x5a6cc5['LSvoK']);_0x397faa&&(_0x397faa[_0x54b2f8(0x25b)]=_0x2bcbc6[_0x54b2f8(0x1aa)]&&_0x5a6cc5[_0x54b2f8(0x196)](parseInt(_0x2bcbc6['estValue']),0x0)?_0x54b2f8(0x2ab)+_0x5a6cc5[_0x54b2f8(0x1df)](parseFloat,_0x2bcbc6['estValue'])[_0x54b2f8(0x29b)](0x2)+_0x54b2f8(0x2b8):_0x5a6cc5[_0x54b2f8(0x2ce)]);let _0x281928=_0x5a6cc5[_0x54b2f8(0x245)](displayCashbackAmount,parseCashbackAmount(_0x2bcbc6));const _0x4bd3cd=_0x1d3a22['querySelector'](_0x5a6cc5[_0x54b2f8(0x179)]);_0x4bd3cd[_0x54b2f8(0x25b)]=_0x281928;const _0x35c4f1=_0x1d3a22[_0x54b2f8(0x275)](_0x5a6cc5[_0x54b2f8(0x1e2)]),_0x1c5649=bankTemplates[_0x2bcbc6['bank']]?.[_0x54b2f8(0x23c)],_0x3b0777=_0x35c4f1['querySelector'](_0x5a6cc5['BgwuM']),_0x572c5b=bankTemplates[_0x2bcbc6[_0x54b2f8(0x280)]]?.[_0x54b2f8(0x158)],_0xeeceda=_0x35c4f1[_0x54b2f8(0x275)](_0x5a6cc5[_0x54b2f8(0x236)]);_0xeeceda[_0x54b2f8(0x1f6)]=_0x572c5b;_0x1c5649?_0x3b0777[_0x54b2f8(0x249)]('click',_0x187b59=>{const _0x4e50fd=_0x54b2f8;_0x187b59[_0x4e50fd(0x2ac)](),window[_0x4e50fd(0x156)](_0x1c5649,_0x5a6cc5['DuctL']);}):_0x3b0777[_0x54b2f8(0x2c6)][_0x54b2f8(0x20f)]=_0x54b2f8(0x1b8);_0x1d3a22[_0x54b2f8(0x275)](_0x5a6cc5['pzriQ'])[_0x54b2f8(0x25b)]='',_0x1d3a22[_0x54b2f8(0x275)]('.offer-max-cashback')['textContent']='',_0x1d3a22[_0x54b2f8(0x275)](_0x54b2f8(0x229))[_0x54b2f8(0x25b)]=_0x2fd4df;if(_0xb30bc8[_0x54b2f8(0x1e5)]!==_0x5a6cc5[_0x54b2f8(0x15d)]){const _0x4b6ca9=_0x1d3a22[_0x54b2f8(0x275)](_0x5a6cc5['gBmAX']);_0x4b6ca9[_0x54b2f8(0x1f9)]['add'](_0x54b2f8(0x165)+_0xb30bc8[_0x54b2f8(0x1e5)]),_0x4b6ca9['textContent']=_0x5a6cc5['nNTCK'](_0xb30bc8[_0x54b2f8(0x1e5)],_0x54b2f8(0x174))?_0x5a6cc5[_0x54b2f8(0x1e6)]:_0x5a6cc5[_0x54b2f8(0x1ee)](_0xb30bc8['ease'],_0x54b2f8(0x188))?_0x5a6cc5[_0x54b2f8(0x28c)]:_0x54b2f8(0x21e);}return _0x4da630[_0x54b2f8(0x199)](_0x1d3a22),_0x4da630['addEventListener'](_0x5a6cc5[_0x54b2f8(0x286)],_0x3a064c=>{const _0x1cc0f1=_0x54b2f8;if(_0x3a064c[_0x1cc0f1(0x29c)]['classList'][_0x1cc0f1(0x1f8)](_0x5a6cc5[_0x1cc0f1(0x218)]))return;_0x5a6cc5[_0x1cc0f1(0x1df)](showOfferDetails,_0x2bcbc6);}),_0x4da630;}function sortOffers(_0x5469af,_0x5e6c8b){const _0x30475f=a1_0x2cc58b,_0x318db3={'LITyV':_0x30475f(0x208),'GRglX':function(_0x163892,_0x5e4525){return _0x163892(_0x5e4525);},'CgqAF':_0x30475f(0x20a),'FAIUf':function(_0x290661,_0x59fd3d){return _0x290661(_0x59fd3d);},'qOGBE':_0x30475f(0x1e3),'nDPnn':function(_0x21f77c,_0x58b10f){return _0x21f77c(_0x58b10f);},'oPwkO':_0x30475f(0x264),'BEMji':function(_0x5c512d,_0x4ac318){return _0x5c512d(_0x4ac318);},'QHNnU':'effort-asc','yayMZ':function(_0x1b6806,_0x44d311){return _0x1b6806-_0x44d311;},'TDPln':function(_0x362ee6,_0x173f21){return _0x362ee6(_0x173f21);},'WHbpS':function(_0x2989fb,_0xa6ab2e){return _0x2989fb-_0xa6ab2e;},'ckNbw':function(_0x5c94a7,_0x211004){return _0x5c94a7(_0x211004);},'kFouu':_0x30475f(0x287),'RqYgJ':function(_0x1a8a54,_0x3d9c83){return _0x1a8a54-_0x3d9c83;},'EPpyg':function(_0xd8ef21,_0x2d821e){return _0xd8ef21(_0x2d821e);},'klmXy':_0x30475f(0x2a1),'kfwkd':function(_0x5f2bf9,_0x4092be){return _0x5f2bf9-_0x4092be;},'yhFHg':function(_0x39bf0e,_0x294d93){return _0x39bf0e(_0x294d93);}};return[..._0x5469af][_0x30475f(0x2de)]((_0x87fc4b,_0x29006a)=>{const _0x25e429=_0x30475f;switch(_0x5e6c8b){case _0x25e429(0x22d):const _0x1b7115=_0x87fc4b[_0x25e429(0x27c)]?new Date(_0x87fc4b[_0x25e429(0x27c)])[_0x25e429(0x2be)]():0x0,_0x3bd14d=_0x29006a[_0x25e429(0x27c)]?new Date(_0x29006a[_0x25e429(0x27c)])[_0x25e429(0x2be)]():0x0;return _0x3bd14d-_0x1b7115;case _0x318db3[_0x25e429(0x1f0)]:return _0x318db3[_0x25e429(0x18b)](getExpiryDate,_0x87fc4b)-getExpiryDate(_0x29006a);case _0x318db3[_0x25e429(0x252)]:return _0x318db3[_0x25e429(0x18b)](getExpiryDate,_0x29006a)-_0x318db3['FAIUf'](getExpiryDate,_0x87fc4b);case _0x318db3['qOGBE']:return _0x318db3['FAIUf'](getCashbackValue,_0x29006a)-_0x318db3['nDPnn'](getCashbackValue,_0x87fc4b);case _0x318db3[_0x25e429(0x159)]:return _0x318db3[_0x25e429(0x18b)](getCashbackValue,_0x87fc4b)-_0x318db3[_0x25e429(0x290)](getCashbackValue,_0x29006a);case _0x318db3[_0x25e429(0x29a)]:return _0x318db3[_0x25e429(0x186)](_0x318db3[_0x25e429(0x1da)](getEffortValue,_0x87fc4b),getEffortValue(_0x29006a));case'effort-desc':return _0x318db3[_0x25e429(0x294)](getEffortValue(_0x29006a),_0x318db3['ckNbw'](getEffortValue,_0x87fc4b));case _0x318db3[_0x25e429(0x1b7)]:return _0x318db3[_0x25e429(0x2d4)](_0x318db3['EPpyg'](getCashbackFixedValue,_0x29006a),_0x318db3['BEMji'](getCashbackFixedValue,_0x87fc4b));case _0x318db3[_0x25e429(0x15f)]:return _0x318db3[_0x25e429(0x1c7)](_0x318db3[_0x25e429(0x180)](getCashbackPercentValue,_0x29006a),_0x318db3[_0x25e429(0x2b1)](getCashbackPercentValue,_0x87fc4b));default:return 0x0;}});}function a1_0x1b2c(_0x2806d9,_0x259350){const _0x30fd47=a1_0x30fd();return a1_0x1b2c=function(_0x1b2cd0,_0x11c564){_0x1b2cd0=_0x1b2cd0-0x146;let _0x2a8e2f=_0x30fd47[_0x1b2cd0];return _0x2a8e2f;},a1_0x1b2c(_0x2806d9,_0x259350);}function getEffortValue(_0x257c71){const _0x145eb3=a1_0x2cc58b,_0x3de666={'XFpMR':function(_0x13aa5d,_0x3dfc66){return _0x13aa5d(_0x3dfc66);},'KUarR':_0x145eb3(0x174),'tFdkw':'hard'},_0x1874d2=_0x3de666[_0x145eb3(0x238)](assessCashbackEase,_0x257c71);switch(_0x1874d2[_0x145eb3(0x1e5)]){case _0x3de666[_0x145eb3(0x1d2)]:return 0x1;case _0x145eb3(0x188):return 0x2;case _0x3de666['tFdkw']:return 0x3;default:return 0x4;}}function getCashbackValue(_0x159692){return parseFloat(_0x159692['estValue']||0x0);}function getCashbackFixedValue(_0x5eb4f3){const _0x18b71f=a1_0x2cc58b,_0x45d0f8={'TXTfw':function(_0x5f0087,_0x469e07){return _0x5f0087(_0x469e07);}};return _0x45d0f8[_0x18b71f(0x272)](parseFloat,_0x5eb4f3[_0x18b71f(0x248)]||0x0);}function a1_0x30fd(){const _0x118ce0=['fZjeH','hero_search_input','redeem-button','xHIQP','sUvLu','pEVTt','packageMax','easy','/data/','Online:\x20To\x20redeem\x20the\x20offer\x20you\x20must\x20make\x20an\x20eligible\x20purchase\x20at\x20','gdNmC','BxTcL','SpfSE','<img\x20src=\x22','trim','length','termsAndConditions','type-cashback','mqgXR','FAIUf','JtiNw','function','IflWW','push','last-modified','yayMZ','Wdsdu','medium','uXhtT','pEYZB','GRglX','KAdHG','nIfWg','GXrRU','hgjvo','all','29825RonXkK','*[style]','orBTN','#888','sCcch','NERrd','.redeem-button-container','div','appendChild','banks','7629895PVcksA','map','Easy','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','merchantName','filter','test','HrAOU','ANlmL','aWmRM','Please\x20give\x20me\x20a\x20few\x20moments\x20to\x20get\x20ready','stat-label','innerHTML','out','My\x20TV\x20is\x20broken.\x20I\x20need\x20a\x20new\x20one.\x20I\x20heard\x20good\x20things\x20about\x20LG\x20OLED\x20TV.\x20Any\x20deals?','estValue','hostname','Unknown\x20Bank','xyOgF','.modal-amount','toPlural','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>How\x20to\x20receive\x20the\x20payout</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Payouts\x20are\x20usually\x20issued\x20within\x2045\x20days\x20of\x20an\x20eligible\x20purchase\x20but\x20may\x20take\x20longer\x20in\x20some\x20cases.\x20Your\x20account\x20must\x20be\x20open\x20and\x20in\x20good\x20standing\x20at\x20the\x20time\x20we\x20attempt\x20to\x20award\x20the\x20payout.\x20In\x20the\x20event\x20you\x20have\x20more\x20than\x20one\x20account,\x20we\x20may\x20apply\x20the\x20payout\x20to\x20any\x20active\x20credit\x20card\x20or\x20bank\x20account\x20that\x20is\x20open\x20and\x20in\x20good\x20standing.\x20This\x20offer\x20is\x20valid\x20for\x20your\x20use\x20only\x20and\x20cannot\x20be\x20used\x20to\x20buy\x20and\x20resell\x20goods\x20or\x20services\x20to\x20other\x20persons\x20or\x20third\x20parties.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>What\x20is\x20a\x20qualifying\x20online\x20purchase?</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>To\x20make\x20a\x20qualifying\x20online\x20purchase,\x20you\x20must\x20use\x20the\x20link\x20below,\x20and\x20then\x20complete\x20a\x20purchase\x20at\x20the\x20selected\x20merchant\x27s\x20site,\x20in\x20the\x20window\x20opened\x20by\x20the\x20Capital\x20One\x20Offers\x20tile,\x20within\x2024\x20hours.\x20If\x20an\x20offer\x20specifically\x20lists\x20an\x20available\x20coupon\x20on\x20this\x20page,\x20you\x20may\x20use\x20it\x20on\x20the\x20merchant\x27s\x20site,\x20subject\x20to\x20any\x20coupon-related\x20conditions\x20that\x20we\x20display,\x20but\x20you\x20must\x20do\x20so\x20within\x2024\x20hours\x20of\x20activating\x20the\x20offer\x20and\x20during\x20the\x20same\x20open\x20browser\x20session\x20triggered\x20by\x20your\x20offer\x20activation.\x20Use\x20of\x20any\x20other\x20coupons,\x20cash\x20back,\x20or\x20promotional\x20websites\x20after\x20selecting\x20an\x20offer\x20and\x20before\x20making\x20a\x20purchase\x20will\x20invalidate\x20your\x20offer.\x20Use\x20of\x20VPNs\x20and\x20ad\x20blockers\x20may\x20also\x20invalidate\x20your\x20offer.\x20Online\x20purchases\x20made\x20on\x20websites\x20without\x20first\x20being\x20redirected\x20by\x20a\x20Capital\x20One\x20Offers\x20tile\x20are\x20not\x20qualifying\x20online\x20purchases.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>How\x20is\x20the\x20payout\x20calculated?</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>The\x20payout\x20for\x20qualifying\x20online\x20purchases\x20is\x20calculated\x20using\x20the\x20subtotal\x20amount\x20of\x20your\x20eligible\x20purchase,\x20which\x20is\x20calculated\x20after\x20any\x20eligible\x20coupons\x20are\x20applied,\x20and\x20excludes\x20taxes,\x20shipping,\x20credits,\x20and\x20other\x20fees.\x20A\x20payout\x20earned\x20through\x20this\x20offer\x20is\x20in\x20addition\x20to\x20any\x20rewards\x20regularly\x20earned\x20with\x20your\x20card.\x20If\x20you\x20return\x20or\x20cancel\x20an\x20otherwise\x20qualifying\x20purchase,\x20you\x20are\x20not\x20eligible\x20for\x20a\x20payout.\x20Payouts\x20for\x20subscription\x20services\x20are\x20only\x20awarded\x20to\x20new\x20customers\x20in\x20their\x20first\x20billing\x20period\x20after\x20the\x20merchant\x20has\x20confirmed\x20your\x20payment\x20has\x20processed.\x20Payouts\x20are\x20not\x20available\x20on\x20trial\x20memberships,\x20unless\x20otherwise\x20stated.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Read\x20the\x20complete\x20<a\x20href=\x22https://capitaloneoffers.com/Capital-One-Offers-Terms-and-Conditions.pdf\x22\x20target=\x22_blank\x22>Capital\x20One\x20Offers\x20terms\x20and\x20conditions</a>.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22https://capitaloneoffers.com/c1-offers/\x22\x20target=\x22_blank\x22>Activate\x20&\x20Shop\x20Now</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','POST','join','EbeDB','spendAmount','displayName','beforeinstallprompt','kFouu','none','GFncP','no-offer-label','OZNdR','toISOString','In-Store:\x20','slice','568afrgMs','easeCategory','<li>Expire\x20on\x20','.modal-description','XRwUg','LQXys','alt','zlQaT','kfwkd','removeAttribute','IfVEP','checkbox','JpiBz','<p>Online</p>','XxDNS','NdypM','expiration','29088719MLtvjK','IqvBd','KUarR','JbKdF','DkyTl','Fmpqz','availability','standard','lalBt','total-value','TDPln','ayjzg','WIUnd','NuMOE','eLCvP','taVHS','value','GWpgm','XKajn','value-desc','filter-container','ease','JHXQP','\x22\x20alt=\x22','43770KliEEN','pJvSn','card','color','headers','gZWVX','nNTCK','endDate','LITyV','MotBJ','input','vecor','MmMfm','.offer-merchant-summary-text','href','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>Merchant\x20details</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>','contains','classList','wZAuL','offers-grid-container','yObzZ','dnybp','MgNBm','tWteE','offer-card','rewardDisplay','htmlFor','(No\x20est.\x20value)','content','\x20characters\x20left','filter-checkbox\x20bank-checkbox','startsWith','expiry-asc','getElementById','expiry-desc','ZTYqr','wlDie','DQknK','replace','display','stringify','isArray','toDateString','EhTiS','riTcS','visibilitychange','navigator','relative','qNaaT','793930mqfYFo','add','BwIOz','searchTerm','mgmrp','Hard','oXLGF','6PZlwTQ','VxIse','Bjcpj','FOhZK','offer-search-label','hRCAB','RyDst','active','.ios-button','.offer-expiry','merchant','Hey\x20Max,\x20I\x27m\x20planning\x20to\x20spend\x20about\x20$120\x20on\x20groceries\x20this\x20week.\x20Any\x20good\x20deals\x20I\x20should\x20know\x20about?','uJBQR','recent','\x20offers.\x20Now,\x20tell\x20me\x20where\x20you\x27re\x20shopping,\x20what\x20you\x27re\x20buying,\x20and\x20your\x20budget\x20—\x20I\x27ll\x20find\x20you\x20the\x20best\x20deals.','VpFad','offer-details-template','catch','cashbackPercent','Medium','preventDefault','red','BqWtk','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','XFpMR','dieEW','hero-suggestion-btn','Edg','applyLink','I\x20am\x20unable\x20to\x20fetch\x20cashback\x20offers\x20at\x20this\x20time.','undefined','position','.offer-modal','ErWOE','Thinking\x20of\x20sending\x20flowers\x20to\x20my\x20mom\x20—\x20around\x20$50\x20budget.\x20Got\x20any\x20offers?','amount','DZffa','yPpRy','PJSdi','.modal-logo','cashbackFixed','addEventListener','bycqL','nouns','from','logo','AlHRD','DpHBv','8540184PxkFqo','#close-modal','CgqAF','KPHzx','.modal-merchant','nlp','DfRdB','storage','hMmrh','WNaxc','Rkkzp','textContent','reward_categories','dYLIU','<li>','https://images.capitaloneshopping.com/api/v1/logos?height=170&domain=','click','.offer-logo','.bank-checkbox:checked','LsBjj','value-asc','NlIXB','unknown','jMOKL','json','Mfhnh','EPkHJ','XroMC','location-online','bank-filter-container','_blank','QOTcn','Cxesh','FvSWG','TXTfw','qFhvQ','I\x27m\x20about\x20to\x20order\x20a\x20few\x20things\x20on\x20Amazon.\x20Anything\x20I\x20can\x20stack\x20for\x20cashback?','querySelector','fgrBd','toLowerCase','setAttribute','iybsl','totalOffers','nPqsd','lastUpdated','gZVZI','type-coupon','TUIis','bank','domain','offers-grid','392885brRhzO','placeholder','Manifest\x20is\x20not\x20an\x20array\x20of\x20file\x20names','FXEtE','cashbackfixed-desc','.offer-value','wPSWb','DOMContentLoaded','className','zUDrh','fixed','AoRMh','.android-button','BEMji','querySelectorAll','Failed\x20to\x20fetch\x20manifest.json','Unknown\x20Card','WHbpS','Need\x20to\x20pick\x20up\x20a\x20few\x20health\x20supplements\x20and\x20vitamins\x20—\x20maybe\x20$60\x20total.\x20Anything\x20worth\x20activating?','OPxNE','No\x20details\x20available','NvtDR','change','QHNnU','toFixed','target','DHQQh','userChoice','then','inStore','cashbackpercent-desc','&sz=32','description','TigwP','sFWIA','TbdmU','aeZQP','mmxjz','get','offer-search','(Est.\x20$','stopPropagation','qpLBt','orvYW','\x20sources','standalone','yhFHg','DbblG','TMaeo','toLocaleString','ueyNz','.hero-searchbox','mORmV','\x20for\x20you\x20·\x20Eligibility\x20may\x20vary)','days\x20left','cloneNode','EksRg','<p>In-Store</p>','.redeem-button','getTime','uDrsR','createElement','</li>','6fsloEG','PAshJ','Looking\x20to\x20book\x20a\x20trip\x20next\x20month\x20—\x20any\x20travel\x20cashback\x20options?','offers','style','ZrJzW','matchMedia','offer-search-char-remaining','ujvUj','qqMMh','maxCashback','type','hKMdV','&type=cropped&fallback=true','CIDiA','.offer-min-spend','To\x20earn\x20the\x20payout,\x20you\x20must\x20be\x20a\x20Capital\x20One\x20cardholder\x20or\x20bank\x20account\x20holder,\x20and\x20logged\x20in\x20to\x20your\x20account\x20on\x20capitalone.com\x20or\x20the\x20Capital\x20One\x20Mobile\x20app.','.nav-link','RqYgJ','MsuXp','https://us-west1-fast-planet-461216-n6.cloudfunctions.net/getOffers','XvKQw','yQsPy','ThUYj','rxWKM','merchantAISummary','.offer-merchant','iyBiI','sort','171WfUNsY','split','type-points','jPNAf','uFjNj','prompt','remove','advanced-filters-toggle','RRHtZ','class','ZOVfP','\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','jnrYv','.windows-button','forEach','100','open','Chrome','allOffersUrl','oPwkO','saved','UzsiD','referrer','ToTqD','dYCor','klmXy','android-app://','local','userAgent','.effort-label','yJZwP','effort-','minSpend','filter-label','includes','sort-options','huySn','cardLinkedOffer','online'];a1_0x30fd=function(){return _0x118ce0;};return a1_0x30fd();}function getCashbackPercentValue(_0xc0c80){const _0x2d2955=a1_0x2cc58b,_0x1e6cac={'ErWOE':function(_0x380f5d,_0x51634d){return _0x380f5d(_0x51634d);}};return _0x1e6cac[_0x2d2955(0x241)](parseFloat,_0xc0c80[_0x2d2955(0x232)]||0x0);}function showOfferDetails(_0x16c73e){const _0x212c59=a1_0x2cc58b,_0x1aa9fd={'QtxHd':'style','sFWIA':_0x212c59(0x14f),'HrAOU':_0x212c59(0x2b9),'IqvBd':function(_0x4ece67,_0x4892a5){return _0x4ece67===_0x4892a5;},'qqMMh':_0x212c59(0x240),'PAshJ':_0x212c59(0x198),'xyOgF':'*[class]','rBcsh':_0x212c59(0x297),'OZNdR':function(_0x2f62e5,_0x2cdb65){return _0x2f62e5(_0x2cdb65);},'uDrsR':_0x212c59(0x247),'jPNAf':function(_0x2b9e9a,_0x5350ef){return _0x2b9e9a(_0x5350ef);},'mYkak':_0x212c59(0x254),'sCcch':_0x212c59(0x1ae),'NlIXB':_0x212c59(0x1c2),'LQXys':_0x212c59(0x260)},_0x592f68=document['querySelectorAll'](_0x1aa9fd['qqMMh']);_0x592f68[_0x212c59(0x154)](_0x446fea=>_0x446fea['remove']());const _0x26cca3=document[_0x212c59(0x209)](_0x212c59(0x230)),_0x4ddb00=_0x26cca3[_0x212c59(0x204)][_0x212c59(0x2ba)](!![])[_0x212c59(0x275)](_0x1aa9fd[_0x212c59(0x2cb)]);let _0x173308='';if(_0x16c73e['description']){const _0x10377c=document[_0x212c59(0x2c0)](_0x1aa9fd[_0x212c59(0x2c3)]);_0x10377c[_0x212c59(0x1a7)]=_0x16c73e['description'];const _0x282d0c=_0x10377c[_0x212c59(0x291)](_0x212c59(0x192));_0x282d0c[_0x212c59(0x154)](_0x3b6d97=>{const _0xee8e46=_0x212c59;_0x3b6d97[_0xee8e46(0x1c8)](_0x1aa9fd['QtxHd']);});const _0x2f6f06=_0x10377c[_0x212c59(0x291)](_0x1aa9fd[_0x212c59(0x1ad)]);_0x2f6f06[_0x212c59(0x154)](_0x2f4ac3=>{const _0x151b93=_0x212c59;_0x2f4ac3[_0x151b93(0x1c8)](_0x1aa9fd[_0x151b93(0x2a5)]);});const _0x26329e=_0x10377c[_0x212c59(0x291)]('li');_0x26329e[_0x212c59(0x154)](_0x56581b=>{const _0x1ad945=_0x212c59;_0x56581b[_0x1ad945(0x25b)][_0x1ad945(0x277)]()['includes'](_0x1aa9fd[_0x1ad945(0x1a2)])&&_0x56581b[_0x1ad945(0x14c)](),_0x56581b['textContent'][_0x1ad945(0x277)]()['includes'](_0x1ad945(0x15a))&&_0x56581b[_0x1ad945(0x14c)]();}),_0x173308=_0x10377c[_0x212c59(0x1a7)];}else _0x173308=_0x1aa9fd['rBcsh'];let _0x66cf6d=formatExpiryDate(_0x1aa9fd['OZNdR'](getExpiryDate,_0x16c73e));_0x4ddb00[_0x212c59(0x275)](_0x1aa9fd[_0x212c59(0x2bf)])['src']=_0x16c73e[_0x212c59(0x24d)],_0x4ddb00['querySelector'](_0x1aa9fd[_0x212c59(0x2bf)])[_0x212c59(0x1c5)]=_0x16c73e[_0x212c59(0x19f)],_0x4ddb00[_0x212c59(0x275)](_0x212c59(0x254))[_0x212c59(0x25b)]=_0x16c73e[_0x212c59(0x19f)]||_0x16c73e['bank'];let _0x4ac1b0=_0x1aa9fd[_0x212c59(0x1bb)](displayCashbackAmount,_0x1aa9fd[_0x212c59(0x149)](parseCashbackAmount,_0x16c73e));_0x4ddb00[_0x212c59(0x275)](_0x212c59(0x247))['src']=_0x16c73e[_0x212c59(0x24d)],_0x4ddb00['querySelector'](_0x1aa9fd[_0x212c59(0x2bf)])[_0x212c59(0x1c5)]=_0x16c73e[_0x212c59(0x19f)],_0x4ddb00[_0x212c59(0x275)](_0x1aa9fd['mYkak'])[_0x212c59(0x25b)]=_0x16c73e[_0x212c59(0x19f)]||_0x16c73e[_0x212c59(0x280)],_0x4ddb00[_0x212c59(0x275)](_0x1aa9fd[_0x212c59(0x195)])[_0x212c59(0x25b)]=_0x4ac1b0,_0x4ddb00[_0x212c59(0x275)](_0x1aa9fd[_0x212c59(0x265)])[_0x212c59(0x1a7)]=_0x173308,document['body'][_0x212c59(0x199)](_0x4ddb00),_0x4ddb00[_0x212c59(0x275)](_0x212c59(0x251))[_0x212c59(0x249)](_0x1aa9fd[_0x212c59(0x1c4)],()=>{const _0x19c93d=_0x212c59;_0x4ddb00[_0x19c93d(0x14c)]();}),_0x4ddb00[_0x212c59(0x249)](_0x1aa9fd[_0x212c59(0x1c4)],_0x2ccf10=>{const _0x424e90=_0x212c59;_0x1aa9fd[_0x424e90(0x1d1)](_0x2ccf10[_0x424e90(0x29c)],_0x4ddb00)&&_0x4ddb00['remove']();});}function setActiveNavLink(_0x3ac299){const _0x5740ae=a1_0x2cc58b,_0x2a75f3={'VpFad':_0x5740ae(0x227),'nFFNn':_0x5740ae(0x2d3)};document['querySelectorAll'](_0x2a75f3['nFFNn'])[_0x5740ae(0x154)](_0x2fa913=>{const _0x44089f=_0x5740ae;_0x2fa913[_0x44089f(0x1f9)][_0x44089f(0x14c)](_0x2a75f3[_0x44089f(0x22f)]);});if(_0x3ac299){const _0x1c4ace=document[_0x5740ae(0x209)](_0x3ac299);_0x1c4ace&&_0x1c4ace[_0x5740ae(0x1f9)][_0x5740ae(0x21a)](_0x2a75f3[_0x5740ae(0x22f)]);}}function populateFilterDropdowns(){const _0x5a260d=a1_0x2cc58b,_0x102273={'DHhUS':_0x5a260d(0x198),'sNczZ':_0x5a260d(0x23a),'WNaxc':_0x5a260d(0x1ca),'DfRdB':_0x5a260d(0x206),'dnybp':_0x5a260d(0x299),'nKzJG':'label'};bankFilterContainer[_0x5a260d(0x1a7)]='';const _0x43250f=Array['from'](new Set(allOffers[_0x5a260d(0x19c)](_0x1b0cbb=>_0x1b0cbb[_0x5a260d(0x280)])));_0x43250f[_0x5a260d(0x154)](_0x3cbd07=>{const _0x4f08ce=_0x5a260d,_0x27718a=document[_0x4f08ce(0x2c0)](_0x102273['DHhUS']);_0x27718a[_0x4f08ce(0x28b)]=_0x102273['sNczZ'];const _0x42f7f7=document[_0x4f08ce(0x2c0)]('input');_0x42f7f7[_0x4f08ce(0x2cd)]=_0x102273[_0x4f08ce(0x259)],_0x42f7f7['id']='bank-'+_0x3cbd07[_0x4f08ce(0x20e)](/\s+/g,'-')[_0x4f08ce(0x277)](),_0x42f7f7[_0x4f08ce(0x1e0)]=_0x3cbd07,_0x42f7f7[_0x4f08ce(0x28b)]=_0x102273[_0x4f08ce(0x256)],_0x42f7f7['addEventListener'](_0x102273[_0x4f08ce(0x1fd)],updateCurrentView);const _0x4dc6ad=document[_0x4f08ce(0x2c0)](_0x102273['nKzJG']);_0x4dc6ad[_0x4f08ce(0x202)]=_0x42f7f7['id'],_0x4dc6ad['textContent']=_0x3cbd07,_0x27718a[_0x4f08ce(0x199)](_0x42f7f7),_0x27718a[_0x4f08ce(0x199)](_0x4dc6ad),bankFilterContainer[_0x4f08ce(0x199)](_0x27718a);});}function updateCurrentView(){filterAndDisplayOffers();}function getFilteredOffers(){const _0x408d36=a1_0x2cc58b,_0x30ce0f={'tImRy':function(_0x310378,_0x2b80e7){return _0x310378===_0x2b80e7;},'Fmpqz':function(_0x2e1efc,_0x30f429){return _0x2e1efc===_0x30f429;},'MsuXp':function(_0x30b989,_0x9cfbbe){return _0x30b989&&_0x9cfbbe;},'riTcS':_0x408d36(0x262),'dYLIU':function(_0x1f3cf8,_0xc40d14,_0x3973cb){return _0x1f3cf8(_0xc40d14,_0x3973cb);},'qhokQ':_0x408d36(0x1b8),'IflWW':function(_0x15779f,_0x35a590){return _0x15779f(_0x35a590);}},_0x23356b=Array[_0x408d36(0x24c)](document['querySelectorAll'](_0x30ce0f[_0x408d36(0x214)]))['map'](_0x3e141c=>_0x3e141c[_0x408d36(0x1e0)]),_0x487acf=Array[_0x408d36(0x24c)](document[_0x408d36(0x291)]('.type-checkbox:checked'))[_0x408d36(0x19c)](_0xc50484=>_0xc50484[_0x408d36(0x1e0)]);let _0x294cb8=allOffers[_0x408d36(0x1a0)](_0x5a71d8=>{const _0x55a84f=_0x408d36,_0x23b293=_0x30ce0f['tImRy'](_0x23356b['length'],0x0)||_0x5a71d8['bank']&&_0x23356b[_0x55a84f(0x168)](_0x5a71d8[_0x55a84f(0x280)]),_0x5297a3=_0x30ce0f[_0x55a84f(0x1d5)](_0x487acf[_0x55a84f(0x17c)],0x0)||_0x487acf['includes'](_0x5a71d8[_0x55a84f(0x2cd)]);return _0x30ce0f[_0x55a84f(0x2d5)](_0x23b293,_0x5297a3);});_0x294cb8=_0x30ce0f[_0x408d36(0x25d)](sortOffers,_0x294cb8,sortOptions[_0x408d36(0x1e0)]);if(_0x30ce0f[_0x408d36(0x1d5)](_0x294cb8[_0x408d36(0x17c)],0x0))noOfferLabel[_0x408d36(0x2c6)][_0x408d36(0x20f)]='',statLabel['style'][_0x408d36(0x20f)]=_0x30ce0f['qhokQ'];else{noOfferLabel[_0x408d36(0x2c6)][_0x408d36(0x20f)]=_0x30ce0f['qhokQ'],statLabel[_0x408d36(0x2c6)][_0x408d36(0x20f)]='';const _0x15adb4=_0x30ce0f[_0x408d36(0x183)](calculateTotalValue,_0x294cb8);document[_0x408d36(0x209)](_0x408d36(0x1d9))['textContent']='$'+(_0x15adb4/_0x294cb8['length'])[_0x408d36(0x29b)](0x2);}return _0x294cb8;}function filterAndDisplayOffers(){const _0x57c787=a1_0x2cc58b,_0x4acafb={'XvKQw':function(_0x479b8c,_0x217823){return _0x479b8c(_0x217823);},'gZVZI':function(_0x3c538e){return _0x3c538e();},'yJZwP':function(_0xbd27ee,_0x53e58a){return _0xbd27ee>_0x53e58a;},'gdNmC':'none','pEYZB':function(_0x5e1a3e,_0x3469b7){return _0x5e1a3e>_0x3469b7;}};offersGrid[_0x57c787(0x1a7)]='';const _0x37dd2d=_0x4acafb[_0x57c787(0x27d)](getFilteredOffers);_0x37dd2d[_0x57c787(0x1be)](0x0,0x32)[_0x57c787(0x154)](_0xbc4a22=>{const _0x17c57a=_0x57c787,_0x31b503=_0x4acafb[_0x17c57a(0x2d7)](createOfferCard,_0xbc4a22);offersGrid[_0x17c57a(0x199)](_0x31b503);}),allOffers&&_0x4acafb[_0x57c787(0x164)](allOffers['length'],0x0)?filterContainer[_0x57c787(0x2c6)]['display']='':filterContainer['style'][_0x57c787(0x20f)]=_0x4acafb['gdNmC'],allOffers&&_0x4acafb[_0x57c787(0x18a)](allOffers['length'],0x0)?bankFilterContainer[_0x57c787(0x2c6)]['display']='':bankFilterContainer[_0x57c787(0x2c6)]['display']=_0x4acafb[_0x57c787(0x177)];}
+// DOM elements
+const offersGrid = document.getElementById('offers-grid');
+const sortOptions = document.getElementById('sort-options');
+const heroSearchBox = document.querySelector('.hero-searchbox');
+const searchBox = document.getElementById('offer-search');
+const buttonAdvancedFilter = document.getElementById('advanced-filters-toggle');
+const onlineFilter = document.getElementById('location-online');
+const offersGridContainer = document.getElementById('offers-grid-container');
+const filterContainer = document.getElementById('filter-container');
+const bankFilterContainer = document.getElementById('bank-filter-container');
+const searchBoxLabel = document.getElementById('offer-search-label');
+const spendAmountLabel = document.getElementById('spend-amount-label');
+const statRow = document.querySelector('.stat-row');
+const statLabel = document.getElementById('stat-label');
+const noOfferLabel = document.getElementById('no-offer-label');
+const edgeButton = document.querySelector('.edge-button');
+const chromeButton = document.querySelector('.chrome-button');
+const filterLabel = document.getElementById('filter-label');
+const sourceLabel = document.getElementById('source-label');
+const iosButton = document.querySelector('.ios-button');
+const androidButton = document.querySelector('.android-button');
+const windowsButton = document.querySelector('.windows-button');
+
+// Global variables
+let allOffers = [];
+let cards = [];
+let currentFilter = 'all';
+let currentSearch = '';
+let spendAmount = 100;
+let merchant = '';
+let provider = [];
+
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+function installPWA() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => {
+      deferredPrompt = null;
+    });
+  }
+}
+
+function isStandaloneMode() {
+  return window.matchMedia('(display-mode: standalone)').matches
+    || window.navigator.standalone === true
+    || document.referrer.startsWith('android-app://');
+}
+
+function hideInstallButtonsIfStandalone() {
+  if (isStandaloneMode()) {
+    if (iosButton) iosButton.style.display = 'none';
+    if (androidButton) androidButton.style.display = 'none';
+    if (windowsButton) windowsButton.style.display = 'none';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Placeholder animation for search box
+  const phrases = [
+    "Hey Max, I'm planning to spend about $120 on groceries this week. Any good deals I should know about?",
+    "Thinking of sending flowers to my mom — around $50 budget. Got any offers?",
+    "I'm about to order a few things on Amazon. Anything I can stack for cashback?",
+    "Looking to book a trip next month — any travel cashback options?",
+    "Need to pick up a few health supplements and vitamins — maybe $60 total. Anything worth activating?",
+    "My TV is broken. I need a new one. I heard good things about LG OLED TV. Any deals?"
+  ];
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let typing = true;
+  function typePlaceholder() {
+    if (!typing) return;
+    const currentPhrase = phrases[phraseIndex];
+    searchBox.setAttribute('placeholder', currentPhrase.slice(0, charIndex));
+    if (charIndex < currentPhrase.length) {
+      charIndex++;
+      setTimeout(typePlaceholder, 60);
+    } else {
+      typing = false;
+      setTimeout(erasePlaceholder, 1500);
+    }
+  }
+  function erasePlaceholder() {
+    const currentPhrase = phrases[phraseIndex];
+    if (charIndex > 0) {
+      charIndex--;
+      searchBox.setAttribute('placeholder', currentPhrase.slice(0, charIndex));
+      setTimeout(erasePlaceholder, 30);
+    } else {
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      typing = true;
+      setTimeout(typePlaceholder, 500);
+    }
+  }
+  typePlaceholder();
+
+  const userAgent = navigator.userAgent;
+  const isEdge = userAgent.indexOf("Edg") !== -1;
+  const isChrome = userAgent.indexOf("Chrome") !== -1 && !isEdge;
+
+  if (edgeButton && chromeButton) {
+    // Show/hide buttons based on browser detection
+    if (isEdge) {
+      edgeButton.style.display = '';
+      chromeButton.style.display = 'none';
+    } else if (isChrome) {
+      edgeButton.style.display = 'none';
+      chromeButton.style.display = '';
+    } else {
+      // For other browsers, show Chrome
+      edgeButton.style.display = 'none';
+      chromeButton.style.display = '';
+    }
+  }
+
+  const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+  const isMacOS = /Macintosh|Mac OS X/.test(userAgent) && !isIOS;
+  const isIPadOS = /\(iPad/.test(userAgent);
+  const isWindows = /Windows/.test(userAgent);
+
+  if (iosButton && windowsButton && chromeButton) {
+    if (isIOS || isMacOS || isIPadOS) {
+      iosButton.style.display = '';
+      windowsButton.style.display = 'none';
+      androidButton.style.display = 'none';
+    } else if (isWindows) {
+      iosButton.style.display = 'none';
+      windowsButton.style.display = '';
+      androidButton.style.display = 'none';
+    } else {
+      iosButton.style.display = 'none';
+      windowsButton.style.display = 'none';
+      androidButton.style.display = '';
+    }
+  }
+
+  hideInstallButtonsIfStandalone();
+  document.addEventListener('visibilitychange', hideInstallButtonsIfStandalone);
+
+  if (iosButton) {
+    iosButton.addEventListener('click', function (e) {
+      installPWA();
+    });
+  }
+  if (androidButton) {
+    androidButton.addEventListener('click', function (e) {
+      installPWA();
+    });
+  }
+  if (windowsButton) {
+    windowsButton.addEventListener('click', function (e) {
+      installPWA();
+    });
+  }
+  // Add event listeners for range inputs
+  document.getElementById('type-cashback').addEventListener('change', updateCurrentView);
+  document.getElementById('type-discount').addEventListener('change', updateCurrentView);
+  document.getElementById('type-points').addEventListener('change', updateCurrentView);
+  document.getElementById('type-coupon').addEventListener('change', updateCurrentView);
+  sortOptions.addEventListener('change', updateCurrentView);
+  searchBox.addEventListener('input', function () {
+    const offerSearch = document.getElementById('offer-search');
+    const charRemaining = document.getElementById('offer-search-char-remaining');
+    if (offerSearch && charRemaining) {
+      const maxLen = 120;
+      function updateCharCount() {
+        const remaining = maxLen - offerSearch.value.length;
+        charRemaining.textContent = `${remaining} characters left`;
+        if (remaining < 10) {
+          charRemaining.style.color = 'red';
+        } else {
+          charRemaining.style.color = '#888';
+        }
+      }
+      offerSearch.addEventListener('input', updateCharCount);
+      updateCharCount();
+    }
+  });
+  buttonAdvancedFilter.addEventListener('click', function () {
+    if (searchBox.value.trim() !== '') {
+      fetch('https://us-west1-fast-planet-461216-n6.cloudfunctions.net/askMax', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: searchBox.value })
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data) {
+            if (typeof data.spendAmount !== 'undefined') spendAmount = data.spendAmount;
+            if (typeof data.searchTerm !== 'undefined') currentSearch = data.searchTerm;
+            if (typeof data.merchant !== 'undefined') merchant = data.merchant;
+            if (typeof data.provider !== 'undefined') provider = data.provider;
+            gTagSearchInput();
+            offersGridContainer.style.display = '';
+            console.log('currentSearch:', currentSearch);
+            searchBoxLabel.textContent = merchant? (merchant + (currentSearch===null ? "" : " " + currentSearch)): (currentSearch || 'something');
+            spendAmountLabel.textContent = "$" + (spendAmount || '100').toLocaleString();
+            statRow.style.display = '';
+            // Fetch offers
+            const pluralSearchTerm = (window.nlp && currentSearch) ? (nlp(currentSearch).nouns().toPlural().out() || currentSearch + "s") : (currentSearch ? currentSearch + "s" : "");
+            const searchTermArray = currentSearch? [currentSearch] : null;
+            if (pluralSearchTerm && pluralSearchTerm !== currentSearch) searchTermArray.push(pluralSearchTerm);
+            const pluralMerchant = (window.nlp && merchant) ? (nlp(merchant).nouns().toPlural().out() || merchant + "s") : (merchant ? merchant + "s" : "");
+            const merchantArray = merchant? [merchant] : null;
+            if (pluralMerchant && pluralMerchant !== merchant) merchantArray.push(pluralMerchant);
+            console.log("getOffers body: ", JSON.stringify({ spendAmount, searchTerm: searchTermArray, merchant: merchantArray, provider: provider }));
+            fetch('https://us-west1-fast-planet-461216-n6.cloudfunctions.net/getOffers', {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ spendAmount, searchTerm: searchTermArray, merchant: merchantArray, provider: provider })
+            })
+              .then(res => res.json())
+              .then(json => {
+                allOffers = json.offers;
+                Promise.all(
+                  allOffers.map(offer =>
+                    estimateValue(offer, spendAmount || 100).then(value => {
+                      offer.estValue = value;
+                    })
+                  )
+                ).then(() => {
+                  populateFilterDropdowns();
+                  updateCurrentView();
+                });
+              })
+          }
+        })
+    }
+  });
+
+  let filterDots = 0;
+  let filterLabelAnimating = true;
+  function animateFilterLabel() {
+    if (!filterLabelAnimating) return;
+    filterDots = (filterDots + 1) % 4; // cycles 0,1,2,3
+    filterLabel.textContent = 'Please give me a few moments to get ready' + '.'.repeat(filterDots) || '.';
+    setTimeout(animateFilterLabel, 400);
+  }
+  animateFilterLabel();
+
+  if (filterLabel) {
+    // Fetch count and banks from backend
+    fetch('https://us-west1-fast-planet-461216-n6.cloudfunctions.net/getOffers', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ date: new Date().toDateString() })
+    })
+      .then(response => response.json())
+      .then(data => {
+        const count = data.count.toLocaleString() || "0";
+        const banks = data.banks.length;
+        filterLabel.textContent = `I found ${count} offers. Now, tell me where you're shopping, what you're buying, and your budget — I'll find you the best deals.`;
+        
+        // Create favicon icons for each bank
+        let bankFavicons = '';
+        if (data.banks && data.banks.length > 0) {
+          data.banks.forEach(bank => {
+            if (bankTemplates[bank] && bankTemplates[bank].allOffersUrl) {
+              const url = new URL(bankTemplates[bank].allOffersUrl);
+              // Extract top-level domain from hostname
+              const hostnameParts = url.hostname.split('.');
+              const topLevelDomain = hostnameParts.length >= 2 ? hostnameParts.slice(-2).join('.') : url.hostname;
+              const faviconUrl = `https://www.google.com/s2/favicons?domain=${topLevelDomain}&sz=32`;
+              bankFavicons += `<img src="${faviconUrl}" alt="${bank}" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 4px; vertical-align: middle;" />`;
+            }
+          });
+        }
+        
+        sourceLabel.innerHTML = `${bankFavicons}${banks} sources`;
+        sourceLabel.style.display = '';
+        filterLabelAnimating = false; // Stop the animation
+        heroSearchBox.style.display = '';
+      })
+      .catch(() => {
+        filterLabel.textContent = 'I am unable to fetch cashback offers at this time.';
+        filterLabelAnimating = false; // Stop the animation
+      });
+  }
+
+  //loadJsonOffers();
+
+  // const offersLoadedInterval = setInterval(function () {
+  //   console.log('Offer loaded?', window.offersLoaded);
+  //   if (window.offersLoaded) {
+  //     clearInterval(offersLoadedInterval);
+  //     loadAllOffers(() => {
+  //       populateFilterDropdowns();
+  //       updateCurrentView();
+  //       heroSearchBox.style.display = '';
+  //     });
+  //   }
+  // }, 1000);
+});
+
+function gTagSearchInput() {
+  // Google Analytics event for hero-search-input as a whole
+  if (typeof gtag === 'function') {
+    gtag('event', 'hero_search_input', {
+      'spend_amount': spendAmount,
+      'search_term': currentSearch
+    });
+  }
+}
+
+// Load all offers from storage
+function loadAllOffers(callback) {
+  chrome.storage.local.get(null, function (result) {
+    cards = ['all'];
+    let totalActive = 0;
+    let totalCollected = 0;
+    let totalActivated = 0;
+    let totalRedeemed = 0;
+    let totalExpired = 0;
+
+    // Process all stored data
+    for (const key in result) {
+      if (key.includes('offercontainer_processed') && key != "offercontainer_processed") {
+        const offerData = result[key];
+
+        if (offerData && offerData.offers && offerData.offers.length > 0) {
+          // Add card to filter options if not already present
+          if (offerData.card && !cards.includes(offerData.card)) {
+            cards.push(offerData.card);
+          }
+          // Process each offer
+          offerData.offers.forEach(offer => {
+            // Update counters
+            totalCollected++;
+            // Check if offer is expired
+            if (getExpiryDate(offer) && new Date(getExpiryDate(offer)) < new Date(new Date().toDateString())) {
+              totalExpired++;
+            }
+            else {
+              // Add bank and card info to each offer
+              const enrichedOffer = {
+                ...offer,
+                bank: offerData.bank || 'Unknown Bank',
+                card: offerData.card || 'Unknown Card',
+                lastUpdated: offer.lastUpdated || new Date().toISOString() // Add lastUpdated if missing
+              };
+              allOffers.push(enrichedOffer);
+            }
+            if (offer.activated) totalActivated++;
+            if (offer.redeemed) totalRedeemed++;
+          });
+          totalActive += offerData.totalOffers || 0;
+        }
+      }
+    }
+    Promise.all(
+      allOffers.map(offer =>
+        estimateValue(offer, 100).then(value => {
+          offer.estValue = value;
+        })
+      )
+    ).then(() => {
+      // If a callback was provided, call it now that offers are loaded
+      if (typeof callback === 'function') {
+        callback();
+      }
+    });
+  })
+}
+
+function loadJsonOffers() {
+  fetch('/data/manifest.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to fetch manifest.json');
+      return response.json();
+    })
+    .then(fileList => {
+      // fileList should be an array of file names, e.g. ["capitalone.json", "amex.json"]
+      if (!Array.isArray(fileList)) {
+        throw new Error('Manifest is not an array of file names');
+      }
+      // Fetch all JSON files in parallel
+      return Promise.all(
+        fileList.map(fileName =>
+          fetch(`/data/${fileName}`)
+            .then(response => {
+              if (!response.ok) throw new Error('Failed to fetch ' + fileName);
+              // Get last-modified header
+              const lastUpdated = response.headers.get('last-modified') || new Date().toISOString();
+              return response.json().then(offersData => ({
+                offersData,
+                lastUpdated,
+                fileName
+              }));
+            })
+        )
+      );
+    })
+    .then(results => {
+      results.forEach(({ offersData, lastUpdated, fileName }) => {
+
+        // Use file name (without .json) as bank and card
+        const name = fileName.replace(/\.json$/i, '');
+        // Helper to normalize offers
+        function normalizeOffer(offer) {
+          return {
+            bank: name,
+            card: name,
+            lastUpdated,
+            id: offer.domain,
+            logo: `https://images.capitaloneshopping.com/api/v1/logos?height=170&domain=${offer.domain}&type=cropped&fallback=true`,
+            merchantName: offer.displayName,
+            cashbackAmount: offer.cardLinkedOffer ? offer.cardLinkedOffer.rewardDisplay : offer.reward_display,
+            merchantWebsite: offer.domain,
+            description: `
+          <div>
+            ${offer.availability.online ? "<p>Online</p>" : ""} 
+            <ul>
+              ${offer.reward_categories ? offer.reward_categories.map(cat => `<li>${cat.name}: ${cat.type == "fixed" ? "$" + cat.amount / 100 : cat.amount / 100 + "%"}</li>`).join('') : ""}
+            </ul>
+            ${offer.availability.inStore ? "<p>In-Store</p>" : ""}
+            <ul>
+              ${offer.cardLinkedOffer?.endDate ? "<li>Expire on " + offer.cardLinkedOffer.endDate.split('T')[0] + "</li>" : ""}
+              ${offer.cardLinkedOffer?.packageMax ? "<li>Up to $" + offer.cardLinkedOffer.packageMax / 100 + "</li>" : ""}
+            </ul>
+          </div>
+          <div>
+            <div>
+              <div>
+                <h3>Merchant details</h3>
+                <p>${offer.availability.online ? "Online: To redeem the offer you must make an eligible purchase at " + offer.domain + ". " + offer.terms_and_conditions + "To earn the payout, you must be a Capital One cardholder or bank account holder, and logged in to your account on capitalone.com or the Capital One Mobile app." : ""}</p>
+                <p>${offer.cardLinkedOffer ? "In-Store: " + offer.cardLinkedOffer.termsAndConditions : ""}</p>
+              </div>
+              <div>
+                <h3>How to receive the payout</h3>
+                <p>Payouts are usually issued within 45 days of an eligible purchase but may take longer in some cases. Your account must be open and in good standing at the time we attempt to award the payout. In the event you have more than one account, we may apply the payout to any active credit card or bank account that is open and in good standing. This offer is valid for your use only and cannot be used to buy and resell goods or services to other persons or third parties.</p>
+              </div>
+              <div>
+                <h3>What is a qualifying online purchase?</h3>
+                <p>To make a qualifying online purchase, you must use the link below, and then complete a purchase at the selected merchant's site, in the window opened by the Capital One Offers tile, within 24 hours. If an offer specifically lists an available coupon on this page, you may use it on the merchant's site, subject to any coupon-related conditions that we display, but you must do so within 24 hours of activating the offer and during the same open browser session triggered by your offer activation. Use of any other coupons, cash back, or promotional websites after selecting an offer and before making a purchase will invalidate your offer. Use of VPNs and ad blockers may also invalidate your offer. Online purchases made on websites without first being redirected by a Capital One Offers tile are not qualifying online purchases.</p>
+              </div>
+              <div>
+                <h3>How is the payout calculated?</h3>
+                <p>The payout for qualifying online purchases is calculated using the subtotal amount of your eligible purchase, which is calculated after any eligible coupons are applied, and excludes taxes, shipping, credits, and other fees. A payout earned through this offer is in addition to any rewards regularly earned with your card. If you return or cancel an otherwise qualifying purchase, you are not eligible for a payout. Payouts for subscription services are only awarded to new customers in their first billing period after the merchant has confirmed your payment has processed. Payouts are not available on trial memberships, unless otherwise stated.</p>
+                <p>Read the complete <a href="https://capitaloneoffers.com/Capital-One-Offers-Terms-and-Conditions.pdf" target="_blank">Capital One Offers terms and conditions</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="https://capitaloneoffers.com/c1-offers/" target="_blank">Activate & Shop Now</a>
+          </div>`,
+            category: offer.easeCategory
+          };
+        }
+        // Push all offers from both standard into allOffers
+        if (offersData.offers && offersData.offers.standard && Array.isArray(offersData.offers.standard.offers)) {
+          offersData.offers.standard.offers.forEach(offer => {
+            const normalizedOffer = normalizeOffer(offer);
+            parseCashbackAmount(normalizedOffer);
+            estimateValue(normalizedOffer, 100).then(
+              value => {
+                normalizedOffer.estValue = value;
+                allOffers.push(normalizedOffer);
+              });
+          });
+        }
+      });
+    })
+    .catch(e => {
+      console.error('Error loading offers:', e);
+    });
+}
+
+// Calculate total value from all offers
+function calculateTotalValue(offers) {
+  return offers.reduce((total, offer) => total + (parseFloat(offer.estValue) || 0), 0);
+}
+
+// Create offer card element
+function createOfferCard(offer) {
+  const offerCard = document.createElement('div');
+  offerCard.className = 'offer-card';
+  offerCard.style.position = 'relative';
+
+  // Clone the template for offer cards (not AI summary cards)
+  const template = document.getElementById('offer-card-template');
+  const clone = template.content.cloneNode(true);
+
+  // Use shared functions to extract and format data
+  if (!offer.expiration && offer.description) {
+    offer.expiration = extractExpiryDateFromDescription(offer.description);
+  }
+
+  // Format expiry date using shared function
+  const expiryText = formatExpiryDate(getExpiryDate(offer));
+
+  // Extract minimum spend and maximum cashback using shared functions
+  let minSpend = offer.minSpend || extractMinSpendFromDescription(offer.description) || '';
+  let maxCashback = offer.maxCashback || extractMaxCashbackFromDescription(offer.description) || '';
+
+  // Assess cashback ease
+  const easeAssessment = assessCashbackEase(offer);
+
+  // Fill in the template with offer data
+  clone.querySelector('.offer-bank-name').textContent = offer.bank;
+  clone.querySelector('.offer-logo').src = offer.logo;
+  clone.querySelector('.offer-logo').alt = offer.merchantName;
+  clone.querySelector('.offer-merchant').textContent = offer.merchantName || offer.bank;
+  clone.querySelector('.offer-merchant-summary-icon').style.display = offer.merchantAISummary ? '' : 'none';
+  clone.querySelector('.offer-merchant-summary-text').textContent = offer.merchantAISummary || '';
+
+
+  // Calculate and display estimated value if the element exists
+  const valueElement = clone.querySelector('.offer-value');
+  if (valueElement) {
+    valueElement.textContent = (offer.estValue && parseInt(offer.estValue) !== 0) ? `(Est. $${parseFloat(offer.estValue).toFixed(2)} for you · Eligibility may vary)` : '(No est. value)';
+  }
+
+  // Format cashback amount to include max cashback if it exists
+  let cashbackDisplay = displayCashbackAmount(parseCashbackAmount(offer));
+  const amountElement = clone.querySelector('.offer-amount');
+  amountElement.textContent = cashbackDisplay;
+
+  // Add redeem button if link is available - UPDATED to match hunt-button implementation
+  const redeemButtonContainer = clone.querySelector('.redeem-button-container');
+  const applyLink = bankTemplates[offer.bank]?.applyLink;
+  const redeemButton = redeemButtonContainer.querySelector('.redeem-button');
+  const loginLink = bankTemplates[offer.bank]?.allOffersUrl;
+  const loginAnchor = redeemButtonContainer.querySelector('.redeem-button-log-in');
+  loginAnchor.href = loginLink;
+  if (applyLink) {
+    // Add click event to open the link in a new tab
+    redeemButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      window.open(applyLink, '_blank');
+    });
+  }
+  else {
+    redeemButton.style.display = 'none'; // Hide the button if no link is presen
+  }
+
+  // Clear the separate min spend and max cashback elements
+  clone.querySelector('.offer-min-spend').textContent = '';
+  clone.querySelector('.offer-max-cashback').textContent = '';
+  clone.querySelector('.offer-expiry').textContent = expiryText;
+
+  // Set ease label if available
+  if (easeAssessment.ease !== 'unknown') {
+    const easeLabel = clone.querySelector('.effort-label');
+    easeLabel.classList.add(`effort-${easeAssessment.ease}`);
+    easeLabel.textContent = easeAssessment.ease === 'easy' ? 'Easy' :
+      easeAssessment.ease === 'medium' ? 'Medium' : 'Hard';
+  }
+
+  // Append the template content to the card
+  offerCard.appendChild(clone);
+
+  // Add click event to show offer details
+  offerCard.addEventListener('click', (event) => {
+    // Don't trigger if clicking on the redeem button
+    if (event.target.classList.contains('redeem-button')) {
+      return;
+    }
+    showOfferDetails(offer);
+  });
+
+  return offerCard;
+}
+
+// Sort offers based on selected option
+function sortOffers(offers, sortOption) {
+  return [...offers].sort((a, b) => {
+    switch (sortOption) {
+      case 'recent':
+        // Sort by lastUpdated timestamp (most recent first)
+        const aTime = a.lastUpdated ? new Date(a.lastUpdated).getTime() : 0;
+        const bTime = b.lastUpdated ? new Date(b.lastUpdated).getTime() : 0;
+        return bTime - aTime; // Descending order (newest first)
+      case 'expiry-asc':
+        return getExpiryDate(a) - getExpiryDate(b);
+      case 'expiry-desc':
+        return getExpiryDate(b) - getExpiryDate(a);
+      case 'value-desc':
+        return getCashbackValue(b) - getCashbackValue(a);
+      case 'value-asc':
+        return getCashbackValue(a) - getCashbackValue(b);
+      case 'effort-asc':
+        return getEffortValue(a) - getEffortValue(b);
+      case 'effort-desc':
+        return getEffortValue(b) - getEffortValue(a);
+      case 'cashbackfixed-desc':
+        return getCashbackFixedValue(b) - getCashbackFixedValue(a);
+      case 'cashbackpercent-desc':
+        return getCashbackPercentValue(b) - getCashbackPercentValue(a);
+      default:
+        return 0;
+    }
+  });
+}
+
+// Helper function to get effort value (ease of cashback)
+function getEffortValue(offer) {
+  const easeAssessment = assessCashbackEase(offer);
+
+  // Convert ease to numeric value for sorting
+  switch (easeAssessment.ease) {
+    case 'easy':
+      return 1;
+    case 'medium':
+      return 2;
+    case 'hard':
+      return 3;
+    default:
+      return 4; // Unknown ease gets lowest priority
+  }
+}
+
+// Helper function to extract cashback value
+function getCashbackValue(offer) {
+  return parseFloat(offer.estValue || 0);
+}
+
+function getCashbackFixedValue(offer) {
+  return parseFloat(offer.cashbackFixed || 0);
+}
+
+function getCashbackPercentValue(offer) {
+  return parseFloat(offer.cashbackPercent || 0);
+}
+
+// Show offer details in a modal
+function showOfferDetails(offer) {
+  // Remove any existing modals first to prevent duplicates
+  const existingModals = document.querySelectorAll('.offer-modal');
+  existingModals.forEach(modal => modal.remove());
+
+  // Clone the template for offer details modal
+  const template = document.getElementById('offer-details-template');
+  const modal = template.content.cloneNode(true).querySelector('.offer-modal');
+
+  // Process description if available
+  let processedDescription = '';
+  if (offer.description) {
+    // Create a temporary div to parse HTML
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = offer.description;
+
+    // Remove all style attributes from all elements
+    const elementsWithStyle = tempDiv.querySelectorAll('*[style]');
+    elementsWithStyle.forEach(el => {
+      el.removeAttribute('style');
+    });
+
+    // Also remove all class attributes to prevent external styling
+    const elementsWithClass = tempDiv.querySelectorAll('*[class]');
+    elementsWithClass.forEach(el => {
+      el.removeAttribute('class');
+    });
+
+    // Also remove x days left text
+    const listItems = tempDiv.querySelectorAll('li');
+    listItems.forEach(item => {
+      if (item.textContent.toLowerCase().includes("days left")) {
+        item.remove();
+      }
+      if (item.textContent.toLowerCase().includes("saved")) {
+        item.remove();
+      }
+    });
+
+    // Set the sanitized HTML
+    processedDescription = tempDiv.innerHTML;
+  } else {
+    processedDescription = 'No details available';
+  }
+
+  // Format expiry text using the shared getExpiryDate function
+  let expiryText = formatExpiryDate(getExpiryDate(offer));
+
+  // Fill in the template with offer data
+  modal.querySelector('.modal-logo').src = offer.logo;
+  modal.querySelector('.modal-logo').alt = offer.merchantName;
+  modal.querySelector('.modal-merchant').textContent = offer.merchantName || offer.bank;
+  let cashbackDisplay = displayCashbackAmount(parseCashbackAmount(offer));
+
+  // Fill in the template with offer data
+  modal.querySelector('.modal-logo').src = offer.logo;
+  modal.querySelector('.modal-logo').alt = offer.merchantName;
+  modal.querySelector('.modal-merchant').textContent = offer.merchantName || offer.bank;
+  modal.querySelector('.modal-amount').textContent = cashbackDisplay;
+  modal.querySelector('.modal-description').innerHTML = processedDescription;
+
+  // Add to document
+  document.body.appendChild(modal);
+
+  // Add event listeners
+  modal.querySelector('#close-modal').addEventListener('click', () => {
+    modal.remove();
+  });
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.remove();
+    }
+  });
+}
+// Event listeners
+// Function to set active nav link
+function setActiveNavLink(linkId) {
+  // Remove active class from all nav links
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+  });
+
+  // Add active class to the selected link
+  if (linkId) {
+    const activeLink = document.getElementById(linkId);
+    if (activeLink) {
+      activeLink.classList.add('active');
+    }
+  }
+}
+// Update the populateFilterDropdowns function to work with checkboxes instead of dropdowns
+function populateFilterDropdowns() {
+  // Clear existing options
+  bankFilterContainer.innerHTML = '';
+
+  // Get unique banks and cards
+  const banks = Array.from(new Set(allOffers.map(offer => offer.bank)));
+
+  // Add banks as checkboxes
+  banks.forEach(bank => {
+    const checkboxContainer = document.createElement('div');
+    checkboxContainer.className = 'hero-suggestion-btn';
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = `bank-${bank.replace(/\s+/g, '-').toLowerCase()}`;
+    checkbox.value = bank;
+    checkbox.className = 'filter-checkbox bank-checkbox';
+    checkbox.addEventListener('change', updateCurrentView);
+
+    const label = document.createElement('label');
+    label.htmlFor = checkbox.id;
+    label.textContent = bank;
+
+    checkboxContainer.appendChild(checkbox);
+    checkboxContainer.appendChild(label);
+    bankFilterContainer.appendChild(checkboxContainer);
+  });
+}
+// Add this new function to handle filtering in any view
+function updateCurrentView() {
+  // Check which view is currently active and update accordingly
+  filterAndDisplayOffers();
+}
+
+// Extract the common filtering logic into a separate function
+function getFilteredOffers() {
+  // Get all filter values
+  // const searchTerm = currentSearch;
+  // const pluralSearchTerm = nlp(searchTerm).nouns().toPlural().out() || searchTerm + "s";
+  // const singularSearchTerm = nlp(searchTerm).nouns().toSingular().out() || searchTerm;
+  // const pluralSearchTermPhraseRegex = new RegExp('\\b' + pluralSearchTerm.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&').replace(/\s+/g, '\\s?') + '\\b', 'i');
+  // const singularSearchTermPhraseRegex = new RegExp('\\b' + singularSearchTerm.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&').replace(/\s+/g, '\\s?') + '\\b', 'i');
+  // console.log('Search term:', singularSearchTerm, pluralSearchTerm);
+  const selectedBanks = Array.from(document.querySelectorAll('.bank-checkbox:checked')).map(cb => cb.value);
+  const selectedTypes = Array.from(document.querySelectorAll('.type-checkbox:checked')).map(cb => cb.value);
+
+  // Filter offers by all criteria
+  let filteredOffers = allOffers.filter(offer => {
+    // const normalizedDescription = getPlainText(offer.description)
+    //   .toLowerCase()
+    //   .split(/(?<=[.?!])(?=\s*[A-Z])/) // Split into sentences
+    //   .filter(sentence =>
+    //     !/(not eligible|exclusions?|excludes?|excluding|not applicable|not qualifying)/i.test(sentence)
+    //   )
+    //   .join(' ');
+    // Handle bank filtering - more lenient
+    const matchesBank = selectedBanks.length === 0 ||
+      (offer.bank && selectedBanks.includes(offer.bank));
+    // Handle search filtering
+    // const matchesSearch = searchTerm === '' ||
+    //   (offer.merchantName && offer.merchantName.toLowerCase().split(/\W+/).includes(singularSearchTerm)) ||
+    //   (offer.merchantName && offer.merchantName.toLowerCase().split(/\W+/).includes(pluralSearchTerm)) ||
+    //   // (offer.category && offer.category.toLowerCase().split(/\W+/).includes(singularSearchTerm)) ||
+    //   // (offer.category && offer.category.toLowerCase().split(/\W+/).includes(pluralSearchTerm)) ||
+    //   (offer.merchantWebsiteTitle && offer.merchantWebsiteTitle.toLowerCase().split(/\W+/).includes(singularSearchTerm)) ||
+    //   (offer.merchantWebsiteTitle && offer.merchantWebsiteTitle.toLowerCase().split(/\W+/).includes(pluralSearchTerm)) ||
+    //   (offer.merchantWebsiteDescription && offer.merchantWebsiteDescription.toLowerCase().split(/\W+/).includes(singularSearchTerm)) ||
+    //   (offer.merchantWebsiteDescription && offer.merchantWebsiteDescription.toLowerCase().split(/\W+/).includes(pluralSearchTerm)) ||
+    //   (singularSearchTerm.includes(' ')? offer.merchantName && singularSearchTermPhraseRegex.test(offer.merchantName.toLowerCase()): false) ||
+    //   (pluralSearchTerm.includes(' ')? offer.merchantName && pluralSearchTermPhraseRegex.test(offer.merchantName.toLowerCase()): false) ||
+    //   (singularSearchTerm.includes(' ')? offer.merchantWebsiteTitle && singularSearchTermPhraseRegex.test(offer.merchantWebsiteTitle.toLowerCase()): false) ||
+    //   (pluralSearchTerm.includes(' ')? offer.merchantWebsiteTitle && pluralSearchTermPhraseRegex.test(offer.merchantWebsiteTitle.toLowerCase()): false) ||
+    //   (singularSearchTerm.includes(' ')? offer.merchantWebsiteDescription && singularSearchTermPhraseRegex.test(offer.merchantWebsiteDescription.toLowerCase()): false) ||
+    //   (pluralSearchTerm.includes(' ')? offer.merchantWebsiteDescription && pluralSearchTermPhraseRegex.test(offer.merchantWebsiteDescription.toLowerCase()): false);
+    // new RegExp(`\\b(${singularSearchTerm}|${pluralSearchTerm})\\b`, 'i').test(normalizedDescription);
+
+    // Determine offer type
+    const matchesType = selectedTypes.length === 0 || selectedTypes.includes(offer.type);
+    // Return true only if all filters match
+    // return matchesBank && matchesType && matchesSearch;
+    return matchesBank && matchesType;
+  });
+
+  // Sort offers
+  filteredOffers = sortOffers(filteredOffers, sortOptions.value);
+
+  if (filteredOffers.length === 0) {
+    noOfferLabel.style.display = '';
+    statLabel.style.display = 'none';
+  }
+  else {
+    // Calculate total value
+    noOfferLabel.style.display = 'none';
+    statLabel.style.display = '';
+    const totalValue = calculateTotalValue(filteredOffers);
+    console.log('Total Value:', totalValue);
+    document.getElementById('total-value').textContent = `$${(totalValue / filteredOffers.length).toFixed(2)}`;
+  }
+
+  return filteredOffers;
+}
+
+// Now simplify filterAndDisplayOffers to use the common function
+function filterAndDisplayOffers() {
+  // Clear current display
+  offersGrid.innerHTML = '';
+
+  // Get filtered offers
+  const filteredOffers = getFilteredOffers();
+
+  // Create and append offer cards
+  filteredOffers.slice(0, 50).forEach(offer => {
+    const offerCard = createOfferCard(offer);
+    offersGrid.appendChild(offerCard);
+  });
+
+  allOffers && allOffers.length > 0 ? filterContainer.style.display = '' : filterContainer.style.display = 'none';
+  allOffers && allOffers.length > 0 ? bankFilterContainer.style.display = '' : bankFilterContainer.style.display = 'none';
+}

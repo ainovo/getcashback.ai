@@ -1,1 +1,409 @@
-const a0_0x5f20cd=a0_0x14d6;function a0_0x4371(){const _0x2ebe00=['target','storage','transaction','rWEAD','auORZ','9053RTKbLR','open','uuSnf','readwrite','YBaEP','getManifest','JAhRn','function','GKtIM','forEach','uvMEx','jkhjA','sEGAu','toSyX','runtime','string','pSaUh','getAllKeys','748472DNipGj','325824kdRmKf','length','hsuuE','getcashback_storage','yNtQa','onerror','110hORgBw','local','NMHKI','lLYQn','13HDGPtL','then','randomUUID','size','createObjectStore','scFIU','chrome','VRUqf','10084yOCHZu','AkwNX','IFVgN','LUTzu','object','jGxLZ','hWmzX','LWzRQ','oDYrk','objectStoreNames','YInSC','huzti','get','72dsCUnw','jPkxh','getAll','rWeDo','uAZwl','bEaOa','ASiTC','keys','objectStore','UvJVN','clientInfo','24MMHkyN','stringify','645xRUyiB','kfUGT','result','undefined','11930052IsnSKx','aYGoB','rYMPy','set','delete','4241214DPFwaL','FfuIY','jJHMH','BxLeS','toISOString','readonly','QcSAl','jymUh','eqatL','put','1.0.0','KUaVt','onupgradeneeded','isArray','528946HMdCZM','7epmVaY','onsuccess','lKRQW'];a0_0x4371=function(){return _0x2ebe00;};return a0_0x4371();}function a0_0x14d6(_0x5dd6ad,_0x1d45cf){const _0x437132=a0_0x4371();return a0_0x14d6=function(_0x14d6b2,_0xdcfc04){_0x14d6b2=_0x14d6b2-0xeb;let _0x2bf55a=_0x437132[_0x14d6b2];return _0x2bf55a;},a0_0x14d6(_0x5dd6ad,_0x1d45cf);}(function(_0x56cb56,_0x3487bd){const _0x24367d=a0_0x14d6,_0x4bfdda=_0x56cb56();while(!![]){try{const _0x11e911=parseInt(_0x24367d(0x143))/0x1*(parseInt(_0x24367d(0x121))/0x2)+-parseInt(_0x24367d(0xf7))/0x3+-parseInt(_0x24367d(0x109))/0x4*(-parseInt(_0x24367d(0x123))/0x5)+parseInt(_0x24367d(0x12c))/0x6*(-parseInt(_0x24367d(0x13b))/0x7)+-parseInt(_0x24367d(0xf6))/0x8*(parseInt(_0x24367d(0x116))/0x9)+-parseInt(_0x24367d(0xfd))/0xa*(-parseInt(_0x24367d(0x13a))/0xb)+parseInt(_0x24367d(0x127))/0xc*(parseInt(_0x24367d(0x101))/0xd);if(_0x11e911===_0x3487bd)break;else _0x4bfdda['push'](_0x4bfdda['shift']());}catch(_0x4fbb15){_0x4bfdda['push'](_0x4bfdda['shift']());}}}(a0_0x4371,0x5ff35),(function(){const _0x509c46=a0_0x14d6,_0x3eeed7={'jkhjA':function(_0x2d269c,_0x14ffbe){return _0x2d269c===_0x14ffbe;},'LUTzu':_0x509c46(0x131),'uAZwl':function(_0x51c3f2,_0x4a1173){return _0x51c3f2(_0x4a1173);},'GKtIM':_0x509c46(0xf3),'QyURq':_0x509c46(0x10d),'BxLeS':_0x509c46(0xeb),'rYMPy':function(_0x1cd793){return _0x1cd793();},'YInSC':function(_0x7ac156){return _0x7ac156();},'lKRQW':function(_0x2acf8a,_0x526537){return _0x2acf8a===_0x526537;},'VRUqf':function(_0x2aee0c,_0x5de527){return _0x2aee0c===_0x5de527;},'jGxLZ':_0x509c46(0x146),'iVzrx':function(_0x256374,_0x113eb9){return _0x256374===_0x113eb9;},'lLYQn':function(_0x15f9dc){return _0x15f9dc();},'jymUh':function(_0x1f74c6){return _0x1f74c6();},'rdoOe':_0x509c46(0x126),'sEGAu':_0x509c46(0xfa)};if(typeof window[_0x509c46(0x107)]===_0x3eeed7['rdoOe'])window['chrome']={};if(!window[_0x509c46(0x107)][_0x509c46(0x13f)])window['chrome']['storage']={};if(!window[_0x509c46(0x107)][_0x509c46(0x13f)]['local']){const _0x33dac9=_0x3eeed7[_0x509c46(0xf0)],_0x58dc94='local';let _0x29acb5=null;function _0x30b68e(){const _0xf2b8={'scFIU':function(_0x7aacdf,_0xfe19d4){return _0x7aacdf(_0xfe19d4);}};if(_0x29acb5)return _0x29acb5;return _0x29acb5=new Promise((_0x24a8f8,_0x26ff8a)=>{const _0x3fc022=a0_0x14d6,_0x15a12e={'KUaVt':function(_0x4b222b,_0x2567be){return _0x4b222b(_0x2567be);}},_0x21d76c=indexedDB[_0x3fc022(0x144)](_0x33dac9,0x1);_0x21d76c[_0x3fc022(0x138)]=function(_0xff89fd){const _0x32b657=_0x3fc022,_0x1b8ed0=_0xff89fd[_0x32b657(0x13e)][_0x32b657(0x125)];!_0x1b8ed0[_0x32b657(0x112)]['contains'](_0x58dc94)&&_0x1b8ed0[_0x32b657(0x105)](_0x58dc94);},_0x21d76c['onsuccess']=function(_0x3c78e1){const _0xe8eddb=_0x3fc022;_0xf2b8[_0xe8eddb(0x106)](_0x24a8f8,_0x3c78e1[_0xe8eddb(0x13e)][_0xe8eddb(0x125)]);},_0x21d76c[_0x3fc022(0xfc)]=function(_0x57d5f0){const _0x19bd7b=_0x3fc022;_0x15a12e[_0x19bd7b(0x137)](_0x26ff8a,_0x57d5f0[_0x19bd7b(0x13e)]['error']);};}),_0x29acb5;}window[_0x509c46(0x107)][_0x509c46(0x13f)][_0x509c46(0xfe)]={'get':function(_0x120319,_0x8b8f51){const _0x32a45e=_0x509c46,_0x478c08={'MDHly':function(_0x25d132,_0x3248a8){const _0x1b58b9=a0_0x14d6;return _0x3eeed7[_0x1b58b9(0x11a)](_0x25d132,_0x3248a8);}};_0x30b68e()[_0x32a45e(0x102)](_0x366ccd=>{const _0x2a39d2=_0x32a45e,_0x1c5c04={'aYGoB':function(_0x2bf27f,_0x622965){return _0x2bf27f===_0x622965;},'YBaEP':function(_0x6b6d20,_0x1f0083){return _0x3eeed7['jkhjA'](_0x6b6d20,_0x1f0083);},'yNtQa':function(_0x5e2d67,_0x160e56){return _0x5e2d67(_0x160e56);}},_0x2d6c39=_0x366ccd[_0x2a39d2(0x140)](_0x58dc94,_0x3eeed7[_0x2a39d2(0x10c)]),_0x5ec16e=_0x2d6c39[_0x2a39d2(0x11e)](_0x58dc94);let _0x5d1f0d={};if(!_0x120319){const _0x2922d7=_0x5ec16e[_0x2a39d2(0xf5)]();_0x2922d7[_0x2a39d2(0x13c)]=function(){const _0x2df093=_0x2a39d2,_0xea40f4={'pSaUh':function(_0x59ac46,_0x15c6c2){const _0x20caec=a0_0x14d6;return _0x1c5c04[_0x20caec(0x128)](_0x59ac46,_0x15c6c2);},'hsuuE':function(_0x49f11a,_0x33cbad){return _0x49f11a(_0x33cbad);}},_0x475017=_0x2922d7[_0x2df093(0x125)];let _0x45ba30=_0x475017[_0x2df093(0xf8)];if(_0x1c5c04['YBaEP'](_0x45ba30,0x0))return _0x8b8f51(_0x5d1f0d);_0x475017[_0x2df093(0xed)](_0x243ba5=>{const _0x5de2b8=_0x2df093,_0x36ecb6=_0x5ec16e[_0x5de2b8(0x115)](_0x243ba5);_0x36ecb6['onsuccess']=function(){const _0x4e07f6=_0x5de2b8;_0x5d1f0d[_0x243ba5]=_0x36ecb6['result'];if(_0xea40f4[_0x4e07f6(0xf4)](--_0x45ba30,0x0))_0xea40f4[_0x4e07f6(0xf9)](_0x8b8f51,_0x5d1f0d);};});};}else{if(Array[_0x2a39d2(0x139)](_0x120319)){let _0x136d3e=_0x120319[_0x2a39d2(0xf8)];if(_0x3eeed7[_0x2a39d2(0xef)](_0x136d3e,0x0))return _0x3eeed7[_0x2a39d2(0x11a)](_0x8b8f51,_0x5d1f0d);_0x120319[_0x2a39d2(0xed)](_0x474c77=>{const _0x45fe8d=_0x2a39d2,_0x52e22d=_0x5ec16e[_0x45fe8d(0x115)](_0x474c77);_0x52e22d[_0x45fe8d(0x13c)]=function(){const _0x27055d=_0x45fe8d;_0x5d1f0d[_0x474c77]=_0x52e22d[_0x27055d(0x125)];if(--_0x136d3e===0x0)_0x1c5c04[_0x27055d(0xfb)](_0x8b8f51,_0x5d1f0d);};});}else{if(_0x3eeed7[_0x2a39d2(0xef)](typeof _0x120319,_0x3eeed7[_0x2a39d2(0xec)])){const _0x260836=_0x5ec16e['get'](_0x120319);_0x260836[_0x2a39d2(0x13c)]=function(){_0x5d1f0d[_0x120319]=_0x260836['result'],_0x478c08['MDHly'](_0x8b8f51,_0x5d1f0d);};}else{if(_0x3eeed7['jkhjA'](typeof _0x120319,_0x3eeed7['QyURq'])){const _0x40413c=Object[_0x2a39d2(0x11d)](_0x120319);let _0x5c2d05=_0x40413c[_0x2a39d2(0xf8)];if(_0x3eeed7[_0x2a39d2(0xef)](_0x5c2d05,0x0))return _0x3eeed7[_0x2a39d2(0x11a)](_0x8b8f51,_0x5d1f0d);_0x40413c[_0x2a39d2(0xed)](_0x5239ae=>{const _0x40b95c=_0x2a39d2,_0xe57abc={'jZglO':function(_0x54e6e5,_0x253a80){const _0x566868=a0_0x14d6;return _0x1c5c04[_0x566868(0x147)](_0x54e6e5,_0x253a80);},'AkwNX':function(_0x295474,_0x599fd9){return _0x295474(_0x599fd9);}},_0x13a353=_0x5ec16e[_0x40b95c(0x115)](_0x5239ae);_0x13a353[_0x40b95c(0x13c)]=function(){const _0x1a7730=_0x40b95c;_0x5d1f0d[_0x5239ae]=_0x13a353[_0x1a7730(0x125)]!==undefined?_0x13a353[_0x1a7730(0x125)]:_0x120319[_0x5239ae];if(_0xe57abc['jZglO'](--_0x5c2d05,0x0))_0xe57abc[_0x1a7730(0x10a)](_0x8b8f51,_0x5d1f0d);};});}}}}});},'set':function(_0x853a51,_0x51fbb3){const _0x5f1676=_0x509c46;_0x3eeed7['YInSC'](_0x30b68e)[_0x5f1676(0x102)](_0x23dad2=>{const _0x14f948=_0x5f1676,_0x52e7f5={'huzti':function(_0x42d59a,_0x3f7939){return _0x42d59a===_0x3f7939;},'hWmzX':_0x3eeed7[_0x14f948(0x12f)],'nsYBI':function(_0x3e3ec1){const _0x571062=_0x14f948;return _0x3eeed7[_0x571062(0x129)](_0x3e3ec1);}},_0x4deb0b=_0x23dad2[_0x14f948(0x140)](_0x58dc94,_0x14f948(0x146)),_0x397215=_0x4deb0b[_0x14f948(0x11e)](_0x58dc94),_0x3ad805=Object['keys'](_0x853a51);let _0x178e32=_0x3ad805[_0x14f948(0xf8)];_0x3ad805['forEach'](_0x12db5a=>{const _0x35f8b8=_0x14f948,_0x5ee7b6=_0x397215[_0x35f8b8(0x135)](_0x853a51[_0x12db5a],_0x12db5a);_0x5ee7b6['onsuccess']=function(){const _0x4bf3fe=_0x35f8b8;if(_0x52e7f5[_0x4bf3fe(0x114)](--_0x178e32,0x0)&&_0x52e7f5[_0x4bf3fe(0x114)](typeof _0x51fbb3,_0x52e7f5[_0x4bf3fe(0x10f)]))_0x52e7f5['nsYBI'](_0x51fbb3);};});});},'remove':function(_0x18c912,_0x3fd14b){const _0xf83441=_0x509c46,_0x30699c={'DyNNX':function(_0x25783f,_0x5c921a){const _0x5a5119=a0_0x14d6;return _0x3eeed7[_0x5a5119(0x13d)](_0x25783f,_0x5c921a);},'toSyX':_0xf83441(0x146),'rWeDo':function(_0x38b800,_0x1c9cda){return _0x38b800===_0x1c9cda;},'NMHKI':_0x3eeed7[_0xf83441(0xec)],'UvJVN':function(_0x68ee7d,_0x22e2ed){const _0x43223f=_0xf83441;return _0x3eeed7[_0x43223f(0x108)](_0x68ee7d,_0x22e2ed);},'QcSAl':_0x3eeed7[_0xf83441(0x12f)],'bEaOa':function(_0x20d4e1){const _0x2b8961=_0xf83441;return _0x3eeed7[_0x2b8961(0x113)](_0x20d4e1);}};_0x3eeed7['YInSC'](_0x30b68e)[_0xf83441(0x102)](_0x53373e=>{const _0x324503=_0xf83441,_0x3520df={'auORZ':function(_0x15f07c,_0x402f5f){return _0x30699c['DyNNX'](_0x15f07c,_0x402f5f);},'oDYrk':function(_0x315e77,_0x5a6645){return _0x315e77===_0x5a6645;},'aknvm':_0x324503(0xeb),'FfuIY':function(_0x4b96ef){return _0x4b96ef();}},_0x295bef=_0x53373e[_0x324503(0x140)](_0x58dc94,_0x30699c[_0x324503(0xf1)]),_0x10c841=_0x295bef[_0x324503(0x11e)](_0x58dc94);if(_0x30699c[_0x324503(0x119)](typeof _0x18c912,_0x30699c[_0x324503(0xff)]))_0x18c912=[_0x18c912];let _0x19baeb=Array[_0x324503(0x139)](_0x18c912)?_0x18c912[_0x324503(0xf8)]:0x0;if(!_0x19baeb){if(_0x30699c[_0x324503(0x11f)](typeof _0x3fd14b,_0x30699c[_0x324503(0x132)]))_0x30699c[_0x324503(0x11b)](_0x3fd14b);return;}_0x18c912[_0x324503(0xed)](_0x4cad22=>{const _0x34a33b=_0x324503,_0x57cb6d=_0x10c841[_0x34a33b(0x12b)](_0x4cad22);_0x57cb6d[_0x34a33b(0x13c)]=function(){const _0x5329f9=_0x34a33b;if(_0x3520df[_0x5329f9(0x142)](--_0x19baeb,0x0)&&_0x3520df[_0x5329f9(0x111)](typeof _0x3fd14b,_0x3520df['aknvm']))_0x3520df[_0x5329f9(0x12d)](_0x3fd14b);};});});},'clear':function(_0xf87d87){const _0x3e26cb=_0x509c46,_0x496065={'kfUGT':function(_0x518b8c,_0x46b013){return _0x3eeed7['iVzrx'](_0x518b8c,_0x46b013);},'jPkxh':_0x3eeed7[_0x3e26cb(0x12f)],'JAhRn':function(_0x18a68e){const _0x4478ad=_0x3e26cb;return _0x3eeed7[_0x4478ad(0x100)](_0x18a68e);}};_0x3eeed7[_0x3e26cb(0x133)](_0x30b68e)[_0x3e26cb(0x102)](_0x57a62b=>{const _0x119621=_0x3e26cb,_0x19cc54=_0x57a62b[_0x119621(0x140)](_0x58dc94,_0x3eeed7[_0x119621(0x10e)]),_0x554a16=_0x19cc54[_0x119621(0x11e)](_0x58dc94),_0x449ddb=_0x554a16['clear']();_0x449ddb[_0x119621(0x13c)]=function(){const _0x34434e=_0x119621;if(_0x496065[_0x34434e(0x124)](typeof _0xf87d87,_0x496065[_0x34434e(0x117)]))_0x496065[_0x34434e(0x149)](_0xf87d87);};});},'getBytesInUse':function(_0x1df144,_0x17fe78){const _0xec8b19=_0x509c46,_0xef1764={'rWEAD':function(_0xbda8ee,_0x3bbb38){return _0xbda8ee(_0x3bbb38);},'ASiTC':function(_0x37c4ae,_0x2c0a88){const _0x5108e2=a0_0x14d6;return _0x3eeed7[_0x5108e2(0x108)](_0x37c4ae,_0x2c0a88);},'eqatL':_0x3eeed7[_0xec8b19(0x10c)],'IFVgN':_0x3eeed7[_0xec8b19(0xec)],'jJHMH':function(_0x45e45f,_0x1c3c6c){return _0x3eeed7['jkhjA'](_0x45e45f,_0x1c3c6c);}};_0x3eeed7[_0xec8b19(0x100)](_0x30b68e)[_0xec8b19(0x102)](_0x5e8612=>{const _0x588d51=_0xec8b19,_0x425b17={'ymOAM':function(_0x2d1bb1,_0x3f28d4){const _0x5b08e3=a0_0x14d6;return _0xef1764[_0x5b08e3(0x141)](_0x2d1bb1,_0x3f28d4);},'uuSnf':function(_0x5646c5,_0x48e84f){const _0x308e4b=a0_0x14d6;return _0xef1764[_0x308e4b(0x11c)](_0x5646c5,_0x48e84f);}},_0x55212e=_0x5e8612['transaction'](_0x58dc94,_0xef1764[_0x588d51(0x134)]),_0x2fafb2=_0x55212e[_0x588d51(0x11e)](_0x58dc94);let _0x38f759=0x0;function _0x2512bd(_0x4b6b66){const _0xd5e4f7=_0x588d51;try{return new Blob([JSON[_0xd5e4f7(0x122)](_0x4b6b66)])[_0xd5e4f7(0x104)];}catch(_0x4915b2){return 0x0;}}if(!_0x1df144){const _0x485d3b=_0x2fafb2[_0x588d51(0x118)]();_0x485d3b[_0x588d51(0x13c)]=function(){const _0x5ebe22=_0x588d51,_0xd10e93={'uvMEx':function(_0x554b23,_0x57cdbf){return _0x554b23(_0x57cdbf);}},_0x3395c5=_0x485d3b[_0x5ebe22(0x125)];_0x3395c5[_0x5ebe22(0xed)](_0x5416b7=>{const _0x3cb1ef=_0x5ebe22;_0x38f759+=_0xd10e93[_0x3cb1ef(0xee)](_0x2512bd,_0x5416b7);}),_0x17fe78(_0x38f759);};}else{if(_0xef1764[_0x588d51(0x11c)](typeof _0x1df144,_0xef1764[_0x588d51(0x10b)])){const _0x5a02ba=_0x2fafb2['get'](_0x1df144);_0x5a02ba['onsuccess']=function(){_0x38f759=_0x2512bd(_0x5a02ba['result']),_0x17fe78(_0x38f759);};}else{if(Array[_0x588d51(0x139)](_0x1df144)){let _0x3f626c=_0x1df144[_0x588d51(0xf8)];if(_0xef1764[_0x588d51(0x12e)](_0x3f626c,0x0))return _0x17fe78(0x0);_0x1df144[_0x588d51(0xed)](_0x2e8069=>{const _0x5cffbe=_0x588d51,_0x25ed9d=_0x2fafb2['get'](_0x2e8069);_0x25ed9d[_0x5cffbe(0x13c)]=function(){const _0xa35e82=_0x5cffbe;_0x38f759+=_0x425b17['ymOAM'](_0x2512bd,_0x25ed9d['result']);if(_0x425b17[_0xa35e82(0x145)](--_0x3f626c,0x0))_0x17fe78(_0x38f759);};});}}}});}};}}()),(function(){const _0x10c010=a0_0x14d6,_0x3adcad={'LWzRQ':_0x10c010(0x136)};if(!window[_0x10c010(0x107)])window['chrome']={};if(!window[_0x10c010(0x107)][_0x10c010(0xf2)])window[_0x10c010(0x107)]['runtime']={};window['chrome'][_0x10c010(0xf2)][_0x10c010(0x148)]=function(){const _0x2d5fd7=_0x10c010;return{'version':_0x3adcad[_0x2d5fd7(0x110)]};};}()),chrome[a0_0x5f20cd(0x13f)][a0_0x5f20cd(0xfe)][a0_0x5f20cd(0x115)]('clientInfo',function(_0xe9816e){const _0x5cd592=a0_0x5f20cd;if(!_0xe9816e[_0x5cd592(0x120)]){const _0x130a08=crypto[_0x5cd592(0x103)](),_0x3ffb96={'clientID':_0x130a08,'registered':![],'createdAt':new Date()[_0x5cd592(0x130)]()};chrome['storage'][_0x5cd592(0xfe)][_0x5cd592(0x12a)]({'clientInfo':_0x3ffb96},function(){});}else{}}));
+(function () {
+  if (typeof window.chrome === "undefined") window.chrome = {};
+  if (!window.chrome.storage) window.chrome.storage = {};
+  if (!window.chrome.storage.local) {
+    const DB_NAME = "getcashback_storage";
+    const STORE_NAME = "local";
+    let dbPromise = null;
+
+    function getDB() {
+      if (dbPromise) return dbPromise;
+      dbPromise = new Promise((resolve, reject) => {
+        const request = indexedDB.open(DB_NAME, 1);
+        request.onupgradeneeded = function (event) {
+          const db = event.target.result;
+          if (!db.objectStoreNames.contains(STORE_NAME)) {
+            db.createObjectStore(STORE_NAME);
+          }
+        };
+        request.onsuccess = function (event) {
+          resolve(event.target.result);
+        };
+        request.onerror = function (event) {
+          reject(event.target.error);
+        };
+      });
+      return dbPromise;
+    }
+
+    window.chrome.storage.local = {
+      get: function (keys, callback) {
+        getDB().then(db => {
+          const tx = db.transaction(STORE_NAME, "readonly");
+          const store = tx.objectStore(STORE_NAME);
+          let result = {};
+          if (!keys) {
+            // Get all
+            const req = store.getAllKeys();
+            req.onsuccess = function () {
+              const allKeys = req.result;
+              let count = allKeys.length;
+              if (count === 0) return callback(result);
+              allKeys.forEach(key => {
+                const getReq = store.get(key);
+                getReq.onsuccess = function () {
+                  result[key] = getReq.result;
+                  if (--count === 0) callback(result);
+                };
+              });
+            };
+          } else if (Array.isArray(keys)) {
+            let count = keys.length;
+            if (count === 0) return callback(result);
+            keys.forEach(key => {
+              const getReq = store.get(key);
+              getReq.onsuccess = function () {
+                result[key] = getReq.result;
+                if (--count === 0) callback(result);
+              };
+            });
+          } else if (typeof keys === "string") {
+            const getReq = store.get(keys);
+            getReq.onsuccess = function () {
+              result[keys] = getReq.result;
+              callback(result);
+            };
+          } else if (typeof keys === "object") {
+            const keyArr = Object.keys(keys);
+            let count = keyArr.length;
+            if (count === 0) return callback(result);
+            keyArr.forEach(key => {
+              const getReq = store.get(key);
+              getReq.onsuccess = function () {
+                result[key] = getReq.result !== undefined ? getReq.result : keys[key];
+                if (--count === 0) callback(result);
+              };
+            });
+          }
+        });
+      },
+      set: function (items, callback) {
+        getDB().then(db => {
+          const tx = db.transaction(STORE_NAME, "readwrite");
+          const store = tx.objectStore(STORE_NAME);
+          const keys = Object.keys(items);
+          let count = keys.length;
+          keys.forEach(key => {
+            const req = store.put(items[key], key);
+            req.onsuccess = function () {
+              if (--count === 0 && typeof callback === "function") callback();
+            };
+          });
+        });
+      },
+      remove: function (keys, callback) {
+        getDB().then(db => {
+          const tx = db.transaction(STORE_NAME, "readwrite");
+          const store = tx.objectStore(STORE_NAME);
+          if (typeof keys === "string") keys = [keys];
+          let count = Array.isArray(keys) ? keys.length : 0;
+          if (!count) {
+            if (typeof callback === "function") callback();
+            return;
+          }
+          keys.forEach(key => {
+            const req = store.delete(key);
+            req.onsuccess = function () {
+              if (--count === 0 && typeof callback === "function") callback();
+            };
+          });
+        });
+      },
+      clear: function (callback) {
+        getDB().then(db => {
+          const tx = db.transaction(STORE_NAME, "readwrite");
+          const store = tx.objectStore(STORE_NAME);
+          const req = store.clear();
+          req.onsuccess = function () {
+            if (typeof callback === "function") callback();
+          };
+        });
+      },
+      getBytesInUse: function (keys, callback) {
+        getDB().then(db => {
+          const tx = db.transaction(STORE_NAME, "readonly");
+          const store = tx.objectStore(STORE_NAME);
+          let totalBytes = 0;
+          function calcSize(obj) {
+            try {
+              return new Blob([JSON.stringify(obj)]).size;
+            } catch (e) {
+              return 0;
+            }
+          }
+          if (!keys) {
+            // All keys
+            const req = store.getAll();
+            req.onsuccess = function () {
+              const all = req.result;
+              all.forEach(val => { totalBytes += calcSize(val); });
+              callback(totalBytes);
+            };
+          } else if (typeof keys === "string") {
+            const req = store.get(keys);
+            req.onsuccess = function () {
+              totalBytes = calcSize(req.result);
+              callback(totalBytes);
+            };
+          } else if (Array.isArray(keys)) {
+            let count = keys.length;
+            if (count === 0) return callback(0);
+            keys.forEach(key => {
+              const req = store.get(key);
+              req.onsuccess = function () {
+                totalBytes += calcSize(req.result);
+                if (--count === 0) callback(totalBytes);
+              };
+            });
+          }
+        });
+      }
+    };
+  }
+})();
+
+// chrome.runtime.getManifest polyfill for web
+(function () {
+  if (!window.chrome) window.chrome = {};
+  if (!window.chrome.runtime) window.chrome.runtime = {};
+  window.chrome.runtime.getManifest = function () {
+    return { version: "1.0.0" };
+  };
+})();
+
+chrome.storage.local.get('clientInfo', function (result) {
+  if (!result.clientInfo) {
+    // Generate a new UUID using crypto.randomUUID()
+    const uuid = crypto.randomUUID();
+
+    // Create client info object with boolean registration status
+    const clientInfo = {
+      clientID: uuid,
+      registered: false,
+      createdAt: new Date().toISOString()
+    };
+
+    // Store in Chrome local storage
+    chrome.storage.local.set({ clientInfo: clientInfo }, function () {
+      console.log('Client ID initialized:', clientInfo.clientID);
+    });
+  } else {
+    console.log('Client ID already exists:', result.clientInfo.clientID);
+  }
+});
+
+// // Load and parse CSV, then store in chrome.storage.local
+// (function () {
+//   window.offersLoaded = false;
+//   const decryptionKey = "8b93e8c2-3c68-4f57-9b6f-d4cb935e4d79";
+//   const remoteUrl = "https://api.getcashback.ai/search";
+//   let csvFile = "";
+
+//   fetch(remoteUrl, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({ passKey: decryptionKey })
+//   })
+//     .then(response => {
+//       if (!response.ok) throw new Error("Failed to get CSV file hash");
+//       return response.json();
+//     })
+//     .then(data => {
+//       if (!data.hash) throw new Error("No hash in response");
+//       csvFile = data.hash;
+//       console.log("Received CSV file hash:", csvFile);
+
+//       function parseCSV(text) {
+//         const lines = text.trim().split(/\r?\n/);
+//         const headers = lines[0].split(",");
+//         return lines.slice(1).map(line => {
+//           const values = [];
+//           let current = '';
+//           let inQuotes = false;
+//           for (let i = 0; i < line.length; i++) {
+//             const char = line[i];
+//             if (char === '"' && line[i + 1] === '"') {
+//               current += '"';
+//               i++;
+//             } else if (char === '"') {
+//               inQuotes = !inQuotes;
+//             } else if (char === ',' && !inQuotes) {
+//               values.push(current);
+//               current = '';
+//             } else {
+//               current += char;
+//             }
+//           }
+//           values.push(current);
+//           const obj = {};
+//           headers.forEach((h, idx) => obj[h.trim()] = values[idx] ? values[idx].trim() : "");
+//           return obj;
+//         });
+//       }
+
+//       // First, check clientInfo for csvFile tracking
+//       chrome.storage.local.get(['clientInfo'], function (result) {
+//         let clientInfo = result.clientInfo || {};
+//         const prevCsvFile = clientInfo.csvFile;
+
+//         // Now check if any offercontainer_processed_ keys exist and have offers
+//         chrome.storage.local.get(null, function (allData) {
+//           const offerKeys = Object.keys(allData).filter(k => k.startsWith("offercontainer_processed_"));
+//           let shouldLoadCSV = false;
+//           // If the csvFile has changed, force reload
+//           if (prevCsvFile !== csvFile) {
+//             console.log("CSV file has changed, reloading...");
+//             shouldLoadCSV = true;
+//           } else if (offerKeys.length === 0) {
+//             console.log("No offercontainer_processed_ keys found, reloading...");
+//             shouldLoadCSV = true;
+//           } else {
+//             // Check if all offer counts are zero
+//             shouldLoadCSV = offerKeys.every(k => {
+//               const group = allData[k];
+//               return !group || !Array.isArray(group.offers) || group.offers.length === 0;
+//             });
+//             if (shouldLoadCSV) {
+//               console.log("No offers, reloading...");
+//             }
+//           }
+//           if (!shouldLoadCSV) {
+//             console.log("Offers already loaded in storage, skipping CSV load.");
+//             window.offersLoaded = true;
+//             return;
+//           }
+
+//           // Remove existing offercontainer_processed_ keys
+//           chrome.storage.local.remove(offerKeys, function () {
+//             console.log("Removed old offercontainer_processed_ keys:", offerKeys);
+//           });
+
+//           // If we reach here, we need to load from CSV
+//           fetch(remoteUrl, {
+//             method: 'POST',
+//             headers: {
+//               'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({ passKey: decryptionKey, includeOfferData: true })
+//           })
+//             .then(res => {
+//               if (!res.ok) throw new Error("Failed to load CSV");
+//               return res.json();
+//             })
+//             .then(resData => {
+//               const encryptedBase64 = resData.offerData;
+//               // 1) Clean & parse Base64
+//               const b64 = encryptedBase64.replace(/[^A-Za-z0-9+/=]/g, '');
+//               const data = CryptoJS.enc.Base64.parse(b64);
+//               // 2) Extract “Salted__” + salt
+//               const hdr = CryptoJS.lib.WordArray.create(data.words.slice(0, 2), 8);
+//               if (hdr.toString(CryptoJS.enc.Latin1) !== 'Salted__') {
+//                 throw new Error('Missing “Salted__” header.');
+//               }
+//               const salt = CryptoJS.lib.WordArray.create(data.words.slice(2, 4), 8);
+//               const ct = CryptoJS.lib.WordArray.create(data.words.slice(4), data.sigBytes - 16);
+
+//               // 3) Derive key+IV & decrypt
+//               // EVP_BytesToKey using SHA-256 (OpenSSL ≥1.1.0 default)
+//               function deriveKeyIv_SHA256(password, salt) {
+//                 const keyIv = CryptoJS.lib.WordArray.create();
+//                 let prev = CryptoJS.lib.WordArray.create();
+//                 const keyLen = 32, ivLen = 16;
+//                 while (keyIv.sigBytes < keyLen + ivLen) {
+//                   prev = CryptoJS.SHA256(prev.concat(CryptoJS.enc.Utf8.parse(password)).concat(salt));
+//                   keyIv.concat(prev);
+//                 }
+//                 return {
+//                   key: CryptoJS.lib.WordArray.create(keyIv.words.slice(0, keyLen / 4), keyLen),
+//                   iv: CryptoJS.lib.WordArray.create(keyIv.words.slice(keyLen / 4, keyLen / 4 + ivLen / 4), ivLen)
+//                 };
+//               }
+//               const { key, iv } = deriveKeyIv_SHA256(decryptionKey, salt);
+//               const dec = CryptoJS.AES.decrypt(
+//                 { ciphertext: ct },
+//                 key,
+//                 { iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }
+//               );
+
+//               // 4) UTF-8 decode
+//               const u8 = new Uint8Array(dec.sigBytes);
+//               for (let i = 0; i < dec.sigBytes; i++) {
+//                 const w = dec.words[i >>> 2];
+//                 u8[i] = (w >>> (24 - (i % 4) * 8)) & 0xFF;
+//               }
+
+//               const csvText = new TextDecoder('utf-8', { fatal: false }).decode(u8);
+//               const offers = parseCSV(csvText);
+
+//               // Group by bank and card
+//               const grouped = {};
+//               offers.forEach(offer => {
+//                 const bank = offer.bank || "Unknown";
+//                 const card = offer.card || "Unknown";
+//                 const key = `offercontainer_processed_${bank}_${card}`;
+//                 if (!grouped[key]) {
+//                   grouped[key] = {
+//                     bank,
+//                     card,
+//                     totalOffers: 0,
+//                     offers: [],
+//                     lastUpdated: offer.lastUpdated || new Date().toISOString()
+//                   };
+//                 }
+//                 // Map fields to required structure
+//                 grouped[key].offers.push({
+//                   id: offer.id,
+//                   description: offer.description,
+//                   logo: offer.logo,
+//                   merchantName: offer.merchantName,
+//                   merchantWebsite: offer.merchantWebsite,
+//                   merchantWebsiteTitle: offer.merchantWebsiteTitle,
+//                   merchantWebsiteDescription: offer.merchantWebsiteDescription,
+//                   merchantAISummary: offer.merchantAISummary,
+//                   cashbackAmount: offer.cashbackAmount,
+//                   expiration: offer.expiration,
+//                   redeemLink: offer.redeemLink,
+//                   redeemLocation: offer.redeemLocation,
+//                   redeemLocationLat: offer.redeemLocationLat,
+//                   redeemLocationLon: offer.redeemLocationLon,
+//                   category: offer.category,
+//                   estValue: offer.estValue,
+//                   minSpend: offer.minSpend,
+//                   maxCashback: offer.maxCashback,
+//                   type: offer.type,
+//                   activated: (typeof offer.activated === "string" ? offer.activated.toLowerCase() : offer.activated) === "true" || offer.activated === true,
+//                   redeemed: (typeof offer.redeemed === "string" ? offer.redeemed.toLowerCase() : offer.redeemed) === "true" || offer.redeemed === true,
+//                   attemptedRedeem: (typeof offer.attemptedRedeem === "string" ? offer.attemptedRedeem.toLowerCase() : offer.attemptedRedeem) === "true" || offer.attemptedRedeem === true,
+//                   lastUpdated: offer.lastUpdated || new Date().toISOString()
+//                 });
+//                 grouped[key].totalOffers++;
+//                 grouped[key].lastUpdated = offer.lastUpdated || grouped[key].lastUpdated;
+//               });
+
+//               // Store each group in chrome.storage.local
+//               Object.keys(grouped).forEach(key => {
+//                 const item = {};
+//                 item[key] = grouped[key];
+//                 chrome.storage.local.set(item, function () {
+//                   console.log("Stored", key, "with", grouped[key].totalOffers, "offers");
+//                 });
+//               });
+//             })
+//             .then(() => {
+//               // Update clientInfo with current csvFile
+//               clientInfo.csvFile = csvFile;
+//               chrome.storage.local.set({ clientInfo }, function () {
+//                 console.log("Updated clientInfo.csvFile to", csvFile);
+//                 window.offersLoaded = true;
+//               });
+//             })
+//             .catch(err => {
+//               console.error("Error loading or parsing CSV:", err);
+//             });
+//         });
+
+//       });
+//     });
+// })();

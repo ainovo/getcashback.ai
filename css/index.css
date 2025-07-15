@@ -1164,10 +1164,10 @@ footer {
   gap: 5px;
 }
 
+.modal-description img,
 .modal-description svg,
-.modal-description img{
-  width: 15px;
-  height: 15px;
+.modal-description button {
+  display: none;
 }
 
 .modal-actions {
