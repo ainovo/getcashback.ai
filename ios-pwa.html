@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetCashback.ai - Save to Home Screen (iOS)</title>
+  <meta name="description" content="How to save GetCashback.ai as an app on your iPhone." />
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <link rel="shortcut icon" href="images/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #03CFC5;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-image: url('/images/background.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .instruction-container {
+      max-width: 90%;
+      margin: 48px auto 0 auto;
+      background: #F0F1EE;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+      padding: 32px 24px 24px 24px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .instruction-title {
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #1a6ca6;
+    }
+
+    .instruction-step {
+      font-size: 1.1em;
+      margin: 18px 0 8px 0;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .instruction-img {
+      width: 100%;
+    }
+
+    .instruction-note {
+      color: #888;
+      font-size: 0.98em;
+      margin-top: 18px;
+    }
+
+    .header-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      position: sticky;
+      background: rgba(3, 207, 197, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 10;
+      top: 0;
+      height: 60px;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: 12px;
+      z-index: 10;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      color: #fff;
+    }
+
+    .logo-title a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .instruction-container {
+        padding: 18px 6px 16px 6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-bar">
+    <div class="logo-title">
+      <a href="/">
+        <img src="images/icon.png" alt="GetCashback.ai" class="logo" />
+        <h1 class="title">GetCashback.ai</h1>
+      </a>
+    </div>
+  </div>
+  <div class="instruction-container">
+    <img src="images/ios%20pwa.png" alt="iOS PWA Instruction" class="instruction-img" />
+    <div class="instruction-note">You can now launch GetCashback.ai like an app from your home screen!</div>
+  </div>
+</body>
+
+</html>
