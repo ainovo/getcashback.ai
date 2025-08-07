@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'docs-src/**'
-      - '.github/workflows/build-docs.yml'
+      - '.github/workflows/jekyll-docs.yml'
   workflow_dispatch:
 
 jobs:
