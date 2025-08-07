@@ -1,0 +1,69 @@
+# Jekyll Configuration for GetCashback.ai Documentation
+
+# Site settings
+title: GetCashback.ai Help Center
+description: Find answers to your questions about GetCashback.ai - your AI-powered cashback copilot
+baseurl: "/docs"
+url: "https://getcashback.ai"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# SEO settings
+author: GetCashback.ai Team
+twitter:
+  username: getcashbackai
+  card: summary_large_image
+
+social:
+  name: GetCashback.ai
+  links:
+    - https://www.reddit.com/r/GetCashback/
+    - https://getcashback.ai
+
+# Google Analytics (if needed)
+# google_analytics: G-XXXXXXXXXX
+
+# Sass/SCSS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Timezone
+timezone: America/New_York
