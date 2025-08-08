@@ -216,7 +216,7 @@ description: Find answers to your questions about GetCashback.ai - your AI-power
 
     <div class="topics-grid">
       <!-- Get to Know GetCashback.ai -->
-      <a href="{{ '/docs/articles/get-to-know-getcashback/' | relative_url }}" class="topic-card-link">
+      <a href="{{ '/articles/get-to-know-getcashback/' | relative_url }}" class="topic-card-link">
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-intro">
@@ -229,7 +229,7 @@ description: Find answers to your questions about GetCashback.ai - your AI-power
       </a>
 
       <!-- Browser Extension -->
-      <a href="{{ '/docs/articles/browser-extension/' | relative_url }}" class="topic-card-link">
+      <a href="{{ '/articles/browser-extension/' | relative_url }}" class="topic-card-link">
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-extension">🧩</div>
@@ -240,7 +240,7 @@ description: Find answers to your questions about GetCashback.ai - your AI-power
       </a>
 
       <!-- Mobile App -->
-      <a href="{{ '/docs/articles/mobile-app/' | relative_url }}" class="topic-card-link">
+      <a href="{{ '/articles/mobile-app/' | relative_url }}" class="topic-card-link">
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-mobile">📱</div>
@@ -251,7 +251,7 @@ description: Find answers to your questions about GetCashback.ai - your AI-power
       </a>
 
       <!-- Ask Max -->
-      <a href="{{ '/docs/articles/ask-max/' | relative_url }}" class="topic-card-link">
+      <a href="{{ '/articles/ask-max/' | relative_url }}" class="topic-card-link">
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-max">
@@ -264,7 +264,7 @@ description: Find answers to your questions about GetCashback.ai - your AI-power
       </a>
 
       <!-- Linking Offers -->
-      <a href="{{ '/docs/articles/linking-offers/' | relative_url }}" class="topic-card-link">
+      <a href="{{ '/articles/linking-offers/' | relative_url }}" class="topic-card-link">
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-offers">🔗</div>
@@ -275,7 +275,7 @@ description: Find answers to your questions about GetCashback.ai - your AI-power
       </a>
 
       <!-- FAQs -->
-      <a href="{{ '/docs/articles/faqs/' | relative_url }}" class="topic-card-link">
+      <a href="{{ '/articles/faqs/' | relative_url }}" class="topic-card-link">
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-faq">❓</div>

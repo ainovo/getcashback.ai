@@ -1,16 +1,18 @@
 source "https://rubygems.org"
 
 # Jekyll version
-gem "jekyll", "~> 3.9.0"
+gem "jekyll", "~> 3.9.5"     # 3.9.0 is old; 3.9.5 has fixes
 
 # Required for GitHub Flavored Markdown
 gem "kramdown-parser-gfm"
 
 # Jekyll plugins
 group :jekyll_plugins do
+  gem "webrick", "~> 1.8"
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
+  # gem "jekyll-lunr-js-search"  # Removed due to therubyracer dependency incompatible with Apple Silicon
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

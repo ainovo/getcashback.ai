@@ -3,7 +3,7 @@
 # Site settings
 title: GetCashback.ai Help Center
 description: Find answers to your questions about GetCashback.ai - your AI-powered cashback copilot
-baseurl: ""
+baseurl: "/docs"
 url: "https://getcashback.ai"
 
 # Build settings
@@ -15,6 +15,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  # - jekyll-lunr-js-search  # Removed due to therubyracer dependency incompatible with Apple Silicon
 
 # Exclude from processing
 exclude:
