@@ -32,7 +32,7 @@ jobs:
       - name: Build Jekyll (mounted at /docs)
         working-directory: docs-src
         run: |
-          bundle exec jekyll build --baseurl "/docs" --destination ../_built-docs
+          bundle exec jekyll build --destination ../_built-docs
           touch ../_built-docs/.nojekyll
 
       - name: Publish built site to /docs (on main)

@@ -3,7 +3,7 @@
 # Site settings
 title: GetCashback.ai Help Center
 description: Find answers to your questions about GetCashback.ai - your AI-powered cashback copilot
-baseurl: "/docs"
+baseurl: ""
 url: "https://getcashback.ai"
 
 # Build settings
@@ -30,7 +30,7 @@ exclude:
 collections:
   articles:
     output: true
-    permalink: /articles/:name/
+    permalink: /docs/articles/:name/
 
 # Defaults
 defaults:
