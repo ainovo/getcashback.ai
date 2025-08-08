@@ -4,8 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GetCashback.ai Help Center</title>
   <meta name="description" content="Find answers to your questions about GetCashback.ai - your AI-powered cashback copilot" />
-  <link rel="icon" href="/docs/images/icon48.png" type="image/png" />
-  <link rel="stylesheet" href="/docs/css/index.css" />
+  <link rel="icon" href="/images/icon48.png" type="image/png" />
+  <link rel="stylesheet" href="/css/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
@@ -176,7 +176,7 @@
   <!-- Header Bar -->
   <div class="header-bar">
     <div class="logo-title">
-      <img src="/docs/images/icon48.png" alt="GetCashback.ai" class="logo" width="50" />
+      <img src="/images/icon48.png" alt="GetCashback.ai" class="logo" width="50" />
       <a href="https://getcashback.ai" style="text-decoration: none;"><h1 class="title">GetCashback.ai</h1></a>
     </div>
     <div class="header-buttons">
@@ -212,7 +212,7 @@
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-intro">
-              <img src="/docs/images/icon128.png" alt="GetCashback.ai Icon" />
+              <img src="/images/icon128.png" alt="GetCashback.ai Icon" />
             </div>
             <h3>Get to Know GetCashback.ai</h3>
           </div>
@@ -247,7 +247,7 @@
         <div class="topic-card">
           <div class="topic-header">
             <div class="topic-icon icon-max">
-              <img src="/docs/images/max.png" alt="Max AI Assistant" />
+              <img src="/images/max.png" alt="Max AI Assistant" />
             </div>
             <h3>Ask Max</h3>
           </div>
@@ -283,7 +283,7 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-logo-col">
-        <img src="/docs/images/icon128.png" alt="GetCashback.ai" class="footer-logo" width="40" />
+        <img src="/images/icon128.png" alt="GetCashback.ai" class="footer-logo" width="40" />
       </div>
       <div class="footer-col">
         <div class="footer-title">Built by <a href="https://ainovo.co">Ainovo Co.</a> with AI</div>
@@ -359,7 +359,7 @@
       </div>
       <div class="footer-col">
         <div class="footer-title">Resources</div>
-        <a href="/docs/">Help Center</a>
+        <a href="/">Help Center</a>
         <a href="mailto:support@getcashback.ai">Email Support</a>
         <a href="https://www.reddit.com/r/GetCashback/">Reddit</a>
       </div>
@@ -371,7 +371,7 @@
     </div>
   </footer>
   
-  <script src="/docs/js/lunr.min.js"></script>
+  <script src="/js/lunr.min.js"></script>
   <script>
     // Jekyll + Lunr.js Search functionality
     document.addEventListener('DOMContentLoaded', function() {
@@ -384,7 +384,7 @@
       let searchResults = null;
       
       // Load search index
-      fetch('/docs/search.json')
+      fetch('/search.json')
         .then(response => response.json())
         .then(data => {
           searchData = data;
@@ -457,7 +457,7 @@
               <h2 style="color: white; margin-bottom: 24px; font-size: 24px;">Search Results (${matchingArticles.length})</h2>
               <div class="topics-grid">
                 ${matchingArticles.map(article => `
-                  <a href="/docs${article.url}" class="topic-card-link">
+                  <a href="${article.url}" class="topic-card-link">
                     <div class="topic-card">
                       <h3 style="color: white; margin-bottom: 12px;">${article.title}</h3>
                       <p style="color: rgba(255, 255, 255, 0.8);">${article.description}</p>

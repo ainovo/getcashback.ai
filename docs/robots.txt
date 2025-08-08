@@ -1,1 +1,1 @@
-Sitemap: https://getcashback.ai/docs/sitemap.xml
+Sitemap: https://getcashback.ai/sitemap.xml
