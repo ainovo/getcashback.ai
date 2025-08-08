@@ -30,7 +30,7 @@ exclude:
 collections:
   articles:
     output: true
-    permalink: /docs/articles/:name/
+    permalink: /articles/:name/
 
 # Defaults
 defaults:
