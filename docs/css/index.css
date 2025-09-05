@@ -113,6 +113,11 @@ body {
   color: white;
 }
 
+.ios-button {
+  background-color:#f4f4f4;
+  color: black;
+}
+
 .git-button {
   background-color: #24292e;
   color: white;
