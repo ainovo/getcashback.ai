@@ -386,6 +386,7 @@ description: Find answers to your questions about GetCashback.ai - your AI-power
       <div class="footer-col">
         <div class="footer-title">Product</div>
         <a href="https://testflight.apple.com/join/fDWWqBay">iOS App (Beta)</a>
+        <a href="https://play.google.com/apps/testing/ai.getcashback.android">Android App (Beta)</a>
         <a href="https://chromewebstore.google.com/detail/getcashbackai-your-cashba/peckgggpikdpgcgdodoljaclafolemde">Chrome
           Extension</a>
         <a href="https://microsoftedge.microsoft.com/addons/detail/getcashbackai-your-cas/mkiiailpejmomkpmpkllhlbmmhihahii">Microsoft Edge

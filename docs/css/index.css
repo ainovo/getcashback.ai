@@ -118,6 +118,11 @@ body {
   color: black;
 }
 
+.android-button {
+  background-color:#ffffff;
+  color: black;
+}
+
 .git-button {
   background-color: #24292e;
   color: white;
