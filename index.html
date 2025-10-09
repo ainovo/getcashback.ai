@@ -241,11 +241,23 @@
   </div>
   <div class="main">
     <div class="hero-center">
-      <img src="images/max.png" alt="Max profile picture" style="width:80px;height:80px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:10px;display:block;">
+      <img src="images/max.png" alt="Max profile picture"
+        style="width:80px;height:80px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:10px;display:block;">
       <h1 class="hero-headline">Hey 👋 I'm Max - your cashback copilot. </h1>
       <div class="hero-subtitle">
         <div id="filter-label" class="message-box"></div>
-        <div id="source-label" class="hero-suggestion-btn" style="display:none"></div>
+        <div style="display: flex; flex-direction: row; gap: 6px;">
+          <div id="source-label" class="hero-suggestion-btn" style="display:none"></div>
+          <div id="download-label" class="hero-suggestion-btn" style="display:none">
+            mobile apps
+            <a href="https://testflight.apple.com/join/fDWWqBay" target="_blank" style="text-decoration: none;">
+              <img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="play.google.com" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 4px; vertical-align: middle;" />
+            </a>
+            <a href="https://play.google.com/apps/testing/ai.getcashback.android" target="_blank" style="text-decoration: none;">
+              <img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=32" alt="play.google.com" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 4px; vertical-align: middle;" />
+            </a>
+          </div>
+        </div>
       </div>
       <div class="hero-searchbox" style="display: none;">
         <div class="hero-search-input">
@@ -260,11 +272,14 @@
             <div class="filters-toggle-container">
               <button id="advanced-filters-toggle" class="toggle-button" title="Show filters">
                 <span class="filter-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -960 960 960" class="shrink-0 h-6 w-6 text-background" fill="currentColor" style="transform: rotate(180deg);">
-                    <path d="M442.39-616.87 309.78-487.26q-11.82 11.83-27.78 11.33t-27.78-12.33q-11.83-11.83-11.83-27.78 0-15.96 11.83-27.79l198.43-199q11.83-11.82 28.35-11.82t28.35 11.82l198.43 199q11.83 11.83 11.83 27.79 0 15.95-11.83 27.78-11.82 11.83-27.78 11.83t-27.78-11.83L521.61-618.87v348.83q0 16.95-11.33 28.28-11.32 11.33-28.28 11.33t-28.28-11.33q-11.33-11.33-11.33-28.28z"></path>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -960 960 960"
+                    class="shrink-0 h-6 w-6 text-background" fill="currentColor" style="transform: rotate(180deg);">
+                    <path
+                      d="M442.39-616.87 309.78-487.26q-11.82 11.83-27.78 11.33t-27.78-12.33q-11.83-11.83-11.83-27.78 0-15.96 11.83-27.79l198.43-199q11.83-11.82 28.35-11.82t28.35 11.82l198.43 199q11.83 11.83 11.83 27.79 0 15.95-11.83 27.78-11.82 11.83-27.78 11.83t-27.78-11.83L521.61-618.87v348.83q0 16.95-11.33 28.28-11.32 11.33-28.28 11.33t-28.28-11.33q-11.33-11.33-11.33-28.28z">
+                    </path>
                   </svg>
                 </span>
-                </button>
+              </button>
             </div>
           </div>
         </div>
@@ -280,7 +295,8 @@
             <span class="header-button demo-button" id="total-value">$0.00</span> back! See individual offers below.
             <span class="header-button demo-button">Install the extension</span> to activate them all.
           </span>
-          <span id="no-offer-label" class="stat-label" style="display:none;">Oops, I cannot find any offer. Try something else and hit the green button again. If you still don't see offers,  
+          <span id="no-offer-label" class="stat-label" style="display:none;">Oops, I cannot find any offer. Try something
+            else and hit the green button again. If you still don't see offers,
             <span class="header-button demo-button">install the extension</span>
             to uncover personalized offers!</span>
           </span>

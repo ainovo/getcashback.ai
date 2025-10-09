@@ -290,12 +290,15 @@ body {
   cursor: pointer;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
   transition: background 0.2s, color 0.2s;
-  width: fit-content;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hero-suggestion-btn:hover {
-  background: #03CFC5;
-  color: #232323;
+  overflow: visible;
+  max-width: fit-content;
 }
 
 .images {
