@@ -23,7 +23,7 @@ The GetCashback.ai mobile app brings your AI-powered cashback copilot directly t
 ### First Time Setup
 
 1. **Download & Install**  
-   Install the GetCashback.ai app from the [App Store (iOS)](https://apps.apple.com/us/app/getcashback-ai/id6751737902) or [Google Play Store (Android)](https://play.google.com/).
+   Install the GetCashback.ai app from the [App Store (iOS)](https://apps.apple.com/us/app/getcashback-ai/id6751737902) or [Google Play Store (Android)](https://play.google.com/store/apps/details?id=ai.getcashback.android).
 
 2. **Activation**  
    When you first open the app, tap the **"Activate"** button to get started. You'll be asked to accept the User Agreement and enter your email address to receive the accepted terms and a one-time activation link.
